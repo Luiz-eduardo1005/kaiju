@@ -65,6 +65,7 @@ export const dashboardSections = [
     href: "/recrutamento",
     category: "recrutamento",
     description: "Etapas de avaliacao fisica, neural, psicologica e de simulacao.",
+    restricted: true,
   },
   {
     title: "Campanha / Sessoes",
