@@ -1,9 +1,15 @@
+"use client";
+
 import { Card } from "@/components/card";
 import { GlobalSearch } from "@/components/global-search";
 import { WorldStatusPanel } from "@/components/world-status-panel";
+import { useMode } from "@/context/mode-context";
 import { dashboardSections } from "@/data";
 
 export default function Home() {
+  const { isMaster } = useMode();
+  const visibleSections = dashboardSections.filter((section) => !("restricted" in section && section.restricted) || isMaster);
+
   return (
     <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-8 px-4 py-8">
       <section className="scanline relative overflow-hidden rounded-[2rem] border border-cyan-300/25 bg-slate-950/70 p-6 shadow-[0_0_60px_rgba(6,182,212,0.12)] md:p-10">
@@ -24,7 +30,7 @@ export default function Home() {
       <GlobalSearch />
 
       <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-        {dashboardSections.map((section) => (
+        {visibleSections.map((section) => (
           <Card
             key={section.href}
             title={section.title}

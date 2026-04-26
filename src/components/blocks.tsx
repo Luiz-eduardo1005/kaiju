@@ -8,9 +8,13 @@ function paragraphs(text: string) {
 }
 
 export function PublicBlock({ title, children }: { title?: string; children: React.ReactNode }) {
+  const { isMaster } = useMode();
+  const tone = isMaster ? "border-red-400/25 bg-red-950/10" : "border-cyan-300/20 bg-cyan-950/10";
+  const titleTone = isMaster ? "text-red-200" : "text-cyan-200";
+
   return (
-    <section className="rounded-2xl border border-cyan-300/20 bg-cyan-950/10 p-5">
-      {title ? <h2 className="mb-4 text-sm font-black uppercase tracking-[0.28em] text-cyan-200">{title}</h2> : null}
+    <section className={`rounded-2xl border p-5 ${tone}`}>
+      {title ? <h2 className={`mb-4 text-sm font-black uppercase tracking-[0.28em] ${titleTone}`}>{title}</h2> : null}
       <div className="prose prose-invert max-w-none text-slate-200 prose-p:leading-8">{children}</div>
     </section>
   );

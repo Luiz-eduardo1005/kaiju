@@ -20,11 +20,22 @@ html {
   background: var(--background);
 }
 
+html[data-mode="master"] {
+  --background: #050208;
+}
+
 body {
   min-height: 100vh;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-rajdhani), sans-serif;
+}
+
+html[data-mode="master"] body {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(239, 68, 68, 0.13), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(127, 29, 29, 0.18), transparent 28%),
+    #050208;
 }
 
 body::selection {

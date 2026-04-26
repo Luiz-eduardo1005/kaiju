@@ -79,4 +79,35 @@ export const dashboardSections = [
     description: "Conspiracoes, verdades ocultas e documentos que nunca chegaram ao publico.",
     restricted: true,
   },
+  {
+    title: "Loja",
+    href: "/shop",
+    category: "loja",
+    description: "Comprar alimentos, medicamentos, roupas, equipamentos e itens taticos ficticios.",
+  },
+  {
+    title: "Inventario",
+    href: "/inventory",
+    category: "inventario",
+    description: "Ver itens comprados, quantidades, efeitos e usar consumiveis.",
+  },
+  {
+    title: "Banco",
+    href: "/bank",
+    category: "banco",
+    description: "Ver saldo, historico de transacoes e transferencias rapidas.",
+  },
+  {
+    title: "Ficha",
+    href: "/character",
+    category: "ficha",
+    description: "Editar dados do personagem, vida atual e status.",
+  },
+  {
+    title: "Painel do Mestre",
+    href: "/master",
+    category: "painel-mestre",
+    description: "Gerenciar players, vida, inventarios, banco, efeitos e logs.",
+    restricted: true,
+  },
 ] as const;

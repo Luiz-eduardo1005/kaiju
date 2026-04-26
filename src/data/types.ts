@@ -30,7 +30,12 @@ export type LoreCategory =
   | "npcs"
   | "recrutamento"
   | "campanha"
-  | "arquivos-secretos";
+  | "arquivos-secretos"
+  | "loja"
+  | "inventario"
+  | "banco"
+  | "ficha"
+  | "painel-mestre";
 
 export type SearchableEntry = {
   id: string;
@@ -62,29 +67,32 @@ export type TimelineEvent = {
   visibility?: Visibility;
 };
 
+export type KaijuModeData = {
+  status: string;
+  firstAppearance: string;
+  location: string;
+  height: string;
+  type: string;
+  threatLevel: string;
+  physicalDescription: string;
+  behavior: string;
+  abilities: string;
+  history: string;
+  howDefeated: string;
+  relationToJaegers: string;
+  relationToEnumeratedWeapons: string;
+  hooks: string;
+  classifiedNotes?: string;
+};
+
 export type Kaiju = {
   id: string;
-  nome: string;
-  numero: string;
-  titulo: string;
+  number: string;
+  name: string;
+  title: string;
   image: string;
-  primeiraAparicao: string;
-  local: string;
-  altura: string;
-  comprimento?: string;
-  tipo: string;
-  nivelAmeaca: string;
-  statusPublico: string;
-  statusSecreto?: string;
-  descricaoFisica: string;
-  comportamento?: string;
-  habilidades?: string[];
-  historiaPublica?: string;
-  historiaSecreta?: string;
-  comoFoiDerrotado?: string;
-  relacaoComJaegers?: string;
-  armaRelacionada?: string;
-  ganchos?: string[];
+  player: KaijuModeData;
+  master: KaijuModeData;
   tags: TagName[];
 };
 

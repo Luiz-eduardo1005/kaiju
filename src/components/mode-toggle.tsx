@@ -1,39 +1,60 @@
 "use client";
 
 import { useState } from "react";
+import { useAuth } from "@/context/auth-context";
 import { useMode } from "@/context/mode-context";
+import { supabase } from "@/lib/supabase";
+
+const MASTER_EMAIL = "mestre@cronicas-titas.example.com";
 
 export function ModeToggle() {
-  const { mode, setMode } = useMode();
+  const { mode, setMode, isMaster } = useMode();
+  const { user } = useAuth();
   const [isOpen, setIsOpen] = useState(false);
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [submitting, setSubmitting] = useState(false);
 
-  function handleModeChange() {
+  async function enterMasterMode(masterPassword: string) {
+    setSubmitting(true);
+    setError("");
+
+    const result = user?.email === MASTER_EMAIL ? { error: null } : await supabase.auth.signInWithPassword({ email: MASTER_EMAIL, password: masterPassword });
+    setSubmitting(false);
+
+    if (result.error) {
+      setError("Senha correta para o modo, mas o login mestre falhou no Supabase. Confira se o usuario mestre foi criado com essa mesma senha.");
+      return;
+    }
+
+    setMode("master");
+    setIsOpen(false);
+    setPassword("");
+    setError("");
+  }
+
+  async function handleModeChange() {
     if (mode === "master") {
       setMode("player");
+      if (user?.email === MASTER_EMAIL) {
+        await supabase.auth.signOut();
+      }
       return;
     }
 
     if (password === "1005@@") {
-      setMode("master");
-      setIsOpen(false);
-      setPassword("");
-      setError("");
+      void enterMasterMode(password);
       return;
     }
 
     setIsOpen(true);
   }
 
-  function submitPassword(event: React.FormEvent<HTMLFormElement>) {
+  async function submitPassword(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     if (password === "1005@@") {
-      setMode("master");
-      setIsOpen(false);
-      setPassword("");
-      setError("");
+      await enterMasterMode(password);
       return;
     }
 
@@ -44,13 +65,18 @@ export function ModeToggle() {
     setIsOpen(false);
     setPassword("");
     setError("");
+    setSubmitting(false);
   }
 
   return (
     <>
       <button
         onClick={handleModeChange}
-        className="group relative overflow-hidden rounded-full border border-cyan-300/40 bg-cyan-300/10 px-4 py-2 text-xs font-black uppercase tracking-[0.25em] text-cyan-100 shadow-[0_0_22px_rgba(34,211,238,0.18)] transition hover:border-red-400/70 hover:text-white"
+        className={`group relative overflow-hidden rounded-full border px-4 py-2 text-xs font-black uppercase tracking-[0.25em] shadow-[0_0_22px_rgba(34,211,238,0.18)] transition hover:text-white ${
+          isMaster
+            ? "border-red-400/60 bg-red-500/15 text-red-100 hover:border-red-300"
+            : "border-cyan-300/40 bg-cyan-300/10 text-cyan-100 hover:border-red-400/70"
+        }`}
       >
         <span className="absolute inset-0 translate-x-[-120%] bg-gradient-to-r from-transparent via-white/20 to-transparent transition duration-700 group-hover:translate-x-[120%]" />
         <span className="relative">{mode === "player" ? "Modo Player" : "Modo Mestre"}</span>
@@ -67,7 +93,7 @@ export function ModeToggle() {
               <p className="font-mono text-xs uppercase tracking-[0.38em] text-red-300">Acesso restrito</p>
               <h2 className="mt-3 text-3xl font-black uppercase tracking-wide text-white">Modo Mestre</h2>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Insira a senha de autorizacao para liberar arquivos classificados, verdades ocultas e notas privadas da campanha.
+                Insira a senha de autorizacao. O sistema tambem fara login automatico como usuario mestre no Supabase.
               </p>
 
               <form onSubmit={submitPassword} className="mt-6 space-y-4">
@@ -95,9 +121,10 @@ export function ModeToggle() {
                 <div className="flex flex-col gap-3 sm:flex-row">
                   <button
                     type="submit"
+                    disabled={submitting}
                     className="flex-1 rounded-xl border border-red-300/60 bg-red-500/20 px-4 py-3 text-xs font-black uppercase tracking-[0.28em] text-red-50 transition hover:bg-red-500/30"
                   >
-                    Liberar
+                    {submitting ? "Validando..." : "Liberar"}
                   </button>
                   <button
                     type="button"

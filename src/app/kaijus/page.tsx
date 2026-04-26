@@ -1,8 +1,13 @@
+"use client";
+
 import { Card } from "@/components/card";
 import { PageShell } from "@/components/page-shell";
+import { useMode } from "@/context/mode-context";
 import { kaijus } from "@/data";
 
 export default function KaijusPage() {
+  const { mode } = useMode();
+
   return (
     <PageShell
       eyebrow="Catalogo de ameacas"
@@ -10,17 +15,20 @@ export default function KaijusPage() {
       subtitle="Dossies de criaturas colossais, titas primordiais e anomalias de fenda registradas desde 1984."
     >
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        {kaijus.map((kaiju) => (
-          <Card
-            key={kaiju.id}
-            title={`${kaiju.numero} - ${kaiju.nome}`}
-            subtitle={kaiju.titulo}
-            description={kaiju.descricaoFisica}
-            href={`/kaijus/${kaiju.id}`}
-            tags={kaiju.tags}
-            status={kaiju.statusPublico}
-          />
-        ))}
+        {kaijus.map((kaiju) => {
+          const data = mode === "master" ? kaiju.master : kaiju.player;
+          return (
+            <Card
+              key={kaiju.id}
+              title={`${kaiju.number} - ${kaiju.name}`}
+              subtitle={kaiju.title}
+              description={data.physicalDescription}
+              href={`/kaijus/${kaiju.id}`}
+              tags={kaiju.tags}
+              status={data.status}
+            />
+          );
+        })}
       </section>
     </PageShell>
   );
