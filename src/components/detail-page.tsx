@@ -13,6 +13,11 @@ type DetailPageProps = {
 };
 
 export function DetailPage({ title, subtitle, image, tags = [], facts, publicText, secretText, sections = [] }: DetailPageProps) {
+  const visibleSections = sections.filter((section) => {
+    if (Array.isArray(section.content)) return section.content.length > 0;
+    return Boolean(section.content?.trim());
+  });
+
   return (
     <article className="space-y-6">
       <section className="relative min-h-[340px] overflow-hidden rounded-3xl border border-cyan-300/25 bg-slate-950">
@@ -65,7 +70,7 @@ export function DetailPage({ title, subtitle, image, tags = [], facts, publicTex
               <TextContent text={secretText} />
             </ClassifiedBlock>
           ) : null}
-          {sections.map((section) =>
+          {visibleSections.map((section) =>
             section.classified ? (
               <ClassifiedBlock key={section.title} title={section.title}>
                 {Array.isArray(section.content) ? (

@@ -4,9 +4,11 @@ import { Card } from "@/components/card";
 import { ClassifiedBlock, PublicBlock, TextContent } from "@/components/blocks";
 import { PageShell } from "@/components/page-shell";
 import { Timeline } from "@/components/timeline";
+import { useMode } from "@/context/mode-context";
 import { historyEntries, timelineEvents } from "@/data";
 
 export default function HistoriaPage() {
+  const { isMaster } = useMode();
   const publicHistory = historyEntries.find((item) => item.id === "historia-publica");
   const secretHistory = historyEntries.find((item) => item.id === "historia-secreta");
 
@@ -18,7 +20,9 @@ export default function HistoriaPage() {
     >
       <div className="grid gap-4 md:grid-cols-4">
         <Card title="Historia Publica" description="A versao oficial para civis, cadetes e recrutas." tags={["Publico"]} />
-        <Card title="Historia Original / Secreta" description="A verdade apagada dos arquivos publicos." tags={["Classificado"]} restricted />
+        {isMaster ? (
+          <Card title="Historia Original / Secreta" description="A verdade apagada dos arquivos publicos." tags={["Classificado"]} restricted />
+        ) : null}
         <Card title="Linha do Tempo" description="Eventos centrais entre 1984 e 2040." tags={["Campanha"]} />
         <Card title="Eventos Importantes" description="Batalhas, descobertas e pontos de virada." tags={["Lendario"]} />
       </div>
