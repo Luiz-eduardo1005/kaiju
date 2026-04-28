@@ -33,7 +33,13 @@ function BankPanel() {
 
   async function load(userId: string) {
     const [walletResult, transactionResult, profileResult] = await Promise.all([
-      supabase.from("wallets").select("*").eq("user_id", userId).single<Wallet>(),
+      supabase
+        .from("wallets")
+        .select("*")
+        .eq("user_id", userId)
+        .order("updated_at", { ascending: false })
+        .limit(1)
+        .maybeSingle<Wallet>(),
       supabase.from("transactions").select("*").eq("user_id", userId).order("created_at", { ascending: false }),
       supabase.from("profiles").select("*").order("username"),
     ]);

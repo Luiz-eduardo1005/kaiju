@@ -22,17 +22,21 @@ import {
   sanitizeEffects,
 } from "@/lib/game/itemEffectCatalog";
 import type { CustomItem, CustomItemEffect, MasterInventoryWithItem, Profile } from "@/types/game";
-import { CUSTOM_ITEM_CATEGORIES, CUSTOM_ITEM_DURATIONS, CUSTOM_ITEM_RARITIES } from "@/types/game";
+import { CUSTOM_ITEM_CATEGORIES, CUSTOM_ITEM_RARITIES } from "@/types/game";
 
-const bonusStats = [
-  ["", "Nenhum"],
-  ["strength", "Forca"],
-  ["agility", "Agilidade"],
-  ["constitution", "Constituicao"],
-  ["mind", "Mente"],
-  ["willpower", "Vontade"],
-  ["technique", "Drift"],
-];
+function FieldHelp({ children }: { children: React.ReactNode }) {
+  return <span className="block text-[11px] leading-5 text-slate-400">{children}</span>;
+}
+
+function FieldLabel({ label, help, children }: { label: string; help?: string; children: React.ReactNode }) {
+  return (
+    <label className="grid min-w-0 gap-2">
+      <span className="text-[10px] font-black uppercase tracking-[0.24em] text-slate-400">{label}</span>
+      {children}
+      {help ? <FieldHelp>{help}</FieldHelp> : null}
+    </label>
+  );
+}
 
 const emptyForm: CustomItemFormInput = {
   name: "",
@@ -278,62 +282,93 @@ export function MasterItemCreatorPanel({
       <div className="mt-5 grid gap-4 xl:grid-cols-[1fr_1.15fr]">
         <div className="rounded-2xl border border-white/10 bg-black/30 p-4">
           <div className="grid gap-3">
-            <input placeholder="Nome do item" value={form.name} onChange={(event) => updateField("name", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none focus:border-red-300/50" />
+            <FieldLabel label="Nome do item" help="Exemplo: Bebida Energetica, Kit Medico Pesado, Bota de Evacuacao.">
+              <input placeholder="Digite o nome que o player vai ver" value={form.name} onChange={(event) => updateField("name", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none focus:border-red-300/50" />
+            </FieldLabel>
             <div className="grid gap-3 sm:grid-cols-3">
-              <select value={form.item_type} onChange={(event) => updateField("item_type", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
-                {AVAILABLE_ITEM_TYPES.map((type) => <option key={type.id} value={type.id}>{type.label}</option>)}
-              </select>
-              <select value={form.category} onChange={(event) => updateField("category", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
-                {CUSTOM_ITEM_CATEGORIES.map((category) => <option key={category}>{category}</option>)}
-              </select>
-              <select value={form.rarity} onChange={(event) => updateField("rarity", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
-                {CUSTOM_ITEM_RARITIES.map((rarity) => <option key={rarity}>{rarity}</option>)}
-              </select>
+              <FieldLabel label="Tipo" help="Define o botao: consumivel usa, equipavel equipa.">
+                <select value={form.item_type} onChange={(event) => updateField("item_type", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
+                  {AVAILABLE_ITEM_TYPES.map((type) => <option key={type.id} value={type.id}>{type.label}</option>)}
+                </select>
+              </FieldLabel>
+              <FieldLabel label="Categoria" help="Organiza o item no inventario e nos logs.">
+                <select value={form.category} onChange={(event) => updateField("category", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
+                  {CUSTOM_ITEM_CATEGORIES.map((category) => <option key={category}>{category}</option>)}
+                </select>
+              </FieldLabel>
+              <FieldLabel label="Raridade" help="Muda destaque visual; classificado fica mais restrito.">
+                <select value={form.rarity} onChange={(event) => updateField("rarity", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
+                  {CUSTOM_ITEM_RARITIES.map((rarity) => <option key={rarity}>{rarity}</option>)}
+                </select>
+              </FieldLabel>
             </div>
-            <textarea placeholder="Descricao visivel" value={form.description} onChange={(event) => updateField("description", event.target.value)} rows={3} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
-            <textarea placeholder="Efeito mecanico / regra narrativa" value={form.mechanical_effect} onChange={(event) => updateField("mechanical_effect", event.target.value)} rows={2} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+            <FieldLabel label="Descricao visivel" help="Texto narrativo que aparece para o player no inventario.">
+              <textarea placeholder="Descreva o item em linguagem de jogo" value={form.description} onChange={(event) => updateField("description", event.target.value)} rows={3} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+            </FieldLabel>
+            <FieldLabel label="Regra narrativa" help="Opcional. Use para observacoes de mestre ou regra que nao vira numero automatico.">
+              <textarea placeholder="Exemplo: so funciona em area contaminada leve" value={form.mechanical_effect} onChange={(event) => updateField("mechanical_effect", event.target.value)} rows={2} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+            </FieldLabel>
 
             <div className="rounded-2xl border border-cyan-300/20 bg-cyan-950/10 p-4">
               <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-cyan-200">Efeitos funcionais</p>
+              <p className="mt-2 text-xs leading-5 text-slate-300">
+                Aqui fica o que muda a ficha de verdade. Escolha o tipo do efeito, preencha os campos que aparecem e clique em Adicionar efeito.
+              </p>
               <div className="mt-3 grid gap-3">
-                <select
-                  value={effectDraft.type}
-                  onChange={(event) => updateEffect("type", event.target.value as CustomItemEffect["type"])}
-                  className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none"
-                >
-                  {AVAILABLE_EFFECT_TYPES.map((effect) => <option key={effect.id} value={effect.id}>{effect.label}</option>)}
-                </select>
-                <input placeholder="Nome curto do efeito (opcional)" value={effectDraft.label ?? ""} onChange={(event) => updateEffect("label", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+                <FieldLabel label="Tipo de efeito" help="Recuperar recurso cura HP/fadiga. Buff temporario aparece na ficha por alguns minutos. Bonus equipado dura ate desequipar.">
+                  <select
+                    value={effectDraft.type}
+                    onChange={(event) => updateEffect("type", event.target.value as CustomItemEffect["type"])}
+                    className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none"
+                  >
+                    {AVAILABLE_EFFECT_TYPES.map((effect) => <option key={effect.id} value={effect.id}>{effect.label}</option>)}
+                  </select>
+                </FieldLabel>
+                <FieldLabel label="Nome curto do efeito" help="Opcional. Exemplo: Reflexos acelerados, Cura rapida, Peso instavel.">
+                  <input placeholder="Nome curto do efeito (opcional)" value={effectDraft.label ?? ""} onChange={(event) => updateEffect("label", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+                </FieldLabel>
                 <div className="grid gap-3 sm:grid-cols-2">
                   {effectUsesField(effectDraft, "resource") ? (
-                    <select value={effectDraft.resource ?? "hp"} onChange={(event) => updateEffect("resource", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
-                      {AVAILABLE_RESOURCES.map((resource) => <option key={resource.id} value={resource.id}>{resource.label}</option>)}
-                    </select>
+                    <FieldLabel label="Recurso afetado" help="Escolha HP para curar/danar vida, ou fadiga para registrar energia/cansaco.">
+                      <select value={effectDraft.resource ?? "hp"} onChange={(event) => updateEffect("resource", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
+                        {AVAILABLE_RESOURCES.map((resource) => <option key={resource.id} value={resource.id}>{resource.label}</option>)}
+                      </select>
+                    </FieldLabel>
                   ) : null}
                   {effectUsesField(effectDraft, "attribute") ? (
-                    <select value={effectDraft.attribute ?? "strength"} onChange={(event) => updateEffect("attribute", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
-                      {AVAILABLE_ATTRIBUTES.map((attribute) => <option key={attribute.id} value={attribute.id}>{attribute.label}</option>)}
-                    </select>
+                    <FieldLabel label="Atributo afetado" help="Esse atributo vai aparecer na ficha com bonus verde ou debuff vermelho.">
+                      <select value={effectDraft.attribute ?? "strength"} onChange={(event) => updateEffect("attribute", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
+                        {AVAILABLE_ATTRIBUTES.map((attribute) => <option key={attribute.id} value={attribute.id}>{attribute.label}</option>)}
+                      </select>
+                    </FieldLabel>
                   ) : null}
                   {effectUsesField(effectDraft, "condition") ? (
-                    <select value={effectDraft.condition ?? "ferido"} onChange={(event) => updateEffect("condition", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
-                      {AVAILABLE_CONDITIONS.map((condition) => <option key={condition.id} value={condition.id}>{condition.label}</option>)}
-                    </select>
+                    <FieldLabel label="Condicao" help="Condicoes sao marcadores narrativos, como contaminado ou atordoado.">
+                      <select value={effectDraft.condition ?? "ferido"} onChange={(event) => updateEffect("condition", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
+                        {AVAILABLE_CONDITIONS.map((condition) => <option key={condition.id} value={condition.id}>{condition.label}</option>)}
+                      </select>
+                    </FieldLabel>
                   ) : null}
                   {effectUsesField(effectDraft, "value") ? (
-                    <input placeholder="Valor" value={effectDraft.value ?? ""} onChange={(event) => updateEffect("value", numberOrNull(event.target.value))} type="number" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+                    <FieldLabel label="Valor" help="Quanto cura, causa dano ou muda atributo. Exemplo: 5 para +5 Agilidade.">
+                      <input placeholder="Valor do efeito" value={effectDraft.value ?? ""} onChange={(event) => updateEffect("value", numberOrNull(event.target.value))} type="number" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+                    </FieldLabel>
                   ) : null}
                   {effectUsesField(effectDraft, "duration") ? (
-                    <input placeholder="Duracao em minutos" value={Math.round(Number(effectDraft.duration ?? 0) / 60) || ""} onChange={(event) => updateEffect("duration", numberOrDefault(event.target.value, 0) * 60)} type="number" min="1" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+                    <FieldLabel label="Duracao" help="Tempo em minutos. Exemplo: 10 vira 10:00 nos efeitos ativos.">
+                      <input placeholder="Duracao em minutos" value={Math.round(Number(effectDraft.duration ?? 0) / 60) || ""} onChange={(event) => updateEffect("duration", numberOrDefault(event.target.value, 0) * 60)} type="number" min="1" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+                    </FieldLabel>
                   ) : null}
                   {effectUsesField(effectDraft, "messageDuration") ? (
-                    <input placeholder="Mensagem em minutos" value={Math.round(Number(effectDraft.messageDuration ?? 0) / 60) || ""} onChange={(event) => updateEffect("messageDuration", numberOrDefault(event.target.value, 0) * 60)} type="number" min="1" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+                    <FieldLabel label="Duracao da mensagem" help="Quanto tempo uma nota temporaria fica visivel, quando o efeito for narrativo.">
+                      <input placeholder="Mensagem em minutos" value={Math.round(Number(effectDraft.messageDuration ?? 0) / 60) || ""} onChange={(event) => updateEffect("messageDuration", numberOrDefault(event.target.value, 0) * 60)} type="number" min="1" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+                    </FieldLabel>
                   ) : null}
                 </div>
                 <button onClick={addEffect} className="rounded-xl border border-cyan-300/45 bg-cyan-300/10 px-4 py-3 text-xs font-black uppercase tracking-[0.25em] text-cyan-50 transition hover:bg-cyan-300/20">
                   Adicionar efeito
                 </button>
-                {draftDefinition ? <p className="text-xs text-cyan-100/80">Configurando: {draftDefinition.label}</p> : null}
+                {draftDefinition ? <p className="text-xs text-cyan-100/80">Efeito selecionado agora: {draftDefinition.label}. Ele so entra no item depois de clicar em Adicionar efeito.</p> : null}
                 {form.effects.length ? (
                   <div className="grid gap-2">
                     {form.effects.map((effect) => (
@@ -349,19 +384,16 @@ export function MasterItemCreatorPanel({
               </div>
             </div>
 
-            <div className="grid gap-3 sm:grid-cols-3">
-              <select value={form.bonus_stat} onChange={(event) => updateField("bonus_stat", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
-                {bonusStats.map(([value, label]) => <option key={value} value={value}>{label}</option>)}
-              </select>
-              <input placeholder="Bonus legado" value={form.bonus_value ?? ""} onChange={(event) => updateField("bonus_value", numberOrNull(event.target.value))} type="number" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
-              <select value={form.duration_type} onChange={(event) => updateField("duration_type", event.target.value)} className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none">
-                {CUSTOM_ITEM_DURATIONS.map((duration) => <option key={duration}>{duration}</option>)}
-              </select>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-3">
-              <input placeholder="Preco" value={form.price ?? ""} onChange={(event) => updateField("price", numberOrNull(event.target.value))} type="number" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
-              <input placeholder="Peso" value={form.weight ?? ""} onChange={(event) => updateField("weight", numberOrNull(event.target.value))} type="number" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
-              <input placeholder="Quantidade" value={form.quantity === 0 ? "" : form.quantity} onChange={(event) => updateField("quantity", Math.max(0, Number(event.target.value) || 0))} type="number" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+            <div className="grid gap-4 rounded-2xl border border-white/10 bg-black/20 p-4">
+              <FieldLabel label="Preco" help="Valor em dolar, se for vendido ou usado em troca.">
+                <input placeholder="Preco em $" value={form.price ?? ""} onChange={(event) => updateField("price", numberOrNull(event.target.value))} type="number" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+              </FieldLabel>
+              <FieldLabel label="Peso" help="Opcional. Serve para controle narrativo de carga.">
+                <input placeholder="Peso narrativo" value={form.weight ?? ""} onChange={(event) => updateField("weight", numberOrNull(event.target.value))} type="number" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+              </FieldLabel>
+              <FieldLabel label="Quantidade criada" help="Quantas unidades entram no inventario do mestre.">
+                <input placeholder="Quantidade" value={form.quantity === 0 ? "" : form.quantity} onChange={(event) => updateField("quantity", Math.max(0, Number(event.target.value) || 0))} type="number" className="rounded-xl border border-white/10 bg-slate-950 px-4 py-3 text-white outline-none" />
+              </FieldLabel>
             </div>
             <div className="grid gap-2 text-sm text-slate-200 sm:grid-cols-2">
               <label className="flex items-center gap-2 rounded-xl border border-white/10 bg-slate-950 px-3 py-2">
@@ -420,4 +452,3 @@ export function MasterItemCreatorPanel({
     </section>
   );
 }
-

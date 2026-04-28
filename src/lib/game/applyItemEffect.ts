@@ -84,7 +84,6 @@ async function applyRecovery(profile: Profile, item: InventoryItem, sheet: Chara
     const recovered = nextHp - sheet.current_hp;
     const { error } = await supabase.from("character_sheets").update({ current_hp: nextHp }).eq("id", sheet.id);
     if (error) throw error;
-    await createMessageEffect(profile, item, recovered, effect.messageDuration ?? 600, "current_hp");
     return { current_hp: nextHp, message: `recuperou ${recovered} HP` };
   }
 

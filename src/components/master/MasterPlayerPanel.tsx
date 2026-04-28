@@ -2,6 +2,12 @@
 
 import type { ActiveEffect, CharacterSheet, InventoryItem, Profile, Wallet } from "@/types/game";
 
+function formatEffectValue(effect: ActiveEffect) {
+  const value = Number(effect.effect_value || 0);
+  if (!value) return "";
+  return `${value > 0 ? "+" : ""}${value}`;
+}
+
 export function MasterPlayerPanel({
   profile,
   sheet,
@@ -68,16 +74,27 @@ export function MasterPlayerPanel({
         )}
       </div>
       <div className="mt-4 space-y-2">
-        {effects.map((effect) => (
-          <div key={effect.id} className="rounded-xl border border-red-300/20 bg-black/30 p-3">
-            <p className="font-bold text-white">
-              {effect.item_name}: {effect.effect_stat} +{effect.effect_value}
-            </p>
-            <button onClick={() => onEndEffect(effect, profile)} className="mt-2 text-xs font-black uppercase tracking-[0.2em] text-red-200">
-              Confirmar fim do efeito
-            </button>
-          </div>
-        ))}
+        <p className="text-[10px] font-black uppercase tracking-[0.24em] text-red-200/80">Efeitos ativos</p>
+        {effects.length ? (
+          effects.map((effect) => (
+            <div key={effect.id} className="flex items-center justify-between gap-3 rounded-xl border border-red-300/20 bg-black/30 p-3">
+              <div>
+                <p className="font-bold text-white">{effect.item_name}</p>
+                <p className="mt-1 text-xs text-slate-400">
+                  {effect.effect_stat ?? "Efeito"} {formatEffectValue(effect)}
+                </p>
+              </div>
+              <button
+                onClick={() => onEndEffect(effect, profile)}
+                className="shrink-0 rounded-xl border border-red-300/35 bg-red-500/10 px-3 py-2 text-[10px] font-black uppercase tracking-[0.18em] text-red-100 transition hover:bg-red-500/20"
+              >
+                Encerrar
+              </button>
+            </div>
+          ))
+        ) : (
+          <p className="rounded-xl border border-white/10 bg-black/30 p-3 text-sm text-slate-400">Nenhum efeito ativo relevante.</p>
+        )}
       </div>
     </article>
   );

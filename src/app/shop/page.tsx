@@ -35,7 +35,13 @@ function ShopPanel() {
   const [busy, setBusy] = useState(false);
 
   async function refreshWallet(userId: string) {
-    const { data } = await supabase.from("wallets").select("*").eq("user_id", userId).single<Wallet>();
+    const { data } = await supabase
+      .from("wallets")
+      .select("*")
+      .eq("user_id", userId)
+      .order("updated_at", { ascending: false })
+      .limit(1)
+      .maybeSingle<Wallet>();
     if (data) setWallet(data);
   }
 

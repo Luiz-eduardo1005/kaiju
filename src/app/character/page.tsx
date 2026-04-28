@@ -108,7 +108,7 @@ function CharacterEditor() {
       .then(async (data) => {
         setProfile(data.profile);
         setSheet(data.sheet);
-        setEffects(await updateActiveEffects(user.id));
+        setEffects((await updateActiveEffects(user.id)).filter((effect) => effect.effect_type !== "message"));
       })
       .catch((error) => setMessage(error.message));
   }, [user]);
@@ -117,7 +117,7 @@ function CharacterEditor() {
     if (!user) return;
 
     const interval = window.setInterval(() => {
-      void updateActiveEffects(user.id).then(setEffects).catch((error) => setMessage(error.message));
+      void updateActiveEffects(user.id).then((nextEffects) => setEffects(nextEffects.filter((effect) => effect.effect_type !== "message"))).catch((error) => setMessage(error.message));
     }, 30000);
 
     return () => window.clearInterval(interval);

@@ -242,19 +242,22 @@ export async function deleteCustomItem(master: Profile, entry: MasterInventoryWi
 
 async function addItemToPlayer(userId: string, item: CustomItem, quantity: number) {
   const payload = customItemToInventoryPayload(item, userId, quantity);
-  const { data: existing, error: findError } = await supabase
+  const { data: existingRows, error: findError } = await supabase
     .from("inventory_items")
     .select("*")
     .eq("user_id", userId)
     .eq("custom_item_id", item.id)
-    .maybeSingle<InventoryItem>();
+    .order("created_at", { ascending: true });
   if (findError) throw findError;
 
+  const [existing, ...duplicates] = ((existingRows as InventoryItem[]) ?? []);
+
   if (existing) {
+    const currentQuantity = [existing, ...duplicates].reduce((total, row) => total + Number(row.quantity || 0), 0);
     const { error } = await supabase
       .from("inventory_items")
       .update({
-        quantity: existing.quantity + quantity,
+        quantity: currentQuantity + quantity,
         item_name: item.name,
         item_type: item.item_type,
         category: item.category,
@@ -273,13 +276,17 @@ async function addItemToPlayer(userId: string, item: CustomItem, quantity: numbe
       })
       .eq("id", existing.id);
     if (error) throw error;
+    if (duplicates.length) {
+      const { error: deleteError } = await supabase.from("inventory_items").delete().in("id", duplicates.map((row) => row.id));
+      if (deleteError) throw deleteError;
+    }
     const { data: updated, error: verifyError } = await supabase
       .from("inventory_items")
       .select("id, quantity")
       .eq("id", existing.id)
       .single<{ id: string; quantity: number }>();
     if (verifyError) throw verifyError;
-    if (!updated || updated.quantity < existing.quantity + quantity) {
+    if (!updated || updated.quantity < currentQuantity + quantity) {
       throw new Error("O item foi atualizado, mas a quantidade nao foi confirmada no inventario do player.");
     }
     return;

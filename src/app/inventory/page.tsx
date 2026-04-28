@@ -84,7 +84,7 @@ function InventoryPanel() {
   }
 
   async function load(userId: string) {
-    const [inventoryResult, effectResult, walletResult, profilesResult, transfersResult] = await Promise.all([
+    const [inventoryResult, effectResult, walletResult, profilesResult, transfersResult, sheetResult] = await Promise.all([
       supabase.from("inventory_items").select("*").eq("user_id", userId).gt("quantity", 0).order("created_at", { ascending: false }),
       supabase.from("active_effects").select("*").eq("user_id", userId).eq("is_active", true),
       supabase.from("wallets").select("*").eq("user_id", userId).order("updated_at", { ascending: false }).limit(1).maybeSingle<Wallet>(),
@@ -95,14 +95,24 @@ function InventoryPanel() {
         .or(`from_user_id.eq.${userId},to_user_id.eq.${userId}`)
         .order("created_at", { ascending: false })
         .limit(30),
+      supabase
+        .from("character_sheets")
+        .select("*")
+        .eq("user_id", userId)
+        .order("updated_at", { ascending: false })
+        .order("created_at", { ascending: false })
+        .limit(1)
+        .maybeSingle<CharacterSheet>(),
     ]);
     if (inventoryResult.error) throw inventoryResult.error;
     if (effectResult.error) throw effectResult.error;
     if (walletResult.error) throw walletResult.error;
     if (profilesResult.error) throw profilesResult.error;
     if (transfersResult.error) throw transfersResult.error;
+    if (sheetResult.error) throw sheetResult.error;
     setItems(await normalizeInventoryRows((inventoryResult.data as InventoryItem[]) ?? []));
-    setEffects(await updateActiveEffects(userId));
+    setEffects((await updateActiveEffects(userId)).filter((effect) => effect.effect_type !== "message"));
+    if (sheetResult.data) setSheet(sheetResult.data);
     if (walletResult.data) setWallet(walletResult.data);
     setProfiles(((profilesResult.data as Profile[]) ?? []).filter((item) => item.id !== userId));
     setTransfers((transfersResult.data as ItemTransfer[]) ?? []);
@@ -123,7 +133,7 @@ function InventoryPanel() {
     if (!user) return;
 
     const interval = window.setInterval(() => {
-      void updateActiveEffects(user.id).then(setEffects).catch((error) => setMessage(error.message));
+      void updateActiveEffects(user.id).then((nextEffects) => setEffects(nextEffects.filter((effect) => effect.effect_type !== "message"))).catch((error) => setMessage(error.message));
     }, 30000);
 
     return () => window.clearInterval(interval);

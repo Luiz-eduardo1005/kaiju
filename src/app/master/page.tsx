@@ -460,23 +460,29 @@ function MasterPanel() {
         <MasterItemCreatorPanel masterProfile={profile} players={profiles.filter((item) => item.id !== profile.id)} onChanged={loadAll} />
       </CollapsibleMasterCard>
       <MasterOnlyFilesPanel />
-      <section className="grid gap-4 xl:grid-cols-2">
-        {profiles
-          .filter((item) => item.role === "player")
-          .map((item) => (
-            <MasterPlayerPanel
-              key={item.id}
-              profile={item}
-              sheet={sheets.find((sheet) => sheet.user_id === item.id)}
-              wallet={wallets.find((wallet) => wallet.user_id === item.id)}
-              effects={effects.filter((effect) => effect.user_id === item.id)}
-              inventory={inventoryItems.filter((inventoryItem) => inventoryItem.user_id === item.id)}
-              onAdjustHp={adjustHp}
-              onAdjustBalance={adjustBalance}
-              onEndEffect={endEffect}
-            />
-          ))}
-      </section>
+      <CollapsibleMasterCard
+        eyebrow="Controle de players"
+        title="Players"
+        subtitle="Abra para ajustar HP, dinheiro, inventario e efeitos ativos de cada player."
+      >
+        <section className="grid gap-4 xl:grid-cols-2">
+          {profiles
+            .filter((item) => item.role === "player")
+            .map((item) => (
+              <MasterPlayerPanel
+                key={item.id}
+                profile={item}
+                sheet={sheets.find((sheet) => sheet.user_id === item.id)}
+                wallet={wallets.find((wallet) => wallet.user_id === item.id)}
+                effects={effects.filter((effect) => effect.user_id === item.id && effect.effect_type !== "message")}
+                inventory={inventoryItems.filter((inventoryItem) => inventoryItem.user_id === item.id)}
+                onAdjustHp={adjustHp}
+                onAdjustBalance={adjustBalance}
+                onEndEffect={endEffect}
+              />
+            ))}
+        </section>
+      </CollapsibleMasterCard>
       <section className="rounded-2xl border border-red-400/30 bg-red-950/15 p-5">
         <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>

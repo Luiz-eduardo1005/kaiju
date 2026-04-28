@@ -52,8 +52,10 @@ export async function purchaseItem(profile: Profile, item: ShopItem, quantity = 
       .update({
         quantity: currentQuantity + safeQuantity,
         item_name: item.name,
+        item_type: item.category,
         category: item.category,
         description: item.description,
+        effects: [],
         effect_type: item.effect_type,
         effect_value: item.effect_value,
         effect_stat: item.effect_stat,
@@ -77,10 +79,12 @@ export async function purchaseItem(profile: Profile, item: ShopItem, quantity = 
     const { error } = await supabase.from("inventory_items").insert({
       user_id: profile.id,
       item_id: item.id,
+      item_type: item.category,
       item_name: item.name,
       category: item.category,
       quantity: safeQuantity,
       description: item.description,
+      effects: [],
       effect_type: item.effect_type,
       effect_value: item.effect_value,
       effect_stat: item.effect_stat,
