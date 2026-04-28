@@ -42,7 +42,14 @@ export async function ensureProfile(user: User) {
 }
 
 export async function ensureCharacterSheet(userId: string, username: string) {
-  const existing = await supabase.from("character_sheets").select("*").eq("user_id", userId).maybeSingle<CharacterSheet>();
+  const existing = await supabase
+    .from("character_sheets")
+    .select("*")
+    .eq("user_id", userId)
+    .order("updated_at", { ascending: false })
+    .order("created_at", { ascending: false })
+    .limit(1)
+    .maybeSingle<CharacterSheet>();
   if (existing.error) throw existing.error;
   if (existing.data) return existing.data;
 
@@ -62,7 +69,13 @@ export async function ensureCharacterSheet(userId: string, username: string) {
 }
 
 export async function ensureWallet(userId: string) {
-  const existing = await supabase.from("wallets").select("*").eq("user_id", userId).maybeSingle<Wallet>();
+  const existing = await supabase
+    .from("wallets")
+    .select("*")
+    .eq("user_id", userId)
+    .order("updated_at", { ascending: false })
+    .limit(1)
+    .maybeSingle<Wallet>();
   if (existing.error) throw existing.error;
   if (existing.data) return existing.data;
 

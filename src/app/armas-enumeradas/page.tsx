@@ -4,14 +4,31 @@ import { ClassifiedBlock, PublicBlock } from "@/components/blocks";
 import { Card } from "@/components/card";
 import { PageShell } from "@/components/page-shell";
 import { Tag } from "@/components/tag";
+import { useMode } from "@/context/mode-context";
 import { weapons } from "@/data";
 
 export default function WeaponsPage() {
+  const { isMaster } = useMode();
+
+  if (!isMaster) {
+    return (
+      <PageShell
+        eyebrow="Área de mestre"
+        title="Armas Enumeradas"
+        subtitle="Esta pesquisa não aparece para players na era jogável de 2006."
+      >
+        <PublicBlock title="Acesso restrito">
+          <p>Em 2006, não existe nenhuma Arma Enumerada operacional ou pública. Este arquivo fica disponível apenas no Modo Mestre.</p>
+        </PublicBlock>
+      </PageShell>
+    );
+  }
+
   return (
     <PageShell
-      eyebrow="Arsenal enumerado"
-      title="Armas Enumeradas"
-      subtitle="Sistemas vivos domesticados, criados apenas apos decadas de pesquisa, falhas, mortes e contencao biologica."
+      eyebrow="Arquivo classificado / 2006"
+      title="Armas Enumeradas - Pesquisa Não Operacional"
+      subtitle="Estudos secretos sobre tecidos, ossos, nucleos e propriedades biologicas de Kaijus mortos."
     >
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {weapons.map((weapon) => (
@@ -44,20 +61,20 @@ export default function WeaponsPage() {
               <strong>Status:</strong> {weapon.status}
             </p>
             <p>{weapon.descricao}</p>
-            <h3>Habilidades</h3>
+            <h3>Pesquisa registrada</h3>
             <ul>
               {weapon.habilidades.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
             {weapon.efeitosColaterais ? (
-              <ClassifiedBlock title="Efeitos colaterais">
+              <ClassifiedBlock title="Riscos">
                 <p>{weapon.efeitosColaterais}</p>
               </ClassifiedBlock>
             ) : null}
-            {weapon.historicoCriacao ? (
-              <ClassifiedBlock title="Historico de criacao">
-                <p>{weapon.historicoCriacao}</p>
+            {weapon.notasSecretas ? (
+              <ClassifiedBlock title="Dados secretos">
+                <p>{weapon.notasSecretas}</p>
               </ClassifiedBlock>
             ) : null}
           </PublicBlock>

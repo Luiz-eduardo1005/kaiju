@@ -23,7 +23,7 @@ export function ModeToggle() {
     setSubmitting(false);
 
     if (result.error) {
-      setError("Senha correta para o modo, mas o login mestre falhou no Supabase. Confira se o usuario mestre foi criado com essa mesma senha.");
+      setError("Senha correta para o modo, mas o login mestre falhou no Supabase. Confira se o usuário mestre foi criado com essa mesma senha.");
       return;
     }
 
@@ -93,7 +93,7 @@ export function ModeToggle() {
               <p className="font-mono text-xs uppercase tracking-[0.38em] text-red-300">Acesso restrito</p>
               <h2 className="mt-3 text-3xl font-black uppercase tracking-wide text-white">Modo Mestre</h2>
               <p className="mt-3 text-sm leading-6 text-slate-300">
-                Insira a senha de autorizacao. O sistema tambem fara login automatico como usuario mestre no Supabase.
+                Insira a senha de autorização. O sistema também fará login automático como usuário mestre no Supabase.
               </p>
 
               <form onSubmit={submitPassword} className="mt-6 space-y-4">

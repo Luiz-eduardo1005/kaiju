@@ -5,22 +5,22 @@ import { Card } from "./card";
 const playerModules = [
   {
     title: "Ficha",
-    description: "Atributos, historico, compatibilidades, condicao fisica e anotacoes do personagem.",
+    description: "Atributos, histórico, compatibilidades, condição física e anotações do personagem.",
     status: "Em breve",
   },
   {
-    title: "Inventario",
-    description: "Itens pessoais, suprimentos, equipamentos taticos e compras realizadas.",
+    title: "Inventário",
+    description: "Itens pessoais, suprimentos, equipamentos de campo e compras realizadas.",
     status: "Em breve",
   },
   {
     title: "Banco",
-    description: "Creditos, pagamentos, debitos, recompensas e historico financeiro.",
+    description: "Créditos, pagamentos, débitos, recompensas e histórico financeiro.",
     status: "Em breve",
   },
   {
     title: "Loja",
-    description: "Catalogo de itens civis e militares para comprar e enviar ao inventario.",
+    description: "Catálogo de itens civis e militares para comprar e enviar ao inventário.",
     status: "Em breve",
   },
 ];

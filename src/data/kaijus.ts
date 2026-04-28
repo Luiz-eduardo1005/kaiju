@@ -11,59 +11,59 @@ export const kaijus: Kaiju[] = [
     player: {
       status: "Morto.",
       firstAppearance: "3 de novembro de 1984.",
-      location: "Fossa das Marianas, Pacifico.",
-      height: "Aproximadamente 96 metros visiveis quando erguido, com comprimento total estimado em cerca de 170 metros.",
-      type: "Kaiju oceanico de primeira geracao.",
-      threatLevel: "Historico / Classe Fundadora.",
+      location: "Fossa das Marianas, Pacífico.",
+      height: "Aproximadamente 96 metros visíveis quando erguido, com comprimento total estimado em cerca de 170 metros.",
+      type: "Kaiju oceânico de primeira geração.",
+      threatLevel: "Histórico / Classe Fundadora.",
       physicalDescription:
-        "Tressarak foi o primeiro Kaiju oficialmente registrado pela humanidade. A versao publica o descreve como uma criatura oceanica colossal, alongada, coberta por placas naturais extremamente resistentes. Seu corpo lembrava uma fusao entre reptil marinho, crocodilo abissal e serpente oceanica. A pele era escura, cinza-azulada, com placas rigidas capazes de resistir a torpedos, misseis e bombardeios convencionais. A cabeca era afilada, com uma crista ossea marcante, e seus olhos ambar se tornaram uma das imagens mais reproduzidas nos documentarios sobre o primeiro ataque Kaiju.",
+        "Tressarak foi o primeiro Kaiju registrado pela humanidade. Era uma criatura oceânica colossal, alongada, coberta por placas naturais extremamente resistentes. Seu corpo lembrava uma fusão entre réptil marinho, crocodilo abissal e serpente oceânica. A pele era escura, cinza-azulada, com placas rígidas capazes de resistir a torpedos, mísseis e bombardeios convencionais. A cabeça era afilada, com uma crista óssea marcante, e seus olhos âmbar se tornaram uma das imagens mais reproduzidas nos documentários sobre o primeiro ataque Kaiju.",
       behavior:
-        "A versao publica afirma que Tressarak emergiu da regiao da Fossa das Marianas e avancou contra instalacoes militares no Pacifico. Seu comportamento inicial foi descrito como territorial e agressivo, embora relatorios civis mencionem que a criatura permaneceu algum tempo circulando a area da anomalia antes de atacar.",
+        "Tressarak emergiu da região da Fossa das Marianas e avançou contra instalações militares no Pacífico. Seu comportamento inicial foi descrito como territorial e agressivo, embora relatos civis mencionem que a criatura permaneceu algum tempo circulando a área da anomalia antes de atacar.",
       abilities:
-        "Resistencia extrema a armamentos convencionais, blindagem natural pesada, forca fisica colossal e emissao de vibracoes graves capazes de interferir em estruturas proximas.",
+        "Resistência extrema a armamentos convencionais, blindagem natural pesada, força física colossal e emissão de vibrações graves capazes de interferir em estruturas próximas.",
       history:
-        "Tressarak e apresentado nos registros publicos como o evento que iniciou a Guerra Kaiju. Seu aparecimento em 1984 provou que a humanidade nao estava preparada para enfrentar ameacas dessa escala. O ataque gerou panico global, forcou cooperacao internacional e marcou o comeco dos estudos sobre organismos Kaiju. Para a populacao, Tressarak e lembrado como o monstro que obrigou o mundo a mudar.",
+        "Tressarak iniciou a Guerra Kaiju. Seu aparecimento em 1984 provou que a humanidade não estava preparada para enfrentar ameaças dessa escala. O ataque gerou pânico global, forçou cooperação internacional e marcou o começo dos estudos sobre organismos Kaiju. Para civis e recrutas, Tressarak é lembrado como o monstro que obrigou o mundo a mudar.",
       howDefeated:
-        "A versao oficial afirma que Tressarak foi derrotado por uma operacao naval internacional comandada pelo Almirante Viktor Leonov. Apos horas de combate, sensores identificaram uma regiao vulneravel no peito da criatura. Uma carga submarina perfurante foi lancada contra esse ponto vital, causando colapso interno no organismo do Kaiju. Leonov recebeu credito pela vitoria e passou a ser conhecido como o primeiro grande heroi da Guerra Kaiju.",
+        "Tressarak foi derrotado por uma operação naval internacional comandada pelo Almirante Viktor Leonov. Após horas de combate, sensores identificaram uma região vulnerável no peito da criatura. Uma carga submarina perfurante foi lançada contra esse ponto vital, causando colapso interno no organismo do Kaiju. Leonov recebeu crédito pela vitória e passou a ser conhecido como o primeiro grande herói da Guerra Kaiju.",
       relationToJaegers:
-        "Tressarak surgiu antes da criacao dos Jaegers. Sua aparicao foi um dos primeiros motivos que levaram governos a discutir armas de escala colossal, embora o Projeto Jaeger so surgisse anos depois.",
+        "Tressarak surgiu antes da criação dos Jaegers. Sua aparição foi um dos primeiros motivos que levaram governos a discutir armas de escala colossal, embora o Projeto Jaeger só surgisse anos depois.",
       relationToEnumeratedWeapons:
-        "A informacao publica afirma que restos preservados de Tressarak serviram decadas depois como base para a Arma Enumerada No 01, conhecida como Lamina Tressarak.",
+        "Em 2006, armas enumeradas ainda não existem operacionalmente. Restos de Tressarak foram levados para estudos científicos, sem aplicação de campo conhecida.",
       hooks:
-        "Para civis e recrutas, Tressarak representa o comeco de tudo: o primeiro monstro, o primeiro trauma global e a primeira vitoria humana contra um Kaiju.",
+        "Para civis e recrutas, Tressarak representa o começo de tudo: o primeiro monstro, o primeiro trauma global e a primeira vitória humana contra um Kaiju.",
     },
     master: {
-      status: "Morto clinicamente, mas fragmentos do corpo continuam biologicamente reativos em determinadas condicoes.",
+      status: "Morto clinicamente, mas fragmentos do corpo continuam biologicamente reativos em determinadas condições.",
       firstAppearance: "3 de novembro de 1984.",
-      location: "Fossa das Marianas, Pacifico, proximo a primeira fenda registrada.",
-      height: "Aproximadamente 96 metros visiveis quando erguido e cerca de 170 metros de comprimento total.",
-      type: "Kaiju oceanico / invasor da fenda / possivel guardiao ou batedor.",
+      location: "Fossa das Marianas, Pacífico, próximo à primeira fenda registrada.",
+      height: "Aproximadamente 96 metros visíveis quando erguido e cerca de 170 metros de comprimento total.",
+      type: "Kaiju oceânico / invasor da fenda / possível guardião ou batedor.",
       threatLevel: "Classe Fundadora / Evento Zero.",
       physicalDescription:
-        "Tressarak era uma criatura colossal, oceanica, serpentina e blindada. Seu corpo lembrava uma mistura de crocodilo abissal, serpente marinha e tubarao pre-historico. Quando erguia o tronco acima da superficie, chegava a quase 96 metros, mas seu comprimento total passava de 170 metros. A pele era cinza-azulada, quase negra quando molhada, coberta por escamas irregulares e placas enormes. Algumas placas tinham bordas esbranquicadas, como coral morto grudado na carne. A cabeca era comprida, afiada, com uma crista ossea que parecia uma lamina partida. Os olhos eram ambar, pequenos demais para o tamanho do corpo, frios e profundos. Fendas branquiais no pescoco brilhavam em azul-esverdeado quando respirava. Seu som nao era um rugido, mas uma nota grave, continua e abissal, capaz de rachar vidro a quilometros.",
+        "Tressarak era uma criatura colossal, oceânica, serpentina e blindada. Seu corpo lembrava uma mistura de crocodilo abissal, serpente marinha e tubarão pré-histórico. Quando erguia o tronco acima da superfície, chegava a quase 96 metros, mas seu comprimento total passava de 170 metros. A pele era cinza-azulada, quase negra quando molhada, coberta por escamas irregulares e placas enormes. Algumas placas tinham bordas esbranquiçadas, como coral morto grudado na carne. A cabeça era comprida, afiada, com uma crista óssea que parecia uma lâmina partida. Os olhos eram âmbar, pequenos demais para o tamanho do corpo, frios e profundos. Fendas branquiais no pescoço brilhavam em azul-esverdeado quando respirava. Seu som não era um rugido, mas uma nota grave, contínua e abissal, capaz de rachar vidro a quilômetros.",
       behavior:
-        "No primeiro contato, Tressarak nao atacou imediatamente. Ele nadou em circulos ao redor da fenda, como se procurasse ou guardasse algo. Seu comportamento real nao era simplesmente predatorio. Ele parecia reagir a anomalia, talvez protegendo a abertura ou tentando localizar alguma coisa do outro lado. So depois avancou contra instalacoes militares.",
+        "No primeiro contato, Tressarak não atacou imediatamente. Ele nadou em círculos ao redor da fenda, como se procurasse ou guardasse algo. Seu comportamento real não era simplesmente predatório. Ele parecia reagir à anomalia, talvez protegendo a abertura ou tentando localizar alguma coisa do outro lado. Só depois avançou contra instalações militares.",
       abilities:
-        "Regeneracao lenta, blindagem natural extrema, som abissal de baixa frequencia, resistencia a misseis e torpedos, nucleo peitoral protegido por placas moveis, resposta biologica pos-morte e fragmentos capazes de reagir a estimulos eletricos.",
+        "Regeneração lenta, blindagem natural extrema, som abissal de baixa frequência, resistência a mísseis e torpedos, núcleo peitoral protegido por placas móveis, resposta biológica pós-morte e fragmentos capazes de reagir a estímulos elétricos.",
       history:
-        "A historia real de Tressarak foi adulterada. A humanidade nao entendeu o que estava enfrentando. O oceano se abriu como uma fenda vertical azul-esverdeada, e Tressarak emergiu nao como simples fera, mas como algo que parecia ter relacao direta com a anomalia. A versao publica transformou a batalha em triunfo militar, mas os arquivos secretos mostram medo, improviso e desespero. O corpo de Tressarak nao se decompos como cadaver comum. Foi levado para a Base Nereu, onde se tornou a primeira grande fonte de pesquisa Kaiju.",
+        "A história real de Tressarak foi adulterada. A humanidade não entendeu o que estava enfrentando. O oceano se abriu como uma fenda vertical azul-esverdeada, e Tressarak emergiu não como simples fera, mas como algo que parecia ter relação direta com a anomalia. A versão pública transformou a batalha em triunfo militar, mas os arquivos secretos mostram medo, improviso e desespero. O corpo de Tressarak não se decompôs como cadáver comum. Foi levado para a Base Nereu, onde se tornou a primeira grande fonte de pesquisa Kaiju.",
       howDefeated:
-        "Quem realmente descobriu o nucleo de Tressarak e executou a manobra decisiva foi Helena Sato, uma biologa abissal apagada dos registros publicos. Ela percebeu que as placas do peito da criatura se abriam por poucos segundos quando o Kaiju absorvia oxigenio. Entrou em um minisubmarino experimental carregado com explosivos de perfuracao industrial, esperou a abertura das placas e lancou a carga diretamente contra o nucleo. A explosao causou colapso interno, fazendo Tressarak endurecer, tremer e cair no oceano. O credito foi entregue a Viktor Leonov por conveniencia politica.",
+        "Quem realmente descobriu o núcleo de Tressarak e executou a manobra decisiva foi Helena Sato, uma bióloga abissal apagada dos registros públicos. Ela percebeu que as placas do peito da criatura se abriam por poucos segundos quando o Kaiju absorvia oxigênio. Entrou em um minisubmarino experimental carregado com explosivos de perfuração industrial, esperou a abertura das placas e lançou a carga diretamente contra o núcleo. A explosão causou colapso interno, fazendo Tressarak endurecer, tremer e cair no oceano. O crédito foi entregue a Viktor Leonov por conveniência política.",
       relationToJaegers:
-        "Tressarak surgiu antes dos Jaegers, mas sua existencia iniciou a logica que levaria ao Projeto Jaeger: a humanidade precisava de algo capaz de enfrentar criaturas colossais de perto. Os estudos de seu corpo tambem influenciaram conceitos posteriores de sensores, blindagem e leitura de nucleos.",
+        "Tressarak surgiu antes dos Jaegers, mas sua existência iniciou a lógica que levaria ao Projeto Jaeger: a humanidade precisava de algo capaz de enfrentar criaturas colossais de perto. Os estudos de seu corpo também influenciaram conceitos posteriores de sensores, blindagem e leitura de núcleos.",
       relationToEnumeratedWeapons:
-        "Tressarak originou a Arma Enumerada No 01 - Lamina Tressarak. A arma foi criada decadas depois, apos muitas falhas, mortes em laboratorio e a intervencao teorica de Helena Sato. Ela utiliza a crista craniana, fibras nervosas e fragmentos estabilizados do primeiro Kaiju. Sua frequencia desorganiza tecido Kaiju em vez de apenas cortar.",
+        "Em 2006, Tressarak ainda não originou uma arma enumerada funcional. Existem apenas estudos secretos sobre a crista craniana, fibras nervosas e fragmentos estabilizados. A Base Nereu sabe que o tecido não deve ser tratado como matéria morta, mas transformar isso em arma ainda é instável, distante e perigoso.",
       hooks:
-        "O canto de Tressarak ainda pode ser ouvido por usuarios compativeis. Fragmentos do corpo reagem a estimulos. A Lamina Tressarak pode carregar memorias do primeiro contato. Existe a possibilidade de que Tressarak nao fosse apenas um invasor, mas um guardiao, batedor ou mensageiro da fenda.",
+        "O canto de Tressarak ainda pode ser ouvido por usuários compatíveis. Fragmentos do corpo reagem a estímulos. A Lâmina Tressarak pode carregar memórias do primeiro contato. Existe a possibilidade de que Tressarak não fosse apenas um invasor, mas um guardião, batedor ou mensageiro da fenda.",
       classifiedNotes:
-        "Helena Sato e a verdadeira heroina do Evento Tressarak. Viktor Leonov e o heroi oficial falso. A Base Nereu guarda fragmentos ainda ativos. A Arma No 01 pode estar conectada a consciencia residual de Tressarak.",
+        "Helena Sato é a verdadeira heroína do Evento Tressarak. Viktor Leonov é o herói oficial falso. A Base Nereu guarda fragmentos ainda ativos. A Arma No 01 pode estar conectada à consciência residual de Tressarak.",
     },
   },
   {
     id: "gorath",
     number: "Kaiju-02",
     name: "Gorath",
-    title: "O Carregador de Terra / Devastador Sismico",
+    title: "O Carregador de Terra / Devastador Sísmico",
     image: "/images/kaijus/gorath.png",
     tags: ["Kaiju", "Morto", "Restrito"],
     player: {
@@ -71,57 +71,57 @@ export const kaijus: Kaiju[] = [
       firstAppearance: "1991.",
       location: "Deserto de Gobi.",
       height: "Aproximadamente 72 metros.",
-      type: "Kaiju terrestre / sismico.",
+      type: "Kaiju terrestre / sísmico.",
       threatLevel: "Extremo.",
       physicalDescription:
-        "Gorath era mais baixo que Tressarak, mas muito mais largo e pesado. A versao publica o descreve como um Kaiju terrestre de pele escura, estrutura macica, bracos enormes e carapaca parcial nas costas. Seu corpo lembrava uma criatura feita para suportar impacto e atravessar terreno solido. Sua aparencia se tornou simbolo de forca bruta e destruicao terrestre.",
+        "Gorath era mais baixo que Tressarak, mas muito mais largo e pesado. Era um Kaiju terrestre de pele escura, estrutura maciça, braços enormes e carapaça parcial nas costas. Seu corpo lembrava uma criatura feita para suportar impacto e atravessar terreno sólido. Sua aparência se tornou símbolo de força bruta e destruição terrestre.",
       behavior:
-        "Gorath avancava lentamente, mas era quase impossivel de deter. Ele seguia em linha de destruicao, derrubando bases, cidades menores e formacoes militares. Seu comportamento foi classificado como agressivo e territorial.",
+        "Gorath avançava lentamente, mas era quase impossível de deter. Ele seguia em linha de destruição, derrubando bases, cidades menores e formações militares. Seu comportamento foi classificado como agressivo e territorial.",
       abilities:
-        "Gorath produzia ondas sismicas ao golpear o chao com os punhos. Essas ondas podiam colapsar tuneis, predios, bunkers e veiculos blindados. Tambem possuia resistencia extrema a explosivos convencionais.",
+        "Gorath produzia ondas sísmicas ao golpear o chão com os punhos. Essas ondas podiam colapsar túneis, prédios, bunkers e veículos blindados. Também possuía resistência extrema a explosivos convencionais.",
       history:
-        "Gorath foi o segundo grande choque da humanidade. Sua aparicao provou que os Kaijus nao vinham apenas do oceano. Ele emergiu do deserto de Gobi e avancou por centenas de quilometros, forcando a criacao de novos protocolos terrestres de evacuacao e combate.",
+        "Gorath foi o segundo grande choque da humanidade. Sua aparição provou que os Kaijus não vinham apenas do oceano. Ele emergiu do deserto de Gobi e avançou por centenas de quilômetros, forçando a criação de novos protocolos terrestres de evacuação e combate.",
       howDefeated:
-        "A versao publica afirma que Gorath foi derrotado apos dias de combate por uma combinacao de bombardeios pesados, cargas subterraneas e o colapso controlado de uma formacao rochosa sobre seu corpo.",
+        "Gorath foi derrotado após dias de combate por uma combinação de bombardeios pesados, cargas subterrâneas e o colapso controlado de uma formação rochosa sobre seu corpo.",
       relationToJaegers:
-        "Gorath surgiu antes da Era dos Jaegers, mas reforcou a necessidade de desenvolver armas capazes de conter fisicamente criaturas colossais.",
+        "Gorath surgiu antes da Era dos Jaegers, mas reforçou a necessidade de desenvolver armas capazes de conter fisicamente criaturas colossais.",
       relationToEnumeratedWeapons:
-        "A versao publica afirma que tecidos e ossos preservados de Gorath serviram, decadas depois, como base para as Manoplas Gorath.",
+        "Em 2006, não há armas enumeradas derivadas de Gorath em uso. Seus restos são, quando muito, material de estudo restrito.",
       hooks:
-        "Para o publico, Gorath e lembrado como a prova de que nenhum territorio estava seguro. Seu surgimento no deserto mudou os mapas de risco globais.",
+        "Gorath é lembrado como a prova de que nenhum território estava seguro. Seu surgimento no deserto mudou os mapas de risco globais.",
     },
     master: {
-      status: "Morto, mas seus fragmentos sismicos permanecem preservados e ainda emitem respostas vibracionais em laboratorio.",
+      status: "Morto, mas seus fragmentos sísmicos permanecem preservados e ainda emitem respostas vibracionais em laboratório.",
       firstAppearance: "1991.",
-      location: "Deserto de Gobi, atraves de uma fenda seca que engolia areia como agua.",
+      location: "Deserto de Gobi, através de uma fenda seca que engolia areia como água.",
       height: "Aproximadamente 72 metros.",
-      type: "Kaiju terrestre / sismico / possivel escavador dimensional.",
+      type: "Kaiju terrestre / sísmico / possível escavador dimensional.",
       threatLevel: "Extremo.",
       physicalDescription:
-        "Gorath era mais baixo que Tressarak, mas muito mais largo, denso e pesado. Seu corpo lembrava uma fusao de gorila, rinoceronte e tartaruga ancestral. Os bracos eram enormes, quase tocando o chao, e os punhos pareciam blocos de concreto vivo. A pele era preta, grossa, oleosa e enrugada como couro queimado. As costas eram protegidas por placas arredondadas, como uma carapaca incompleta e quebrada. A cabeca era achatada, com mandibula projetada para frente. No inicio parecia nao ter dentes, apenas placas osseas como uma prensa. Quando rugia, a boca se abria em quatro partes e revelava fileiras internas de dentes pequenos. Os olhos vermelhos eram cobertos por membranas cinzentas. Gorath era praticamente cego e percebia o mundo por vibracao.",
+        "Gorath era mais baixo que Tressarak, mas muito mais largo, denso e pesado. Seu corpo lembrava uma fusão de gorila, rinoceronte e tartaruga ancestral. Os braços eram enormes, quase tocando o chão, e os punhos pareciam blocos de concreto vivo. A pele era preta, grossa, oleosa e enrugada como couro queimado. As costas eram protegidas por placas arredondadas, como uma carapaça incompleta e quebrada. A cabeça era achatada, com mandíbula projetada para frente. No início parecia não ter dentes, apenas placas ósseas como uma prensa. Quando rugia, a boca se abria em quatro partes e revelava fileiras internas de dentes pequenos. Os olhos vermelhos eram cobertos por membranas cinzentas. Gorath era praticamente cego e percebia o mundo por vibração.",
       behavior:
-        "Gorath nao cacava como predador rapido. Ele avancava de forma lenta, pesada e inevitavel, esmagando tudo em sua direcao. Reagia a vibracoes, explosoes, passos, tuneis e estruturas subterraneas. Seu comportamento indicava adaptacao ao subsolo e possivel orientacao por padroes sismicos muito profundos.",
+        "Gorath não caçava como predador rápido. Ele avançava de forma lenta, pesada e inevitável, esmagando tudo em sua direção. Reagia a vibrações, explosões, passos, túneis e estruturas subterrâneas. Seu comportamento indicava adaptação ao subsolo e possível orientação por padrões sísmicos muito profundos.",
       abilities:
-        "Ondas sismicas geradas pelos punhos, capacidade de colapsar tuneis, bunkers, predios e bases, resistencia absurda a explosivos, percepcao por vibracao, forca fisica extrema e reflexos pos-morte nos membros.",
+        "Ondas sísmicas geradas pelos punhos, capacidade de colapsar túneis, bunkers, prédios e bases, resistência absurda a explosivos, percepção por vibração, força física extrema e reflexos pós-morte nos membros.",
       history:
-        "A emergencia de Gorath revelou que as fendas nao eram apenas oceanicas. Ele saiu de uma rachadura preta no deserto, uma abertura que engolia areia como agua. Esse evento contradizia todas as teorias iniciais. A batalha contra Gorath nao teve gloria. Foi uma sucessao de falhas, perdas e improvisos. Quando ele caiu, seus punhos continuaram batendo no chao por varios minutos, como se o corpo ainda obedecesse a um comando vindo de baixo.",
+        "A emergência de Gorath revelou que as fendas não eram apenas oceânicas. Ele saiu de uma rachadura preta no deserto, uma abertura que engolia areia como água. Esse evento contradizia todas as teorias iniciais. A batalha contra Gorath não teve glória. Foi uma sucessão de falhas, perdas e improvisos. Quando ele caiu, seus punhos continuaram batendo no chão por vários minutos, como se o corpo ainda obedecesse a um comando vindo de baixo.",
       howDefeated:
-        "Gorath foi derrotado apos dias de combate atraves de bombardeios, minas subterraneas e uma manobra desesperada que derrubou parte de uma montanha sobre ele. Mesmo esmagado, seu corpo continuou reagindo por reflexo sismico. A versao publica omite o quanto a vitoria foi acidental e o quanto as forcas humanas estiveram proximas do colapso.",
+        "Gorath foi derrotado após dias de combate através de bombardeios, minas subterrâneas e uma manobra desesperada que derrubou parte de uma montanha sobre ele. Mesmo esmagado, seu corpo continuou reagindo por reflexo sísmico. A versão pública omite o quanto a vitória foi acidental e o quanto as forças humanas estiveram próximas do colapso.",
       relationToJaegers:
-        "Gorath surgiu antes dos Jaegers, mas foi um dos motivos centrais para o Projeto Jaeger existir. Ele provou que nao bastava atingir um Kaiju a distancia; era necessario conter, empurrar, segurar e redirecionar uma massa viva colossal. A doutrina de combate pesado dos primeiros Jaegers nasceu em parte das licoes deixadas por Gorath.",
+        "Gorath surgiu antes dos Jaegers, mas foi um dos motivos centrais para o Projeto Jaeger existir. Ele provou que não bastava atingir um Kaiju à distância; era necessário conter, empurrar, segurar e redirecionar uma massa viva colossal. A doutrina de combate pesado dos primeiros Jaegers nasceu em parte das lições deixadas por Gorath.",
       relationToEnumeratedWeapons:
-        "Gorath originou as Manoplas Gorath, criadas a partir de ossos dos antebracos, tendoes e tecido sismico. A arma permite gerar ondas de impacto e quebrar carapacas, mas cobra um preco cardiaco do usuario.",
+        "Em 2006, Gorath ainda não originou uma arma funcional. Ossos dos antebraços, tendões e tecidos sísmicos permanecem preservados em pesquisas restritas, mas qualquer tentativa de uso prático ainda é experimental demais.",
       hooks:
-        "Gorath nunca foi totalmente compreendido. Apos sua queda, sensores sismicos ao redor do mundo comecaram a registrar vibracoes semelhantes as que ele produzia, mesmo decadas depois de sua morte. Algumas dessas leituras vem de profundidades impossiveis, abaixo de placas tectonicas onde nenhum equipamento humano consegue chegar. Ha registros nao confirmados de estruturas subterraneas gigantescas, como se tuneis colossais tivessem sido escavados por algo do tamanho de Gorath ou maior. Operadores que usam as Manoplas Gorath relatam sonhos recorrentes: estao enterrados vivos, com o corpo esmagado por terra infinita, mas ainda conseguem se mover. Existe uma hipotese classificada: Gorath nao emergiu sozinho. Ele pode ter sido apenas o primeiro a alcancar a superficie.",
+        "Gorath nunca foi totalmente compreendido. Após sua queda, sensores sísmicos ao redor do mundo começaram a registrar vibrações semelhantes às que ele produzia, mesmo décadas depois de sua morte. Algumas dessas leituras vêm de profundidades impossíveis, abaixo de placas tectônicas onde nenhum equipamento humano consegue chegar. Há registros não confirmados de estruturas subterrâneas gigantescas, como se túneis colossais tivessem sido escavados por algo do tamanho de Gorath ou maior. Operadores que usam as Manoplas Gorath relatam sonhos recorrentes: estão enterrados vivos, com o corpo esmagado por terra infinita, mas ainda conseguem se mover. Existe uma hipótese classificada: Gorath não emergiu sozinho. Ele pode ter sido apenas o primeiro a alcançar a superfície.",
       classifiedNotes:
-        "Fragmentos de Gorath sao usados em tecnologias sismicas. Alguns sensores sugerem atividade semelhante a dele em profundidades ligadas a Terra Interna.",
+        "Fragmentos de Gorath são usados em tecnologias sísmicas. Alguns sensores sugerem atividade semelhante à dele em profundidades ligadas à Terra Interna.",
     },
   },
   {
     id: "mirekai",
     number: "Kaiju-03",
     name: "Mirekai",
-    title: "A Mae de Vidro",
+    title: "A Mãe de Vidro",
     image: "/images/kaijus/mirekai.png",
     tags: ["Kaiju", "Morto", "Restrito"],
     player: {
@@ -129,48 +129,48 @@ export const kaijus: Kaiju[] = [
       firstAppearance: "1998.",
       location: "Litoral do Chile.",
       height: "Aproximadamente 64 metros.",
-      type: "Kaiju biologico / contaminante.",
-      threatLevel: "Biologico extremo.",
+      type: "Kaiju biológico / contaminante.",
+      threatLevel: "Biológico extremo.",
       physicalDescription:
-        "Mirekai foi descrita publicamente como um Kaiju de aparencia incomum, com corpo alongado, translucido e estruturas semelhantes a placas de vidro. Sua bioluminescencia azulada e violeta a tornou uma das criaturas mais visualmente marcantes da historia Kaiju. Diferente de Tressarak e Gorath, sua ameaca nao vinha apenas da forca fisica, mas de sua capacidade biologica.",
+        "Mirekai era um Kaiju de aparência incomum, com corpo alongado, translúcido e estruturas semelhantes a placas de vidro. Sua bioluminescência azulada e violeta a tornou uma das criaturas mais visualmente marcantes da história Kaiju. Diferente de Tressarak e Gorath, sua ameaça não vinha apenas da força física, mas de sua capacidade biológica.",
       behavior:
-        "Mirekai permaneceu submersa por dias antes de atacar. Durante esse periodo, contaminou a agua e liberou organismos menores que causaram o primeiro grande surto biologico Kaiju.",
+        "Mirekai permaneceu submersa por dias antes de atacar. Durante esse período, contaminou a água e liberou organismos menores que causaram o primeiro grande surto biológico Kaiju.",
       abilities:
-        "Contaminacao biologica, liberacao de organismos menores, resistencia a ataques diretos e capacidade de gerar surtos de criaturas secundarias conhecidas como Yoju.",
+        "Contaminação biológica, liberação de organismos menores, resistência a ataques diretos e capacidade de gerar surtos de criaturas secundárias conhecidas como Yoju.",
       history:
-        "Mirekai marcou o momento em que a humanidade entendeu que a ameaca Kaiju podia se espalhar. Ela nao era apenas um monstro gigante, mas uma fonte de infestacao. Seu ataque levou a criacao de protocolos globais de quarentena, limpeza biologica e contencao costeira.",
+        "Mirekai marcou o momento em que a humanidade entendeu que a ameaça Kaiju podia se espalhar. Ela não era apenas um monstro gigante, mas uma fonte de infestação. Seu ataque levou à criação de protocolos globais de quarentena, limpeza biológica e contenção costeira.",
       howDefeated:
-        "A versao publica afirma que Mirekai foi derrotada por contencao costeira, agentes quimicos, fogo controlado e ataque coordenado ao ponto vital da criatura.",
+        "Mirekai foi derrotada por contenção costeira, agentes químicos, fogo controlado e ataque coordenado ao ponto vital da criatura.",
       relationToJaegers:
-        "Mirekai surgiu antes dos Jaegers, mas influenciou diretamente a criacao de sensores biologicos e doutrinas de suporte contra infestacoes.",
+        "Mirekai surgiu antes dos Jaegers, mas influenciou diretamente a criação de sensores biológicos e doutrinas de suporte contra infestações.",
       relationToEnumeratedWeapons:
-        "A versao publica afirma que seus restos deram origem ao Veu Mirekai, equipamento sensorial usado para detectar organismos Kaiju e contaminacoes.",
+        "Em 2006, não existe equipamento avançado derivado de Mirekai. O que existe são protocolos de limpeza biológica e sensores de contaminação ainda limitados.",
       hooks:
-        "Para o publico, Mirekai e lembrada como a razao pela qual equipes de limpeza biologica e contencao urbana se tornaram tao importantes.",
+        "Mirekai é lembrada como a razão pela qual equipes de limpeza biológica e contenção urbana se tornaram tão importantes.",
     },
     master: {
-      status: "Morta, mas fragmentos sensoriais e residuos biologicos continuam ativos em zonas classificadas.",
+      status: "Morta, mas fragmentos sensoriais e resíduos biológicos continuam ativos em zonas classificadas.",
       firstAppearance: "1998.",
       location: "Litoral do Chile.",
       height: "Aproximadamente 64 metros.",
-      type: "Kaiju biologico / incubadora / organismo de colonia.",
-      threatLevel: "Biologico extremo.",
+      type: "Kaiju biológico / incubadora / organismo de colônia.",
+      threatLevel: "Biológico extremo.",
       physicalDescription:
-        "Mirekai era completamente diferente dos dois primeiros Kaijus. Seu corpo era alongado, elegante e perturbador, lembrando uma mistura de arraia, louva-a-deus e criatura abissal. A pele era translucida em varias regioes, permitindo ver orgaos internos luminosos, veios azulados e violetas e membranas pulsantes. Nas costas havia placas finas como vidro, que tremiam quando ela emitia sinais. O rosto era quase liso, com uma mandibula vertical que se abria de cima para baixo. Os olhos ficavam espalhados em duas fileiras laterais, pequenos, leitosos e sem foco humano. Ela era bela de um jeito errado: silenciosa, alienigena, hipnotica e repulsiva.",
+        "Mirekai era completamente diferente dos dois primeiros Kaijus. Seu corpo era alongado, elegante e perturbador, lembrando uma mistura de arraia, louva-a-deus e criatura abissal. A pele era translúcida em várias regiões, permitindo ver órgãos internos luminosos, veios azulados e violetas e membranas pulsantes. Nas costas havia placas finas como vidro, que tremiam quando ela emitia sinais. O rosto era quase liso, com uma mandíbula vertical que se abria de cima para baixo. Os olhos ficavam espalhados em duas fileiras laterais, pequenos, leitosos e sem foco humano. Ela era bela de um jeito errado: silenciosa, alienígena, hipnótica e repulsiva.",
       behavior:
-        "Permaneceu submersa por dias antes de agir. Liberava organismos contaminantes na agua e parecia mais interessada em espalhar vida Kaiju do que destruir diretamente. Seu comportamento sugere que ela talvez fosse menos uma criatura individual e mais um organismo-mae ou no de colonia.",
+        "Permaneceu submersa por dias antes de agir. Liberava organismos contaminantes na água e parecia mais interessada em espalhar vida Kaiju do que destruir diretamente. Seu comportamento sugere que ela talvez fosse menos uma criatura individual e mais um organismo-mãe ou nó de colônia.",
       abilities:
-        "Liberacao de micro-organismos Kaiju, criacao de Yoju/Filhotes de Vidro, comunicacao biologica por vibracao, contaminacao de fauna e cadaveres, resistencia a ataques diretos e risco de espalhar mais contaminacao quando ferida.",
+        "Liberação de micro-organismos Kaiju, criação de Yoju/Filhotes de Vidro, comunicação biológica por vibração, contaminação de fauna e cadáveres, resistência a ataques diretos e risco de espalhar mais contaminação quando ferida.",
       history:
-        "Mirekai revelou que um Kaiju nao precisava ser uma ameaca unica. Ele podia ser um ecossistema, uma praga e uma fabrica viva. Drones submarinos enviados para investiga-la perderam sinal apos registrar centenas de olhos abrindo na escuridao. A operacao de contencao foi muito mais desesperada do que a versao publica admite, e Helena Sato reapareceu secretamente para orientar a analise do nucleo.",
+        "Mirekai revelou que um Kaiju não precisava ser uma ameaça única. Ele podia ser um ecossistema, uma praga e uma fábrica viva. Drones submarinos enviados para investigá-la perderam sinal após registrar centenas de olhos abrindo na escuridão. A operação de contenção foi muito mais desesperada do que a versão pública admite, e Helena Sato reapareceu secretamente para orientar a análise do núcleo.",
       howDefeated:
-        "Mirekai foi derrotada por contencao biologica, fogo quimico e ataque direcionado ao nucleo apos Helena Sato orientar a equipe sobre a natureza da estrutura vital. A operacao evitou que ferimentos descontrolados espalhassem ainda mais organismos contaminantes.",
+        "Mirekai foi derrotada por contenção biológica, fogo químico e ataque direcionado ao núcleo após Helena Sato orientar a equipe sobre a natureza da estrutura vital. A operação evitou que ferimentos descontrolados espalhassem ainda mais organismos contaminantes.",
       relationToJaegers:
-        "Mirekai surgiu antes da criacao dos Jaegers, mas sua existencia influenciou diretamente o projeto. Sua capacidade de gerar multiplas criaturas menores mostrou que a ameaca Kaiju nao era apenas de escala, mas de multiplicacao. Jaegers nao sao eficazes contra enxames ou infestacoes. Esse entendimento levou ao desenvolvimento de unidades menores de combate, que mais tarde evoluiram para os trajes anti-Kaiju. Alem disso, o comportamento de Mirekai fez com que os primeiros Jaegers fossem equipados com sensores biologicos, nao apenas militares.",
+        "Mirekai surgiu antes da criação dos Jaegers, mas sua existência influenciou diretamente o projeto. Sua capacidade de gerar múltiplas criaturas menores mostrou que a ameaça Kaiju não era apenas de escala, mas de multiplicação. Jaegers não são eficazes contra enxames ou infestações. Esse entendimento levou ao desenvolvimento de unidades menores de combate, que mais tarde evoluíram para os trajes anti-Kaiju. Além disso, o comportamento de Mirekai fez com que os primeiros Jaegers fossem equipados com sensores biológicos, não apenas militares.",
       relationToEnumeratedWeapons:
-        "Mirekai originou o Veu Mirekai, traje sensorial criado a partir de suas membranas. O equipamento permite detectar vida Kaiju, ovos, tuneis, contaminacao e fendas pequenas, mas expoe usuarios a percepcoes de colmeia.",
+        "Em 2006, Mirekai ainda não originou um equipamento funcional. Suas membranas sensoriais são estudadas em segredo, mas a tecnologia de detecção biológica derivada de Kaiju ainda está longe de uso seguro.",
       hooks:
-        "Fragmentos de tecido de Mirekai continuam ativos em zonas contaminadas. Alguns laboratorios secretos relatam crescimento espontaneo de estruturas biologicas mesmo decadas depois da morte da criatura. Usuarios do Veu Mirekai frequentemente relatam sensacoes de presenca coletiva, como se estivessem sendo observados por multiplas consciencias ao mesmo tempo. Existe a suspeita de que Mirekai nao era apenas um Kaiju, mas um organismo de colonia. Isso levanta uma possibilidade: e se ela ainda estiver viva, espalhada?",
+        "Fragmentos de tecido de Mirekai continuam ativos em zonas contaminadas. Alguns laboratórios secretos relatam crescimento espontâneo de estruturas biológicas mesmo décadas depois da morte da criatura. Usuários do Véu Mirekai frequentemente relatam sensações de presença coletiva, como se estivessem sendo observados por múltiplas consciências ao mesmo tempo. Existe a suspeita de que Mirekai não era apenas um Kaiju, mas um organismo de colônia. Isso levanta uma possibilidade: e se ela ainda estiver viva, espalhada?",
       classifiedNotes:
         "Mirekai pode ser a prova de que alguns Kaijus sao nos biologicos de uma rede maior. O Veu Mirekai talvez nao detecte apenas organismos; talvez conecte o usuario temporariamente a colonia.",
     },

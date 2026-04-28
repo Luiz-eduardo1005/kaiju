@@ -32,7 +32,7 @@ export function Card({ title, subtitle, description, href, tags = [], status, re
         <div className="flex items-start justify-between gap-3">
           <div>
             <p className={`text-[10px] font-black uppercase tracking-[0.28em] ${eyebrowTone}`}>
-              {restricted ? "Arquivo restrito" : subtitle ?? "Dossie operacional"}
+          {restricted ? "Arquivo restrito" : subtitle ?? "Dossiê operacional"}
             </p>
             <h3 className="mt-2 text-xl font-black uppercase tracking-wide text-white">{title}</h3>
           </div>

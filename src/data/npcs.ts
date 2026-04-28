@@ -5,62 +5,40 @@ export const npcs: Npc[] = [
     id: "helena-sato",
     nome: "Helena Sato",
     visibilidade: "masterOnly",
-    idade: "Muito idosa em 2040",
-    cargoPublico: "Desconhecido / oficialmente apagada",
-    cargoSecreto: "Biologa abissal, verdadeira responsavel pela queda de Tressarak, figura central da pesquisa Kaiju",
+    idade: "Adulta/madura em 2006",
+    cargoPublico: "Nenhum / oficialmente apagada",
+    cargoSecreto: "Bióloga abissal, pesquisadora Kaiju e verdadeira responsável pela queda de Tressarak",
     tags: ["NPC", "Classificado", "Nivel Omega"],
     descricao:
-      "Mulher idosa, lucida, marcada por decadas de culpa, pesquisa e silencio. Foi apagada da historia oficial, mas sua influencia atravessa toda a guerra. Entende os Kaijus melhor que quase qualquer pessoa viva.",
+      "Helena Sato foi apagada da história oficial, mas é uma das mentes centrais por trás da compreensão dos núcleos Kaiju. Em 2006, sua influência existe em arquivos, relatórios ocultos, Base Nereu e pesquisas que o público jamais viu.",
     segredo:
-      "Ela descobriu o nucleo de Tressarak, orientou operacoes posteriores, corrigiu o erro cientifico que permitiu a criacao das armas enumeradas e talvez saiba que a fenda nao e origem, mas cicatriz.",
+      "Ela identificou o núcleo de Tressarak, executou a manobra que matou o primeiro Kaiju e sabe que tecidos Kaiju não se comportam como matéria morta.",
     usoNaCampanha:
-      "Pode aparecer como mentora oculta, contato secreto, prisioneira protegida ou fonte de revelacoes.",
+      "Pode surgir por documentos apagados, gravações, memórias de Drift, relatórios da Base Nereu ou contato indireto com pesquisadores do Projeto Atlas.",
   },
   {
     id: "viktor-leonov",
     nome: "Viktor Leonov",
     visibilidade: "public",
-    cargo: "Almirante / heroi oficial",
+    idade: "A definir",
+    cargo: "Almirante / herói oficial da queda de Tressarak",
     tags: ["NPC", "Publico"],
     descricaoPublica:
-      "Comandante da operacao que derrotou Tressarak. Figura historica celebrada, com avenidas, estatuas e documentarios em seu nome.",
+      "Viktor Leonov é celebrado como o comandante responsável pela operação que derrotou Tressarak em 1984. Seu nome aparece em livros, documentários, discursos oficiais e materiais de recrutamento.",
     segredo:
-      "Nao foi o verdadeiro responsavel pela queda do primeiro Kaiju. Recebeu credito por decisao politica.",
+      "Leonov não executou a manobra decisiva contra Tressarak. Ele recebeu crédito por uma vitória que dependeu de Helena Sato.",
+    usoNaCampanha:
+      "O player provavelmente conhece seu nome pelos registros históricos. Mais tarde pode encontrar inconsistências entre documentos oficiais e registros secretos.",
   },
   {
-    id: "amara-sato-qadir",
-    nome: "Amara Sato-Qadir",
-    visibilidade: "masterOnly",
-    cargo: "Piloto lendaria / sobrevivente de Drift extremo",
-    tags: ["NPC", "Classificado", "Lendario"],
+    id: "instrutores-atlas",
+    nome: "Instrutores do Programa Atlas",
+    visibilidade: "public",
+    cargo: "Equipe militar de seleção Jaeger",
+    tags: ["NPC", "Publico", "Jaeger"],
     descricao:
-      "Neta de Helena Sato e filha adotiva de Mara Qadir. Assumiu o Drift sozinha por 94 segundos durante a batalha contra Slathern, algo considerado impossivel.",
-    segredo: "A verdadeira responsavel pela vitoria final contra Slathern.",
-  },
-  {
-    id: "elias-ward",
-    nome: "Elias Ward",
-    visibilidade: "public",
-    cargo: "Piloto do Atlas-Prime",
-    tags: ["NPC", "Publico", "Lendario"],
-    descricao: "Ex-piloto de caca e um dos dois pilotos do Atlas-Prime na batalha contra Raijin-Delta.",
-  },
-  {
-    id: "ren-akiyama",
-    nome: "Ren Akiyama",
-    visibilidade: "public",
-    cargo: "Engenheira neural e piloto do Atlas-Prime",
-    tags: ["NPC", "Publico", "Lendario"],
-    descricao:
-      "Copiloto de Elias Ward. Percebeu o momento de carga do pulso EMP de Raijin-Delta e ajudou a executar a manobra que venceu a batalha.",
-  },
-  {
-    id: "julian-cross",
-    nome: "Julian Cross",
-    visibilidade: "public",
-    cargo: "Comandante / piloto celebrado do Mourning Star",
-    tags: ["NPC", "Publico", "Classificado"],
-    descricaoPublica: "Heroi oficial da batalha contra Slathern.",
-    segredo: "Morreu antes da manobra final. O credito real deveria ser de Amara Sato-Qadir.",
+      "Soldados, médicos e avaliadores que conduzem a seleção de candidatos em 2006. Eles não tratam o teste como sonho heroico; tratam como filtro brutal para descobrir quem não quebra antes do Drift.",
+    usoNaCampanha:
+      "Podem pressionar, avaliar, intimidar ou proteger candidatos durante as fases do Teste de Seleção Jaeger.",
   },
 ];

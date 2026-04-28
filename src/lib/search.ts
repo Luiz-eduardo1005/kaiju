@@ -10,6 +10,7 @@ import {
   weapons,
   type SearchableEntry,
   type TagName,
+  type Visibility,
 } from "@/data";
 
 export const searchIndex: SearchableEntry[] = [
@@ -32,6 +33,7 @@ export const searchIndex: SearchableEntry[] = [
     category: "kaijus" as const,
     status: item.player.status,
     tags: item.tags,
+    visibility: (["tressarak", "gorath", "mirekai"].includes(item.id) ? "public" : "masterOnly") as Visibility,
   })),
   ...jaegers.map((item) => ({
     id: item.id,
@@ -42,6 +44,7 @@ export const searchIndex: SearchableEntry[] = [
     category: "jaegers" as const,
     status: item.statusPublico,
     tags: item.tags,
+    visibility: (["atlas-prime", "vanguard-01", "iron-saint"].includes(item.id) ? "public" : "masterOnly") as Visibility,
   })),
   ...weapons.map((item) => ({
     id: item.id,
@@ -52,6 +55,7 @@ export const searchIndex: SearchableEntry[] = [
     category: "armas-enumeradas" as const,
     status: item.status,
     tags: item.tags,
+    visibility: "masterOnly" as Visibility,
   })),
   ...suits.map((item) => ({
     id: item.id,
@@ -98,12 +102,13 @@ export const searchIndex: SearchableEntry[] = [
     href: "/campanha",
     category: "campanha",
     tags: ["Campanha", "Classificado"],
+    visibility: "masterOnly",
   },
   {
     id: "loja",
     title: "Loja",
     subtitle: "Compras",
-    description: "Comprar alimentos, medicamentos, roupas, equipamentos taticos ficticios, ferramentas anti-Kaiju e treino.",
+    description: "Comprar comida, medicamentos comuns, roupas, equipamentos de campo, limpeza, contencao e treinamento de 2006.",
     href: "/shop",
     category: "loja",
     tags: ["Campanha"],

@@ -1,13 +1,32 @@
+"use client";
+
 import { ClassifiedBlock, PublicBlock } from "@/components/blocks";
 import { PageShell } from "@/components/page-shell";
+import { useMode } from "@/context/mode-context";
 import { campaign } from "@/data";
 
 export default function CampaignPage() {
+  const { isMaster } = useMode();
+
+  if (!isMaster) {
+    return (
+      <PageShell
+        eyebrow="Área de mestre"
+        title="Campanha / Sessões"
+        subtitle="Planejamento narrativo, anotações de sessão e consequências futuras ficam ocultos para players."
+      >
+        <PublicBlock title="Acesso restrito">
+          <p>Este card aparece apenas no Modo Mestre para proteger preparação, segredos e controle narrativo da campanha.</p>
+        </PublicBlock>
+      </PageShell>
+    );
+  }
+
   return (
     <PageShell
       eyebrow={`Campanha inicial / ${campaign.ano}`}
       title={campaign.titulo}
-      subtitle="Area para registrar premissa, abertura, ganchos e futuras sessoes da mesa."
+      subtitle="Área para registrar premissa, abertura, ganchos e futuras sessões da mesa."
     >
       <PublicBlock title="Premissa">
         <p>{campaign.premissa}</p>

@@ -8,7 +8,12 @@ import { dashboardSections } from "@/data";
 
 export default function Home() {
   const { isMaster } = useMode();
-  const visibleSections = dashboardSections.filter((section) => !("restricted" in section && section.restricted) || isMaster);
+  const visibleSections = dashboardSections.filter((section) => {
+    const isRestricted = "restricted" in section && section.restricted;
+    const isMasterPanel = section.category === "painel-mestre";
+
+    return !isRestricted || (isMaster && isMasterPanel);
+  });
 
   return (
     <main className="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-8 px-4 py-8">
@@ -16,13 +21,11 @@ export default function Home() {
         <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
         <div className="absolute bottom-0 left-1/4 h-72 w-72 rounded-full bg-violet-600/20 blur-3xl" />
         <div className="relative max-w-4xl">
-          <p className="font-mono text-xs uppercase tracking-[0.45em] text-cyan-300">Arquivo militar / acesso monitorado</p>
+          <p className="font-mono text-xs uppercase tracking-[0.45em] text-cyan-300">ERA ATUAL: 2006 - Início dos Jaegers</p>
           <h1 className="mt-5 text-5xl font-black uppercase leading-none tracking-tight text-white md:text-7xl">
-            Crônicas dos Titãs
+            C&iacute;rculo de Fogo
           </h1>
-          <p className="mt-5 max-w-2xl text-xl leading-8 text-slate-300">
-            Jaegers, Kaijus e a guerra que nunca terminou.
-          </p>
+          <p className="mt-5 max-w-2xl text-xl leading-8 text-slate-300">Programa Atlas, Drift instável e a primeira fase dos Jaegers.</p>
         </div>
       </section>
 

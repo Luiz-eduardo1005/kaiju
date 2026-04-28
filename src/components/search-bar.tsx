@@ -26,7 +26,7 @@ export function SearchBar({
       <input
         value={query}
         onChange={(event) => onQueryChange(event.target.value)}
-        placeholder="Buscar por nome, numero, titulo, descricao, tag ou categoria..."
+        placeholder="Buscar por nome, número, título, descrição, tag ou categoria..."
         className="min-h-12 rounded-xl border border-white/10 bg-black/40 px-4 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-300/70"
       />
       {onCategoryChange ? (

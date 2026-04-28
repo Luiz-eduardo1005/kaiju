@@ -8,7 +8,7 @@ export default function SuitsPage() {
     <PageShell
       eyebrow="Unidades anti-Kaiju"
       title="Trajes Anti-Kaiju"
-      subtitle="A camada intermediaria da guerra: essencial para Yoju, tuneis, contaminacao, evacuacao armada e ameacas urbanas."
+      subtitle="A camada intermediária da guerra: essencial para Yoju, túneis, contaminação, evacuação armada e ameaças urbanas."
     >
       <section className="grid gap-4 md:grid-cols-3">
         {suits.map((suit) => (
@@ -26,10 +26,10 @@ export default function SuitsPage() {
         {suits.map((suit) => (
           <PublicBlock key={suit.id} title={suit.nome}>
             <p>
-              <strong>Geracao:</strong> {suit.geracao ?? "Nao especificada"}
+              <strong>Geração:</strong> {suit.geracao ?? "Não especificada"}
             </p>
             <p>
-              <strong>Funcao:</strong> {suit.funcao}
+              <strong>Função:</strong> {suit.funcao}
             </p>
             <p>{suit.descricao}</p>
           </PublicBlock>

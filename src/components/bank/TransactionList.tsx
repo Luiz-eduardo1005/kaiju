@@ -5,7 +5,7 @@ import type { Transaction } from "@/types/game";
 export function TransactionList({ transactions }: { transactions: Transaction[] }) {
   return (
     <section className="rounded-2xl border border-cyan-300/20 bg-slate-950/80 p-5">
-      <h2 className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">Historico de Transacoes</h2>
+      <h2 className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">Histórico de Transações</h2>
       <div className="mt-4 space-y-3">
         {transactions.length ? (
           transactions.map((transaction) => (

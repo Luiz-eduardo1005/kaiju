@@ -1,12 +1,13 @@
 "use client";
 
-import type { ActiveEffect, CharacterSheet, Profile, Wallet } from "@/types/game";
+import type { ActiveEffect, CharacterSheet, InventoryItem, Profile, Wallet } from "@/types/game";
 
 export function MasterPlayerPanel({
   profile,
   sheet,
   wallet,
   effects,
+  inventory,
   onAdjustHp,
   onAdjustBalance,
   onEndEffect,
@@ -15,6 +16,7 @@ export function MasterPlayerPanel({
   sheet?: CharacterSheet;
   wallet?: Wallet;
   effects: ActiveEffect[];
+  inventory?: InventoryItem[];
   onAdjustHp: (profile: Profile, sheet: CharacterSheet) => void;
   onAdjustBalance: (profile: Profile, wallet: Wallet) => void;
   onEndEffect: (effect: ActiveEffect, profile: Profile) => void;
@@ -38,7 +40,7 @@ export function MasterPlayerPanel({
       <div className="mt-4 flex flex-wrap gap-2">
         {sheet ? (
           <button onClick={() => onAdjustHp(profile, sheet)} className="rounded-xl border border-red-300/40 bg-red-500/10 px-3 py-2 text-xs font-black uppercase tracking-[0.2em] text-red-100">
-            Ajustar vida
+            Ajustar HP
           </button>
         ) : null}
         {wallet ? (
@@ -46,6 +48,24 @@ export function MasterPlayerPanel({
             Ajustar dinheiro
           </button>
         ) : null}
+      </div>
+      <div className="mt-4 space-y-2">
+        <p className="text-[10px] font-black uppercase tracking-[0.24em] text-red-200/80">Inventário do player</p>
+        {inventory?.length ? (
+          <div className="grid gap-2">
+            {inventory.slice(0, 6).map((item) => (
+              <div key={item.id} className="flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-black/30 p-3">
+                <span className="text-sm font-bold text-white">{item.item_name}</span>
+                <span className="rounded-full border border-red-300/20 bg-red-500/10 px-2 py-1 font-mono text-[10px] uppercase tracking-[0.16em] text-red-100">
+                  x{item.quantity}
+                </span>
+              </div>
+            ))}
+            {inventory.length > 6 ? <p className="text-xs text-slate-500">+{inventory.length - 6} itens ocultos nesta previa.</p> : null}
+          </div>
+        ) : (
+          <p className="rounded-xl border border-white/10 bg-black/30 p-3 text-sm text-slate-400">Nenhum item no inventário deste player.</p>
+        )}
       </div>
       <div className="mt-4 space-y-2">
         {effects.map((effect) => (

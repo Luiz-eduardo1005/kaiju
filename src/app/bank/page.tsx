@@ -12,7 +12,7 @@ import type { Profile, Transaction, Wallet } from "@/types/game";
 
 export default function BankPage() {
   return (
-    <PageShell eyebrow="Banco Civil de Nova Aurora" title="Banco" subtitle="Saldo, historico e Transferencia Rapida entre players.">
+    <PageShell eyebrow="Banco Civil de Nova Aurora" title="Banco" subtitle="Saldo, histórico e Transferência Rápida entre players.">
       <LoginRequired>
         <BankPanel />
       </LoginRequired>
@@ -27,7 +27,7 @@ function BankPanel() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [profiles, setProfiles] = useState<Profile[]>([]);
   const [toUser, setToUser] = useState("");
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState("");
   const [description, setDescription] = useState("");
   const [message, setMessage] = useState("");
 
@@ -35,7 +35,7 @@ function BankPanel() {
     const [walletResult, transactionResult, profileResult] = await Promise.all([
       supabase.from("wallets").select("*").eq("user_id", userId).single<Wallet>(),
       supabase.from("transactions").select("*").eq("user_id", userId).order("created_at", { ascending: false }),
-      supabase.from("profiles").select("*").eq("role", "player"),
+      supabase.from("profiles").select("*").order("username"),
     ]);
     if (walletResult.data) setWallet(walletResult.data);
     setTransactions((transactionResult.data as Transaction[]) ?? []);
@@ -57,12 +57,18 @@ function BankPanel() {
     if (!profile || !user || !toUser) return;
     setMessage("");
     try {
+      const parsedAmount = Number(amount);
+      if (Number.isNaN(parsedAmount) || parsedAmount <= 0) {
+      setMessage("Digite um valor válido.");
+        return;
+      }
       const target = await getProfile(toUser);
-      await transferMoney({ from: profile, to: target, amount, description });
+      await transferMoney({ from: profile, to: target, amount: parsedAmount, description });
       await load(user.id);
-      setMessage("Transferencia Rapida concluida.");
+      setAmount("");
+      setMessage("Transferência Rápida concluída.");
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : "Erro na transferencia.");
+      setMessage(error instanceof Error ? error.message : "Erro na transferência.");
     }
   }
 
@@ -73,7 +79,7 @@ function BankPanel() {
         <h2 className="mt-3 text-5xl font-black text-white">${wallet?.balance ?? 0}</h2>
       </section>
       <section className="rounded-2xl border border-cyan-300/20 bg-slate-950/80 p-5">
-        <h2 className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">Transferencia Rapida</h2>
+        <h2 className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">Transferência Rápida</h2>
         <div className="mt-4 grid gap-3 md:grid-cols-4">
           <select className="rounded-xl border border-white/10 bg-black/60 p-3 text-white" value={toUser} onChange={(e) => setToUser(e.target.value)}>
             <option value="">Destinatario</option>
@@ -83,8 +89,8 @@ function BankPanel() {
               </option>
             ))}
           </select>
-          <input type="number" className="rounded-xl border border-white/10 bg-black/60 p-3 text-white" value={amount} onChange={(e) => setAmount(Number(e.target.value))} />
-          <input className="rounded-xl border border-white/10 bg-black/60 p-3 text-white md:col-span-2" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Descricao" />
+          <input type="number" className="rounded-xl border border-white/10 bg-black/60 p-3 text-white" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Valor" />
+          <input className="rounded-xl border border-white/10 bg-black/60 p-3 text-white md:col-span-2" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Descrição" />
         </div>
         <button onClick={transfer} className="mt-4 rounded-xl border border-cyan-300/45 bg-cyan-300/10 px-5 py-3 text-xs font-black uppercase tracking-[0.25em] text-cyan-50">
           Transferir

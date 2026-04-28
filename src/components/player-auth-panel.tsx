@@ -39,7 +39,7 @@ export function PlayerAuthPanel() {
 
     if (!email) {
       setSubmitting(false);
-      setMessage("Usuario nao autorizado.");
+      setMessage("Usuário não autorizado.");
       return;
     }
 
@@ -95,7 +95,7 @@ export function PlayerAuthPanel() {
         <p className="font-mono text-xs uppercase tracking-[0.35em] text-cyan-300">Acesso restrito de player</p>
         <h2 className="mt-3 text-3xl font-black uppercase text-white">Login</h2>
         <p className="mt-3 text-sm leading-6 text-slate-300">
-          Entre com o usuario entregue pelo Mestre.
+          Entre com o usuário entregue pelo Mestre.
         </p>
 
         <form onSubmit={handleSubmit} className="mt-6 grid gap-4">

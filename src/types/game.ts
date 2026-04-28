@@ -55,16 +55,136 @@ export type InventoryItem = {
   id: string;
   user_id: string;
   item_id: string;
+  custom_item_id?: string | null;
+  item_type?: CustomItemType | string | null;
   item_name: string;
   category: string;
   quantity: number;
   description: string | null;
+  effects?: CustomItemEffect[] | null;
   effect_type: string | null;
   effect_value: number | null;
   effect_stat: string | null;
   duration_type: string | null;
   duration_seconds: number | null;
+  rarity?: CustomItemRarity | string | null;
+  price?: number | null;
+  weight?: number | null;
+  visible_to_player?: boolean | null;
+  master_only?: boolean | null;
+  equipped?: boolean | null;
   created_at?: string;
+  updated_at?: string;
+};
+
+export const CUSTOM_ITEM_CATEGORIES = [
+  "Arma",
+  "Equipamento",
+  "Consumivel",
+  "Roupa",
+  "Ferramenta",
+  "Item de missao",
+  "Material Kaiju",
+  "Outro",
+] as const;
+
+export const CUSTOM_ITEM_TYPES = [
+  "Consumivel",
+  "Equipavel",
+  "Material",
+  "Arma",
+  "Armadura",
+  "Dispositivo",
+  "Remedio",
+  "Comida",
+  "Bebida",
+  "Outro",
+] as const;
+
+export const CUSTOM_ITEM_RARITIES = ["Comum", "Incomum", "Raro", "Epico", "Lendario", "Experimental", "Classificado"] as const;
+
+export const CUSTOM_ITEM_DURATIONS = ["Permanente", "Temporario", "Um turno", "Ate o mestre remover"] as const;
+
+export type CustomItemCategory = (typeof CUSTOM_ITEM_CATEGORIES)[number];
+export type CustomItemType = (typeof CUSTOM_ITEM_TYPES)[number];
+export type CustomItemRarity = (typeof CUSTOM_ITEM_RARITIES)[number];
+export type CustomItemDuration = (typeof CUSTOM_ITEM_DURATIONS)[number];
+export type ItemTransferStatus = "pending" | "accepted" | "declined" | "completed";
+export type ItemTransferType = "direct" | "trade";
+
+export type CustomItemEffectType =
+  | "recover_resource"
+  | "reduce_fatigue"
+  | "temporary_attribute_buff"
+  | "temporary_attribute_debuff"
+  | "equipment_attribute_bonus"
+  | "equipment_attribute_penalty"
+  | "damage_resource"
+  | "cure_condition"
+  | "apply_condition"
+  | "remove_condition"
+  | "narrative";
+
+export type CustomItemEffect = {
+  id: string;
+  type: CustomItemEffectType;
+  resource?: "hp" | "fadiga" | string | null;
+  attribute?: StatKey | string | null;
+  condition?: string | null;
+  value?: number | null;
+  duration?: number | null;
+  messageDuration?: number | null;
+  label?: string | null;
+};
+
+export type CustomItem = {
+  id: string;
+  name: string;
+  item_type?: CustomItemType | string | null;
+  category: CustomItemCategory | string;
+  rarity: CustomItemRarity | string;
+  description: string | null;
+  mechanical_effect: string | null;
+  effects?: CustomItemEffect[] | null;
+  bonus_stat: StatKey | string | null;
+  bonus_value: number | null;
+  duration_type: CustomItemDuration | string | null;
+  price: number | null;
+  weight: number | null;
+  visible_to_player: boolean;
+  master_only: boolean;
+  secret_notes: string | null;
+  created_by: string | null;
+  created_at?: string;
+  updated_at?: string;
+};
+
+export type MasterInventoryItem = {
+  id: string;
+  item_id: string;
+  quantity: number;
+  created_at?: string;
+  updated_at?: string;
+};
+
+export type MasterInventoryWithItem = MasterInventoryItem & {
+  custom_items: CustomItem | null;
+};
+
+export type ItemTransfer = {
+  id: string;
+  from_user_id: string | null;
+  to_user_id: string;
+  item_id: string;
+  item_name: string;
+  item_snapshot: Record<string, unknown> | null;
+  quantity: number;
+  status: ItemTransferStatus;
+  transfer_type: ItemTransferType;
+  requested_money: number | null;
+  requested_item_id: string | null;
+  requested_item_name: string | null;
+  created_at: string;
   updated_at?: string;
 };
 
@@ -114,5 +234,4 @@ export type StatKey =
   | "constitution"
   | "mind"
   | "willpower"
-  | "technique"
-  | "speed";
+  | "technique";

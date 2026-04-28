@@ -44,7 +44,7 @@ export function DetailPage({ title, subtitle, image, tags = [], facts, publicTex
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(34,211,238,0.1)_1px,transparent_1px)] bg-[size:34px_34px]" />
         <div className="relative flex min-h-[340px] flex-col justify-end p-6 md:p-10">
           <p className={`text-[10px] font-black uppercase tracking-[0.35em] ${isMaster ? "text-red-300" : "text-cyan-300"}`}>
-            {isMaster ? "Arquivo classificado" : "Dossie individual"}
+            {isMaster ? "Arquivo classificado" : "Dossiê individual"}
           </p>
           <h1 className="mt-3 text-4xl font-black uppercase tracking-tight text-white md:text-6xl">{title}</h1>
           {subtitle ? <p className="mt-3 max-w-2xl text-lg text-slate-300">{subtitle}</p> : null}
@@ -73,7 +73,7 @@ export function DetailPage({ title, subtitle, image, tags = [], facts, publicTex
 
         <div className="space-y-6">
           {publicText ? (
-            <PublicBlock title="Arquivo publico">
+            <PublicBlock title="Dossiê operacional">
               <TextContent text={publicText} />
             </PublicBlock>
           ) : null}

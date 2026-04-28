@@ -14,16 +14,16 @@ export default function HistoriaPage() {
 
   return (
     <PageShell
-      eyebrow="Departamento historico"
-      title="Historia"
-      subtitle="A guerra Kaiju tem uma versao ensinada em escolas e uma versao enterrada em arquivos que nunca deveriam existir."
+      eyebrow="Departamento histórico"
+      title="História"
+      subtitle="A linha jogável começa em 2006, com os registros conhecidos de 1984 até o Programa Atlas."
     >
       <div className="grid gap-4 md:grid-cols-4">
-        <Card title="Historia Publica" description="A versao oficial para civis, cadetes e recrutas." tags={["Publico"]} />
+        <Card title="Registro Histórico" description="Linha conhecida por civis, cadetes e recrutas." tags={["Publico"]} />
         {isMaster ? (
-          <Card title="Historia Original / Secreta" description="A verdade apagada dos arquivos publicos." tags={["Classificado"]} restricted />
+          <Card title="História Original / Secreta" description="A verdade apagada dos arquivos públicos." tags={["Classificado"]} restricted />
         ) : null}
-        <Card title="Linha do Tempo" description="Eventos centrais entre 1984 e 2040." tags={["Campanha"]} />
+        <Card title="Linha do Tempo" description="Eventos centrais entre 1984 e o início de 2006." tags={["Campanha"]} />
         <Card title="Eventos Importantes" description="Batalhas, descobertas e pontos de virada." tags={["Lendario"]} />
       </div>
 
@@ -33,7 +33,7 @@ export default function HistoriaPage() {
           <TextContent text={publicHistory.text} />
           {publicHistory.summary ? (
             <div className="mt-6 rounded-2xl border border-cyan-300/20 bg-cyan-300/10 p-4">
-              <h3 className="text-sm font-black uppercase tracking-[0.25em] text-cyan-100">Resumo publico para player</h3>
+              <h3 className="text-sm font-black uppercase tracking-[0.25em] text-cyan-100">Resumo para recrutas</h3>
               <p>{publicHistory.summary}</p>
             </div>
           ) : null}

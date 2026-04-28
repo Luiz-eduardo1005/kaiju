@@ -48,7 +48,7 @@ export function LoginModal() {
 
     if (!email) {
       setSubmitting(false);
-      setMessage("Usuario nao autorizado.");
+      setMessage("Usuário não autorizado.");
       return;
     }
 
