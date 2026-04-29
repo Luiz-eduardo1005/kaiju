@@ -110,6 +110,12 @@ export const dashboardSections = [
     description: "Editar dados do personagem, vida atual e status.",
   },
   {
+    title: "Anotações",
+    href: "/notes",
+    category: "anotacoes",
+    description: "Caderno pessoal do player para registrar pistas, ideias e lembranças da campanha.",
+  },
+  {
     title: "Áreas Descobertas",
     href: "/areas-descobertas",
     category: "areas-descobertas",
