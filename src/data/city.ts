@@ -18,7 +18,7 @@ export const cityLocations: CityLocation[] = [
     nome: "Zona Portuária de Nova Aurora",
     tipo: "Porto / área industrial",
     status: "Ativa",
-    tags: ["Cidade", "Publico"],
+    tags: ["Cidade", "Público"],
     descricao:
       "Região de docas, guindastes, armazéns, navios de carga e postos militares discretos. Parte do porto ainda funciona como área civil, mas algumas docas foram adaptadas para logística do Projeto Atlas.",
   },
@@ -27,7 +27,7 @@ export const cityLocations: CityLocation[] = [
     nome: "Bairro Residencial do Player",
     tipo: "Zona civil",
     status: "Habitado",
-    tags: ["Cidade", "Publico"],
+    tags: ["Cidade", "Público"],
     descricao:
       "Bairro comum de Nova Aurora, com prédios baixos, comércio pequeno, escolas, mercados e rotas de evacuação pintadas no chão. É o melhor lugar para mostrar que a vida comum continua mesmo sob a sombra dos Kaijus.",
   },
@@ -36,7 +36,7 @@ export const cityLocations: CityLocation[] = [
     nome: "Estação Central",
     tipo: "Transporte / abrigo parcial",
     status: "Movimentada",
-    tags: ["Cidade", "Publico"],
+    tags: ["Cidade", "Público"],
     descricao:
       "Centro de transporte da cidade. Placas antigas dividem espaço com instruções de emergência, linhas azuis de evacuação e avisos sobre simulados civis.",
   },
@@ -45,7 +45,7 @@ export const cityLocations: CityLocation[] = [
     nome: "Abrigo Subterrâneo 04",
     tipo: "Abrigo civil",
     status: "Operacional",
-    tags: ["Cidade", "Publico"],
+    tags: ["Cidade", "Público"],
     descricao:
       "Abrigo sob uma área de grande circulação, abastecido para emergências curtas. A maioria dos moradores já entrou aqui em simulados, mas poucos sabem como seria esperar um alerta real terminar.",
   },
@@ -54,7 +54,7 @@ export const cityLocations: CityLocation[] = [
     nome: "Avenida Leonov",
     tipo: "Marco público",
     status: "Ativa",
-    tags: ["Cidade", "Publico"],
+    tags: ["Cidade", "Público"],
     descricao:
       "Avenida batizada em homenagem ao almirante Viktor Leonov, herói oficial da queda de Tressarak. Monumentos, propagandas de recrutamento e cartazes do Programa Atlas aparecem ao longo da via.",
   },
@@ -63,7 +63,7 @@ export const cityLocations: CityLocation[] = [
     nome: "Distrito Industrial",
     tipo: "Fábricas / manutenção",
     status: "Militarização crescente",
-    tags: ["Cidade", "Publico"],
+    tags: ["Cidade", "Público"],
     descricao:
       "Área de fábricas, oficinas, galpões e empresas contratadas para fornecer peças, cabos, blindagem e equipamentos de suporte ao Projeto Atlas.",
   },
@@ -72,7 +72,7 @@ export const cityLocations: CityLocation[] = [
     nome: "Rota Azul de Evacuação",
     tipo: "Corredor de emergência",
     status: "Sinalizada",
-    tags: ["Cidade", "Publico"],
+    tags: ["Cidade", "Público"],
     descricao:
       "Linhas azuis pintadas no chão conectam escolas, estações, praças e abrigos. Crianças aprendem desde cedo a seguir essas rotas quando as sirenes tocam.",
   },
@@ -81,7 +81,7 @@ export const cityLocations: CityLocation[] = [
     nome: "Mercado Velho",
     tipo: "Comércio civil",
     status: "Ativo",
-    tags: ["Cidade", "Publico"],
+    tags: ["Cidade", "Público"],
     descricao:
       "Mercado popular onde trabalhadores, candidatos e famílias compram comida, roupas, pilhas, lanternas, mapas e itens de emergência. É um bom ponto para rumores e cenas urbanas.",
   },
@@ -99,7 +99,7 @@ export const cityLocations: CityLocation[] = [
     nome: "Estrada de Acesso à Base Naval Atlas",
     tipo: "Estrada militar",
     status: "Monitorada",
-    tags: ["Cidade", "Publico"],
+    tags: ["Cidade", "Público"],
     descricao:
       "Estrada costeira que liga Nova Aurora à Base Naval Atlas. Em dias de teste, caminhões militares e ônibus de candidatos seguem por ela sob chuva, vento e sirenes de treinamento.",
   },
@@ -126,7 +126,7 @@ export const cityLocations: CityLocation[] = [
     nome: "Base Nereu",
     tipo: "Instalação secreta",
     status: "Não existe oficialmente",
-    tags: ["Cidade", "Classificado", "Nivel Omega"],
+    tags: ["Cidade", "Classificado", "Nível Omega"],
     descricao:
       "Instalação secreta no Pacífico profundo criada para estudar restos de Tressarak e outros materiais Kaiju. O player não deve conhecer esse lugar no início, mas o mestre pode usá-lo como origem de arquivos ocultos, memórias de Drift e segredos sobre Helena Sato.",
   },

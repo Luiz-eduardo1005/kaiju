@@ -416,7 +416,7 @@ function InventoryPanel() {
                 </select>
                 {!profiles.length ? (
                   <span className="text-xs leading-5 text-amber-200">
-                    Nenhum destinatario carregado. Rode o SQL profiles-list-policy.sql no Supabase para liberar a lista de players.
+                    Nenhum destinatário carregado. Rode o SQL profiles-list-policy.sql no Supabase para liberar a lista de players.
                   </span>
                 ) : null}
               </label>

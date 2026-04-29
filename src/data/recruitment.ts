@@ -27,7 +27,7 @@ export const recruitmentSteps: RecruitmentStep[] = [
     text: "O candidato é preso em uma estrutura de simulação que treme, inclina e replica choque de cabine. Rolagens sugeridas: Constituição dificuldade 15, Vontade dificuldade 15 e Mente dificuldade 14.",
   },
   {
-    id: "avaliacao-psicologica",
+    id: "avaliacao-psicológica",
     title: "Avaliação Psicológica",
     text: "Perguntas morais e imagens de ataques Kaiju medem medo, impulso, obediência e capacidade de decisão. Não há resposta limpa. Rolagens sugeridas: Vontade dificuldade 15, Mente dificuldade 13 e Vontade ou Drift dificuldade 16.",
   },

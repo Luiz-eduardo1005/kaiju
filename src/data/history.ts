@@ -6,7 +6,7 @@ export const historyEntries: HistoryEntry[] = [
     title: "História da Guerra Kaiju - 1984 até 2006",
     visibility: "public",
     subtitle: "O registro histórico usado por civis, cadetes e recrutas sobre os primeiros Kaijus e o nascimento do Projeto Jaeger.",
-    tags: ["Publico", "Campanha"],
+    tags: ["Público", "Campanha"],
     summary:
       "Em 2006, três grandes Kaijus marcaram a memória mundial: Tressarak, Gorath e Mirekai. A humanidade ainda não tem trajes anti-Kaiju padronizados nem armas enumeradas operacionais. O Projeto Atlas recruta candidatos para testar o Atlas-Prime, primeiro Jaeger funcional, ainda experimental e sem vitória comprovada.",
     text: `O mundo moderno mudou na madrugada de 3 de novembro de 1984.
@@ -81,7 +81,7 @@ Esse evento marcou uma nova fase da guerra.
 
 A ameaça Kaiju não era apenas destrutiva.
 
-Era tambem biologica.
+Era também biológica.
 
 Após três grandes eventos, ficou evidente que os métodos tradicionais não eram suficientes. Cada Kaiju exigia uma abordagem diferente. Cada vitória custava recursos extremos. Cada batalha mostrava os limites das armas humanas.
 
@@ -105,7 +105,7 @@ Testes iniciais foram realizados com sucesso limitado.
 
 O sistema funcionava.
 
-Mas ainda era instavel.
+Mas ainda era instável.
 
 Ao início de 2006, o mundo se encontra em um estado de tensão constante. Três Kaijus já apareceram. A ameaça é real. A frequência ainda é incerta. A humanidade está preparada até certo ponto.
 
@@ -119,7 +119,7 @@ Mas ainda não há prova definitiva de que ele pode vencer.
 
 Todos com um objetivo: tentar se tornar piloto de Jaeger.
 
-A populacao ve isso como esperanca.
+A população vê isso como esperança.
 
 Os governos tratam como necessidade.
 
@@ -134,7 +134,7 @@ Estão se voluntariando para algo que ninguém testou o suficiente.`,
     title: "História Secreta da Guerra Kaiju - 1984 até 2006",
     visibility: "masterOnly",
     subtitle: "A verdade oculta sobre os primeiros Kaijus, Helena Sato, Base Nereu e os riscos reais do Projeto Atlas.",
-    tags: ["Classificado", "Nivel Omega", "Campanha"],
+    tags: ["Classificado", "Nível Omega", "Campanha"],
     notes: [
       "Helena Sato foi apagada da história pública apesar de ter identificado e atingido o núcleo de Tressarak.",
       "Viktor Leonov é o herói oficial, mas não foi o verdadeiro responsável pela queda do primeiro Kaiju.",
@@ -142,23 +142,23 @@ Estão se voluntariando para algo que ninguém testou o suficiente.`,
       "Em 2006, as armas enumeradas ainda não existem operacionalmente.",
       "Atlas-Prime é funcional, mas instável; o Drift ainda é pouco compreendido e já causou mortes em testes.",
     ],
-    text: `Em 2006, o mundo ainda nao tinha certeza se a humanidade sobreviveria.
+    text: `Em 2006, o mundo ainda não tinha certeza se a humanidade sobreviveria.
 
-Nao existiam herois de metal desfilando em telas de propaganda. Nao existiam academias famosas formando pilotos lendarios. Nao existiam trajes anti-Kaiju usados por esquadroes urbanos. Nao existiam armas enumeradas com nomes gravados em arquivos secretos.
+Não existiam heróis de metal desfilando em telas de propaganda. Não existiam academias famosas formando pilotos lendários. Não existiam trajes anti-Kaiju usados por esquadrões urbanos. Não existiam armas enumeradas com nomes gravados em arquivos secretos.
 
 Existia medo.
 
 Existia improviso.
 
-Existia uma humanidade que ja tinha visto monstros grandes demais para suas armas, estranhos demais para sua ciencia e resistentes demais para sua arrogancia.
+Existia uma humanidade que já tinha visto monstros grandes demais para suas armas, estranhos demais para sua ciência e resistentes demais para sua arrogância.
 
-O mundo nao acabou em 1984.
+O mundo não acabou em 1984.
 
 Mas foi ali que ele deixou de ser o mesmo.
 
-Tudo comecou no dia 3 de novembro de 1984, proximo a Fossa das Marianas.
+Tudo começou no dia 3 de novembro de 1984, próximo à Fossa das Marianas.
 
-Antes de qualquer monstro aparecer, o oceano comecou a se comportar errado. Nao foi uma tempestade comum. Nao foi terremoto submarino. Nao foi atividade vulcanica. Durante horas, navios pesqueiros relataram falhas em bussolas, radios chiando sem frequencia definida e ondas surgindo em direcoes opostas ao vento.
+Antes de qualquer monstro aparecer, o oceano começou a se comportar errado. Não foi uma tempestade comum. Não foi terremoto submarino. Não foi atividade vulcânica. Durante horas, navios pesqueiros relataram falhas em bússolas, rádios chiando sem frequência definida e ondas surgindo em direções opostas ao vento.
 
 Submarinos militares registraram um som vindo das profundezas.
 
@@ -166,27 +166,27 @@ Um som grave.
 
 Repetido.
 
-Quase como respiracao.
+Quase como respiração.
 
-As 03h17 da manha, o mar abriu.
+Às 03h17 da manhã, o mar abriu.
 
-Nao como uma explosao.
+Não como uma explosão.
 
-Nao como uma onda.
+Não como uma onda.
 
-Foi como se uma parte do oceano tivesse sido puxada para baixo por algo invisivel. A agua afundou em um circulo gigantesco, criando uma depressao impossivel. No centro, surgiu uma fenda azul-esverdeada, vertical, brilhando debaixo da superficie.
+Foi como se uma parte do oceano tivesse sido puxada para baixo por algo invisível. A água afundou em um círculo gigantesco, criando uma depressao impossível. No centro, surgiu uma fenda azul-esverdeada, vertical, brilhando debaixo da superfície.
 
 E de dentro dela saiu Tressarak.
 
-Tressarak nao parecia apenas um animal.
+Tressarak não parecia apenas um animal.
 
 Parecia uma coisa antiga demais.
 
-Uma coisa que nao deveria existir na superficie.
+Uma coisa que não deveria existir na superfície.
 
-Ele nao rugia.
+Ele não rugia.
 
-Emitia uma nota grave, continua, tao baixa que fazia o vidro de navios vibrar a quilometros de distancia. Marinheiros relataram nausea, pressao nos ouvidos, sangramento nasal e sensacao de panico antes mesmo de ver a criatura de perto.
+Emitia uma nota grave, contínua, tão baixa que fazia o vidro de navios vibrar a quilômetros de distância. Marinheiros relataram náusea, pressão nos ouvidos, sangramento nasal e sensação de pânico antes mesmo de ver a criatura de perto.
 
 O primeiro erro da humanidade foi achar que podia reagir como sempre reagiu.
 
@@ -196,7 +196,7 @@ Submarinos se aproximaram.
 
 Torpedos foram disparados.
 
-Misseis atingiram o corpo de Tressarak e explodiram contra suas placas, arrancando pedacos superficiais, mas nada que realmente parasse a criatura. O monstro se movia em circulos ao redor da fenda, como se guardasse alguma coisa. Por horas, ele nao avancou contra cidades. Nao atacou o continente. Nao cacou pessoas.
+Mísseis atingiram o corpo de Tressarak e explodiram contra suas placas, arrancando pedaços superficiais, mas nada que realmente parasse a criatura. O monstro se movia em círculos ao redor da fenda, como se guardasse alguma coisa. Por horas, ele não avançou contra cidades. Não atacou o continente. Não caçou pessoas.
 
 Ele permaneceu ali.
 
@@ -204,35 +204,35 @@ Observando.
 
 Ou esperando.
 
-A versao oficial diria depois que Tressarak era uma ameaca irracional, abatida gracas a lideranca militar do Almirante Viktor Leonov. Mas a verdade e que, naquela noite, ninguem sabia o que fazer.
+A versão oficial diria depois que Tressarak era uma ameaça irracional, abatida graças a liderança militar do Almirante Viktor Leonov. Mas a verdade e que, naquela noite, ninguém sabia o que fazer.
 
 O ataque final nasceu do desespero.
 
-Foi Helena Sato, uma biologa abissal ligada a uma forca naval conjunta, quem percebeu o detalhe que mudou tudo. Em meio aos registros termicos, ela notou que as placas no peito de Tressarak se abriam por poucos segundos quando a criatura absorvia oxigenio da superficie.
+Foi Helena Sato, uma bióloga abissal ligada a uma força naval conjunta, quem percebeu o detalhe que mudou tudo. Em meio aos registros térmicos, ela notou que as placas no peito de Tressarak se abriam por poucos segundos quando a criatura absorvia oxigênio da superfície.
 
-Atras daquelas placas havia uma luz.
+Atrás daquelas placas havia uma luz.
 
 Um ponto pulsante.
 
-O primeiro nucleo Kaiju registrado.
+O primeiro núcleo Kaiju registrado.
 
-Helena tentou avisar a cadeia de comando, mas ninguem queria ouvir uma pesquisadora civil enquanto navios militares afundavam. Entao ela fez algo que nenhum documento publico reconheceria.
+Helena tentou avisar a cadeia de comando, mas ninguém queria ouvir uma pesquisadora civil enquanto navios militares afundavam. Então ela fez algo que nenhum documento público reconheceria.
 
-Entrou em um minisubmarino experimental carregado com explosivos de perfuracao industrial.
+Entrou em um minisubmarino experimental carregado com explosivos de perfuração industrial.
 
-O mar ao redor de Tressarak estava cheio de destrocos, oleo, sangue e ondas instaveis. A pressao sacudia o casco do minisubmarino. O som grave da criatura atravessava o metal como se estivesse dentro da cabeca dela.
+O mar ao redor de Tressarak estava cheio de destroços, óleo, sangue e ondas instáveis. A pressão sacudia o casco do minisubmarino. O som grave da criatura atravessava o metal como se estivesse dentro da cabeça dela.
 
 Helena esperou.
 
-Nao pelo melhor angulo.
+Não pelo melhor ângulo.
 
-Nao por autorizacao.
+Não por autorização.
 
-Esperou pela respiracao.
+Esperou pela respiração.
 
-Quando as placas do peito se abriram, ela lancou a carga diretamente contra o nucleo.
+Quando as placas do peito se abriram, ela lancou a carga diretamente contra o núcleo.
 
-A explosao nao destruiu Tressarak de imediato.
+A explosão não destruiu Tressarak de imediato.
 
 O corpo inteiro da criatura endureceu.
 
@@ -242,15 +242,15 @@ A nota grave parou.
 
 Por alguns segundos, o oceano ficou estranhamente silencioso.
 
-Entao Tressarak caiu.
+Então Tressarak caiu.
 
-O mundo viu apenas a versao editada.
+O mundo viu apenas a versão editada.
 
 Viu Leonov dando ordens.
 
 Viu mapas militares.
 
-Viu explosoes.
+Viu explosões.
 
 Viu a humanidade vencendo.
 
@@ -260,71 +260,71 @@ Leonov virou heroi.
 
 O corpo de Tressarak foi rebocado secretamente para uma instalacao no Pacifico profundo, que mais tarde receberia o nome de Base Nereu.
 
-Na epoca, ninguem sabia o que fazer com aquilo.
+Na época, ninguém sabia o que fazer com aquilo.
 
-O tecido nao apodrecia como deveria.
+O tecido não apodrecia como deveria.
 
 Os ossos reagiam a eletricidade.
 
 Fragmentos musculares se contraiam quando estimulados.
 
-Mesmo morto, Tressarak parecia nao entender que tinha morrido.
+Mesmo morto, Tressarak parecia não entender que tinha morrido.
 
-E esse foi o primeiro segredo da Guerra Kaiju: a humanidade nao estava estudando cadaveres.
+E esse foi o primeiro segredo da Guerra Kaiju: a humanidade não estava estudando cadáveres.
 
 Estava estudando restos de algo que ainda tentava funcionar.
 
 Em 1991, Gorath emergiu no deserto de Gobi. A fenda por onde surgiu era seca, escura e sem o brilho azul-esverdeado visto no evento Tressarak. Gorath era cego, mas sentia vibracao. Quando batia os punhos no chao, soldados morriam com orgaos rompidos por impacto interno antes mesmo de a criatura chegar perto.
 
-A batalha contra Gorath nao teve imagem bonita. Nao houve vitoria limpa. O deserto virou uma zona de fumaca, poeira, explosoes e crateras. A operacao de soterramento funcionou por pouco. Milhoes de toneladas de rocha esmagaram o Kaiju contra o solo, mas seus punhos continuaram se movendo sob os destrocos por varios minutos.
+A batalha contra Gorath não teve imagem bonita. Não houve vitória limpa. O deserto virou uma zona de fumaça, poeira, explosões e crateras. A operação de soterramento funcionou por pouco. Milhões de toneladas de rocha esmagaram o Kaiju contra o solo, mas seus punhos continuaram se movendo sob os destroços por varios minutos.
 
 Depois de Gorath, a pergunta mudou.
 
-Nao era mais: "E se outro vier?"
+Não era mais: "E se outro vier?"
 
-Era: "De onde o proximo vai sair?"
+Era: "De onde o próximo vai sair?"
 
-Em 1998, Mirekai apareceu no litoral do Chile. Ela nao emergiu rugindo. Ficou submersa por tres dias. A noite, pescadores viam um brilho azul-violeta sob a agua, como se uma cidade tivesse afundado e continuasse acesa no fundo do mar.
+Em 1998, Mirekai apareceu no litoral do Chile. Ela não emergiu rugindo. Ficou submersa por três dias. A noite, pescadores viam um brilho azul-violeta sob a água, como se uma cidade tivesse afundado e continuasse acesa no fundo do mar.
 
-Mirekai ensinou uma verdade horrivel: um Kaiju nao precisava destruir uma cidade com as proprias maos.
+Mirekai ensinou uma verdade horrível: um Kaiju não precisava destruir uma cidade com as próprias mãos.
 
 Podia infecta-la.
 
-A operacao contra Mirekai foi diferente das anteriores. Bombardear sem controle poderia espalhar mais material contaminante. Cortar o corpo podia liberar mais organismos. Afunda-la sem neutralizacao poderia transformar o oceano em bercario.
+A operação contra Mirekai foi diferente das anteriores. Bombardear sem controle poderia espalhar mais material contaminante. Cortar o corpo podia liberar mais organismos. Afundá-la sem neutralização poderia transformar o oceano em berçário.
 
-Helena Sato foi chamada secretamente para orientar a operacao. Ela percebeu que Mirekai nao funcionava como Tressarak ou Gorath. Seu nucleo parecia coordenar organismos externos, como se fosse uma mae ou um centro de comando biologico.
+Helena Sato foi chamada secretamente para orientar a operação. Ela percebeu que Mirekai não funcionava como Tressarak ou Gorath. Seu núcleo parecia coordenar organismos externos, como se fosse uma mãe ou um centro de comando biológico.
 
-A vitoria veio com precisao.
+A vitória veio com precisão.
 
-Contencao primeiro.
+Contenção primeiro.
 
 Isolamento depois.
 
 Fogo controlado.
 
-E so entao o ataque ao nucleo.
+E so então o ataque ao núcleo.
 
-Depois de tres grandes eventos, ninguem serio acreditava mais que a humanidade tinha uma resposta definitiva.
+Depois de três grandes eventos, ninguém sério acreditava mais que a humanidade tinha uma resposta definitiva.
 
-Cada Kaiju tinha exigido uma solucao diferente.
+Cada Kaiju tinha exigido uma solução diferente.
 
-Tressarak precisou de precisao no nucleo.
+Tressarak precisou de precisao no núcleo.
 
 Gorath precisou ser soterrado por montanhas.
 
-Mirekai precisou de contencao biologica antes do golpe final.
+Mirekai precisou de contenção biológica antes do golpe final.
 
-A humanidade nao estava desenvolvendo uma estrategia.
+A humanidade não estava desenvolvendo uma estratégia.
 
 Estava improvisando uma nova a cada desastre.
 
 E isso era insustentavel.
 
-Foi nesse periodo que surgiu, dentro de um conjunto de reunioes militares fechadas, a ideia que parecia absurda: se as armas humanas nao conseguiam derrubar os Kaijus de longe, entao a humanidade teria que lutar de perto.
+Foi nesse período que surgiu, dentro de um conjunto de reuniões militares fechadas, a ideia que parecia absurda: se as armas humanas não conseguiam derrubar os Kaijus de longe, então a humanidade teria que lutar de perto.
 
 Assim nasceu o embriao do Projeto Jaeger.
 
-Os primeiros prototipos Jaeger nao tinham nomes heroicos.
+Os primeiros protótipos Jaeger não tinham nomes heroicos.
 
 Tinham codigos.
 
@@ -332,27 +332,27 @@ Estruturas incompletas.
 
 Corpos presos em andaimes.
 
-Bracos que se moviam em laboratorios enormes, sem pernas funcionais. Pernas que davam tres passos e travavam. Cockpits que pareciam mais camaras de tortura tecnologica do que postos de comando.
+Braços que se moviam em laboratórios enormes, sem pernas funcionais. Pernas que davam três passos e travavam. Cockpits que pareciam mais câmaras de tortura tecnológica do que postos de comando.
 
 No inicio, tentaram controle convencional.
 
 Falhou.
 
-Entao tentaram interface neural com um piloto.
+Então tentaram interface neural com um piloto.
 
 Foi pior.
 
-O cerebro humano nao suportava. Um piloto sozinho recebia retorno demais: equilibrio, peso, impacto, sensores, temperatura, pressao, movimento das articulacoes, status de armas, resposta de reator. Tudo ao mesmo tempo.
+O cérebro humano não suportava. Um piloto sozinho recebia retorno demais: equilíbrio, peso, impacto, sensores, temperatura, pressão, movimento das articulações, status de armas, resposta de reator. Tudo ao mesmo tempo.
 
 Alguns pilotos desmaiaram nos primeiros minutos.
 
 Outros tiveram convulsoes.
 
-Um deles, apos testar o movimento de uma perna mecanica, acordou tentando se levantar sem mover as proprias pernas, convencido de que ainda estava preso dentro da maquina.
+Um deles, após testar o movimento de uma perna mecânica, acordou tentando se levantar sem mover as próprias pernas, convencido de que ainda estava preso dentro da máquina.
 
 Houve mortes.
 
-Nao muitas nos relatorios oficiais.
+Não muitas nos relatórios oficiais.
 
 Mais do que os arquivos publicos admitiriam.
 
@@ -362,25 +362,25 @@ Duas mentes.
 
 Um corpo.
 
-A ideia nao era apenas dividir comandos. Era dividir a carga de existencia da maquina. Eles precisariam compartilhar intencao, memoria, reflexo e instinto.
+A ideia não era apenas dividir comandos. Era dividir a carga de existência da máquina. Eles precisariam compartilhar intenção, memória, reflexo e instinto.
 
-A primeira vez que uma dupla conseguiu mover um braco mecanico sem atraso significativo, os engenheiros comemoraram.
+A primeira vez que uma dupla conseguiu mover um braço mecanico sem atraso significativo, os engenheiros comemoraram.
 
-Os medicos nao.
+Os médicos não.
 
 Porque os dois pilotos sairam do teste tremendo, chorando e sem conseguir explicar quais memorias pertenciam a quem.
 
 O Drift funcionava.
 
-Mas abria portas que talvez nao devessem ser abertas.
+Mas abria portas que talvez não devessem ser abertas.
 
 Em 2005, o Projeto Jaeger foi consolidado sob um programa mais direto: Projeto Atlas.
 
 A ideia era construir o primeiro Jaeger realmente funcional.
 
-Nao perfeito.
+Não perfeito.
 
-Nao bonito.
+Não bonito.
 
 Funcional.
 
@@ -388,43 +388,43 @@ O resultado foi o Atlas-Prime.
 
 Ele era bruto.
 
-Tinha cerca de 78 metros de altura, blindagem naval reaproveitada, articulacoes grandes demais, cabos expostos em areas que os engenheiros juravam que seriam protegidas depois, placas cinzentas pesadas e um reator selado no peito.
+Tinha cerca de 78 metros de altura, blindagem naval reaproveitada, articulações grandes demais, cabos expostos em áreas que os engenheiros juravam que seriam protegidas depois, placas cinzentas pesadas e um reator selado no peito.
 
-Atlas-Prime nao parecia um cavaleiro.
+Atlas-Prime não parecia um cavaleiro.
 
 Parecia uma plataforma de guerra que aprendeu a ficar de pe.
 
 Quando 2006 comeca, Atlas-Prime existe.
 
-Mas existencia nao e vitoria.
+Mas existência não e vitória.
 
-Ele ja andou em testes.
+Ele já andou em testes.
 
-Ja moveu bracos.
+Já moveu braços.
 
-Ja resistiu a impactos simulados.
+Já resistiu a impactos simulados.
 
-Ja quase matou pilotos em sincronizacoes ruins.
+Já quase matou pilotos em sincronizações ruins.
 
-O Drift ainda e instavel.
+O Drift ainda é instável.
 
-Os medicos ainda nao sabem todos os efeitos de longo prazo.
+Os médicos ainda não sabem todos os efeitos de longo prazo.
 
-Os engenheiros ainda discutem se a maquina aguenta combate real por mais de alguns minutos.
+Os engenheiros ainda discutem se a máquina aguenta combate real por mais de alguns minutos.
 
 Os militares querem resultados.
 
 Os cientistas querem mais tempo.
 
-A populacao quer esperanca.
+A população quer esperança.
 
-E os Kaijus nao esperam ninguem.
+E os Kaijus não esperam ninguém.
 
 E nesse momento que a campanha comeca.
 
-Nao em um mundo que ja sabe o que sao Jaegers.
+Não em um mundo que já sabe o que são Jaegers.
 
-Mas em um mundo que esta prestes a descobrir se eles sao salvacao ou apenas mais uma tentativa desesperada.`,
+Mas em um mundo que está prestes a descobrir se eles são salvação ou apenas mais uma tentativa desesperada.`,
   },
 ];
 
@@ -433,5 +433,5 @@ export const timelineEvents: TimelineEvent[] = [
   { year: "1991", title: "A Emergência de Gorath", text: "O segundo Kaiju surge da terra e prova que a ameaça não vem apenas do oceano." },
   { year: "1998", title: "O Surto de Mirekai", text: "Mirekai revela que a ameaça Kaiju pode ser biológica e gerar criaturas menores." },
   { year: "2005", title: "Fundacao do Projeto Atlas", text: "O Projeto Jaeger e consolidado em um programa militar experimental para criar o Atlas-Prime." },
-  { year: "2006", title: "Teste de Selecao Jaeger", text: "Candidatos chegam a Base Naval Atlas para tentar entrar no Programa Atlas." },
+  { year: "2006", title: "Teste de Seleção Jaeger", text: "Candidatos chegam a Base Naval Atlas para tentar entrar no Programa Atlas." },
 ];

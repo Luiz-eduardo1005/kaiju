@@ -83,7 +83,7 @@ export const CUSTOM_ITEM_CATEGORIES = [
   "Consumivel",
   "Roupa",
   "Ferramenta",
-  "Item de missao",
+  "Item de missão",
   "Material Kaiju",
   "Outro",
 ] as const;
@@ -101,9 +101,9 @@ export const CUSTOM_ITEM_TYPES = [
   "Outro",
 ] as const;
 
-export const CUSTOM_ITEM_RARITIES = ["Comum", "Incomum", "Raro", "Epico", "Lendario", "Experimental", "Classificado"] as const;
+export const CUSTOM_ITEM_RARITIES = ["Comum", "Incomum", "Raro", "Épico", "Lendário", "Experimental", "Classificado"] as const;
 
-export const CUSTOM_ITEM_DURATIONS = ["Permanente", "Temporario", "Um turno", "Ate o mestre remover"] as const;
+export const CUSTOM_ITEM_DURATIONS = ["Permanente", "Temporário", "Um turno", "Até o mestre remover"] as const;
 
 export type CustomItemCategory = (typeof CUSTOM_ITEM_CATEGORIES)[number];
 export type CustomItemType = (typeof CUSTOM_ITEM_TYPES)[number];
@@ -233,6 +233,21 @@ export type PlayerNote = {
   user_id: string;
   content: string;
   created_at: string;
+  updated_at?: string;
+};
+
+export type JaegerPartState = "operational" | "damaged" | "impaired" | "destroyed" | "detached";
+
+export type JaegerPartStatus = {
+  id: string;
+  jaeger_id: string;
+  part_id: string;
+  status: JaegerPartState;
+  integrity: number;
+  note: string | null;
+  equipment_note: string | null;
+  updated_by: string | null;
+  created_at?: string;
   updated_at?: string;
 };
 

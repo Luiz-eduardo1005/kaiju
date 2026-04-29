@@ -6,14 +6,14 @@ import { Tag } from "../tag";
 
 const effectLabels: Record<string, string> = {
   heal: "Cura",
-  buff_stat: "Bonus temporario",
+  buff_stat: "Bônus temporário",
   food_buff: "Bonus leve",
   utility: "Utilitario",
   protection: "Proteção",
 };
 
 const statLabels: Record<string, string> = {
-  strength: "Forca",
+  strength: "Força",
   agility: "Agilidade",
   constitution: "Constituicao",
   mind: "Mente",
@@ -24,17 +24,17 @@ const statLabels: Record<string, string> = {
 
 function getEffectText(item: InventoryItem) {
   if (item.effects?.length) return item.effects.map(effectSummary).join(" / ");
-  if (item.effect_type === "heal") return `Recupera ate ${item.effect_value ?? 0} HP`;
+  if (item.effect_type === "heal") return `Recupera até ${item.effect_value ?? 0} HP`;
   if ((item.effect_type === "buff_stat" || item.effect_type === "food_buff") && item.effect_stat) {
     return `${statLabels[item.effect_stat] ?? item.effect_stat} +${item.effect_value ?? 0}`;
   }
   if (item.effect_type === "protection") return `Proteção narrativa${item.effect_value ? ` +${item.effect_value}` : ""}`;
-  return "Uso narrativo / utilitario";
+  return "Uso narrativo / utilitário";
 }
 
 function getDurationText(item: InventoryItem) {
   if (item.effects?.some(isEquipmentEffect) && item.effects.every(isEquipmentEffect)) return "Enquanto equipado";
-  if (item.effects?.some((effect) => effect.duration)) return "Temporario / configurado";
+  if (item.effects?.some((effect) => effect.duration)) return "Temporário / configurado";
   if (!item.duration_type || item.duration_type === "instant") return "Efeito imediato";
   if (item.duration_type === "manual_confirm") return "Até o mestre encerrar";
   if (item.duration_type === "equipped") return "Enquanto equipado";
@@ -95,7 +95,7 @@ export function InventoryItemCard({
           <p className="mt-1 text-sm font-bold text-cyan-50">{getEffectText(item)}</p>
         </div>
         <div className="rounded-xl border border-white/10 bg-black/30 p-3">
-          <p className="text-[10px] font-black uppercase tracking-[0.22em] text-slate-500">Duracao</p>
+          <p className="text-[10px] font-black uppercase tracking-[0.22em] text-slate-500">Duração</p>
           <p className="mt-1 text-sm font-bold text-cyan-50">{getDurationText(item)}</p>
         </div>
       </div>

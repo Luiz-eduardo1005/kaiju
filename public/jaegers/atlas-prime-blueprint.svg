@@ -1,0 +1,106 @@
+<svg width="900" height="1280" viewBox="0 0 900 1280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.35"/>
+      <stop offset="46%" stop-color="#0e7490" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#020617" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="armor" x1="230" y1="90" x2="700" y2="1130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dffcff" stop-opacity="0.76"/>
+      <stop offset="0.38" stop-color="#67e8f9" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#164e63" stop-opacity="0.45"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#a5f3fc" stroke-opacity="0.13" stroke-width="1"/>
+    </pattern>
+    <pattern id="smallGrid" width="8.5" height="8.5" patternUnits="userSpaceOnUse">
+      <path d="M8.5 0H0V8.5" stroke="#e0f2fe" stroke-opacity="0.08" stroke-width="0.6"/>
+    </pattern>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="1280" fill="#082f49"/>
+  <rect width="900" height="1280" fill="url(#grid)"/>
+  <rect width="900" height="1280" fill="url(#smallGrid)"/>
+  <rect x="28" y="28" width="844" height="1224" stroke="#d9f99d" stroke-opacity="0.42" stroke-width="2"/>
+  <rect x="45" y="47" width="810" height="1187" stroke="#a5f3fc" stroke-opacity="0.25" stroke-width="1"/>
+  <circle cx="450" cy="430" r="392" fill="url(#glow)"/>
+
+  <g stroke="#e0f2fe" stroke-opacity="0.38" stroke-width="1">
+    <path d="M108 120H316V258H108z"/>
+    <path d="M602 104H800V236H602z"/>
+    <path d="M610 694H806V836H610z"/>
+    <path d="M628 904H806V1082H628z"/>
+    <path d="M92 1094H274"/>
+    <path d="M92 1126H226"/>
+    <path d="M92 1158H252"/>
+  </g>
+
+  <g font-family="monospace" fill="#e0f2fe" opacity="0.74">
+    <text x="70" y="74" font-size="18" letter-spacing="9">ATLAS-PRIME / PROJETO ATLAS</text>
+    <text x="640" y="166" font-size="34" font-weight="700">ATLAS</text>
+    <text x="640" y="204" font-size="34" font-weight="700">PRIME</text>
+    <text x="122" y="290" font-size="15">BLINDAGEM NAVAL REAPROVEITADA</text>
+    <text x="626" y="676" font-size="14">REATOR SELADO / PEITORAL</text>
+    <text x="644" y="884" font-size="14">ARTICULACOES HIDRAULICAS</text>
+    <text x="94" y="1188" font-size="13">ERA ATUAL: 2006 / DRIFT EXPERIMENTAL</text>
+  </g>
+
+  <g filter="url(#softGlow)" stroke="url(#armor)" stroke-width="3" stroke-linejoin="round">
+    <path d="M405 116L495 116L522 152L510 220L450 254L390 220L378 152Z" fill="#082f49" fill-opacity="0.48"/>
+    <path d="M372 238L528 238L612 334L568 486L508 570L392 570L332 486L288 334Z" fill="#0f172a" fill-opacity="0.55"/>
+    <path d="M386 352L514 352L548 478L502 590L398 590L352 478Z" fill="#020617" fill-opacity="0.38"/>
+    <path d="M412 398L488 398L508 472L450 526L392 472Z" fill="#0e7490" fill-opacity="0.22"/>
+
+    <path d="M281 328L188 390L150 620L212 680L270 584L312 388Z" fill="#082f49" fill-opacity="0.42"/>
+    <path d="M619 328L712 390L750 620L688 680L630 584L588 388Z" fill="#082f49" fill-opacity="0.42"/>
+    <path d="M188 628L120 746L154 890L226 852L245 704Z" fill="#020617" fill-opacity="0.38"/>
+    <path d="M712 628L780 746L746 890L674 852L655 704Z" fill="#020617" fill-opacity="0.38"/>
+
+    <path d="M384 600L450 632L516 600L542 760L486 1084L424 1084L358 760Z" fill="#0f172a" fill-opacity="0.44"/>
+    <path d="M370 754L292 1118L360 1182L446 862L430 746Z" fill="#082f49" fill-opacity="0.4"/>
+    <path d="M530 746L514 862L600 1182L668 1118L590 754Z" fill="#082f49" fill-opacity="0.4"/>
+    <path d="M270 1152L366 1190L342 1230L226 1214Z" fill="#020617" fill-opacity="0.36"/>
+    <path d="M630 1190L534 1152L674 1214L558 1230Z" fill="#020617" fill-opacity="0.36"/>
+  </g>
+
+  <g stroke="#ecfeff" stroke-opacity="0.42" stroke-width="1">
+    <path d="M405 116L450 254L495 116"/>
+    <path d="M288 334L450 526L612 334"/>
+    <path d="M332 486H568"/>
+    <path d="M392 570L450 632L508 570"/>
+    <path d="M188 390L312 388M588 388L712 390"/>
+    <path d="M154 890L245 704M655 704L746 890"/>
+    <path d="M292 1118L446 862M514 862L668 1118"/>
+  </g>
+
+  <g stroke="#cffafe" stroke-opacity="0.34" stroke-width="1.4">
+    <circle cx="450" cy="462" r="34"/>
+    <circle cx="450" cy="462" r="54"/>
+    <circle cx="246" cy="414" r="35"/>
+    <circle cx="654" cy="414" r="35"/>
+    <circle cx="190" cy="726" r="30"/>
+    <circle cx="710" cy="726" r="30"/>
+    <circle cx="374" cy="812" r="28"/>
+    <circle cx="526" cy="812" r="28"/>
+  </g>
+
+  <g stroke="#e0f2fe" stroke-opacity="0.42" stroke-width="1" stroke-dasharray="6 7">
+    <path d="M514 352L704 180"/>
+    <path d="M558 478L796 654"/>
+    <path d="M654 414L792 826"/>
+    <path d="M374 812L184 1134"/>
+  </g>
+
+  <g opacity="0.3">
+    <circle cx="310" cy="1056" r="56" stroke="#d9f99d" stroke-width="2"/>
+    <circle cx="310" cy="1056" r="30" stroke="#d9f99d" stroke-width="1"/>
+    <path d="M254 1056H366M310 1000V1112" stroke="#d9f99d" stroke-width="1"/>
+  </g>
+</svg>

@@ -106,7 +106,7 @@ function ShopPanel() {
               <p className="font-mono text-[10px] uppercase tracking-[0.4em] text-cyan-400/60">Setor Comercial</p>
               <h3 className="mt-4 text-2xl font-black text-white transition-colors group-hover:text-cyan-300">{storeName}</h3>
               <p className="mt-4 text-sm leading-relaxed text-slate-400 group-hover:text-slate-300">
-                {storeDescriptions[storeName] || "Catalogo de itens simples para sobrevivencia, treino e operacoes."}
+                {storeDescriptions[storeName] || "Catálogo de itens simples para sobrevivência, treino e operações."}
               </p>
               <div className="mt-8 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-cyan-400 opacity-0 transition-all duration-300 group-hover:translate-x-2 group-hover:opacity-100">
                 Entrar na loja <span>-&gt;</span>

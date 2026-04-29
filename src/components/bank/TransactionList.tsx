@@ -21,7 +21,7 @@ export function TransactionList({ transactions }: { transactions: Transaction[] 
             </div>
           ))
         ) : (
-          <p className="text-sm text-slate-400">Nenhuma transacao registrada.</p>
+          <p className="text-sm text-slate-400">Nenhuma transação registrada.</p>
         )}
       </div>
     </section>

@@ -88,7 +88,7 @@ function BankPanel() {
         <h2 className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">Transferência Rápida</h2>
         <div className="mt-4 grid gap-3 md:grid-cols-4">
           <select className="rounded-xl border border-white/10 bg-black/60 p-3 text-white" value={toUser} onChange={(e) => setToUser(e.target.value)}>
-            <option value="">Destinatario</option>
+            <option value="">Destinatário</option>
             {profiles.map((item) => (
               <option key={item.id} value={item.id}>
                 {item.username}

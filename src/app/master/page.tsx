@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { LoginRequired } from "@/components/game/login-required";
+import { MasterJaegerStatusPanel } from "@/components/master/MasterJaegerStatusPanel";
 import { MasterItemCreatorPanel } from "@/components/master/MasterItemCreatorPanel";
 import { MasterPlayerPanel } from "@/components/master/MasterPlayerPanel";
 import { PageShell } from "@/components/page-shell";
@@ -34,6 +35,7 @@ const actionLabels: Record<string, string> = {
   item_trade_accepted: "Troca aceita",
   item_trade_declined: "Troca recusada",
   inventory_item_deleted: "Item excluído",
+  jaeger_status_updated: "Status de Jaeger atualizado",
 };
 
 const entityLabels: Record<string, string> = {
@@ -44,6 +46,7 @@ const entityLabels: Record<string, string> = {
   active_effect: "Efeito ativo",
   custom_item: "Item customizado",
   item_transfer: "Troca",
+  jaeger_status: "Jaeger",
 };
 
 const auditFieldLabels: Record<string, string> = {
@@ -73,6 +76,12 @@ const auditFieldLabels: Record<string, string> = {
   effect_stat: "Atributo",
   effect_value: "Bonus",
   is_active: "Ativo",
+  jaeger_id: "Jaeger",
+  part_id: "Parte",
+  status: "Status",
+  integrity: "Integridade",
+  note: "Nota",
+  equipment_note: "Função/equipamento",
 };
 
 const hiddenAuditFields = new Set(["id", "user_id", "actor_id", "created_at", "updated_at", "entity_id"]);
@@ -111,7 +120,7 @@ function formatAuditValue(value: Record<string, unknown> | null, keys?: string[]
     .map(([key, entryValue]) => `${formatAuditField(key)}: ${String(entryValue)}`)
     .join(" | ");
 
-  return entries || "Sem alteracao relevante";
+  return entries || "Sem alteração relevante";
 }
 
 function formatAuditTime(value: string) {
@@ -453,6 +462,13 @@ function MasterPanel() {
       {message ? <p className="rounded-xl border border-red-300/30 bg-red-500/10 p-3 text-red-100">{message}</p> : null}
       <MasterWorldAlertPanel />
       <CollapsibleMasterCard
+        eyebrow="Hangar Atlas"
+        title="Status dos Jaegers"
+        subtitle="Atualize dano, integridade, partes arrancadas e funções afetadas dos Jaegers visíveis para os players."
+      >
+        <MasterJaegerStatusPanel masterProfile={profile} />
+      </CollapsibleMasterCard>
+      <CollapsibleMasterCard
         eyebrow="Arsenal narrativo"
         title="Criação de Itens"
         subtitle="Crie, edite, estoque e envie itens personalizados apenas quando precisar abrir esse menu."
@@ -463,7 +479,7 @@ function MasterPanel() {
       <CollapsibleMasterCard
         eyebrow="Controle de players"
         title="Players"
-        subtitle="Abra para ajustar HP, dinheiro, inventario e efeitos ativos de cada player."
+        subtitle="Abra para ajustar HP, dinheiro, inventário e efeitos ativos de cada player."
       >
         <section className="grid gap-4 xl:grid-cols-2">
           {profiles

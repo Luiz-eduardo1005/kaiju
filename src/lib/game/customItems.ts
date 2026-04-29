@@ -224,7 +224,7 @@ export async function duplicateCustomItem(master: Profile, item: CustomItem, qua
 
 export async function deleteCustomItem(master: Profile, entry: MasterInventoryWithItem) {
   const item = entry.custom_items;
-  if (!item) throw new Error("Item nao encontrado.");
+  if (!item) throw new Error("Item não encontrado.");
 
   const { error } = await supabase.from("custom_items").delete().eq("id", item.id);
   if (error) throw error;
@@ -236,7 +236,7 @@ export async function deleteCustomItem(master: Profile, entry: MasterInventoryWi
     entity_type: "custom_item",
     entity_id: item.id,
     old_value: { item: item.name, quantity: entry.quantity },
-    description: `${displayName(master)} deletou o item ${item.name} do inventario do mestre.`,
+    description: `${displayName(master)} deletou o item ${item.name} do inventário do mestre.`,
   });
 }
 
@@ -287,7 +287,7 @@ async function addItemToPlayer(userId: string, item: CustomItem, quantity: numbe
       .single<{ id: string; quantity: number }>();
     if (verifyError) throw verifyError;
     if (!updated || updated.quantity < currentQuantity + quantity) {
-      throw new Error("O item foi atualizado, mas a quantidade nao foi confirmada no inventario do player.");
+      throw new Error("O item foi atualizado, mas a quantidade não foi confirmada no inventário do player.");
     }
     return;
   }
@@ -299,15 +299,15 @@ async function addItemToPlayer(userId: string, item: CustomItem, quantity: numbe
     .single<{ id: string; quantity: number }>();
   if (error) throw error;
   if (!inserted || inserted.quantity < quantity) {
-    throw new Error("O item foi enviado, mas nao foi confirmado no inventario do player.");
+    throw new Error("O item foi enviado, mas não foi confirmado no inventário do player.");
   }
 }
 
 export async function sendMasterItemToPlayer(master: Profile, entry: MasterInventoryWithItem, target: Profile, quantity: number) {
   const item = entry.custom_items;
-  if (!item) throw new Error("Item nao encontrado.");
+  if (!item) throw new Error("Item não encontrado.");
   if (quantity <= 0) throw new Error("Quantidade invalida.");
-  if (quantity > entry.quantity) throw new Error("O mestre nao tem essa quantidade em estoque.");
+  if (quantity > entry.quantity) throw new Error("O mestre não tem essa quantidade em estoque.");
 
   await addItemToPlayer(target.id, item, quantity);
 

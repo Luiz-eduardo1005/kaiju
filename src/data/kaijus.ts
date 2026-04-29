@@ -7,7 +7,7 @@ export const kaijus: Kaiju[] = [
     name: "Tressarak",
     title: "O Primeiro Violador",
     image: "/images/kaijus/tressarak.png",
-    tags: ["Kaiju", "Morto", "Lendario", "Restrito"],
+    tags: ["Kaiju", "Morto", "Lendário", "Restrito"],
     player: {
       status: "Morto.",
       firstAppearance: "3 de novembro de 1984.",
@@ -33,7 +33,7 @@ export const kaijus: Kaiju[] = [
         "Para civis e recrutas, Tressarak representa o começo de tudo: o primeiro monstro, o primeiro trauma global e a primeira vitória humana contra um Kaiju.",
     },
     master: {
-      status: "Morto clinicamente, mas fragmentos do corpo continuam biologicamente reativos em determinadas condições.",
+      status: "Morto clinicamente, mas fragmentos do corpo continuam biológicamente reativos em determinadas condições.",
       firstAppearance: "3 de novembro de 1984.",
       location: "Fossa das Marianas, Pacífico, próximo à primeira fenda registrada.",
       height: "Aproximadamente 96 metros visíveis quando erguido e cerca de 170 metros de comprimento total.",
@@ -98,7 +98,7 @@ export const kaijus: Kaiju[] = [
       type: "Kaiju terrestre / sísmico / possível escavador dimensional.",
       threatLevel: "Extremo.",
       physicalDescription:
-        "Gorath era mais baixo que Tressarak, mas muito mais largo, denso e pesado. Seu corpo lembrava uma fusão de gorila, rinoceronte e tartaruga ancestral. Os braços eram enormes, quase tocando o chão, e os punhos pareciam blocos de concreto vivo. A pele era preta, grossa, oleosa e enrugada como couro queimado. As costas eram protegidas por placas arredondadas, como uma carapaça incompleta e quebrada. A cabeça era achatada, com mandíbula projetada para frente. No início parecia não ter dentes, apenas placas ósseas como uma prensa. Quando rugia, a boca se abria em quatro partes e revelava fileiras internas de dentes pequenos. Os olhos vermelhos eram cobertos por membranas cinzentas. Gorath era praticamente cego e percebia o mundo por vibração.",
+        "Gorath era mais baixo que Tressarak, mas muito mais largo, denso e pesado. Seu corpo lembrava uma fusão de gorila, rinoceronte e tartaruga ancestral. Os braços eram enormes, quase tocando o chão, e os punhos pareciam blocos de concreto vivo. A pele era preta, grossa, óleosa e enrugada como couro queimado. As costas eram protegidas por placas arredondadas, como uma carapaça incompleta e quebrada. A cabeça era achatada, com mandíbula projetada para frente. No início parecia não ter dentes, apenas placas ósseas como uma prensa. Quando rugia, a boca se abria em quatro partes e revelava fileiras internas de dentes pequenos. Os olhos vermelhos eram cobertos por membranas cinzentas. Gorath era praticamente cego e percebia o mundo por vibração.",
       behavior:
         "Gorath não caçava como predador rápido. Ele avançava de forma lenta, pesada e inevitável, esmagando tudo em sua direção. Reagia a vibrações, explosões, passos, túneis e estruturas subterrâneas. Seu comportamento indicava adaptação ao subsolo e possível orientação por padrões sísmicos muito profundos.",
       abilities:
@@ -172,7 +172,7 @@ export const kaijus: Kaiju[] = [
       hooks:
         "Fragmentos de tecido de Mirekai continuam ativos em zonas contaminadas. Alguns laboratórios secretos relatam crescimento espontâneo de estruturas biológicas mesmo décadas depois da morte da criatura. Usuários do Véu Mirekai frequentemente relatam sensações de presença coletiva, como se estivessem sendo observados por múltiplas consciências ao mesmo tempo. Existe a suspeita de que Mirekai não era apenas um Kaiju, mas um organismo de colônia. Isso levanta uma possibilidade: e se ela ainda estiver viva, espalhada?",
       classifiedNotes:
-        "Mirekai pode ser a prova de que alguns Kaijus sao nos biologicos de uma rede maior. O Veu Mirekai talvez nao detecte apenas organismos; talvez conecte o usuario temporariamente a colonia.",
+        "Mirekai pode ser a prova de que alguns Kaijus são nós biológicos de uma rede maior. O Véu Mirekai talvez não detecte apenas organismos; talvez conecte o usuário temporariamente a colônia.",
     },
   },
   {
@@ -181,113 +181,113 @@ export const kaijus: Kaiju[] = [
     name: "Raijin-Delta",
     title: "O Relampago Vivo",
     image: "/images/kaijus/raijin-delta.png",
-    tags: ["Kaiju", "Morto", "Lendario"],
+    tags: ["Kaiju", "Morto", "Lendário"],
     player: {
       status: "Morto.",
       firstAppearance: "2006.",
       location: "Hong Kong.",
       height: "Aproximadamente 82 metros.",
-      type: "Kaiju eletrico / alta mobilidade.",
+      type: "Kaiju elétrico / alta mobilidade.",
       threatLevel: "Extremo.",
       physicalDescription:
-        "Raijin-Delta foi um Kaiju de corpo agil, postura predatoria e emissao eletrica constante. A versao publica o descreve como uma criatura semi-bipede, com pele azul-escura, manchas amareladas, garras alongadas, espinhos dorsais condutores e olhos brancos brilhantes. Sua silhueta em meio a tempestade de Hong Kong se tornou uma das imagens mais famosas da Guerra Kaiju.",
+        "Raijin-Delta foi um Kaiju de corpo ágil, postura predatória e emissão elétrica constante. A versão publica o descreve como uma criatura semi-bípede, com pele azul-escura, manchas amareladas, garras alongadas, espinhos dorsais condutores e olhos brancos brilhantes. Sua silhueta em meio a tempestade de Hong Kong se tornou uma das imagens mais famosas da Guerra Kaiju.",
       behavior:
         "Raijin-Delta se movia com velocidade anormal para uma criatura de seu tamanho. Escalava predios, saltava entre estruturas, mergulhava na baia e reaparecia em outros pontos da cidade.",
       abilities:
-        "Pulsos eletromagneticos, descargas eletricas, alta mobilidade, saltos extremos e resistencia parcial a armamentos guiados.",
+        "Pulsos eletromagnéticos, descargas elétricas, alta mobilidade, saltos extremos e resistência parcial a armamentos guiados.",
       history:
         "Raijin-Delta ficou famoso por ser o primeiro Kaiju derrotado por um Jaeger. Seu ataque a Hong Kong foi o teste definitivo do Projeto Jaeger.",
       howDefeated:
-        "A versao publica afirma que Atlas-Prime derrotou Raijin-Delta apos uma batalha de 41 minutos. Os pilotos Elias Ward e Ren Akiyama imobilizaram o Kaiju e sobrecarregaram o reator do Jaeger por alguns segundos, permitindo atingir seu nucleo.",
+        "A versão publica afirma que Atlas-Prime derrotou Raijin-Delta após uma batalha de 41 minutos. Os pilotos Elias Ward e Ren Akiyama imobilizaram o Kaiju e sobrecarregaram o reator do Jaeger por alguns segundos, permitindo atingir seu núcleo.",
       relationToJaegers:
-        "Raijin-Delta e diretamente ligado ao nascimento da Era dos Jaegers. Sua derrota transformou Atlas-Prime em simbolo global.",
+        "Raijin-Delta e diretamente ligado ao nascimento da Era dos Jaegers. Sua derrota transformou Atlas-Prime em símbolo global.",
       relationToEnumeratedWeapons:
-        "Restos de Raijin-Delta foram usados no desenvolvimento do Traje Raijin, equipamento de alta mobilidade eletrica.",
+        "Restos de Raijin-Delta foram usados no desenvolvimento do Traje Raijin, equipamento de alta mobilidade elétrica.",
       hooks: "Para recrutas, Raijin-Delta e lembrado como o monstro que provou que Jaegers podiam vencer.",
     },
     master: {
-      status: "Morto, mas tecido condutor e fragmentos nervosos ainda reagem a estimulos eletricos.",
+      status: "Morto, mas tecido condutor e fragmentos nervosos ainda reagem a estímulos elétricos.",
       firstAppearance: "2006.",
       location: "Hong Kong.",
       height: "Aproximadamente 82 metros.",
-      type: "Kaiju eletrico / alta mobilidade / possivel canalizador de energia extradimensional.",
+      type: "Kaiju elétrico / alta mobilidade / possível canalizador de energia extradimensional.",
       threatLevel: "Extremo.",
       physicalDescription:
-        "Raijin-Delta tinha corpo semi-bipede, estreito, musculoso e extremamente agil. Os bracos eram longos, com tres garras em cada mao. As pernas eram dobradas para tras, como as de um predador veloz, permitindo saltos violentos entre predios e deslocamentos absurdos. A pele era azul-escura com manchas amareladas, embora quase ninguem visse sua cor real por causa das descargas eletricas constantes. Ao longo da coluna havia espinhos finos, semelhantes a para-raios, que canalizavam eletricidade. O cranio era triangular, agressivo, com mandibulas laterais que se abriam antes do rugido. Os olhos eram brancos, sem pupila, brilhando como lampadas queimadas.",
+        "Raijin-Delta tinha corpo semi-bípede, estreito, musculoso e extremamente ágil. Os braços eram longos, com três garras em cada mao. As pernas eram dobradas para tras, como as de um predador veloz, permitindo saltos violentos entre predios e deslocamentos absurdos. A pele era azul-escura com manchas amareladas, embora quase ninguém visse sua cor real por causa das descargas elétricas constantes. Ao longo da coluna havia espinhos finos, semelhantes a para-raios, que canalizavam eletricidade. O cranio era triangular, agressivo, com mandíbulas laterais que se abriam antes do rugido. Os olhos eram brancos, sem pupila, brilhando como lampadas queimadas.",
       behavior:
-        "Movia-se rapido demais para artilharia. Escalava predios, saltava entre estruturas, mergulhava na baia e reaparecia em outro ponto. Seu padrao nao era apenas caotico; ele explorava falhas de infraestrutura, pontos cegos e dependencia tecnologica humana.",
+        "Movia-se rápido demais para artilharia. Escalava predios, saltava entre estruturas, mergulhava na baia e reaparecia em outro ponto. Seu padrão não era apenas caótico; ele explorava falhas de infraestrutura, pontos cegos e dependência tecnológica humana.",
       abilities:
-        "Pulsos eletromagneticos, descargas eletricas, alta mobilidade, saltos extremos, resistencia parcial a tecnologia guiada, canalizacao eletrica pelos espinhos dorsais e interferencia em sistemas de comunicacao.",
+        "Pulsos eletromagnéticos, descargas elétricas, alta mobilidade, saltos extremos, resistência parcial a tecnologia guiada, canalizacao elétrica pelos espinhos dorsais e interferência em sistemas de comunicação.",
       history:
-        "Raijin-Delta foi o primeiro grande teste real dos Jaegers. A batalha publica virou simbolo de esperanca, mas os arquivos secretos mostram que Atlas-Prime quase caiu nos primeiros minutos. O combate revelou tanto o potencial quanto a fragilidade do Projeto Jaeger.",
+        "Raijin-Delta foi o primeiro grande teste real dos Jaegers. A batalha pública virou símbolo de esperança, mas os arquivos secretos mostram que Atlas-Prime quase caiu nos primeiros minutos. O combate revelou tanto o potencial quanto a fragilidade do Projeto Jaeger.",
       howDefeated:
-        "Atlas-Prime segurou Raijin-Delta pelo pescoco com o braco danificado enquanto Ren Akiyama identificava o momento de carga do pulso EMP. Os pilotos sobrecarregaram o reator do Jaeger por alguns segundos, transformando o peito da maquina em uma fornalha. O calor carbonizou as placas frontais de Raijin-Delta, permitindo esmagar seu esterno e atingir o nucleo.",
+        "Atlas-Prime segurou Raijin-Delta pelo pescoço com o braço danificado enquanto Ren Akiyama identificava o momento de carga do pulso EMP. Os pilotos sobrecarregaram o reator do Jaeger por alguns segundos, transformando o peito da máquina em uma fornalha. O calor carbonizou as placas frontais de Raijin-Delta, permitindo esmagar seu esterno e atingir o núcleo.",
       relationToJaegers:
-        "Raijin-Delta inaugurou a Era dos Jaegers. Sua morte transformou Atlas-Prime em mito. Internamente, porem, a batalha provou que Jaegers eram vulneraveis a energia, interferencia e velocidade extrema.",
+        "Raijin-Delta inaugurou a Era dos Jaegers. Sua morte transformou Atlas-Prime em mito. Internamente, porem, a batalha provou que Jaegers eram vulneraveis a energia, interferência e velocidade extrema.",
       relationToEnumeratedWeapons:
-        "Raijin-Delta originou o Traje Raijin, feito com fibras musculares e espinhos condutores. O traje permite arrancadas, saltos e laminas eletricas, mas acelera o sistema nervoso do usuario e pode causar tremores, apagoes e perda de memoria.",
+        "Raijin-Delta originou o Traje Raijin, feito com fibras musculares e espinhos condutores. O traje permite arrancadas, saltos e lâminas elétricas, mas acelera o sistema nervoso do usuário e pode causar tremores, apagões e perda de memória.",
       hooks:
-        "Apos sua morte, regioes proximas a Hong Kong passaram a registrar tempestades eletromagneticas anomalas. Equipamentos falham sem explicacao, luzes piscam sem motivo e drones perdem controle. Usuarios do Traje Raijin relatam momentos em que seus corpos se movem antes do pensamento, como reflexos que nao sao totalmente humanos. Ha registros classificados de que fragmentos do sistema nervoso de Raijin ainda reagem a estimulos eletricos, como se ainda estivessem tentando completar um circuito interrompido. Existe uma hipotese perigosa: a energia de Raijin nao era apenas gerada, era canalizada de algum lugar.",
+        "Após sua morte, regiões próximas a Hong Kong passaram a registrar tempestades eletromagnéticas anômalas. Equipamentos falham sem explicação, luzes piscam sem motivo e drones perdem controle. Usuários do Traje Raijin relatam momentos em que seus corpos se movem antes do pensamento, como reflexos que não são totalmente humanos. Há registros classificados de que fragmentos do sistema nervoso de Raijin ainda reagem a estímulos elétricos, como se ainda estivessem tentando completar um circuito interrompido. Existe uma hipótese perigosa: a energia de Raijin não era apenas gerada, era canalizada de algum lugar.",
       classifiedNotes:
-        "Raijin-Delta pode ter sido um canal vivo, nao uma bateria. O Traje Raijin talvez conecte o usuario a esse mesmo fluxo.",
+        "Raijin-Delta pode ter sido um canal vivo, não uma bateria. O Traje Raijin talvez conecte o usuário a esse mesmo fluxo.",
     },
   },
   {
     id: "behemoth-kai",
     number: "Kaiju-05",
     name: "Behemoth-Kai",
-    title: "O Rei que Nao Acordou",
+    title: "O Rei que Não Acordou",
     image: "/images/kaijus/behemoth-kai.png",
-    tags: ["Kaiju", "Desaparecido", "Nivel Omega", "Classificado"],
+    tags: ["Kaiju", "Desaparecido", "Nível Omega", "Classificado"],
     player: {
-      status: "Desaparecido / classificado como Tita nao-hostil.",
+      status: "Desaparecido / classificado como Tita não-hostil.",
       firstAppearance: "2013.",
       location: "Zona Primordial.",
       height: "Aproximadamente 110 metros.",
       type: "Tita primordial / criatura nativa.",
       threatLevel: "Classe Tita / incerto.",
       physicalDescription:
-        "Behemoth-Kai e descrito publicamente como uma criatura colossal encontrada na Zona Primordial. Seu corpo lembra um primata titanico com tracos reptilianos, pele escura, placas osseas, vegetacao crescida sobre o corpo e olhos dourados. Diferente dos Kaijus invasores, sua aparencia e associada a uma criatura antiga do proprio planeta.",
+        "Behemoth-Kai e descrito publicamente como uma criatura colossal encontrada na Zona Primordial. Seu corpo lembra um primata titanico com traços reptilianos, pele escura, placas ósseas, vegetacao crescida sobre o corpo e olhos dourados. Diferente dos Kaijus invasores, sua aparência e associada a uma criatura antiga do proprio planeta.",
       behavior:
-        "Behemoth-Kai nao atacou cidades nem demonstrou comportamento predatorio contra a humanidade. Foi classificado como territorial e reativo.",
+        "Behemoth-Kai não atacou cidades nem demonstrou comportamento predatório contra a humanidade. Foi classificado como territorial e reativo.",
       abilities:
-        "Forca titanica, resistencia extrema, influencia ambiental e capacidade de se mover por regioes subterraneas da Zona Primordial.",
+        "Força titânica, resistencia extrema, influência ambiental e capacidade de se mover por regiões subterrâneas da Zona Primordial.",
       history:
-        "Behemoth-Kai foi descoberto em 2013 na Zona Primordial, uma regiao cercada por anomalias magneticas e fauna colossal. Sua existencia mostrou que nem toda criatura gigante vinha das fendas.",
+        "Behemoth-Kai foi descoberto em 2013 na Zona Primordial, uma região cercada por anomalias magnéticas e fauna colossal. Sua existência mostrou que nem toda criatura gigante vinha das fendas.",
       howDefeated:
-        "Behemoth-Kai nao foi derrotado. Apos um incidente de pesquisa, desapareceu no interior da Zona Primordial.",
+        "Behemoth-Kai não foi derrotado. Após um incidente de pesquisa, desapareceu no interior da Zona Primordial.",
       relationToJaegers:
-        "Nao ha registro publico de combate total entre Behemoth-Kai e Jaegers. Protocolos recomendam observacao e nao engajamento.",
+        "Não há registro público de combate total entre Behemoth-Kai e Jaegers. Protocolos recomendam observação e não engajamento.",
       relationToEnumeratedWeapons:
-        "A versao publica omite detalhes sobre armas derivadas de Behemoth-Kai ou trata o assunto como informacao restrita.",
+        "A versão publica omite detalhes sobre armas derivadas de Behemoth-Kai ou trata o assunto como informação restrita.",
       hooks:
-        "Para o publico, Behemoth-Kai e simbolo do misterio da Zona Primordial e prova de que o planeta ainda guarda segredos colossais.",
+        "Para o público, Behemoth-Kai é símbolo do mistério da Zona Primordial e prova de que o planeta ainda guarda segredos colossais.",
     },
     master: {
       status: "Vivo, desaparecido e provavelmente ativo dentro da Terra Interna.",
       firstAppearance: "2013.",
       location: "Zona Primordial / Ilha da Caveira / entrada para a Terra Interna.",
       height: "Aproximadamente 110 metros.",
-      type: "Tita primordial / guardiao da Terra Interna.",
+      type: "Tita primordial / guardião da Terra Interna.",
       threatLevel: "Classe Tita / entidade de risco extremo.",
       physicalDescription:
-        "Behemoth-Kai parecia uma montanha viva. Seu corpo lembrava um gorila colossal com tracos reptilianos. A pele era marrom-escura, grossa, marcada por cicatrizes antigas. Os ombros eram largos como encostas. Os bracos eram enormes e cobertos por placas osseas naturais. O peito tinha pelos grossos misturados com musgo, cipos e fungos, como se a floresta tivesse crescido sobre ele. A cabeca era larga e quase nobre, com mandibula forte e olhos dourados. Diferente dos invasores, Behemoth-Kai nao parecia uma aberracao dimensional. Parecia antigo. Parecia parte do mundo.",
+        "Behemoth-Kai parecia uma montanha viva. Seu corpo lembrava um gorila colossal com traços reptilianos. A pele era marrom-escura, grossa, marcada por cicatrizes antigas. Os ombros eram largos como encostas. Os braços eram enormes e cobertos por placas ósseas naturais. O peito tinha pelos grossos misturados com musgo, cipós e fungos, como se a floresta tivesse crescido sobre ele. A cabeça era larga e quase nobre, com mandíbula forte e olhos dourados. Diferente dos invasores, Behemoth-Kai não parecia uma aberração dimensional. Parecia antigo. Parecia parte do mundo.",
       behavior:
-        "Dormia no centro da Zona Primordial, confundido com uma montanha. Despertou quando humanos tentaram extrair amostras de seu corpo. Nao atacou indiscriminadamente; destruiu apenas a base responsavel e recuou para cavernas ligadas a Terra Interna.",
+        "Dormia no centro da Zona Primordial, confundido com uma montanha. Despertou quando humanos tentaram extrair amostras de seu corpo. Não atacou indiscriminadamente; destruiu apenas a base responsavel e recuou para cavernas ligadas a Terra Interna.",
       abilities:
-        "Behemoth-Kai possui forca fisica em escala titanica, capaz de alterar o ambiente ao seu redor apenas com movimento. Seus passos provocam microtremores, e seus golpes podem abrir crateras. Diferente dos outros Kaijus, ele parece absorver energia do ambiente ao inves de depender de um nucleo ativo convencional. Sensores indicam que sua presenca estabiliza certas anomalias ao redor da Zona Primordial. Ele tambem demonstra comportamento territorial, nao predatorio. Nao ataca indiscriminadamente; reage apenas quando ameacado ou quando algo invade seu dominio.",
+        "Behemoth-Kai possui força física em escala titânica, capaz de alterar o ambiente ao seu redor apenas com movimento. Seus passos provocam microtremores, e seus golpes podem abrir crateras. Diferente dos outros Kaijus, ele parece absorver energia do ambiente ao invés de depender de um núcleo ativo convencional. Sensores indicam que sua presença estabiliza certas anomalias ao redor da Zona Primordial. Ele também demonstra comportamento territorial, não predatório. Não ataca indiscriminadamente; reage apenas quando ameaçado ou quando algo invade seu domínio.",
       history:
-        "A descoberta de Behemoth-Kai mudou a compreensao secreta da guerra. Ele nao tinha a assinatura dimensional dos invasores da fenda. Helena Sato concluiu que ele nao veio de fora, mas de dentro: da Terra Interna, ou Dominio Oco. Isso sugeriu que a fenda oceanica poderia ser apenas uma cicatriz conectada a algo muito mais antigo.",
+        "A descoberta de Behemoth-Kai mudou a compreensão secreta da guerra. Ele não tinha a assinatura dimensional dos invasores da fenda. Helena Sato concluiu que ele não veio de fora, mas de dentro: da Terra Interna, ou Domínio Oco. Isso sugeriu que a fenda oceânica poderia ser apenas uma cicatriz conectada a algo muito mais antigo.",
       howDefeated:
-        "Behemoth-Kai nao foi derrotado. Apos despertar e destruir a base que tentava extrair material de seu corpo, ele recuou para o interior da Zona Primordial, desaparecendo em sistemas de cavernas gigantescas. Nenhuma tentativa posterior de localizacao foi bem-sucedida.",
+        "Behemoth-Kai não foi derrotado. Após despertar e destruir a base que tentava extrair material de seu corpo, ele recuou para o interior da Zona Primordial, desaparecendo em sistemas de cavernas gigantescas. Nenhuma tentativa posterior de localizacao foi bem-sucedida.",
       relationToJaegers:
-        "Behemoth-Kai nunca enfrentou diretamente um Jaeger em combate total. O contato registrado foi breve e desastroso para forcas humanas. Apos o incidente, foi estabelecido um protocolo: Jaegers nao devem engajar Behemoth-Kai sem autorizacao de nivel maximo. Ele nao e tratado como inimigo direto, mas como entidade de risco extremo.",
+        "Behemoth-Kai nunca enfrentou diretamente um Jaeger em combate total. O contato registrado foi breve e desastroso para forças humanas. Após o incidente, foi estabelecido um protocolo: Jaegers não devem engajar Behemoth-Kai sem autorização de nível máximo. Ele não é tratado como inimigo direto, mas como entidade de risco extremo.",
       relationToEnumeratedWeapons:
-        "Behemoth-Kai originou indiretamente o Machado Behemoth, uma arma proibida criada a partir de uma lasca ossea arrancada durante o incidente. Como a arma nao veio de um Kaiju morto, mas de um Tita vivo, sua existencia e eticamente e biologicamente instavel.",
+        "Behemoth-Kai originou indiretamente o Machado Behemoth, uma arma proibida criada a partir de uma lasca óssea arrancada durante o incidente. Como a arma não veio de um Kaiju morto, mas de um Tita vivo, sua existência é eticamente e biologicamente instável.",
       hooks:
-        "Relatorios recentes indicam atividade crescente na Zona Primordial, com padroes que lembram comportamento de guarda. Alguns operadores acreditam que Behemoth-Kai protege algo ou impede algo de sair. O Machado Behemoth reage mesmo sem ativacao completa, como se estivesse conectado a uma consciencia distante. Existe uma pergunta que ninguem conseguiu responder: se Behemoth acordar completamente, ele vai atacar, ou defender o mundo?",
+        "Relatórios recentes indicam atividade crescente na Zona Primordial, com padrões que lembram comportamento de guarda. Alguns operadores acreditam que Behemoth-Kai protege algo ou impede algo de sair. O Machado Behemoth reage mesmo sem ativação completa, como se estivesse conectado a uma consciência distante. Existe uma pergunta que ninguém conseguiu responder: se Behemoth acordar completamente, ele vai atacar, ou defender o mundo?",
       classifiedNotes:
-        "Behemoth-Kai pode ser aliado, ameaca ou guardiao. Ele e peca central para revelar a Terra Interna.",
+        "Behemoth-Kai pode ser aliado, ameaça ou guardião. Ele e peça central para revelar a Terra Interna.",
     },
   },
   {
@@ -296,55 +296,55 @@ export const kaijus: Kaiju[] = [
     name: "Slathern",
     title: "O General da Fenda",
     image: "/images/kaijus/slathern.png",
-    tags: ["Kaiju", "Morto", "Nivel Omega", "Classificado"],
+    tags: ["Kaiju", "Morto", "Nível Omega", "Classificado"],
     player: {
       status: "Morto.",
       firstAppearance: "2020.",
-      location: "Alto-mar, proximo a uma fenda ativa.",
+      location: "Alto-mar, próximo a uma fenda ativa.",
       height: "Aproximadamente 138 metros.",
-      type: "Kaiju comandante / estrategico.",
+      type: "Kaiju comandante / estratégico.",
       threatLevel: "Catastrofico.",
       physicalDescription:
-        "Slathern foi o maior invasor registrado ate entao. Seu corpo era comprido, com postura predatoria, tres caudas musculares, pele roxa escura quase preta, veios vermelhos sob placas osseas e uma carapaca tripla protegendo o peito. A cabeca larga possuia seis olhos vermelhos, permitindo que observasse o campo de batalha inteiro.",
+        "Slathern foi o maior invasor registrado até então. Seu corpo era comprido, com postura predatória, três caudas musculares, pele roxa escura quase preta, veios vermelhos sob placas ósseas e uma carapaça tripla protegendo o peito. A cabeça larga possuía seis olhos vermelhos, permitindo que observasse o campo de batalha inteiro.",
       behavior:
-        "Slathern demonstrou comportamento estrategico. Ele coordenava outros Kaijus durante o combate, alterando seus padroes de ataque.",
+        "Slathern demonstrou comportamento estratégico. Ele coordenava outros Kaijus durante o combate, alterando seus padrões de ataque.",
       abilities:
-        "Coordenacao de outros Kaijus, forca extrema, multiplas caudas, carapaca tripla, inteligencia tatica e resistencia catastrofica.",
+        "Coordenação de outros Kaijus, força extrema, múltiplas caudas, carapaça tripla, inteligência tática e resistência catastrófica.",
       history:
         "Slathern encerrou a Era Dourada dos Jaegers ao destruir multiplas unidades em combate direto. Sua aparicao mostrou que os Kaijus podiam agir de forma organizada.",
       howDefeated:
-        "A versao publica afirma que Slathern foi derrotado pelo Jaeger Mourning Star em uma missao suicida com sobrecarga de reator.",
+        "A versão publica afirma que Slathern foi derrotado pelo Jaeger Mourning Star em uma missão suicida com sobrecarga de reator.",
       relationToJaegers:
-        "Slathern e lembrado como o maior trauma da historia dos Jaegers. Depois dele, o mundo entendeu que Jaegers eram essenciais, mas nao invenciveis.",
+        "Slathern e lembrado como o maior trauma da história dos Jaegers. Depois dele, o mundo entendeu que Jaegers eram essenciais, mas não invencíveis.",
       relationToEnumeratedWeapons:
-        "Restos neurais de Slathern foram usados na criacao da Coroa Slathern, uma interface de comando extremamente restrita.",
-      hooks: "Para o publico, Slathern representa a queda da ilusao de seguranca absoluta dos Jaegers.",
+        "Restos neurais de Slathern foram usados na criação da Coroa Slathern, uma interface de comando extremamente restrita.",
+      hooks: "Para o público, Slathern representa a queda da ilusão de segurança absoluta dos Jaegers.",
     },
     master: {
       status: "Morto, mas fragmentos neurais preservados ainda demonstram influencia cognitiva.",
       firstAppearance: "2020.",
-      location: "Alto-mar, proximo a fenda ativa.",
+      location: "Alto-mar, próximo à fenda ativa.",
       height: "Aproximadamente 138 metros.",
-      type: "Kaiju comandante / possivel receptor de ordens de uma consciencia maior.",
+      type: "Kaiju comandante / possível receptor de ordens de uma consciência maior.",
       threatLevel: "Catastrofico.",
       physicalDescription:
-        "Slathern era o maior invasor registrado ate entao. Tinha corpo comprido, postura de predador e tres caudas musculares que funcionavam como chicotes e estabilizadores. A pele era roxa escura, quase preta, com veios vermelhos pulsando sob placas osseas. Nas costas, espinhos grossos e tortos pareciam torres quebradas. O peito era protegido por carapaca tripla. A cabeca era larga, com seis olhos vermelhos, tres de cada lado. Ele nao focava em um inimigo; observava o campo inteiro. A boca possuia duas camadas de mandibula, sendo que uma segunda arcada avancava de dentro para fora.",
+        "Slathern era o maior invasor registrado até então. Tinha corpo comprido, postura de predador e três caudas musculares que funcionavam como chicotes e estabilizadores. A pele era roxa escura, quase preta, com veios vermelhos pulsando sob placas ósseas. Nas costas, espinhos grossos e tortos pareciam torres quebradas. O peito era protegido por carapaça tripla. A cabeça era larga, com seis olhos vermelhos, três de cada lado. Ele não focava em um inimigo; observava o campo inteiro. A boca possuía duas camadas de mandíbula, sendo que uma segunda arcada avançava de dentro para fora.",
       behavior:
-        "Slathern nao apenas atacava. Ele comandava. Sons graves emitidos por ele alteravam o comportamento de outros Kaijus, fazendo-os flanquear, recuar, proteger nucleos e atacar pontos fracos de Jaegers. Sua inteligencia tatica era incompativel com a nocao de animal selvagem.",
+        "Slathern não apenas atacava. Ele comandava. Sons graves emitidos por ele alteravam o comportamento de outros Kaijus, fazendo-os flanquear, recuar, proteger nucleos e atacar pontos fracos de Jaegers. Sua inteligência tática era incompativel com a nocao de animal selvagem.",
       abilities:
-        "Coordenacao de outros Kaijus, tres caudas de combate, carapaca tripla, inteligencia tatica, resistencia extrema, leitura de campo de batalha e possivel conexao a uma rede de comando maior.",
+        "Coordenação de outros Kaijus, três caudas de combate, carapaça tripla, inteligência tática, resistencia extrema, leitura de campo de batalha e possível conexão a uma rede de comando maior.",
       history:
-        "Slathern foi o monstro que encerrou a Era Dourada dos Jaegers. Durante sua batalha, a humanidade viu seus simbolos de seguranca serem destruidos um a um. Atlas-Prime II teve o cockpit arrancado. Cherno-Valkyr foi partido ao meio. Horizon Fang foi afogado e esmagado contra o fundo do mar.",
+        "Slathern foi o monstro que encerrou a Era Dourada dos Jaegers. Durante sua batalha, a humanidade viu seus símbolos de segurança serem destruídos um a um. Atlas-Prime II teve o cockpit arrancado. Cherno-Valkyr foi partido ao meio. Horizon Fang foi afogado e esmagado contra o fundo do mar.",
       howDefeated:
-        "A versao publica afirma que o Jaeger Mourning Star se sacrificou para destruir Slathern com uma sobrecarga nuclear. A verdade e mais brutal. Durante o combate, Slathern ja havia destruido multiplos Jaegers e dominado o campo de batalha. O Mourning Star era a ultima opcao. Apos a morte do piloto principal, Amara Sato-Qadir assumiu o Drift sozinha, algo considerado impossivel, e manteve controle do Jaeger por 94 segundos. Nesse tempo, ela forcou aproximacao direta, abriu o peito do Mourning Star manualmente e utilizou a propria estrutura do Jaeger para expor o nucleo de Slathern. Em vez de apenas explodir, ela agarrou o nucleo com as maos mecanicas e o arrancou fisicamente antes da detonacao. A explosao veio depois. Slathern nao morreu instantaneamente. Seu corpo continuou reagindo por varios segundos, como se recusasse aceitar a morte.",
+        "A versão publica afirma que o Jaeger Mourning Star se sacrificou para destruir Slathern com uma sobrecarga nuclear. A verdade é mais brutal. Durante o combate, Slathern já havia destruido múltiplos Jaegers e dominado o campo de batalha. O Mourning Star era a última opção. Após a morte do piloto principal, Amara Sato-Qadir assumiu o Drift sozinha, algo considerado impossível, e manteve controle do Jaeger por 94 segundos. Nesse tempo, ela forçou aproximação direta, abriu o peito do Mourning Star manualmente e utilizou a própria estrutura do Jaeger para expor o núcleo de Slathern. Em vez de apenas explodir, ela agarrou o núcleo com as mãos mecanicas e o arrancou fisicamente antes da detonação. A explosão veio depois. Slathern não morreu instantaneamente. Seu corpo continuou reagindo por vários segundos, como se recusasse aceitar a morte.",
       relationToJaegers:
-        "Slathern representa o maior trauma da historia dos Jaegers. Foi o primeiro Kaiju a derrotar multiplos Jaegers em combate direto, expondo suas limitacoes. Sua capacidade de coordenacao mostrou que os Kaijus podiam pensar em nivel estrategico. Depois dele, os Jaegers deixaram de ser vistos como solucao definitiva.",
+        "Slathern representa o maior trauma da história dos Jaegers. Foi o primeiro Kaiju a derrotar múltiplos Jaegers em combate direto, expondo suas limitações. Sua capacidade de coordenação mostrou que os Kaijus podiam pensar em nível estratégico. Depois dele, os Jaegers deixaram de ser vistos como solução definitiva.",
       relationToEnumeratedWeapons:
-        "Slathern originou a Coroa Slathern, criada a partir de tecido cerebral e placas sensoriais. A Coroa permite comandar drones, torretas, unidades de traje e ate sistemas de Jaegers por pensamento, mas influencia a mente do usuario.",
+        "Slathern originou a Coroa Slathern, criada a partir de tecido cerebral e placas sensoriais. A Coroa permite comandar drones, torretas, unidades de traje e até sistemas de Jaegers por pensamento, mas influencia a mente do usuário.",
       hooks:
-        "Fragmentos neurais de Slathern ainda sao estudados. Alguns cientistas acreditam que sua mente nao era individual, mas conectada a algo maior. Usuarios da Coroa Slathern relatam pensamentos que nao sao seus, estrategias que surgem sem origem e sensacao de presenca constante. Existe uma teoria classificada: Slathern nao comandava os outros Kaijus, ele recebia ordens.",
+        "Fragmentos neurais de Slathern ainda são estudados. Alguns cientistas acreditam que sua mente não era individual, mas conectada a algo maior. Usuários da Coroa Slathern relatam pensamentos que não são seus, estratégias que surgem sem origem e sensação de presença constante. Existe uma teoria classificada: Slathern não comandava os outros Kaijus, ele recebia ordens.",
       classifiedNotes:
-        "A Coroa Slathern e uma das armas mais perigosas do arsenal humano. Ela pode ser ponte para a consciencia estrategica do inimigo.",
+        "A Coroa Slathern é uma das armas mais perigosas do arsenal humano. Ela pode ser ponte para a consciência estrategica do inimigo.",
     },
   },
   {
@@ -358,105 +358,105 @@ export const kaijus: Kaiju[] = [
       status: "Morto.",
       firstAppearance: "2028.",
       location: "Toquio.",
-      height: "58 metros apos crescimento.",
+      height: "58 metros após crescimento.",
       type: "Kaiju humanoide / adaptativo.",
       threatLevel: "Extremo urbano.",
       physicalDescription:
-        "Kamuro foi o primeiro Kaiju humanoide registrado publicamente. Surgiu em ambiente urbano e cresceu rapidamente ate atingir dezenas de metros de altura. Seu corpo tinha proporcoes humanas distorcidas, pele cinza, bracos longos, dedos finos e olhos negros com brilho azulado.",
+        "Kamuro foi o primeiro Kaiju humanoide registrado publicamente. Surgiu em ambiente urbano e cresceu rapidamente até atingir dezenas de metros de altura. Seu corpo tinha proporções humanas distorcidas, pele cinza, braços longos, dedos finos e olhos negros com brilho azulado.",
       behavior:
-        "Kamuro demonstrou capacidade de adaptacao durante o combate, alterando a resistencia do proprio corpo conforme recebia dano.",
+        "Kamuro demonstrou capacidade de adaptação durante o combate, alterando a resistência do próprio corpo conforme recebia dano.",
       abilities:
-        "Adaptacao a dano, deslocamento de nucleo, crescimento rapido, resistencia progressiva e imitacao vocal limitada.",
+        "Adaptação a dano, deslocamento de núcleo, crescimento rápido, resistência progressiva e imitação vocal limitada.",
       history:
-        "Kamuro marcou uma nova fase da guerra urbana contra Kaijus. Seu surgimento provou que nem toda ameaca poderia ser enfrentada diretamente por Jaegers dentro de cidades densas.",
+        "Kamuro marcou uma nova fase da guerra urbana contra Kaijus. Seu surgimento provou que nem toda ameaça poderia ser enfrentada diretamente por Jaegers dentro de cidades densas.",
       howDefeated:
-        "A versao publica afirma que Kamuro foi derrotado por unidades de traje e armas especiais, com suporte indireto de Jaegers posicionados fora do centro urbano.",
+        "A versão publica afirma que Kamuro foi derrotado por unidades de traje e armas especiais, com suporte indireto de Jaegers posicionados fora do centro urbano.",
       relationToJaegers:
-        "Kamuro mostrou que Jaegers nao sao ideais para combate urbano intenso. A partir dele, unidades de traje ganharam mais importancia.",
+        "Kamuro mostrou que Jaegers não são ideais para combate urbano intenso. A partir dele, unidades de traje ganharam mais importancia.",
       relationToEnumeratedWeapons:
         "Restos de Kamuro foram usados para desenvolver a Pele Kamuro, traje adaptativo experimental.",
-      hooks: "Para o publico, Kamuro representa a ameaca de Kaijus que aprendem durante o combate.",
+      hooks: "Para o público, Kamuro representa a ameaça de Kaijus que aprendem durante o combate.",
     },
     master: {
       status: "Morto, mas seus registros finais foram adulterados.",
       firstAppearance: "2028.",
       location: "Toquio.",
-      height: "58 metros apos crescimento.",
-      type: "Kaiju humanoide / adaptativo / possivel hibrido.",
+      height: "58 metros após crescimento.",
+      type: "Kaiju humanoide / adaptativo / possível híbrido.",
       threatLevel: "Extremo urbano.",
       physicalDescription:
-        "Kamuro apareceu primeiro como um homem nu, magro, coberto de pele cinza. Depois cresceu ate 58 metros em poucos minutos. Seu corpo era humanoide, mas errado em todos os detalhes: bracos longos demais, dedos finos, costelas marcadas sob a pele, pescoco alongado, rosto sem nariz e sem labios. A pele era cinza-clara, lisa em algumas partes e rachada em outras, como concreto vivo. Os olhos eram completamente negros, com um ponto azul minusculo no centro.",
+        "Kamuro apareceu primeiro como um homem nu, magro, coberto de pele cinza. Depois cresceu até 58 metros em poucos minutos. Seu corpo era humanoide, mas errado em todos os detalhes: braços longos demais, dedos finos, costelas marcadas sob a pele, pescoço alongado, rosto sem nariz e sem lábios. A pele era cinza-clara, lisa em algumas partes e rachada em outras, como concreto vivo. Os olhos eram completamente negros, com um ponto azul minúsculo no centro.",
       behavior:
-        "Falava palavras copiadas de transmissoes militares. Aprendia durante o combate. Adaptava pele, ossos e nucleo conforme recebia dano. Seu comportamento sugeria aprendizado acelerado e talvez compreensao parcial de linguagem humana.",
+        "Falava palavras copiadas de transmissões militares. Aprendia durante o combate. Adaptava pele, ossos e núcleo conforme recebia dano. Seu comportamento sugeria aprendizado acelerado e talvez compreensão parcial de linguagem humana.",
       abilities:
-        "Adaptacao a dano, deslocamento de nucleo, resistencia progressiva, imitacao vocal, crescimento rapido, alteracao de densidade da pele e aprendizado durante combate.",
+        "Adaptação a dano, deslocamento de núcleo, resistência progressiva, imitação vocal, crescimento rápido, alteração de densidade da pele e aprendizado durante combate.",
       history:
-        "Kamuro nao surgiu como os outros. Primeiro parecia uma vitima. Depois sorriu e cresceu. Seu aparecimento abalou os pesquisadores porque aproximou demais a biologia Kaiju da forma humana. Ele repetia palavras militares como se estivesse aprendendo com os humanos em tempo real.",
+        "Kamuro não surgiu como os outros. Primeiro parecia uma vítima. Depois sorriu e cresceu. Seu aparecimento abalou os pesquisadores porque aproximou demais a biologia Kaiju da forma humana. Ele repetia palavras militares como se estivesse aprendendo com os humanos em tempo real.",
       howDefeated:
-        "Kamuro foi derrotado por uma combinacao de armas enumeradas e unidades de traje, com suporte indireto de Jaegers posicionados fora do centro urbano. A luta foi prolongada porque a criatura se adaptava constantemente. O Veu Mirekai foi usado para rastrear o nucleo movel. As Manoplas Gorath quebravam ossos adaptativos. O Traje Raijin abria brechas com velocidade. A Lamina Tressarak foi usada no golpe final. Antes de morrer, Kamuro falou. Suas ultimas palavras foram removidas dos registros oficiais.",
+        "Kamuro foi derrotado por uma combinação de armas enumeradas e unidades de traje, com suporte indireto de Jaegers posicionados fora do centro urbano. A luta foi prolongada porque a criatura se adaptava constantemente. O Véu Mirekai foi usado para rastrear o núcleo móvel. As Manoplas Gorath quebravam ossos adaptativos. O Traje Raijin abria brechas com velocidade. A Lâmina Tressarak foi usada no golpe final. Antes de morrer, Kamuro falou. Suas últimas palavras foram removidas dos registros oficiais.",
       relationToJaegers:
-        "Kamuro mostrou que Jaegers nao sao ideais para combate urbano intenso. Seu surgimento consolidou o uso de unidades menores como principal linha de defesa em cidades. Jaegers passaram a atuar como suporte, nao como linha de frente nesses cenarios.",
+        "Kamuro mostrou que Jaegers não são ideais para combate urbano intenso. Seu surgimento consolidou o uso de unidades menores como principal linha de defesa em cidades. Jaegers passaram a atuar como suporte, não como linha de frente nesses cenários.",
       relationToEnumeratedWeapons:
-        "Kamuro originou a Pele Kamuro, traje adaptativo que muda resistencia conforme o dano recebido. E um dos equipamentos mais instaveis porque reage ao medo do usuario.",
+        "Kamuro originou a Pele Kamuro, traje adaptativo que muda resistencia conforme o dano recebido. É um dos equipamentos mais instáveis porque reage ao medo do usuário.",
       hooks:
-        "Alguns registros indicam que Kamuro nao surgiu da fenda da mesma forma que outros Kaijus. Existe a suspeita de que ele tenha sido criado ou adaptado a partir de material humano. Usuarios da Pele Kamuro relatam mudancas de comportamento com o tempo. E existe uma pergunta que assombra os pesquisadores: se Kamuro aprendeu tao rapido, quem ensinou?",
+        "Alguns registros indicam que Kamuro não surgiu da fenda da mesma forma que outros Kaijus. Existe a suspeita de que ele tenha sido criado ou adaptado a partir de material humano. Usuários da Pele Kamuro relatam mudanças de comportamento com o tempo. E existe uma pergunta que assombra os pesquisadores: se Kamuro aprendeu tão rápido, quem ensinou?",
       classifiedNotes:
-        "As ultimas palavras de Kamuro foram: 'Voces tambem foram feitos.' Isso sugere origem artificial, manipulacao genetica ou vinculo entre humanidade e Kaijus.",
+        "As últimas palavras de Kamuro foram: 'Voces também foram feitos.' Isso sugere origem artificial, manipulação genética ou vínculo entre humanidade e Kaijus.",
     },
   },
   {
     id: "noctilio",
     number: "Kaiju-08",
     name: "Noctilio",
-    title: "O Deus que Caiu do Ceu",
+    title: "O Deus que Caiu do Céu",
     image: "/images/kaijus/noctilio.png",
-    tags: ["Kaiju", "Morto", "Nivel Omega", "Classificado"],
+    tags: ["Kaiju", "Morto", "Nível Omega", "Classificado"],
     player: {
       status: "Morto.",
       firstAppearance: "2035.",
-      location: "Atlantico.",
+      location: "Atlântico.",
       height: "Aproximadamente 101 metros.",
       type: "Kaiju alado / ativador de fendas.",
       threatLevel: "Global.",
       physicalDescription:
-        "Noctilio foi um Kaiju alado de aparencia quase divina. Tinha corpo alto, fino, escamas prateadas e pretas, quatro bracos e asas formadas por placas escuras articuladas com bordas luminosas. Sua cabeca lembrava a de um dragao sem olhos frontais, com olhos laterais azul-palidos.",
+        "Noctilio foi um Kaiju alado de aparência quase divina. Tinha corpo alto, fino, escamas prateadas e pretas, quatro braços e asas formadas por placas escuras articuladas com bordas luminosas. Sua cabeça lembrava a de um dragão sem olhos frontais, com olhos laterais azul-pálidos.",
       behavior:
-        "Noctilio nao atacou imediatamente ao pousar. Seu primeiro ato conhecido foi emitir um sinal que ativou fendas ao redor do planeta durante dezessete segundos.",
+        "Noctilio não atacou imediatamente ao pousar. Seu primeiro ato conhecido foi emitir um sinal que ativou fendas ao redor do planeta durante dezessete segundos.",
       abilities:
-        "Voo, ativacao de fendas, resistencia aerea extrema, coordenacao indireta de surtos globais e subnucleos multiplos.",
+        "Voo, ativação de fendas, resistencia aérea extrema, coordenação indireta de surtos globais e subnúcleos múltiplos.",
       history:
-        "Noctilio provocou uma das maiores crises globais da historia ao ativar fendas simultaneamente, permitindo o surgimento de Yoju em varios continentes.",
+        "Noctilio provocou uma das maiores crises globais da história ao ativar fendas simultaneamente, permitindo o surgimento de Yoju em vários continentes.",
       howDefeated:
-        "A versao publica afirma que Noctilio foi derrotado por uma operacao conjunta envolvendo Jaegers, unidades de traje e sistemas avancados de comando.",
+        "A versão publica afirma que Noctilio foi derrotado por uma operação conjunta envolvendo Jaegers, unidades de traje e sistemas avançados de comando.",
       relationToJaegers: "Jaegers foram essenciais para conter Noctilio fisicamente durante a batalha.",
-      relationToEnumeratedWeapons: "Armas enumeradas e sistemas especiais foram usados como suporte na operacao.",
-      hooks: "Para o publico, Noctilio representa o evento em que a guerra se tornou verdadeiramente global.",
+      relationToEnumeratedWeapons: "Armas enumeradas e sistemas especiais foram usados como suporte na operação.",
+      hooks: "Para o público, Noctilio representa o evento em que a guerra se tornou verdadeiramente global.",
     },
     master: {
       status: "Morto, mas sua origem real permanece desconhecida.",
       firstAppearance: "2035.",
-      location: "Atlantico, apos entrada atmosferica controlada.",
+      location: "Atlântico, após entrada atmosférica controlada.",
       height: "Aproximadamente 101 metros.",
-      type: "Kaiju alado / ativador de fendas / possivel entidade de retorno.",
+      type: "Kaiju alado / ativador de fendas / possível entidade de retorno.",
       threatLevel: "Global.",
       physicalDescription:
-        "Noctilio tinha corpo alto, fino e alado. As asas nao eram de pena nem membrana comum, mas placas articuladas de quitina escura com bordas luminosas. O corpo era coberto por escamas prateadas e pretas. Possuia quatro bracos: dois grandes terminando em garras e dois menores proximos ao peito, dobrados como se rezasse. A cabeca lembrava a de um dragao sem olhos frontais. Os olhos ficavam nas laterais e brilhavam em azul palido. A cauda era longa e terminava em lamina natural.",
+        "Noctilio tinha corpo alto, fino e alado. As asas não eram de pena nem membrana comum, mas placas articuladas de quitina escura com bordas luminosas. O corpo era coberto por escamas prateadas e pretas. Possuia quatro braços: dois grandes terminando em garras e dois menores proximos ao peito, dobrados como se rezasse. A cabeça lembrava a de um dragão sem olhos frontais. Os olhos ficavam nas laterais e brilhavam em azul pálido. A cauda era longa e terminava em lamina natural.",
       behavior:
-        "Ao pousar no oceano, nao atacou imediatamente. Olhou para a lua e emitiu um sinal que ativou todas as fendas conhecidas por 17 segundos. Seu comportamento parecia ritualistico, como se estivesse chamando, reabrindo ou confirmando algo.",
+        "Ao pousar no oceano, não atacou imediatamente. Olhou para a lua e emitiu um sinal que ativou todas as fendas conhecidas por 17 segundos. Seu comportamento parecia ritualistico, como se estivesse chamando, reabrindo ou confirmando algo.",
       abilities:
-        "Voo, ativacao de fendas, subnucleos multiplos nos bracos menores, coordenacao indireta de eventos globais, resistencia aerea extrema e capacidade de amplificar anomalias dimensionais.",
+        "Voo, ativação de fendas, subnúcleos múltiplos nos braços menores, coordenação indireta de eventos globais, resistencia aérea extrema e capacidade de amplificar anomalias dimensionais.",
       history:
-        "Noctilio nao saiu do mar nem da terra. Caiu do ceu com trajetoria controlada. Seu surgimento quebrou a logica dos Kaijus anteriores e sugeriu que a ameaca nao estava limitada a fenda oceanica ou a Terra Interna. Durante os 17 segundos em que ativou as fendas, sensores captaram sinais vindos do outro lado.",
+        "Noctilio não saiu do mar nem da terra. Caiu do céu com trajetória controlada. Seu surgimento quebrou a lógica dos Kaijus anteriores e sugeriu que a ameaça não estava limitada a fenda oceânica ou a Terra Interna. Durante os 17 segundos em que ativou as fendas, sensores captaram sinais vindos do outro lado.",
       howDefeated:
-        "Noctilio foi derrotado atraves de uma operacao global coordenada. Dois Jaegers mantiveram a criatura em combate direto enquanto unidades de traje identificavam e destruiam seus subnucleos localizados nos bracos menores. A Coroa Slathern foi usada para sincronizar todas as unidades em tempo real. Apos a destruicao dos subnucleos, o nucleo principal ficou vulneravel e foi neutralizado por ataque conjunto. A batalha durou horas e resultou em multiplas perdas ao redor do mundo devido aos Yoju ativados durante o evento.",
+        "Noctilio foi derrotado através de uma operação global coordenada. Dois Jaegers mantiveram a criatura em combate direto enquanto unidades de traje identificavam e destruiam seus subnúcleos localizados nos braços menores. A Coroa Slathern foi usada para sincronizar todas as unidades em tempo real. Após a destruição dos subnúcleos, o núcleo principal ficou vulnerável e foi neutralizado por ataque conjunto. A batalha durou horas e resultou em multiplas perdas ao redor do mundo devido aos Yoju ativados durante o evento.",
       relationToJaegers:
-        "Jaegers foram essenciais para conter Noctilio fisicamente, impedindo que ele alcancasse areas criticas. No entanto, eles nao poderiam vencer sozinhos. A vitoria so foi possivel com integracao total entre Jaegers, trajes e armas enumeradas.",
+        "Jaegers foram essenciais para conter Noctilio fisicamente, impedindo que ele alcançasse áreas críticas. No entanto, eles não poderiam vencer sozinhos. A vitória so foi possível com integração total entre Jaegers, trajes e armas enumeradas.",
       relationToEnumeratedWeapons:
-        "As armas enumeradas foram fundamentais na batalha. A Coroa Slathern coordenou operacoes globais. A Lamina Tressarak e outras armas foram usadas para destruir subnucleos. Sem elas, Noctilio teria permanecido invulneravel.",
+        "As armas enumeradas foram fundamentais na batalha. A Coroa Slathern coordenou operações globais. A Lâmina Tressarak e outras armas foram usadas para destruir subnúcleos. Sem elas, Noctilio teria permanecido invulnerável.",
       hooks:
-        "O evento de Noctilio ativou fendas em todo o planeta por 17 segundos. Durante esse tempo, sensores registraram sinais vindos do outro lado. O usuario da Coroa desapareceu apos a batalha. Seu ultimo registro foi: 'Eu vi o outro lado.' E depois: 'Eles nao estao vindo... eles estao voltando.'",
+        "O evento de Noctilio ativou fendas em todo o planeta por 17 segundos. Durante esse tempo, sensores registraram sinais vindos do outro lado. O usuário da Coroa desapareceu após a batalha. Seu último registro foi: 'Eu vi o outro lado.' E depois: 'Eles não estão vindo... eles estão voltando.'",
       classifiedNotes:
-        "Noctilio pode ter sido menos um invasor e mais um sinalizador. Sua queda do ceu indica uma rota de origem ainda nao compreendida.",
+        "Noctilio pode ter sido menos um invasor e mais um sinalizador. Sua queda do céu indica uma rota de origem ainda não compreendida.",
     },
   },
 ];

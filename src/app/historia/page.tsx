@@ -19,12 +19,12 @@ export default function HistoriaPage() {
       subtitle="A linha jogável começa em 2006, com os registros conhecidos de 1984 até o Programa Atlas."
     >
       <div className="grid gap-4 md:grid-cols-4">
-        <Card title="Registro Histórico" description="Linha conhecida por civis, cadetes e recrutas." tags={["Publico"]} />
+        <Card title="Registro Histórico" description="Linha conhecida por civis, cadetes e recrutas." tags={["Público"]} />
         {isMaster ? (
           <Card title="História Original / Secreta" description="A verdade apagada dos arquivos públicos." tags={["Classificado"]} restricted />
         ) : null}
         <Card title="Linha do Tempo" description="Eventos centrais entre 1984 e o início de 2006." tags={["Campanha"]} />
-        <Card title="Eventos Importantes" description="Batalhas, descobertas e pontos de virada." tags={["Lendario"]} />
+        <Card title="Eventos Importantes" description="Batalhas, descobertas e pontos de virada." tags={["Lendário"]} />
       </div>
 
       {publicHistory ? (

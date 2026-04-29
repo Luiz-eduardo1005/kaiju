@@ -151,7 +151,7 @@ async function applySingleEffect(profile: Profile, item: InventoryItem, sheet: C
     return createStatEffect(profile, item, effect, "timed");
   }
   if (isEquipmentEffect(effect)) {
-    throw new Error("Este efeito funciona ao equipar o item, nao ao usar.");
+    throw new Error("Este efeito funciona ao equipar o item, não ao usar.");
   }
   return createNarrativeEffect(profile, item, effect);
 }
@@ -183,7 +183,7 @@ async function applyLegacyEffect(profile: Profile, item: InventoryItem, sheet: C
   }
 
   await createMessageEffect(profile, item, 0, 600, null);
-  return { message: "uso narrativo registrado" };
+  return { message: "Uso narrativo registrado." };
 }
 
 export async function applyItemEffect(profile: Profile, item: InventoryItem, sheet: CharacterSheet) {
@@ -224,7 +224,7 @@ export async function applyItemEffect(profile: Profile, item: InventoryItem, she
 }
 
 export async function equipItem(profile: Profile, item: InventoryItem) {
-  if (!isEquippableItem(item)) throw new Error("Este item nao e equipavel.");
+  if (!isEquippableItem(item)) throw new Error("Este item não é equipável.");
 
   const existing = await supabase
     .from("active_effects")
@@ -234,7 +234,7 @@ export async function equipItem(profile: Profile, item: InventoryItem) {
     .eq("duration_type", "equipped")
     .eq("is_active", true);
   if (existing.error) throw existing.error;
-  if (existing.data?.length) throw new Error("Este item ja esta equipado.");
+  if (existing.data?.length) throw new Error("Este item já está equipado.");
 
   const equipmentEffects = item.effects?.filter(isEquipmentEffect) ?? [];
   if (equipmentEffects.length) {

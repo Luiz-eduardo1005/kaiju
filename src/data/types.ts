@@ -1,15 +1,15 @@
 export type Visibility = "public" | "secret" | "masterOnly" | "classified";
 
 export type TagName =
-  | "Publico"
+  | "Público"
   | "Confidencial"
   | "Restrito"
-  | "Nivel Omega"
+  | "Nível Omega"
   | "Morto"
   | "Ativo"
   | "Desaparecido"
   | "Experimental"
-  | "Lendario"
+  | "Lendário"
   | "Jaeger"
   | "Kaiju"
   | "Arma Enumerada"
@@ -143,7 +143,7 @@ export type Suit = {
   armasAcopladas?: string[];
   compatibilidade?: string;
   descricao: string;
-  usuariosConhecidos?: string[];
+  usuáriosConhecidos?: string[];
   status?: string;
   tags: TagName[];
 };

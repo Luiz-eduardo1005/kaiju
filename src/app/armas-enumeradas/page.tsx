@@ -28,7 +28,7 @@ export default function WeaponsPage() {
     <PageShell
       eyebrow="Arquivo classificado / 2006"
       title="Armas Enumeradas - Pesquisa Não Operacional"
-      subtitle="Estudos secretos sobre tecidos, ossos, nucleos e propriedades biologicas de Kaijus mortos."
+      subtitle="Estudos secretos sobre tecidos, ossos, nucleos e propriedades biológicas de Kaijus mortos."
     >
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {weapons.map((weapon) => (

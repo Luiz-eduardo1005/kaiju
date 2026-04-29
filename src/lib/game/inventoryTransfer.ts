@@ -33,7 +33,7 @@ function snapshotItem(item: InventoryItem) {
 
 async function removeInventoryQuantity(item: InventoryItem, quantity: number) {
   if (quantity <= 0) throw new Error("Quantidade invalida.");
-  if (item.quantity < quantity) throw new Error("Voce nao tem essa quantidade.");
+  if (item.quantity < quantity) throw new Error("Você não tem essa quantidade.");
 
   const nextQuantity = item.quantity - quantity;
   if (nextQuantity > 0) {
@@ -164,9 +164,9 @@ export async function acceptTradeProposal(input: {
   fromProfile?: Profile | null;
   requestedItem?: InventoryItem | null;
 }) {
-  if (input.actor.id !== input.transfer.to_user_id) throw new Error("Apenas o destinatario pode aceitar esta troca.");
-  if (input.transfer.status !== "pending") throw new Error("Esta troca nao esta pendente.");
-  if (!input.transfer.from_user_id) throw new Error("Player de origem nao encontrado.");
+  if (input.actor.id !== input.transfer.to_user_id) throw new Error("Apenas o destinatário pode aceitar esta troca.");
+  if (input.transfer.status !== "pending") throw new Error("Esta troca não está pendente.");
+  if (!input.transfer.from_user_id) throw new Error("Player de origem não encontrado.");
 
   const { error } = await supabase.rpc("accept_item_trade_v2", {
     p_transfer_id: input.transfer.id,
@@ -192,8 +192,8 @@ export async function acceptTradeProposal(input: {
 }
 
 export async function declineTradeProposal(actor: Profile, transfer: ItemTransfer) {
-  if (actor.id !== transfer.to_user_id) throw new Error("Apenas o destinatario pode recusar esta troca.");
-  if (transfer.status !== "pending") throw new Error("Esta troca nao esta pendente.");
+  if (actor.id !== transfer.to_user_id) throw new Error("Apenas o destinatário pode recusar esta troca.");
+  if (transfer.status !== "pending") throw new Error("Esta troca não está pendente.");
 
   const { error } = await supabase.from("item_transfers").update({ status: "declined" }).eq("id", transfer.id);
   if (error) throw error;

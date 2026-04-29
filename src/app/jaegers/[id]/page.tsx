@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { DetailPage } from "@/components/detail-page";
+import { JaegerDiagnosticLoader } from "@/components/jaegers/JaegerDiagnosticLoader";
 import { PageShell } from "@/components/page-shell";
 import { jaegers } from "@/data";
 
@@ -36,6 +37,7 @@ export default async function JaegerDetailPage({ params }: { params: Promise<{ i
           { title: "Transmissao", content: jaeger.transmissao, classified: true },
         ]}
       />
+      <JaegerDiagnosticLoader jaegerId={jaeger.id} jaegerName={jaeger.nome} />
     </PageShell>
   );
 }

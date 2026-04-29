@@ -8,7 +8,7 @@ export const npcs: Npc[] = [
     idade: "Adulta/madura em 2006",
     cargoPublico: "Nenhum / oficialmente apagada",
     cargoSecreto: "Bióloga abissal, pesquisadora Kaiju e verdadeira responsável pela queda de Tressarak",
-    tags: ["NPC", "Classificado", "Nivel Omega"],
+    tags: ["NPC", "Classificado", "Nível Omega"],
     descricao:
       "Helena Sato foi apagada da história oficial, mas é uma das mentes centrais por trás da compreensão dos núcleos Kaiju. Em 2006, sua influência existe em arquivos, relatórios ocultos, Base Nereu e pesquisas que o público jamais viu.",
     segredo:
@@ -22,7 +22,7 @@ export const npcs: Npc[] = [
     visibilidade: "public",
     idade: "A definir",
     cargo: "Almirante / herói oficial da queda de Tressarak",
-    tags: ["NPC", "Publico"],
+    tags: ["NPC", "Público"],
     descricaoPublica:
       "Viktor Leonov é celebrado como o comandante responsável pela operação que derrotou Tressarak em 1984. Seu nome aparece em livros, documentários, discursos oficiais e materiais de recrutamento.",
     segredo:
@@ -35,7 +35,7 @@ export const npcs: Npc[] = [
     nome: "Instrutores do Programa Atlas",
     visibilidade: "public",
     cargo: "Equipe militar de seleção Jaeger",
-    tags: ["NPC", "Publico", "Jaeger"],
+    tags: ["NPC", "Público", "Jaeger"],
     descricao:
       "Soldados, médicos e avaliadores que conduzem a seleção de candidatos em 2006. Eles não tratam o teste como sonho heroico; tratam como filtro brutal para descobrir quem não quebra antes do Drift.",
     usoNaCampanha:

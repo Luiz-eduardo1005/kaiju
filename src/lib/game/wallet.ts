@@ -13,7 +13,7 @@ export async function getWallet(userId: string) {
     .limit(1)
     .maybeSingle<Wallet>();
   if (error) throw error;
-  if (!data) throw new Error("Carteira nao encontrada.");
+  if (!data) throw new Error("Carteira não encontrada.");
   return data;
 }
 

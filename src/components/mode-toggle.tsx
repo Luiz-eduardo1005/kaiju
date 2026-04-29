@@ -98,7 +98,7 @@ export function ModeToggle() {
 
               <form onSubmit={submitPassword} className="mt-6 space-y-4">
                 <label className="block">
-                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-300">Senha de autorizacao</span>
+                  <span className="text-[10px] font-black uppercase tracking-[0.3em] text-cyan-300">Senha de autorização</span>
                   <input
                     autoFocus
                     type="password"

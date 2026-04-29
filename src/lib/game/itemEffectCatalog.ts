@@ -21,13 +21,13 @@ export const AVAILABLE_ITEM_CATEGORIES = [
   "Consumivel",
   "Roupa",
   "Ferramenta",
-  "Item de missao",
+  "Item de missão",
   "Material Kaiju",
   "Outro",
 ] as const;
 
 export const AVAILABLE_ATTRIBUTES: { id: StatKey; label: string }[] = [
-  { id: "strength", label: "Forca" },
+  { id: "strength", label: "Força" },
   { id: "agility", label: "Agilidade" },
   { id: "constitution", label: "Constituicao" },
   { id: "mind", label: "Mente" },
@@ -45,7 +45,7 @@ export const AVAILABLE_CONDITIONS = [
   { id: "exausto", label: "Exausto" },
   { id: "contaminado", label: "Contaminado" },
   { id: "atordoado", label: "Atordoado" },
-  { id: "em_panico", label: "Em panico" },
+  { id: "em_pânico", label: "Em pânico" },
 ] as const;
 
 export const AVAILABLE_EFFECT_TYPES: {
@@ -55,14 +55,14 @@ export const AVAILABLE_EFFECT_TYPES: {
 }[] = [
   { id: "recover_resource", label: "Recuperar recurso", fields: ["resource", "value", "messageDuration"] },
   { id: "reduce_fatigue", label: "Reduzir fadiga", fields: ["value", "messageDuration"] },
-  { id: "temporary_attribute_buff", label: "Buff temporario de atributo", fields: ["attribute", "value", "duration"] },
-  { id: "temporary_attribute_debuff", label: "Debuff temporario de atributo", fields: ["attribute", "value", "duration"] },
+  { id: "temporary_attribute_buff", label: "Buff temporário de atributo", fields: ["attribute", "value", "duration"] },
+  { id: "temporary_attribute_debuff", label: "Debuff temporário de atributo", fields: ["attribute", "value", "duration"] },
   { id: "equipment_attribute_bonus", label: "Bonus enquanto equipado", fields: ["attribute", "value"] },
   { id: "equipment_attribute_penalty", label: "Penalidade enquanto equipado", fields: ["attribute", "value"] },
   { id: "damage_resource", label: "Causar dano", fields: ["resource", "value", "messageDuration"] },
-  { id: "cure_condition", label: "Curar condicao", fields: ["condition", "messageDuration"] },
-  { id: "apply_condition", label: "Aplicar condicao", fields: ["condition", "duration"] },
-  { id: "remove_condition", label: "Remover condicao", fields: ["condition", "messageDuration"] },
+  { id: "cure_condition", label: "Curar condição", fields: ["condition", "messageDuration"] },
+  { id: "apply_condition", label: "Aplicar condição", fields: ["condition", "duration"] },
+  { id: "remove_condition", label: "Remover condição", fields: ["condition", "messageDuration"] },
   { id: "narrative", label: "Apenas narrativo / sem efeito mecanico", fields: ["messageDuration"] },
 ];
 
@@ -112,7 +112,7 @@ export function effectSummary(effect: CustomItemEffect) {
     const value = effectValue(effect);
     return `${definition.label}: ${attribute} ${value >= 0 ? "+" : ""}${value}`;
   }
-  if (effect.type.includes("condition")) return `${definition.label}: ${effect.condition ?? "condicao"}`;
+  if (effect.type.includes("condition")) return `${definition.label}: ${effect.condition ?? "condição"}`;
   return effect.label || definition.label;
 }
 
@@ -128,10 +128,10 @@ export function validateItemEffect(effect: CustomItemEffect) {
     throw new Error("Escolha o recurso afetado pelo efeito.");
   }
   if (definition.fields.includes("condition") && !effect.condition) {
-    throw new Error("Escolha a condicao afetada pelo efeito.");
+    throw new Error("Escolha a condição afetada pelo efeito.");
   }
   if (definition.fields.includes("duration") && Number(effect.duration ?? 0) <= 0) {
-    throw new Error("Efeitos temporarios precisam de duracao.");
+    throw new Error("Efeitos temporários precisam de duração.");
   }
 }
 
@@ -148,4 +148,3 @@ export function sanitizeEffects(effects: CustomItemEffect[]) {
     label: effect.label?.trim() || null,
   }));
 }
-

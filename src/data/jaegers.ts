@@ -8,9 +8,9 @@ export const jaegers: Jaeger[] = [
     altura: "78 metros",
     statusPublico: "Em testes / ainda sem vitória comprovada",
     statusSecreto: "Funcional, mas instável; o Drift ainda quase matou pilotos em sincronizações ruins",
-    pilotos: "Pilotos ainda em selecao pelo Programa Atlas",
+    pilotos: "Pilotos ainda em seleção pelo Programa Atlas",
     funcao: "Primeiro Jaeger funcional / protótipo de combate pesado",
-    tags: ["Jaeger", "Experimental", "Publico"],
+    tags: ["Jaeger", "Experimental", "Público"],
     descricao:
       "Atlas-Prime é o primeiro Jaeger funcional da humanidade. Não é elegante nem refinado. É pesado, bruto, com blindagem naval reaproveitada, placas cinzentas imensas, articulações expostas, cabos ainda visíveis em partes do corpo e um reator selado no peito. Em 2006, ele representa a maior esperança do Programa Atlas: uma plataforma de guerra que aprendeu a ficar de pé antes de provar que consegue sobreviver a uma batalha real.",
     historia:
@@ -28,7 +28,7 @@ export const jaegers: Jaeger[] = [
       "Ainda não está pronto para combate real contra Kaijus de classe alta; sofre perda de sincronia em movimentos de impacto",
     pilotos: "Duplas de teste do Programa Atlas",
     funcao: "Suporte, testes de mobilidade, contenção auxiliar e treinamento avançado",
-    tags: ["Jaeger", "Experimental", "Publico"],
+    tags: ["Jaeger", "Experimental", "Público"],
     descricao:
       "Vanguard-01 é um dos primeiros Jaegers de suporte criados depois dos testes estruturais do Atlas-Prime. Ele é menor, mais simples e mais limitado, com cerca de 70 metros de altura. Sua blindagem é menos pesada que a do Atlas, mas seu sistema hidráulico responde melhor em movimentos básicos.",
     historia:
@@ -58,21 +58,21 @@ export const jaegers: Jaeger[] = [
     id: "atlas-prime-ii",
     nome: "Atlas-Prime II",
     geracao: "Segunda geracao derivada do Atlas",
-    statusPublico: "Destruido por Slathern",
-    statusSecreto: "Cockpit arrancado; restos parcialmente nao recuperados",
-    funcao: "Combate pesado e simbolo de continuidade",
+    statusPublico: "Destruído por Slathern",
+    statusSecreto: "Cockpit arrancado; restos parcialmente não recuperados",
+    funcao: "Combate pesado é símbolo de continuidade",
     tags: ["Jaeger", "Morto", "Classificado"],
     descricao:
-      "Criado como sucessor simbolico do primeiro Atlas. Mais avancado, mais rapido e mais estavel que o original, mas ainda carregava o peso emocional do nome Atlas.",
-    historia: "Foi destruido por Slathern durante a batalha que encerrou a Era Dourada dos Jaegers.",
+      "Criado como sucessor simbolico do primeiro Atlas. Mais avancado, mais rápido e mais estavel que o original, mas ainda carregava o peso emocional do nome Atlas.",
+    historia: "Foi destruído por Slathern durante a batalha que encerrou a Era Dourada dos Jaegers.",
   },
   {
     id: "cherno-valkyr",
     nome: "Cherno-Valkyr",
     geracao: "Jaeger pesado",
-    statusPublico: "Destruido por Slathern",
+    statusPublico: "Destruído por Slathern",
     funcao: "Tanque nuclear ambulante",
-    tags: ["Jaeger", "Morto", "Lendario"],
+    tags: ["Jaeger", "Morto", "Lendário"],
     descricao:
       "Jaeger lento, pesado, de blindagem extrema. Projetado para aguentar dano enquanto outros Jaegers atacavam. Tinha reator altamente protegido e estrutura robusta.",
     historia: "Foi partido ao meio por Slathern.",
@@ -81,11 +81,11 @@ export const jaegers: Jaeger[] = [
     id: "horizon-fang",
     nome: "Horizon Fang",
     geracao: "Jaeger de mobilidade",
-    statusPublico: "Destruido por Slathern",
+    statusPublico: "Destruído por Slathern",
     funcao: "Velocidade e laminas",
-    tags: ["Jaeger", "Morto", "Lendario"],
+    tags: ["Jaeger", "Morto", "Lendário"],
     descricao:
-      "Jaeger mais leve, agil e agressivo, equipado com laminas retrateis. Criado para flanquear Kaijus e atacar pontos fracos.",
+      "Jaeger mais leve, ágil e agressivo, equipado com laminas retrateis. Criado para flanquear Kaijus e atacar pontos fracos.",
     historia: "Foi afogado e esmagado contra o fundo do mar por Slathern.",
   },
   {
@@ -94,12 +94,12 @@ export const jaegers: Jaeger[] = [
     geracao: "Projeto secreto",
     statusPublico: "Sacrificado contra Slathern",
     statusSecreto: "Amara Sato-Qadir assumiu o Drift sozinha e venceu",
-    funcao: "Contencao extrema / arma final",
-    tags: ["Jaeger", "Nivel Omega", "Classificado"],
+    funcao: "Contenção extrema / arma final",
+    tags: ["Jaeger", "Nível Omega", "Classificado"],
     descricao:
-      "Jaeger experimental com reator instavel no peito. Projetado como ultimo recurso contra ameacas impossiveis. Oficialmente era uma plataforma de contencao; secretamente era uma bomba ambulante.",
+      "Jaeger experimental com reator instável no peito. Projetado como último recurso contra ameaças impossíveis. Oficialmente era uma plataforma de contenção; secretamente era uma bomba ambulante.",
     historia:
-      "Derrotou Slathern. A versao publica atribui a vitoria ao Comandante Julian Cross. A verdade e que Amara Sato-Qadir assumiu o Drift sozinha por 94 segundos e arrancou o nucleo do Kaiju.",
+      "Derrotou Slathern. A versão publica atribui a vitória ao Comandante Julian Cross. A verdade é que Amara Sato-Qadir assumiu o Drift sozinha por 94 segundos e arrancou o núcleo do Kaiju.",
   },
   {
     id: "crimson-daito",
@@ -109,7 +109,7 @@ export const jaegers: Jaeger[] = [
     funcao: "Combate urbano e defesa de metropoles",
     tags: ["Jaeger", "Ativo"],
     descricao:
-      "Jaeger projetado para operar proximo a cidades densas, com movimentos mais precisos e protocolos de dano colateral reduzido.",
+      "Jaeger projetado para operar próximo a cidades densas, com movimentos mais precisos e protocolos de dano colateral reduzido.",
   },
   {
     id: "aegis-meridian",
@@ -119,6 +119,6 @@ export const jaegers: Jaeger[] = [
     funcao: "Defesa de muralhas, portos e bases costeiras",
     tags: ["Jaeger", "Ativo"],
     descricao:
-      "Jaeger especializado em defesa de posicoes estrategicas, equipado com escudos, sistemas de ancoragem e armamento de contencao.",
+      "Jaeger especializado em defesa de posicoes estrategicas, equipado com escudos, sistemas de ancoragem e armamento de contenção.",
   },
 ];
