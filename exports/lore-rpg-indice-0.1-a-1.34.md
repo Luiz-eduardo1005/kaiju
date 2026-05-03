@@ -1,0 +1,305 @@
+# Índice da Fonte de Lore RPG — Partes 0.1 a 1.34
+
+Arquivo bruto canônico: `lore-rpg-fonte-chatgpt-0.1-a-1.34.md`
+
+Observação: este índice foi gerado para consulta. O conteúdo narrativo bruto foi preservado separadamente sem reescrita.
+
+## Entradas Principais
+
+- Linha 1: PARTE 0.1 — A ORIGEM DOS PRECURSORES
+- Linha 498: PARTE 0.2 — A PRIMEIRA PRESENÇA NA TERRA ANTIGA
+- Linha 746: PARTE 0.3 — O RETORNO DOS PRECURSORES
+- Linha 1094: PARTE 1 — 1984: O PRIMEIRO CONTATO HUMANO
+- Linha 1387: PARTE 1.1 — DEPOIS DE TRESSARAK
+- Linha 1673: PARTE 1.2 — MIREKAI E O NASCIMENTO DO MEDO BIOLÓGICO
+- Linha 2007: PARTE 1.3 — A IDEIA IMPOSSÍVEL
+- Linha 2443: PARTE 1.4 — OS PRIMEIROS GIGANTES
+- Linha 2750: PARTE 1.5 — O PRIMEIRO JAEGER EM COMBATE
+- Linha 3131: PARTE 1.6 — O PESO DA PRIMEIRA VITÓRIA
+- Linha 3379: PARTE 1.7 — A EXPANSÃO DO PROGRAMA JAEGER
+- Linha 3543: PARTE 1.7 — A EXPANSÃO DO PROGRAMA JAEGER
+- Linha 3707: PARTE 1.8 — O SEGUNDO SINAL DA ERA JAEGER
+- Linha 4117: PARTE 1.9 — BRAWLER YUKON CONTRA SHIRANUI
+- Linha 4471: PARTE 1.10 — A DOUTRINA DOS CAÇADORES
+- Linha 4655: PARTE 1.11 — A CHEGADA DOS NOVOS CANDIDATOS
+- Linha 4897: PARTE 1.12 — O PRIMEIRO DIA DE SELEÇÃO REAL
+- Linha 5210: PARTE 1.13 — COMPATIBILIDADE
+- Linha 5594: PARTE 1.14 — OS PARES ESCOLHIDOS
+- Linha 6023: PARTE 1.15 — O PRIMEIRO COCKPIT
+- Linha 6363: PARTE 1.16 — DOIS GIGANTES SOB HONG KONG
+- Linha 6668: PARTE 1.17 — A CIDADE ENTRE DOIS CORPOS
+- Linha 7024: PARTE 1.18 — DUAS PORTAS, DOIS FLUXOS
+- Linha 7482: PARTE 1.19 — BAIXA CARGA
+- Linha 7993: PARTE 1.20 — PRONTIDÃO CINZA
+- Linha 8352: PARTE 1.21 — QUATRO MENTES, DOIS GIGANTES
+- Linha 8961: PARTE 1.22 — A CIDADE QUE NÃO DEIXA O GIGANTE ANDAR
+- Linha 9571: PARTE 1.23 — O PRIMEIRO IMPACTO
+- Linha 10129: PARTE 1.24 — A PRIMEIRA RESPOSTA REAL
+- Linha 10704: PARTE 1.25 — O COMANDO QUE ATRAVESSA A JUNTA
+- Linha 11267: PARTE 1.26 — O CORPO VERDADEIRO
+- Linha 11961: PARTE 1.27 — O GIGANTE APRENDE A DOBRAR
+- Linha 12547: PARTE 1.28 — O PESO ANTES DO PASSO
+- Linha 13242: PARTE 1.29 — O PRIMEIRO MOVIMENTO ASSISTIDO
+- Linha 13880: PARTE 1.30 — O PRIMEIRO PASSO NÃO É LIVRE
+- Linha 14336: PARTE 1.31 — SOB CÉU ABERTO
+- Linha 14784: PARTE 1.32 — DOIS GIGANTES NO MESMO CAMPO
+- Linha 15264: PARTE 1.33 — RESERVA EXTERNA LIMITADA
+- Linha 15751: PARTE 1.34 — PATRULHA NÃO É CAÇADA
+
+## Subtítulos e Blocos de Apoio
+
+- Linha 3: Antes da Terra, antes da Fenda, antes dos Kaijus terem nome
+- Linha 500: O Proto-Kaiju, a biosfera primitiva e o nascimento do primeiro segredo da Terra Oca
+- Linha 748: A decisão de invadir a Terra… e o nascimento da Fenda moderna
+  - Linha 1080: **PARTE 1 — 1984: O PRIMEIRO CONTATO HUMANO**
+- Linha 1096: O dia em que Tressarak saiu da Fenda
+- Linha 1389: O mundo tenta voltar ao normal… e descobre que normalidade acabou
+- Linha 1675: Quando o mundo descobriu que um Kaiju podia continuar vencendo mesmo depois de morto
+- Linha 2009: Quando a humanidade percebeu que precisava criar monstros de metal para enfrentar monstros de carne
+- Linha 2445: O nascimento dos protótipos Jaeger e o preço humano do Drift
+- Linha 2752: O dia em que a humanidade colocou um gigante de metal entre um Kaiju e uma cidade
+- Linha 3133: 18 de março de 2006 — Victoria, Colúmbia Britânica, Canadá
+- Linha 3381: 19 de março de 2006 a 12 de dezembro de 2006 — quando a vitória em Victoria virou corrida mundial
+- Linha 3545: 19 de março de 2006 a 12 de dezembro de 2006 — quando a vitória em Victoria virou corrida mundial
+- Linha 3709: 14 de novembro de 2006 — Hokkaido, Japão — o dia em que o mundo percebeu que Harrow não tinha sido um caso isolado
+- Linha 4119: 14 de novembro de 2006 — 17h31 — Monbetsu, Hokkaido, Japão
+- Linha 4473: 22 de novembro de 2006 — Anchorage, Alasca — quando o PPDC começou a transformar sobreviventes em pilotos
+- Linha 4657: 16 de dezembro de 2006 — K-Station 01, Kwai Tsing, Hong Kong
+- Linha 4899: 17 de dezembro de 2006 — K-Station 01, Kwai Tsing, Hong Kong
+- Linha 5212: 18 de dezembro de 2006 — K-Station 01, Kwai Tsing, Hong Kong
+- Linha 5596: 19 de dezembro de 2006 — K-Station 01, Kwai Tsing, Hong Kong
+- Linha 6025: 20 de dezembro de 2006 — K-Station 01, Kwai Tsing, Hong Kong
+- Linha 6365: K-Station 01, Kwai Tsing, Hong Kong — 21 a 24 de dezembro de 2006
+- Linha 6647: Mini resumo da Parte 1.16 revisada
+- Linha 6656: O que vem na Parte 1.17 revisada
+- Linha 6664: Como isso entra no RPG
+- Linha 6670: K-Station 01, Kwai Tsing, Hong Kong — 22 de dezembro de 2006 a 8 de janeiro de 2007
+- Linha 7009: Mini resumo da Parte 1.17 revisada
+- Linha 7015: O que vem na Parte 1.18 revisada
+- Linha 7019: Como isso entra no RPG
+- Linha 7026: K-Station 01, Kwai Tsing, Hong Kong — 9 a 22 de janeiro de 2007
+- Linha 7156: O Ciclo Horizon — a porta larga que pesa como cidade
+- Linha 7245: O Ciclo Ronin — a porta estreita que escuta demais
+- Linha 7367: A consequência dos dois ciclos
+- Linha 7403: O gancho jogável final da Parte 1.18
+- Linha 7468: Mini resumo da Parte 1.18 revisada
+- Linha 7474: O que vem na Parte 1.19
+- Linha 7478: Como isso entra no RPG
+- Linha 7484: K-Station 01, Kwai Tsing, Hong Kong — 23 de janeiro a 6 de fevereiro de 2007
+- Linha 7638: O Ciclo Horizon — quando o peso acorda
+- Linha 7744: O Ciclo Ronin — quando o eixo chama antes da ordem
+- Linha 7885: Entre ciência, submundo e pressão
+- Linha 7931: O gancho final — a primeira chamada de prontidão
+- Linha 7977: Mini resumo da Parte 1.19
+- Linha 7985: O que vem na Parte 1.20
+- Linha 7989: Como isso entra no RPG
+- Linha 7995: K-Station 01, Kwai Tsing, Hong Kong — 6 a 18 de fevereiro de 2007
+- Linha 8082: A base aprende a acordar
+- Linha 8124: O peso de não ser chamado
+- Linha 8174: O relatório dos cientistas
+- Linha 8224: Chau deixa de ser só sobrenome
+- Linha 8262: O segundo alerta
+- Linha 8290: A decisão de Vorn
+- Linha 8338: Mini resumo da Parte 1.20
+- Linha 8344: O que vem na Parte 1.21
+- Linha 8348: Como isso entra no RPG
+- Linha 8354: K-Station 01, Kwai Tsing, Hong Kong — 19 de fevereiro a 3 de março de 2007
+- Linha 8476: A convocação da Célula K
+- Linha 8519: Preparação Horizon: o corpo que segura
+- Linha 8539: Preparação Ronin: o corpo que espera
+- Linha 8563: O ensaio coordenado
+  - Linha 8582: Entrada no Horizon Brave
+  - Linha 8610: Entrada no Tacit Ronin
+- Linha 8642: A baixa carga coordenada começa
+- Linha 8757: Depois da porta
+- Linha 8803: Pentecost, Mako e o preço de observar
+- Linha 8833: O comando regional pressiona
+- Linha 8869: O mundo acima e o mercado abaixo
+- Linha 8903: O novo exercício: baixa carga com cidade virtual
+- Linha 8945: Mini resumo da Parte 1.21
+- Linha 8953: O que vem na Parte 1.22
+- Linha 8957: Como isso entra no RPG
+- Linha 8963: K-Station 01, Kwai Tsing, Hong Kong — 3 a 16 de março de 2007
+- Linha 9099: Antes da entrada
+- Linha 9139: Entrada dupla
+  - Linha 9153: Horizon Brave
+  - Linha 9177: Tacit Ronin
+- Linha 9205: A cidade aparece
+- Linha 9309: O erro que ensina
+- Linha 9350: Descompressão conjunta
+- Linha 9388: O efeito fora da sala
+- Linha 9412: Chau se aproxima do mundo real
+- Linha 9448: Mako e a pergunta errada
+- Linha 9482: Segundo LC-1: o mesmo teste, outro custo
+- Linha 9521: Encerramento da Parte 1.22
+- Linha 9555: Mini resumo da Parte 1.22
+- Linha 9563: O que vem na Parte 1.23
+- Linha 9567: Como isso entra no RPG
+- Linha 9573: K-Station 01, Kwai Tsing, Hong Kong — 17 de março a 2 de abril de 2007
+- Linha 9659: A convocação
+- Linha 9697: Horizon Brave — o golpe contra a muralha
+- Linha 9801: Tacit Ronin — o golpe contra a lâmina
+- Linha 9900: O relatório que ninguém interpreta igual
+- Linha 9973: Entre um teste e outro
+- Linha 10035: Chau ganha nome completo
+- Linha 10083: Preparação para o primeiro microcomando
+- Linha 10115: Mini resumo da Parte 1.23
+- Linha 10121: O que vem na Parte 1.24
+- Linha 10125: Como isso entra no RPG
+- Linha 10131: K-Station 01, Kwai Tsing, Hong Kong — 3 a 18 de abril de 2007
+- Linha 10165: A instrução antes do comando
+- Linha 10209: Linha Horizon — três centímetros de muralha
+- Linha 10333: Linha Ronin — dois graus de silêncio
+- Linha 10447: A primeira resposta muda o olhar
+- Linha 10483: Os olhos de fora
+- Linha 10511: Pentecost e o aviso
+- Linha 10573: Chau e a primeira sombra perto da estação
+- Linha 10613: Progressão controlada
+- Linha 10634: O gancho para o próximo passo
+- Linha 10690: Mini resumo da Parte 1.24
+- Linha 10696: O que vem na Parte 1.25
+- Linha 10700: Como isso entra no RPG
+- Linha 10706: K-Station 01, Kwai Tsing, Hong Kong — 19 de abril a 4 de maio de 2007
+- Linha 10784: A chamada da Célula K
+- Linha 10834: Linha Horizon — levantar útil
+- Linha 10928: Linha Ronin — alinhar sem desaparecer
+- Linha 11019: O primeiro ensaio combinado de MR-2
+- Linha 11075: A rachadura social
+- Linha 11099: Chau e o mapa de ossos
+- Linha 11149: Mako vê o movimento pequeno
+- Linha 11187: O gancho para o corpo real
+- Linha 11253: Mini resumo da Parte 1.25
+- Linha 11259: O que vem na Parte 1.26
+- Linha 11263: Como isso entra no RPG
+- Linha 11269: K-Station 01, Kwai Tsing, Hong Kong — 5 a 22 de maio de 2007
+- Linha 11345: O briefing do corpo inteiro
+- Linha 11393: Horizon Brave — a muralha respira
+- Linha 11527: Tacit Ronin — o corpo que quase pensa junto
+- Linha 11663: O silêncio depois do corpo
+- Linha 11707: O vazamento impossível de conter
+- Linha 11741: Pentecost e o aviso ao comando
+- Linha 11777: Mako e o movimento que quase não aparece
+- Linha 11821: Chau toca a borda errada
+- Linha 11865: Entre 12 e 20 de maio — repetição e limite
+- Linha 11885: O gancho para a primeira resposta maior
+- Linha 11945: Mini resumo da Parte 1.26
+- Linha 11953: O que vem na Parte 1.27
+- Linha 11957: Como isso entra no RPG
+- Linha 11963: K-Station 01, Kwai Tsing, Hong Kong — 23 de maio a 12 de junho de 2007
+- Linha 12043: A instrução da manhã
+- Linha 12079: Horizon Brave — o braço que quase nasce
+- Linha 12199: Tacit Ronin — o torso que quer terminar a frase
+- Linha 12322: O ensaio conjunto: defesa e postura
+- Linha 12369: A consequência: a base começa a acreditar
+- Linha 12397: Chau: a primeira operação discreta
+- Linha 12429: Mako e o limite do olhar
+- Linha 12477: O gancho para o primeiro ajuste de postura
+- Linha 12531: Mini resumo da Parte 1.27
+- Linha 12539: O que vem na Parte 1.28
+- Linha 12543: Como isso entra no RPG
+- Linha 12549: K-Station 01, Kwai Tsing, Hong Kong — 13 de junho a 2 de julho de 2007
+- Linha 12586: A reunião que não chamaram de medo
+- Linha 12660: Briefing da Célula K
+- Linha 12712: Horizon Brave — a muralha inclina o peso
+- Linha 12816: Tacit Ronin — a lâmina sente a bainha
+- Linha 12934: A reunião dos quatro
+- Linha 12969: O rumor vira pressão
+- Linha 13001: Pentecost e Vorn: o teste que vem
+- Linha 13043: Mako e a postura
+- Linha 13079: Chau se mexe no fundo
+- Linha 13117: A falha antes do passo
+- Linha 13155: O gancho: primeiro movimento assistido
+- Linha 13225: Mini resumo da Parte 1.28
+- Linha 13233: O que vem na Parte 1.29
+- Linha 13237: Como isso entra no RPG
+- Linha 13244: K-Station 01, Kwai Tsing, Hong Kong — 3 a 21 de julho de 2007
+- Linha 13341: O briefing do movimento
+- Linha 13389: Horizon Brave — a muralha se mexe
+- Linha 13531: Tacit Ronin — a lâmina se inclina
+- Linha 13655: O que a base viu
+- Linha 13694: Pentecost e Mako: o primeiro movimento visto de longe
+- Linha 13742: Chau aproveita o barulho
+- Linha 13780: O relatório do MA-1
+- Linha 13830: O gancho para o equilíbrio
+- Linha 13864: Mini resumo da Parte 1.29
+- Linha 13872: O que vem na Parte 1.30
+- Linha 13876: Como isso entra no RPG
+- Linha 13882: K-Station 01, Kwai Tsing, Hong Kong — 22 de julho a 18 de setembro de 2007
+- Linha 13912: O briefing da travessia
+- Linha 13958: MA-2/H — o Horizon aprende a voltar
+- Linha 14003: MA-2/R — o Ronin aprende a não perseguir o eixo
+- Linha 14044: PA-1 — o primeiro passo preso
+  - Linha 14068: Horizon Brave — o peso descobre uma direção
+  - Linha 14093: Tacit Ronin — o passo que não pode virar ataque
+- Linha 14128: DI-1 — deslocamento interno assistido
+- Linha 14192: A base depois da marcha
+- Linha 14214: Pentecost, Mako e o som do primeiro deslocamento
+- Linha 14246: Chau cresce enquanto os gigantes aprendem
+- Linha 14270: O gancho para fora da baia
+- Linha 14320: Mini resumo da Parte 1.30
+- Linha 14328: O que vem na Parte 1.31
+- Linha 14332: Como isso entra no RPG
+- Linha 14338: K-Station 01, Kwai Tsing, Hong Kong — 19 de setembro a 18 de outubro de 2007
+- Linha 14410: O briefing: o mundo não é convite
+- Linha 14452: A saída do Horizon Brave
+- Linha 14530: A saída do Tacit Ronin
+- Linha 14606: O primeiro retorno
+- Linha 14640: A base vê os dois como Jaegers de verdade
+- Linha 14666: Pentecost e Mako: o mundo aberto
+- Linha 14704: Chau percebe o movimento no porto
+- Linha 14730: O próximo salto: treino externo conjunto
+- Linha 14768: Mini resumo da Parte 1.31
+- Linha 14776: O que vem na Parte 1.32
+- Linha 14780: Como isso entra no RPG
+- Linha 14786: K-Station 01, Kwai Tsing, Hong Kong — 19 de outubro a 12 de dezembro de 2007
+- Linha 14853: O briefing da Célula K
+- Linha 14907: A saída conjunta
+- Linha 14951: Estágio um — posicionamento
+- Linha 14977: Estágio dois — função complementar
+- Linha 15029: Estágio três — retorno conjunto
+- Linha 15065: Depois do TE-2
+- Linha 15093: A pressão de Mercer
+- Linha 15133: Mako e a ideia de equipe
+- Linha 15155: Chau continua no fundo do mapa
+- Linha 15175: TS-1 — pressão variável
+- Linha 15203: O gancho: primeiro alerta real com a Célula K em reserva
+- Linha 15248: Mini resumo da Parte 1.32
+- Linha 15256: O que vem na Parte 1.33
+- Linha 15260: Como isso entra no RPG
+- Linha 15266: K-Station 01, Kwai Tsing, Hong Kong — 12 de dezembro de 2007 a 28 de janeiro de 2008
+- Linha 15335: A sala K-12 não parecia mais sala de aula
+- Linha 15382: Os Jaegers acordam sem sair
+- Linha 15418: A primeira ida até os Conn-Pods em alerta real
+- Linha 15480: A frustração da quase-mobilização
+- Linha 15512: O mundo da base reage
+- Linha 15546: A repetição dos alertas e a primeira saída em espera
+- Linha 15606: Pentecost e a frase que fica
+- Linha 15632: Mako entende a espera
+- Linha 15658: Chau segue os bloqueios
+- Linha 15682: O relatório que muda a classificação
+- Linha 15734: Mini resumo da Parte 1.33
+- Linha 15742: O que vem na Parte 1.34
+- Linha 15746: Como isso entra no RPG
+- Linha 15753: K-Station 01, Kwai Tsing, Hong Kong — 29 de janeiro a 26 de março de 2008
+- Linha 15799: O briefing: procurar sem desejar encontrar
+- Linha 15843: A primeira patrulha
+- Linha 15939: O relatório e o peso do “nada aconteceu”
+- Linha 15967: Patrulhas condensadas: fevereiro e março de 2008
+- Linha 15991: A base muda de postura
+- Linha 16017: Pentecost e Mako: a missão que não vira lenda
+- Linha 16049: Hannibal Chau e a patrulha invisível
+- Linha 16073: A patrulha que quase virou contato
+- Linha 16127: O relatório final da PC-1
+- Linha 16163: Mini resumo da Parte 1.34
+- Linha 16171: O que vem na Parte 1.35
+- Linha 16175: Como isso entra no RPG
+
+## Checagens
+
+- Total de headings principais `# PARTE`: 39
+- Total de headings/subheadings capturados: 284
+- Linhas no arquivo bruto: 16177
+
+## Possíveis Duplicatas Mantidas
+
+- PARTE 1.7 — A EXPANSÃO DO PROGRAMA JAEGER aparece nas linhas 3379, 3543

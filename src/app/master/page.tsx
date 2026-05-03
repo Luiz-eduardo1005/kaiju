@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import { LoginRequired } from "@/components/game/login-required";
 import { MasterJaegerStatusPanel } from "@/components/master/MasterJaegerStatusPanel";
 import { MasterItemCreatorPanel } from "@/components/master/MasterItemCreatorPanel";
+import { MasterLorePanel } from "@/components/master/MasterLorePanel";
 import { MasterPlayerPanel } from "@/components/master/MasterPlayerPanel";
 import { PageShell } from "@/components/page-shell";
 import { useAuth } from "@/context/auth-context";
 import { useMode } from "@/context/mode-context";
-import { dashboardSections } from "@/data";
 import { getWorldAlert, worldAlerts, WORLD_ALERT_STORAGE_KEY, type WorldAlertId } from "@/data/alerts";
 import { createAuditLog } from "@/lib/game/auditLog";
 import { bootstrapPlayer, getProfile } from "@/lib/game/profile";
@@ -163,12 +163,11 @@ function CollapsibleMasterCard({
 }
 
 function MasterWorldAlertPanel() {
-  const [alertId, setAlertId] = useState<WorldAlertId>("verde");
+  const [alertId, setAlertId] = useState<WorldAlertId>(() => {
+    if (typeof window === "undefined") return "verde";
+    return (window.localStorage.getItem(WORLD_ALERT_STORAGE_KEY) as WorldAlertId | null) ?? "verde";
+  });
   const currentAlert = getWorldAlert(alertId);
-
-  useEffect(() => {
-    setAlertId((window.localStorage.getItem(WORLD_ALERT_STORAGE_KEY) as WorldAlertId | null) ?? "verde");
-  }, []);
 
   function updateAlert(nextAlertId: WorldAlertId) {
     setAlertId(nextAlertId);
@@ -214,28 +213,6 @@ function MasterWorldAlertPanel() {
             <p className="mt-2 text-sm leading-6 text-red-50/90">{currentAlert.masterNotes}</p>
           </div>
         </div>
-      </div>
-    </CollapsibleMasterCard>
-  );
-}
-
-function MasterOnlyFilesPanel() {
-  const restrictedSections = dashboardSections.filter((section) => "restricted" in section && section.restricted && section.category !== "painel-mestre");
-
-  return (
-    <CollapsibleMasterCard
-      eyebrow="Arquivos classificados"
-      title="Informações do Mestre"
-      subtitle="Atalhos para conteúdos que não devem aparecer para players: preparação, segredos, recrutamento e tecnologia futura."
-    >
-      <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-        {restrictedSections.map((section) => (
-          <a key={section.href} href={section.href} className="rounded-2xl border border-red-300/20 bg-black/35 p-4 transition hover:border-red-300/50 hover:bg-red-500/10">
-            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-red-200">{section.category}</p>
-            <h3 className="mt-2 text-lg font-black uppercase text-white">{section.title}</h3>
-            <p className="mt-2 text-sm leading-6 text-slate-300">{section.description}</p>
-          </a>
-        ))}
       </div>
     </CollapsibleMasterCard>
   );
@@ -475,7 +452,14 @@ function MasterPanel() {
       >
         <MasterItemCreatorPanel masterProfile={profile} players={profiles.filter((item) => item.id !== profile.id)} onChanged={loadAll} />
       </CollapsibleMasterCard>
-      <MasterOnlyFilesPanel />
+      <CollapsibleMasterCard
+        eyebrow="Dossiê Omega"
+        title="Informações do Mestre"
+        subtitle="Leia, filtre e navegue pela lore completa do RPG sem sair do painel. O texto original entra aqui sem resumo."
+        defaultOpen
+      >
+        <MasterLorePanel />
+      </CollapsibleMasterCard>
       <CollapsibleMasterCard
         eyebrow="Controle de players"
         title="Players"

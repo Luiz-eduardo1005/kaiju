@@ -14,13 +14,13 @@ export default async function JaegerDetailPage({ params }: { params: Promise<{ i
   if (!jaeger) notFound();
 
   return (
-    <PageShell eyebrow="Dossiê Jaeger" title={jaeger.nome} subtitle={jaeger.geracao}>
+    <PageShell eyebrow="Dossiê Jaeger" title={jaeger.nome} subtitle={jaeger.geracao} showHero={false}>
       <DetailPage
         title={jaeger.nome}
         subtitle={jaeger.funcao}
         tags={jaeger.tags}
         facts={{
-          Geracao: jaeger.geracao,
+          Geração: jaeger.geracao,
           Altura: jaeger.altura,
           "Peso estimado": jaeger.pesoEstimado,
           Pilotos: jaeger.pilotos,
@@ -31,10 +31,11 @@ export default async function JaegerDetailPage({ params }: { params: Promise<{ i
         secretText={jaeger.statusSecreto}
         sections={[
           { title: "História", content: jaeger.historia },
+          ...(jaeger.dossie ?? []),
           { title: "Armamentos", content: jaeger.armamentos },
           { title: "Batalhas famosas", content: jaeger.batalhasFamosas },
           { title: "Segredos", content: jaeger.segredo, classified: true },
-          { title: "Transmissao", content: jaeger.transmissao, classified: true },
+          { title: "Transmissão", content: jaeger.transmissao, classified: true },
         ]}
       />
       <JaegerDiagnosticLoader jaegerId={jaeger.id} jaegerName={jaeger.nome} />

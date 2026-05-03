@@ -13,7 +13,7 @@ export default async function KaijuDetailPage({ params }: { params: Promise<{ id
   if (!kaiju) notFound();
 
   return (
-    <PageShell eyebrow="Dossiê Kaiju" title={kaiju.name} subtitle={`${kaiju.number} / ${kaiju.title}`}>
+    <PageShell eyebrow="Dossiê Kaiju" title={kaiju.name} subtitle={`${kaiju.number} / ${kaiju.title}`} showHero={false}>
       <KaijuDetail kaiju={kaiju} />
     </PageShell>
   );

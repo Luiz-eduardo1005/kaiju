@@ -12,10 +12,10 @@ type MasterJaegerStatusPanelProps = {
   masterProfile: Profile;
 };
 
-const editableJaegers = jaegers.filter((jaeger) => ["atlas-prime", "vanguard-01", "iron-saint"].includes(jaeger.id));
+const editableJaegers = jaegers;
 
 export function MasterJaegerStatusPanel({ masterProfile }: MasterJaegerStatusPanelProps) {
-  const [jaegerId, setJaegerId] = useState(editableJaegers[0]?.id ?? "atlas-prime");
+  const [jaegerId, setJaegerId] = useState(editableJaegers[0]?.id ?? "");
   const [statuses, setStatuses] = useState<JaegerPartStatus[]>([]);
   const [selectedPartId, setSelectedPartId] = useState("chest");
   const [status, setStatus] = useState<JaegerPartState>("operational");
@@ -98,7 +98,13 @@ export function MasterJaegerStatusPanel({ masterProfile }: MasterJaegerStatusPan
     }
   }
 
-  if (!selectedJaeger) return null;
+  if (!selectedJaeger) {
+    return (
+      <section className="rounded-[1.75rem] border border-red-300/20 bg-black/35 p-4 text-sm leading-6 text-red-100">
+        Nenhum Jaeger cadastrado no hangar para edição de status.
+      </section>
+    );
+  }
 
   return (
     <section className="grid gap-5">

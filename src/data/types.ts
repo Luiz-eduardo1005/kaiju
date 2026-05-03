@@ -12,6 +12,50 @@ export type TagName =
   | "Lendário"
   | "Jaeger"
   | "Kaiju"
+  | "Mark-1"
+  | "Canadá"
+  | "Estados Unidos"
+  | "Japão"
+  | "Rússia"
+  | "Alasca"
+  | "Contenção"
+  | "Artilharia"
+  | "Mobilidade"
+  | "Fortaleza"
+  | "Linha de frente"
+  | "Ofensiva"
+  | "Interceptação"
+  | "Mark-2"
+  | "Modular"
+  | "Treinamento"
+  | "Sustentável"
+  | "Energia"
+  | "Caça"
+  | "Precisão"
+  | "Urbano"
+  | "Mark-3"
+  | "Equilíbrio"
+  | "Controle"
+  | "Corpo a corpo"
+  | "Térmico"
+  | "Brutalidade"
+  | "Sustentação"
+  | "Mark-4"
+  | "Multivetorial"
+  | "Redundância"
+  | "Condução"
+  | "Ressonância"
+  | "Cerco"
+  | "Instabilidade"
+  | "Mark-5"
+  | "Comando"
+  | "Finalização"
+  | "Suporte"
+  | "Proteção"
+  | "Mark-6"
+  | "Berserker"
+  | "Resgate"
+  | "Redenção"
   | "Arma Enumerada"
   | "Traje"
   | "Cidade"
@@ -110,6 +154,11 @@ export type Jaeger = {
   batalhasFamosas?: string[];
   descricao: string;
   historia?: string;
+  dossie?: {
+    title: string;
+    content: string | string[];
+    classified?: boolean;
+  }[];
   segredo?: string;
   transmissao?: string;
   tags: TagName[];

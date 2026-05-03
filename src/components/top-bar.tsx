@@ -15,11 +15,6 @@ const nav = [
   ["Banco", "/bank"],
 ];
 
-const masterNav = [
-  ["Armas", "/armas-enumeradas"],
-  ["Campanha", "/campanha"],
-];
-
 export function TopBar() {
   const { isMaster } = useMode();
 
@@ -55,17 +50,6 @@ export function TopBar() {
               {label}
             </Link>
           ))}
-          {isMaster
-            ? masterNav.map(([label, href]) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="rounded-full border border-red-300/40 bg-red-500/10 px-3 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-red-100 shadow-[0_0_22px_rgba(239,68,68,0.18)] transition hover:border-red-200 hover:bg-red-500/20"
-                >
-                  {label}
-                </Link>
-              ))
-            : null}
           {isMaster ? (
             <Link
               href="/master"
