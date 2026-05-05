@@ -120,7 +120,7 @@ export function MasterLorePanel() {
             </p>
           </div>
 
-          <div className="mt-4 max-h-[42rem] space-y-3 overflow-y-auto pr-1">
+          <div className="mt-4 max-h-[76rem] space-y-3 overflow-y-auto pr-1">
             {filteredParts.map((part) => {
               const selected = selectedPart?.id === part.id;
               return (
@@ -202,7 +202,7 @@ export function MasterLorePanel() {
             <div className="grid gap-0 lg:grid-cols-[0.52fr_1.48fr]">
               <div className="border-b border-white/10 p-5 lg:border-b-0 lg:border-r">
                 <p className="font-mono text-[10px] uppercase tracking-[0.32em] text-cyan-200">Mapa interno</p>
-                <div className="mt-4 max-h-[28rem] space-y-2 overflow-y-auto pr-1">
+                <div className="mt-4 max-h-[58rem] space-y-2 overflow-y-auto pr-1">
                   {selectedPart.subtitles.length ? (
                     selectedPart.subtitles.map((subtitle) => (
                       <div key={subtitle} className="rounded-xl border border-cyan-300/15 bg-cyan-950/10 p-3">
