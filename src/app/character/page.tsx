@@ -182,7 +182,20 @@ function CharacterEditor() {
 
   return (
     <div className="space-y-6">
-      <section className="rounded-2xl border border-cyan-300/20 bg-slate-950/80 p-5">
+      <section className="relative overflow-hidden rounded-[2rem] border border-cyan-300/25 bg-[#04111a]/90 p-5 shadow-[0_0_65px_rgba(34,211,238,0.11)]">
+        <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full bg-cyan-400/15 blur-3xl" />
+        <div className="relative mb-5 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.35em] text-cyan-300">Prontuário PPDC</p>
+            <h2 className="mt-2 text-4xl font-black uppercase text-white">{sheet.character_name || "Candidato sem nome"}</h2>
+          </div>
+          <div className="rounded-2xl border border-cyan-300/20 bg-black/35 px-5 py-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-cyan-300">HP</p>
+            <p className="text-3xl font-black text-white">
+              {sheet.current_hp}/{sheet.max_hp}
+            </p>
+          </div>
+        </div>
         <div className="grid gap-4 md:grid-cols-2">
           <label className="grid gap-2">
             <span className="text-xs font-black uppercase tracking-[0.25em] text-cyan-300">Nome</span>

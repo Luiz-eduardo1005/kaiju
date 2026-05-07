@@ -4,6 +4,7 @@ import Link from "next/link";
 import { masterLoreParts } from "@/data/master-lore";
 
 function partCode(part: (typeof masterLoreParts)[number]) {
+  if (part.partLabel) return part.partLabel;
   if (part.partMajor === 0) return `0.${part.partMinor}`;
   if (part.partMinor === 0) return String(part.partMajor);
   return `${part.partMajor}.${part.partMinor}`;

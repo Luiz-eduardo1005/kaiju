@@ -24,7 +24,10 @@ const accessTone: Record<MasterLoreAccessLayer, string> = {
   revisar_manual: "border-slate-300/30 bg-slate-500/10 text-slate-100",
 };
 
+const FAVORITES_STORAGE_KEY = "kaiju-master-lore-favorites";
+
 function partCode(part: MasterLorePart) {
+  if (part.partLabel) return part.partLabel;
   if (part.partMajor === 0) return `0.${part.partMinor}`;
   if (part.partMinor === 0) return String(part.partMajor);
   return `${part.partMajor}.${part.partMinor}`;
@@ -37,14 +40,44 @@ function matchesSearch(part: MasterLorePart, query: string) {
   return searchable.includes(normalizedQuery);
 }
 
+function getInitialFavoriteIds() {
+  if (typeof window === "undefined") return [];
+  try {
+    const parsed = JSON.parse(window.localStorage.getItem(FAVORITES_STORAGE_KEY) ?? "[]");
+    if (!Array.isArray(parsed)) return [];
+    return parsed.filter((id): id is string => typeof id === "string");
+  } catch {
+    return [];
+  }
+}
+
 export function MasterLoreArchive() {
   const [selectedId, setSelectedId] = useState(masterLoreParts.at(-1)?.id ?? masterLoreParts[0]?.id ?? "");
   const [accessFilter, setAccessFilter] = useState<MasterLoreAccessLayer | "all">("all");
+  const [favoriteIds, setFavoriteIds] = useState<string[]>(getInitialFavoriteIds);
   const [query, setQuery] = useState("");
   const deferredQuery = useDeferredValue(query);
 
   const filteredParts = masterLoreParts.filter((part) => (accessFilter === "all" || part.accessLayer === accessFilter) && matchesSearch(part, deferredQuery));
   const selectedPart = filteredParts.find((part) => part.id === selectedId) ?? filteredParts[0] ?? masterLoreParts.find((part) => part.id === selectedId) ?? masterLoreParts[0];
+  const favoriteParts = favoriteIds
+    .map((id) => (masterLoreParts as readonly MasterLorePart[]).find((part) => part.id === id))
+    .filter((part): part is MasterLorePart => part !== undefined);
+  const isSelectedFavorite = selectedPart ? favoriteIds.includes(selectedPart.id) : false;
+
+  function updateFavorites(nextFavorites: string[]) {
+    setFavoriteIds(nextFavorites);
+    window.localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(nextFavorites));
+  }
+
+  function toggleSelectedFavorite() {
+    if (!selectedPart) return;
+    if (favoriteIds.includes(selectedPart.id)) {
+      updateFavorites(favoriteIds.filter((id) => id !== selectedPart.id));
+      return;
+    }
+    updateFavorites([selectedPart.id, ...favoriteIds].slice(0, 8));
+  }
 
   async function copySelectedPart() {
     if (!selectedPart) return;
@@ -110,6 +143,23 @@ export function MasterLoreArchive() {
             </div>
 
             <div className="mt-4 flex max-h-80 gap-3 overflow-x-auto pb-2 xl:max-h-[calc(100vh-18rem)] xl:flex-col xl:overflow-y-auto xl:overflow-x-hidden xl:pr-1">
+              {favoriteParts.length ? (
+                <div className="min-w-72 rounded-2xl border border-amber-300/20 bg-amber-500/10 p-3 xl:min-w-0">
+                  <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-amber-100">Fixados</p>
+                  <div className="mt-3 space-y-2">
+                    {favoriteParts.map((part) => (
+                      <button
+                        key={`fav-${part.id}`}
+                        type="button"
+                        onClick={() => setSelectedId(part.id)}
+                        className="w-full rounded-xl border border-amber-300/20 bg-black/25 px-3 py-2 text-left text-xs font-black uppercase leading-4 text-amber-50 transition hover:bg-amber-500/10"
+                      >
+                        {partCode(part)} | {part.title.replace(/^PARTE\s+/, "")}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
               {filteredParts.map((part) => {
                 const selected = selectedPart?.id === part.id;
                 return (
@@ -166,6 +216,15 @@ export function MasterLoreArchive() {
                   </div>
                 </div>
               </div>
+              <div className="mt-5 flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  onClick={toggleSelectedFavorite}
+                  className="rounded-2xl border border-amber-300/35 bg-amber-500/10 px-4 py-3 text-xs font-black uppercase tracking-[0.22em] text-amber-50 transition hover:bg-amber-500/20"
+                >
+                  {isSelectedFavorite ? "Remover dos fixados" : "Fixar para sessão"}
+                </button>
+              </div>
 
               {selectedPart.subtitles.length ? (
                 <div className="mt-5 flex gap-2 overflow-x-auto pb-2">
@@ -179,6 +238,20 @@ export function MasterLoreArchive() {
             </header>
 
             <div className="bg-[#02040a] px-3 py-5 md:px-5 lg:px-7 2xl:px-9">
+              <div className="mb-5 grid gap-3 lg:grid-cols-5">
+                {[
+                  ["Cena jogável", "Use o trecho como leitura/narração quando a mesa chegar neste ponto."],
+                  ["NPCs citados", "Procure nomes no texto e traga apenas quem já pode aparecer para os players."],
+                  ["Segredos", "Tudo que estiver marcado como mestre/alto escalão entra como descoberta futura."],
+                  ["Pergunta de mesa", "Transforme a parte em decisão: o que os players fazem com essa informação?"],
+                  ["Gancho futuro", "Marque mentalmente qualquer ameaça que ainda não precisa ser revelada."],
+                ].map(([title, text]) => (
+                  <div key={title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
+                    <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-cyan-200">{title}</p>
+                    <p className="mt-2 text-xs font-semibold leading-5 text-slate-300">{text}</p>
+                  </div>
+                ))}
+              </div>
               <div className="w-full rounded-[2rem] border border-white/10 bg-[#050813] px-5 py-7 shadow-inner shadow-black/50 md:px-9 md:py-10">
                 <pre className="whitespace-pre-wrap font-sans text-lg font-semibold leading-9 text-slate-100 md:text-[1.32rem] md:leading-[2.45rem]">
                   {selectedPart.content}

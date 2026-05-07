@@ -5,7 +5,7 @@ import { useMode } from "@/context/mode-context";
 import { LoginModal } from "./login-modal";
 import { ModeToggle } from "./mode-toggle";
 
-const nav = [
+const playerNav = [
   ["História", "/historia"],
   ["Kaijus", "/kaijus"],
   ["Jaegers", "/jaegers"],
@@ -15,8 +15,17 @@ const nav = [
   ["Banco", "/bank"],
 ];
 
+const masterNav = [
+  ["Leitura", "/master/lore"],
+  ["Painel", "/master"],
+  ["Jaegers", "/jaegers"],
+  ["Kaijus", "/kaijus"],
+  ["Cidade", "/cidade"],
+];
+
 export function TopBar() {
   const { isMaster } = useMode();
+  const nav = isMaster ? masterNav : playerNav;
 
   return (
     <header
@@ -50,14 +59,6 @@ export function TopBar() {
               {label}
             </Link>
           ))}
-          {isMaster ? (
-            <Link
-              href="/master"
-              className="rounded-full border border-red-300/40 bg-red-500/10 px-3 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-red-100 shadow-[0_0_22px_rgba(239,68,68,0.18)] transition hover:border-red-200 hover:bg-red-500/20"
-            >
-              Mestre
-            </Link>
-          ) : null}
           <LoginModal />
           <ModeToggle />
         </nav>

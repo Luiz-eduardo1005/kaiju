@@ -1,0 +1,69 @@
+# ?ndice da lore RPG ? 0.1 a 1.59
+
+Arquivo bruto can?nico: exports/lore-rpg-fonte-chatgpt-0.1-a-1.59.md
+Total de partes: 63
+Total de linhas: 33903
+
+- 0.1 | PARTE 0.1 — A ORIGEM DOS PRECURSORES | linhas 1-497 | Mestre / alto escal?o
+- 0.2 | PARTE 0.2 — A PRIMEIRA PRESENÇA NA TERRA ANTIGA | linhas 498-745 | Mestre / alto escal?o
+- 0.3 | PARTE 0.3 — O RETORNO DOS PRECURSORES | linhas 746-1093 | Mestre / alto escal?o
+- 1 | PARTE 1 — 1984: O PRIMEIRO CONTATO HUMANO | linhas 1094-1386 | P?blico filtrado + mestre completo
+- 1.1 | PARTE 1.1 — DEPOIS DE TRESSARAK | linhas 1387-1672 | P?blico filtrado + mestre completo
+- 1.2 | PARTE 1.2 — MIREKAI E O NASCIMENTO DO MEDO BIOLÓGICO | linhas 1673-2006 | P?blico filtrado + mestre completo
+- 1.3 | PARTE 1.3 — A IDEIA IMPOSSÍVEL | linhas 2007-2442 | P?blico filtrado / players / mestre
+- 1.4 | PARTE 1.4 — OS PRIMEIROS GIGANTES | linhas 2443-2749 | P?blico filtrado / players / mestre
+- 1.5 | PARTE 1.5 — O PRIMEIRO JAEGER EM COMBATE | linhas 2750-3130 | P?blico filtrado / players / mestre
+- 1.6 | PARTE 1.6 — O PESO DA PRIMEIRA VITÓRIA | linhas 3131-3379 | P?blico filtrado / players / mestre
+- 1.7 | PARTE 1.7 — A EXPANSÃO DO PROGRAMA JAEGER | linhas 3380-3543 | P?blico filtrado / players / mestre
+- 1.8 | PARTE 1.8 — O SEGUNDO SINAL DA ERA JAEGER | linhas 3544-3953 | P?blico filtrado / players / mestre
+- 1.9 | PARTE 1.9 — BRAWLER YUKON CONTRA SHIRANUI | linhas 3954-4307 | P?blico filtrado / players / mestre
+- 1.10 | PARTE 1.10 — A DOUTRINA DOS CAÇADORES | linhas 4308-4491 | P?blico filtrado / players / mestre
+- 1.11 | PARTE 1.11 — A CHEGADA DOS NOVOS CANDIDATOS | linhas 4492-4733 | Players + mestre
+- 1.12 | PARTE 1.12 — O PRIMEIRO DIA DE SELEÇÃO REAL | linhas 4734-5046 | Players + mestre
+- 1.13 | PARTE 1.13 — COMPATIBILIDADE | linhas 5047-5430 | Players + mestre
+- 1.14 | PARTE 1.14 — OS PARES ESCOLHIDOS | linhas 5431-5859 | Players + mestre
+- 1.15 | PARTE 1.15 — O PRIMEIRO COCKPIT | linhas 5860-6199 | Players em sess?o + mestre
+- 1.16 | PARTE 1.16 — DOIS GIGANTES SOB HONG KONG | linhas 6200-6504 | Players em sess?o + mestre
+- 1.17 | PARTE 1.17 — A CIDADE ENTRE DOIS CORPOS | linhas 6505-6860 | Players em sess?o + mestre
+- 1.18 | PARTE 1.18 — DUAS PORTAS, DOIS FLUXOS | linhas 6861-7318 | Players em sess?o + mestre
+- 1.19 | PARTE 1.19 — BAIXA CARGA | linhas 7319-7829 | Players em sess?o + mestre
+- 1.20 | PARTE 1.20 — PRONTIDÃO CINZA | linhas 7830-8188 | Players em sess?o + mestre
+- 1.21 | PARTE 1.21 — QUATRO MENTES, DOIS GIGANTES | linhas 8189-8797 | Players em sess?o + mestre
+- 1.22 | PARTE 1.22 — A CIDADE QUE NÃO DEIXA O GIGANTE ANDAR | linhas 8798-9407 | Players em sess?o + mestre
+- 1.23 | PARTE 1.23 — O PRIMEIRO IMPACTO | linhas 9408-9965 | Players em sess?o + mestre
+- 1.24 | PARTE 1.24 — A PRIMEIRA RESPOSTA REAL | linhas 9966-10540 | Players em sess?o + mestre
+- 1.25 | PARTE 1.25 — O COMANDO QUE ATRAVESSA A JUNTA | linhas 10541-11103 | Players filtrado + mestre completo
+- 1.26 | PARTE 1.26 — O CORPO VERDADEIRO | linhas 11104-11797 | Players filtrado + mestre completo
+- 1.27 | PARTE 1.27 — O GIGANTE APRENDE A DOBRAR | linhas 11798-12383 | Players filtrado + mestre completo
+- 1.28 | PARTE 1.28 — O PESO ANTES DO PASSO | linhas 12384-13078 | Players filtrado + mestre completo
+- 1.29 | PARTE 1.29 — O PRIMEIRO MOVIMENTO ASSISTIDO | linhas 13079-13716 | Players filtrado + mestre completo
+- 1.30 | PARTE 1.30 — O PRIMEIRO PASSO NÃO É LIVRE | linhas 13717-14172 | Players filtrado + mestre completo
+- 1.31 | PARTE 1.31 — SOB CÉU ABERTO | linhas 14173-14620 | Players filtrado + mestre completo
+- 1.32 | PARTE 1.32 — DOIS GIGANTES NO MESMO CAMPO | linhas 14621-15100 | Players filtrado + mestre completo
+- 1.33 | PARTE 1.33 — RESERVA EXTERNA LIMITADA | linhas 15101-15587 | Players filtrado + mestre completo
+- 1.34 | PARTE 1.34 — PATRULHA NÃO É CAÇADA | linhas 15588-16016 | Players filtrado + mestre completo
+- 1.35 | PARTE 1.35 — O MONSTRO QUE AINDA NÃO ESTAVA LÁ | linhas 16017-16669 | Players filtrado + mestre completo
+- 1.36R | PARTE 1.36R — O PRIMEIRO ALERTA REAL | linhas 16670-17623 | Players filtrado + mestre completo
+- 1.37R | PARTE 1.37R — O PRIMEIRO IMPACTO REAL | linhas 17624-18257 | Players filtrado + mestre completo
+- 1.38R | PARTE 1.38R — A PRIMEIRA VITÓRIA NÃO PARECE VITÓRIA | linhas 18258-19198 | Players filtrado + mestre completo
+- 1.39 | PARTE 1.39 — O PREÇO DE TER VOLTADO | linhas 19199-19639 | Players filtrado + mestre completo
+- 1.40 | PARTE 1.40 — PROTEGER O QUE NÃO PODE LUTAR | linhas 19640-20159 | Players filtrado + mestre completo
+- 1.41 | PARTE 1.41 — A MISSÃO QUE NÃO PODIA VIRAR LENDA | linhas 20160-20725 | Players filtrado + mestre completo
+- 1.42 | PARTE 1.42 — O CAMINHO ATÉ O FUNDO | linhas 20726-21500 | Players filtrado + mestre completo
+- 1.43 | PARTE 1.43 — O QUE VEIO JUNTO | linhas 21501-22196 | Players filtrado + mestre completo
+- 1.44 | PARTE 1.44 — OS DADOS QUE NÃO DEVERIAM RESPONDER | linhas 22197-22815 | Players filtrado + mestre completo
+- 1.45 | PARTE 1.45 — O ANO EM QUE A GUERRA COMEÇOU A ENCURTAR | linhas 22816-23323 | Players filtrado + mestre completo
+- 1.46R | PARTE 1.46R — O SEGUNDO MONSTRO NÃO REPETE O PRIMEIRO | linhas 23324-24391 | Players filtrado + mestre completo
+- 1.47R | PARTE 1.47R — QUANDO A MURALHA FOI PUXADA | linhas 24392-25220 | Players filtrado + mestre completo
+- 1.48 | PARTE 1.48 — O PRIMEIRO GIGANTE QUE TALVEZ FIQUE PARA TRÁS | linhas 25221-25802 | Players filtrado + mestre completo
+- 1.49 | PARTE 1.49 — O TESTE NÃO ERA PARA ESCOLHER UM NOVO CORPO | linhas 25803-26472 | Players filtrado + mestre completo
+- 1.50 | PARTE 1.50 — OS GIGANTES ANTIGOS AINDA SAEM PRIMEIRO | linhas 26473-27025 | Players filtrado + mestre completo
+- 1.51R | PARTE 1.51R — O SOM QUE EMPURRA POR DENTRO | linhas 27026-28030 | Players filtrado + mestre completo
+- 1.52R | PARTE 1.52R — QUEBRAR O SINO | linhas 28031-28961 | Players filtrado + mestre completo
+- 1.53 | PARTE 1.53 — TRÊS MANEIRAS DE QUEBRAR UM JAEGER | linhas 28962-29605 | Players filtrado + mestre completo
+- 1.54 | PARTE 1.54 — O ANO EM QUE A GUERRA APRENDEU A FALAR BAIXO | linhas 29606-30264 | Players filtrado + mestre completo
+- 1.55 | PARTE 1.55 — A JANELA CINZA | linhas 30265-31166 | Players filtrado + mestre completo
+- 1.56 | PARTE 1.56 — A BOIA QUE RESPONDEU DE VOLTA | linhas 31167-31883 | Players filtrado + mestre completo
+- 1.57 | PARTE 1.57 — O QUE A BOIA TROUXE DE VOLTA | linhas 31884-32536 | Players filtrado + mestre completo
+- 1.58 | PARTE 1.58 — A REDE ANTES DA FENDA | linhas 32537-33191 | Players filtrado + mestre completo
+- 1.59 | PARTE 1.59 — QUEM ESCUTA A REDE | linhas 33192-33903 | Players filtrado + mestre completo

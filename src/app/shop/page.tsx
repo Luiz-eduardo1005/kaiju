@@ -85,13 +85,22 @@ function ShopPanel() {
   if (!selectedStore) {
     return (
       <div className="space-y-8">
-        <section className="relative overflow-hidden rounded-3xl border border-cyan-300/20 bg-slate-950/80 p-6 shadow-2xl">
+        <section className="relative overflow-hidden rounded-[2rem] border border-cyan-300/25 bg-[#04111a]/90 p-6 shadow-[0_0_70px_rgba(34,211,238,0.14)]">
           <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-cyan-500/10 blur-[100px]" />
-          <p className="font-mono text-xs uppercase tracking-[0.3em] text-cyan-400/80">Creditos Disponiveis</p>
-          <h2 className="mt-2 text-5xl font-black tracking-tighter text-white">
-            <span className="text-cyan-400">$</span>
-            {wallet?.balance ?? 0}
-          </h2>
+          <div className="relative flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-cyan-400/80">Terminal comercial autorizado</p>
+              <h2 className="mt-2 text-4xl font-black uppercase tracking-tight text-white md:text-6xl">Mercado de Nova Aurora</h2>
+              <p className="mt-3 max-w-2xl text-sm font-semibold leading-6 text-slate-300">Suprimentos civis, campo, contenção e treinamento antes do Programa Atlas engolir todo mundo.</p>
+            </div>
+            <div className="rounded-2xl border border-cyan-300/25 bg-black/35 px-5 py-4">
+              <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-cyan-300">Créditos disponíveis</p>
+              <p className="mt-1 text-4xl font-black tracking-tighter text-white">
+                <span className="text-cyan-400">$</span>
+                {wallet?.balance ?? 0}
+              </p>
+            </div>
+          </div>
           {message ? <p className="mt-4 rounded-lg border border-cyan-500/20 bg-cyan-500/10 p-3 text-sm text-cyan-200">{message}</p> : null}
         </section>
 

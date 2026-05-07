@@ -80,11 +80,21 @@ function BankPanel() {
 
   return (
     <div className="space-y-6">
-      <section className="rounded-3xl border border-emerald-300/30 bg-emerald-950/10 p-6">
-        <p className="font-mono text-xs uppercase tracking-[0.35em] text-emerald-300">Saldo atual</p>
-        <h2 className="mt-3 text-5xl font-black text-white">${wallet?.balance ?? 0}</h2>
+      <section className="relative overflow-hidden rounded-[2rem] border border-emerald-300/30 bg-[#04150e]/90 p-6 shadow-[0_0_70px_rgba(16,185,129,0.12)]">
+        <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-emerald-400/15 blur-3xl" />
+        <div className="relative flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="font-mono text-xs uppercase tracking-[0.35em] text-emerald-300">Terminal financeiro civil</p>
+            <h2 className="mt-3 text-4xl font-black uppercase text-white md:text-6xl">Banco de Campanha</h2>
+            <p className="mt-3 max-w-2xl text-sm font-semibold leading-6 text-slate-300">Saldo, transferências e rastros econômicos dos personagens em Nova Aurora.</p>
+          </div>
+          <div className="rounded-2xl border border-emerald-300/25 bg-black/35 px-5 py-4">
+            <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-emerald-300">Saldo atual</p>
+            <p className="mt-1 text-5xl font-black text-white">${wallet?.balance ?? 0}</p>
+          </div>
+        </div>
       </section>
-      <section className="rounded-2xl border border-cyan-300/20 bg-slate-950/80 p-5">
+      <section className="rounded-2xl border border-emerald-300/20 bg-slate-950/80 p-5">
         <h2 className="text-sm font-black uppercase tracking-[0.28em] text-cyan-200">Transferência Rápida</h2>
         <div className="mt-4 grid gap-3 md:grid-cols-4">
           <select className="rounded-xl border border-white/10 bg-black/60 p-3 text-white" value={toUser} onChange={(e) => setToUser(e.target.value)}>
