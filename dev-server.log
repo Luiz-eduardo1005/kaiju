@@ -4,25 +4,12 @@
 
 ▲ Next.js 16.2.4 (Turbopack)
 - Local:         http://localhost:3000
-- Network:       http://172.20.10.3:3000
+- Network:       http://192.168.15.183:3000
 - Environments: .env.local
-✓ Ready in 655ms
+✓ Ready in 525ms
 
- GET / 200 in 720ms (next.js: 358ms, application-code: 363ms)
- GET / 200 in 92ms (next.js: 21ms, application-code: 71ms)
- GET /master 200 in 106ms (next.js: 76ms, application-code: 30ms)
- GET / 200 in 25ms (next.js: 4ms, application-code: 20ms)
- GET /bank 200 in 78ms (next.js: 51ms, application-code: 27ms)
- GET / 200 in 21ms (next.js: 4ms, application-code: 17ms)
- GET /inventory 200 in 81ms (next.js: 49ms, application-code: 32ms)
- GET / 200 in 22ms (next.js: 4ms, application-code: 18ms)
- GET /master 200 in 26ms (next.js: 4ms, application-code: 22ms)
- GET /master/lore 200 in 87ms (next.js: 59ms, application-code: 28ms)
- GET / 200 in 22ms (next.js: 4ms, application-code: 17ms)
- GET /master 200 in 30ms (next.js: 5ms, application-code: 25ms)
- GET /master/lore 200 in 27ms (next.js: 4ms, application-code: 22ms)
- GET / 200 in 172ms (next.js: 66ms, application-code: 106ms)
- GET /master 200 in 33ms (next.js: 9ms, application-code: 25ms)
- GET / 200 in 160ms (next.js: 109ms, application-code: 51ms)
- GET /master 200 in 771ms (next.js: 350ms, application-code: 421ms)
- GET /master/lore 200 in 149ms (next.js: 113ms, application-code: 36ms)
+ GET / 200 in 353ms (next.js: 164ms, application-code: 189ms)
+ GET / 200 in 121ms (next.js: 7ms, application-code: 114ms)
+ GET /master 200 in 102ms (next.js: 66ms, application-code: 36ms)
+ GET /master/lore 200 in 94ms (next.js: 62ms, application-code: 32ms)
+ GET /master/lore 200 in 157ms (next.js: 6ms, application-code: 151ms)

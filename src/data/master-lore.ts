@@ -19,18 +19,37 @@ export type MasterLorePart = {
   accessLayer: MasterLoreAccessLayer;
   audience: string;
   masterUse: string;
+  arc: string;
+  status: string;
+  isRevisionR: boolean;
+  isPlayableCombat: boolean;
+  visibilityBadges: string[];
+  sessionTags: string[];
+  publicGuidance: string[];
+  privateGuidance: string[];
+  spoilerWarnings: string[];
+  questions: string[];
+  conditionalConsequences: string[];
+  visibleNpcs: string[];
+  backstageNpcs: string[];
+  entities: string[];
+  technologies: string[];
+  kaijus: string[];
+  jaegers: string[];
+  sceneAssets: string[];
+  continuityNotes: string[];
   subtitles: string[];
   detectedDates: string[];
   content: string;
 };
 
 export const masterLoreAccessLabels: Record<MasterLoreAccessLayer, string> = {
-  mestre_alto_escalao: "Alto escal?o",
-  misto_publico_com_classificado: "P?blico filtrado + mestre",
-  historia_principal_ppdc_com_bastidores: "Hist?ria principal + bastidores",
+  mestre_alto_escalao: "Alto escalão",
+  misto_publico_com_classificado: "Público filtrado + mestre",
+  historia_principal_ppdc_com_bastidores: "História principal + bastidores",
   players_celula_k_com_mestre: "Players + mestre",
-  mesa_jogavel_players: "Mesa jog?vel",
-  mesa_jogavel_com_segredos_de_mestre: "Mesa jog?vel + segredos",
+  mesa_jogavel_players: "Mesa jogável",
+  mesa_jogavel_com_segredos_de_mestre: "Mesa jogável + segredos",
   revisar_manual: "Revisar",
 };
 
@@ -45,8 +64,77 @@ export const masterLoreParts = [
     "partMinor": 1,
     "partLabel": "0.1",
     "accessLayer": "mestre_alto_escalao",
-    "audience": "Mestre / alto escal?o",
-    "masterUse": "Segredo estrutural da campanha. Usar no modo mestre/alto escal?o; n?o liberar como card p?blico sem desbloqueio.",
+    "audience": "Mestre / alto escalão",
+    "masterUse": "Segredo estrutural da campanha. Usar no modo mestre/alto escalão; não liberar como card público sem desbloqueio.",
+    "arc": "Origem e bastidores c?smicos",
+    "status": "Somente mestre / segredo estrutural",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "NÃO REVELAR AINDA",
+      "SOMENTE MESTRE",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "FENDA",
+      "TERRA OCA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "TERRA OCA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Não narrar como verdade para players nesta fase. Use como bastidor e continuidade.",
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro."
+    ],
+    "questions": [],
+    "conditionalConsequences": [
+      "Se a invasão demorasse demais, a humanidade poderia se tornar uma ameaça real. Não no nível dos Precursores, ainda não. Mas rápida o suficiente para resistir, adaptar e talvez descobrir coisas que não deveria. A janela ideal havia começado."
+    ],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena"
+    ],
+    "backstageNpcs": [
+      "Precursores"
+    ],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Precursores",
+      "Drift",
+      "Fenda",
+      "Terra Oca"
+    ],
+    "technologies": [
+      "Drift",
+      "Fenda",
+      "Terra Oca",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "ponte"
+    ],
+    "continuityNotes": [
+      "Preservar como verdade de bastidor até revelação futura."
+    ],
     "subtitles": [
       "Antes da Terra, antes da Fenda, antes dos Kaijus terem nome"
     ],
@@ -65,8 +153,66 @@ export const masterLoreParts = [
     "partMinor": 2,
     "partLabel": "0.2",
     "accessLayer": "mestre_alto_escalao",
-    "audience": "Mestre / alto escal?o",
-    "masterUse": "Segredo estrutural da campanha. Usar no modo mestre/alto escal?o; n?o liberar como card p?blico sem desbloqueio.",
+    "audience": "Mestre / alto escalão",
+    "masterUse": "Segredo estrutural da campanha. Usar no modo mestre/alto escalão; não liberar como card público sem desbloqueio.",
+    "arc": "Origem e bastidores c?smicos",
+    "status": "Somente mestre / segredo estrutural",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "NÃO REVELAR AINDA",
+      "SOMENTE MESTRE",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "FENDA",
+      "TERRA OCA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "TERRA OCA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Não narrar como verdade para players nesta fase. Use como bastidor e continuidade.",
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro."
+    ],
+    "questions": [],
+    "conditionalConsequences": [],
+    "visibleNpcs": [],
+    "backstageNpcs": [
+      "Precursores"
+    ],
+    "entities": [
+      "Precursores",
+      "Fenda",
+      "Terra Oca"
+    ],
+    "technologies": [
+      "Fenda",
+      "Terra Oca",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Proto-Kaiju Alpha",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Jaeger"
+    ],
+    "sceneAssets": [],
+    "continuityNotes": [
+      "Preservar como verdade de bastidor até revelação futura."
+    ],
     "subtitles": [
       "O Proto-Kaiju, a biosfera primitiva e o nascimento do primeiro segredo da Terra Oca"
     ],
@@ -85,8 +231,76 @@ export const masterLoreParts = [
     "partMinor": 3,
     "partLabel": "0.3",
     "accessLayer": "mestre_alto_escalao",
-    "audience": "Mestre / alto escal?o",
-    "masterUse": "Segredo estrutural da campanha. Usar no modo mestre/alto escal?o; n?o liberar como card p?blico sem desbloqueio.",
+    "audience": "Mestre / alto escalão",
+    "masterUse": "Segredo estrutural da campanha. Usar no modo mestre/alto escalão; não liberar como card público sem desbloqueio.",
+    "arc": "Origem e bastidores c?smicos",
+    "status": "Somente mestre / segredo estrutural",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "NÃO REVELAR AINDA",
+      "SOMENTE MESTRE",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "FLUXO",
+      "PAR K-01",
+      "FENDA",
+      "TERRA OCA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "FLUXO",
+      "TERRA OCA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Não narrar como verdade para players nesta fase. Use como bastidor e continuidade.",
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro."
+    ],
+    "questions": [],
+    "conditionalConsequences": [
+      "Se uma nova invasão fosse iniciada sem planejamento, existia o risco de repetir o erro: perda de ativos, contaminação biológica fora de controle e criação de zonas imprevisíveis.",
+      "Se quiser, já continuo nesse mesmo nível 🔥"
+    ],
+    "visibleNpcs": [],
+    "backstageNpcs": [
+      "Precursores"
+    ],
+    "entities": [
+      "Precursores",
+      "Fluxo",
+      "Fenda",
+      "Terra Oca"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Fenda",
+      "Terra Oca",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Proto-Kaiju Alpha",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Jaeger"
+    ],
+    "sceneAssets": [],
+    "continuityNotes": [
+      "Preservar como verdade de bastidor até revelação futura.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "A decisão de invadir a Terra… e o nascimento da Fenda moderna"
     ],
@@ -105,8 +319,81 @@ export const masterLoreParts = [
     "partMinor": 0,
     "partLabel": "1",
     "accessLayer": "misto_publico_com_classificado",
-    "audience": "P?blico filtrado + mestre completo",
-    "masterUse": "Evento hist?rico pode existir para p?blico/players, mas o texto bruto cont?m bastidores e vers?es classificadas. Separar antes de publicar.",
+    "audience": "Público filtrado + mestre completo",
+    "masterUse": "Evento histórico pode existir para público/players, mas o texto bruto contém bastidores e versões classificadas. Separar antes de publicar.",
+    "arc": "Primeiros contatos Kaiju",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FENDA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro."
+    ],
+    "questions": [
+      "A evacuação foi melhor do que em Saipan, mas ainda insuficiente. As autoridades agora sabiam que algo vinha, mas saber não resolvia a logística. Como evacuar milhares de pessoas em ilhas, cidades costeiras, vilarejos de pescadores, hospitais, escolas, mercados? Para onde levar todos quando a ameaça vinha do próprio mar?"
+    ],
+    "conditionalConsequences": [],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Mateo"
+    ],
+    "backstageNpcs": [
+      "Precursores",
+      "Daniel Hargrove",
+      "Rafael Santoro"
+    ],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Mateo",
+      "Precursores",
+      "Daniel Hargrove",
+      "Rafael Santoro",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fenda",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Kaiju"
+    ],
+    "jaegers": [],
+    "sceneAssets": [
+      "cargueiro",
+      "guindaste",
+      "barco",
+      "barcos",
+      "porto",
+      "hospital"
+    ],
+    "continuityNotes": [],
     "subtitles": [
       "O dia em que Tressarak saiu da Fenda"
     ],
@@ -126,8 +413,84 @@ export const masterLoreParts = [
     "partMinor": 1,
     "partLabel": "1.1",
     "accessLayer": "misto_publico_com_classificado",
-    "audience": "P?blico filtrado + mestre completo",
-    "masterUse": "Evento hist?rico pode existir para p?blico/players, mas o texto bruto cont?m bastidores e vers?es classificadas. Separar antes de publicar.",
+    "audience": "Público filtrado + mestre completo",
+    "masterUse": "Evento histórico pode existir para público/players, mas o texto bruto contém bastidores e versões classificadas. Separar antes de publicar.",
+    "arc": "Primeiros contatos Kaiju",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FENDA",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "Foi depois de Gorath que a primeira conversa séria sobre armas de escala equivalente aconteceu em círculos fechados. Não ainda Jaegers, não da forma que existiriam depois, mas a pergunta começou a nascer: se armas convencionais precisavam de sorte, armadilha e sacrifício para derrubar cada Kaiju, quantos ataques a humanidade suportaria antes de quebrar?"
+    ],
+    "conditionalConsequences": [
+      "Se a criatura seguia vibração, poderia ser conduzida. Se podia ser conduzida, poderia ser levada a um lugar preparado. Não seria uma vitória bonita. Seria armadilha geológica.",
+      "Se ele percebesse a armadilha, seguiria para outra direção.",
+      "Se as cargas falhassem, as tropas ficariam presas.",
+      "Se detonassem cedo demais, só bloqueariam o caminho.",
+      "Se detonassem tarde demais, Gorath atravessaria.",
+      "Se um Kaiju podia sair do oceano e outro podia sair da terra, então nenhuma região estava completamente segura. Governos começaram a instalar sensores sísmicos adicionais em desertos, cordilheiras e áreas industriais. Protocolos de evacuação foram expandidos para zonas continentais. Bases militares subterrâneas, antes vistas como proteção, passaram a ser analisadas como possíveis túmulos. Companhias de seguro entraram em colapso em algumas regiões. Mercados globais oscilaram. Igrejas, seitas, movimentos políticos e teorias conspiratórias cresceram ao redor do medo."
+    ],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Stacker Pentecost",
+      "Pentecost"
+    ],
+    "backstageNpcs": [
+      "Maribel Acosta"
+    ],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Maribel Acosta",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fenda"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "barco",
+      "barcos",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [],
     "subtitles": [
       "O mundo tenta voltar ao normal… e descobre que normalidade acabou"
     ],
@@ -146,8 +509,76 @@ export const masterLoreParts = [
     "partMinor": 2,
     "partLabel": "1.2",
     "accessLayer": "misto_publico_com_classificado",
-    "audience": "P?blico filtrado + mestre completo",
-    "masterUse": "Evento hist?rico pode existir para p?blico/players, mas o texto bruto cont?m bastidores e vers?es classificadas. Separar antes de publicar.",
+    "audience": "Público filtrado + mestre completo",
+    "masterUse": "Evento histórico pode existir para público/players, mas o texto bruto contém bastidores e versões classificadas. Separar antes de publicar.",
+    "arc": "Primeiros contatos Kaiju",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FENDA",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [],
+    "conditionalConsequences": [
+      "Se um podia vir do oceano e outro podia nascer da terra, então nenhuma cidade estava realmente protegida.",
+      "Se algum dia a humanidade criasse uma arma derivada de Kaiju, ela precisaria ser grande o bastante para ser usada por uma máquina gigante. Precisaria ser uma lâmina, um canhão, um revestimento, um sistema de condução, uma armadura, um núcleo auxiliar ou um equipamento de contenção para Jaegers.",
+      "se cada Kaiju exigisse uma resposta diferente, a humanidade perderia antes de construir uma doutrina."
+    ],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Pentecost"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Pentecost",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fenda"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Mirekai",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "boia",
+      "boias",
+      "barco",
+      "barcos",
+      "doca",
+      "porto"
+    ],
+    "continuityNotes": [],
     "subtitles": [
       "Quando o mundo descobriu que um Kaiju podia continuar vencendo mesmo depois de morto"
     ],
@@ -167,8 +598,78 @@ export const masterLoreParts = [
     "partMinor": 3,
     "partLabel": "1.3",
     "accessLayer": "historia_principal_ppdc_com_bastidores",
-    "audience": "P?blico filtrado / players / mestre",
-    "masterUse": "Hist?ria principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha p?blica, mantendo bastidores para revela??o em mesa.",
+    "audience": "Público filtrado / players / mestre",
+    "masterUse": "História principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha pública, mantendo bastidores para revelação em mesa.",
+    "arc": "Nascimento do Programa Jaeger",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FENDA",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "o que fazemos quando o próximo vier?"
+    ],
+    "conditionalConsequences": [
+      "Se uma máquina gigante precisasse se mover como corpo, talvez precisasse ser controlada como corpo."
+    ],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena",
+      "Stacker Pentecost",
+      "Pentecost"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Drift",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Mirekai",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Gipsy Danger",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "barco",
+      "barcos",
+      "doca",
+      "porto",
+      "ponte",
+      "civis"
+    ],
+    "continuityNotes": [],
     "subtitles": [
       "Quando a humanidade percebeu que precisava criar monstros de metal para enfrentar monstros de carne"
     ],
@@ -187,8 +688,86 @@ export const masterLoreParts = [
     "partMinor": 4,
     "partLabel": "1.4",
     "accessLayer": "historia_principal_ppdc_com_bastidores",
-    "audience": "P?blico filtrado / players / mestre",
-    "masterUse": "Hist?ria principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha p?blica, mantendo bastidores para revela??o em mesa.",
+    "audience": "Público filtrado / players / mestre",
+    "masterUse": "História principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha pública, mantendo bastidores para revelação em mesa.",
+    "arc": "Nascimento do Programa Jaeger",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "FENDA",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [],
+    "conditionalConsequences": [],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Aaron"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Aaron",
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Mirekai",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Brawler Yukon",
+      "Jaeger",
+      "Mark I"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "ponte",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "O nascimento dos protótipos Jaeger e o preço humano do Drift"
     ],
@@ -208,8 +787,77 @@ export const masterLoreParts = [
     "partMinor": 5,
     "partLabel": "1.5",
     "accessLayer": "historia_principal_ppdc_com_bastidores",
-    "audience": "P?blico filtrado / players / mestre",
-    "masterUse": "Hist?ria principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha p?blica, mantendo bastidores para revela??o em mesa.",
+    "audience": "Público filtrado / players / mestre",
+    "masterUse": "História principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha pública, mantendo bastidores para revelação em mesa.",
+    "arc": "Nascimento do Programa Jaeger",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FENDA",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [],
+    "conditionalConsequences": [],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Pentecost",
+      "Aaron"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Pentecost",
+      "Aaron",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Drift",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Mirekai",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Brawler Yukon",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "barco",
+      "barcos",
+      "doca",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [],
     "subtitles": [
       "O dia em que a humanidade colocou um gigante de metal entre um Kaiju e uma cidade"
     ],
@@ -228,8 +876,88 @@ export const masterLoreParts = [
     "partMinor": 6,
     "partLabel": "1.6",
     "accessLayer": "historia_principal_ppdc_com_bastidores",
-    "audience": "P?blico filtrado / players / mestre",
-    "masterUse": "Hist?ria principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha p?blica, mantendo bastidores para revela??o em mesa.",
+    "audience": "Público filtrado / players / mestre",
+    "masterUse": "História principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha pública, mantendo bastidores para revelação em mesa.",
+    "arc": "Nascimento do Programa Jaeger",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FENDA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro."
+    ],
+    "questions": [],
+    "conditionalConsequences": [],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Aaron"
+    ],
+    "backstageNpcs": [
+      "Precursores"
+    ],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Aaron",
+      "Precursores",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Drift",
+      "Fenda",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Mirekai",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Brawler Yukon",
+      "Jaeger",
+      "Mark I",
+      "Mark II"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "boia",
+      "barco",
+      "barcos",
+      "porto"
+    ],
+    "continuityNotes": [],
     "subtitles": [
       "18 de março de 2006 — Victoria, Colúmbia Britânica, Canadá"
     ],
@@ -248,8 +976,83 @@ export const masterLoreParts = [
     "partMinor": 7,
     "partLabel": "1.7",
     "accessLayer": "historia_principal_ppdc_com_bastidores",
-    "audience": "P?blico filtrado / players / mestre",
-    "masterUse": "Hist?ria principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha p?blica, mantendo bastidores para revela??o em mesa.",
+    "audience": "Público filtrado / players / mestre",
+    "masterUse": "História principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha pública, mantendo bastidores para revelação em mesa.",
+    "arc": "Nascimento do Programa Jaeger",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FENDA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro."
+    ],
+    "questions": [],
+    "conditionalConsequences": [],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Aaron"
+    ],
+    "backstageNpcs": [
+      "Precursores"
+    ],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Aaron",
+      "Precursores",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Drift",
+      "Fenda",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Mirekai",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Brawler Yukon",
+      "Jaeger",
+      "Mark I",
+      "Mark II"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "doca",
+      "porto",
+      "ponte"
+    ],
+    "continuityNotes": [],
     "subtitles": [
       "19 de março de 2006 a 12 de dezembro de 2006 — quando a vitória em Victoria virou corrida mundial"
     ],
@@ -278,8 +1081,89 @@ export const masterLoreParts = [
     "partMinor": 8,
     "partLabel": "1.8",
     "accessLayer": "historia_principal_ppdc_com_bastidores",
-    "audience": "P?blico filtrado / players / mestre",
-    "masterUse": "Hist?ria principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha p?blica, mantendo bastidores para revela??o em mesa.",
+    "audience": "Público filtrado / players / mestre",
+    "masterUse": "História principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha pública, mantendo bastidores para revelação em mesa.",
+    "arc": "Nascimento do Programa Jaeger",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FENDA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro."
+    ],
+    "questions": [],
+    "conditionalConsequences": [
+      "Se Brawler tentasse perseguir o Kaiju em mar aberto, poderia cair na vantagem do inimigo. O combate precisaria ser forçado para uma região rasa, entre o porto e um setor industrial parcialmente evacuado. Ali, o Jaeger teria apoio visual, fundo menos profundo e chance de usar estruturas costeiras como referência. O risco era óbvio: lutar perto demais da cidade."
+    ],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena",
+      "Ryo",
+      "Pentecost",
+      "Aaron"
+    ],
+    "backstageNpcs": [
+      "Precursores"
+    ],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Ryo",
+      "Pentecost",
+      "Aaron",
+      "Precursores",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Drift",
+      "Fenda",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Mirekai",
+      "Shiranui",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Brawler Yukon",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cargueiro",
+      "guindaste",
+      "cabo",
+      "cabos",
+      "boia",
+      "boias",
+      "barco",
+      "barcos",
+      "doca",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [],
     "subtitles": [
       "14 de novembro de 2006 — Hokkaido, Japão — o dia em que o mundo percebeu que Harrow não tinha sido um caso isolado"
     ],
@@ -299,8 +1183,87 @@ export const masterLoreParts = [
     "partMinor": 9,
     "partLabel": "1.9",
     "accessLayer": "historia_principal_ppdc_com_bastidores",
-    "audience": "P?blico filtrado / players / mestre",
-    "masterUse": "Hist?ria principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha p?blica, mantendo bastidores para revela??o em mesa.",
+    "audience": "Público filtrado / players / mestre",
+    "masterUse": "História principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha pública, mantendo bastidores para revelação em mesa.",
+    "arc": "Nascimento do Programa Jaeger",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro."
+    ],
+    "questions": [
+      "“Continuem andando!” ela gritou. “Se ele cair, vocês vão querer estar aqui embaixo?”"
+    ],
+    "conditionalConsequences": [],
+    "visibleNpcs": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Aaron"
+    ],
+    "backstageNpcs": [
+      "Precursores"
+    ],
+    "entities": [
+      "Helena Sato",
+      "Helena",
+      "Newton Geiszler",
+      "Newt",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Aaron",
+      "Precursores",
+      "Drift"
+    ],
+    "technologies": [
+      "Drift",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Mirekai",
+      "Shiranui",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Brawler Yukon",
+      "Jaeger",
+      "Mark I",
+      "Mark II"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "boia",
+      "barco",
+      "barcos",
+      "doca",
+      "porto"
+    ],
+    "continuityNotes": [],
     "subtitles": [
       "14 de novembro de 2006 — 17h31 — Monbetsu, Hokkaido, Japão"
     ],
@@ -320,8 +1283,86 @@ export const masterLoreParts = [
     "partMinor": 10,
     "partLabel": "1.10",
     "accessLayer": "historia_principal_ppdc_com_bastidores",
-    "audience": "P?blico filtrado / players / mestre",
-    "masterUse": "Hist?ria principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha p?blica, mantendo bastidores para revela??o em mesa.",
+    "audience": "Público filtrado / players / mestre",
+    "masterUse": "História principal da Guerra Kaiju e do Programa Jaeger. Pode orientar a linha pública, mantendo bastidores para revelação em mesa.",
+    "arc": "Nascimento do Programa Jaeger",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "FENDA",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [],
+    "conditionalConsequences": [
+      "Se forem bem, os instrutores percebem. Se forem mal, não significa eliminação imediata; significa anotação. O PPDC não procura perfeição. Procura padrão sob pressão."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Helena Sato",
+      "Helena",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Aaron"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Helena Sato",
+      "Helena",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Aaron",
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Gorath",
+      "Mirekai",
+      "Shiranui",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Brawler Yukon",
+      "Jaeger",
+      "Mark I"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "22 de novembro de 2006 — Anchorage, Alasca — quando o PPDC começou a transformar sobreviventes em pilotos"
     ],
@@ -344,7 +1385,87 @@ export const masterLoreParts = [
     "partLabel": "1.11",
     "accessLayer": "players_celula_k_com_mestre",
     "audience": "Players + mestre",
-    "masterUse": "Base de apresenta??o da C?lula K e dos personagens jog?veis. Usar para guiar cenas de recrutamento e v?nculos entre players.",
+    "masterUse": "Base de apresentação da Célula K e dos personagens jogáveis. Usar para guiar cenas de recrutamento e vínculos entre players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "FENDA",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "Quando for a vez dos players, as perguntas devem atingir o personagem, não a ficha. “Por que você acha que deveria entrar num Jaeger?” é fraca. Melhor perguntar algo que pressione: “Quem você deixaria para trás se a cidade dependesse disso?” ou “Se o seu parceiro travar no Drift, você puxa ele de volta ou assume o controle sozinho?” ou “Você tem medo de ver uma memória sua na cabeça de outra pessoa?” A resposta não define aprovação automática, mas define perfil: protetor, dominante, frio, instável, cooperativo, impulsivo, calculista."
+    ],
+    "conditionalConsequences": [],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Stacker Pentecost",
+      "Pentecost"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Shiranui",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Brawler Yukon",
+      "Jaeger",
+      "Mark I"
+    ],
+    "sceneAssets": [
+      "cargueiro",
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "16 de dezembro de 2006 — K-Station 01, Kwai Tsing, Hong Kong"
     ],
@@ -365,7 +1486,87 @@ export const masterLoreParts = [
     "partLabel": "1.12",
     "accessLayer": "players_celula_k_com_mestre",
     "audience": "Players + mestre",
-    "masterUse": "Base de apresenta??o da C?lula K e dos personagens jog?veis. Usar para guiar cenas de recrutamento e v?nculos entre players.",
+    "masterUse": "Base de apresentação da Célula K e dos personagens jogáveis. Usar para guiar cenas de recrutamento e vínculos entre players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "FENDA",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [],
+    "conditionalConsequences": [
+      "Se os players estiverem nessa cena, é o momento ideal para fechar a sessão com cada um descrevendo o que trouxe do Pré-Fluxo: uma imagem, uma sensação, uma memória do outro, uma frase. Nada precisa ser totalmente explicado agora. O mistério ajuda."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Pentecost"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Pentecost",
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Shiranui",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Brawler Yukon",
+      "Jaeger",
+      "Mark I"
+    ],
+    "sceneAssets": [
+      "cargueiro",
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto",
+      "hospital",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "17 de dezembro de 2006 — K-Station 01, Kwai Tsing, Hong Kong"
     ],
@@ -386,7 +1587,97 @@ export const masterLoreParts = [
     "partLabel": "1.13",
     "accessLayer": "players_celula_k_com_mestre",
     "audience": "Players + mestre",
-    "masterUse": "Base de apresenta??o da C?lula K e dos personagens jog?veis. Usar para guiar cenas de recrutamento e v?nculos entre players.",
+    "masterUse": "Base de apresentação da Célula K e dos personagens jogáveis. Usar para guiar cenas de recrutamento e vínculos entre players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "FENDA",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [],
+    "conditionalConsequences": [
+      "Se um player tiver perfil impulsivo, Helena pode colocá-lo com alguém calmo para ver se ele respeita ritmo. Se tiver perfil frio, pode colocá-lo com alguém emocionalmente aberto. Se for protetor demais, pode colocá-lo com alguém que odeia ser protegido. O objetivo não é premiar conforto. É revelar verdade.",
+      "Se os dois pilotos pensassem em levantar, levantava.",
+      "Se um pensasse em bloquear e outro em atacar, tremia.",
+      "Se um travasse, parava.",
+      "Se os dois tentassem dominar, dava erro."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mateo",
+      "Aaron"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mateo",
+      "Aaron",
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Shiranui",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Brawler Yukon",
+      "Jaeger",
+      "Mark I"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "18 de dezembro de 2006 — K-Station 01, Kwai Tsing, Hong Kong"
     ],
@@ -408,7 +1699,97 @@ export const masterLoreParts = [
     "partLabel": "1.14",
     "accessLayer": "players_celula_k_com_mestre",
     "audience": "Players + mestre",
-    "masterUse": "Base de apresenta??o da C?lula K e dos personagens jog?veis. Usar para guiar cenas de recrutamento e v?nculos entre players.",
+    "masterUse": "Base de apresentação da Célula K e dos personagens jogáveis. Usar para guiar cenas de recrutamento e vínculos entre players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "FENDA",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PRECURSORES",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Trechos narráveis devem ser revisados pelo mestre antes da leitura em voz alta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro."
+    ],
+    "questions": [],
+    "conditionalConsequences": [],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mateo"
+    ],
+    "backstageNpcs": [
+      "Precursores"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mateo",
+      "Precursores",
+      "Fluxo",
+      "Drift",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Fenda",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Brawler Yukon",
+      "Jaeger",
+      "Mark I"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "19 de dezembro de 2006 — K-Station 01, Kwai Tsing, Hong Kong"
     ],
@@ -428,8 +1809,88 @@ export const masterLoreParts = [
     "partMinor": 15,
     "partLabel": "1.15",
     "accessLayer": "mesa_jogavel_players",
-    "audience": "Players em sess?o + mestre",
-    "masterUse": "Material de sess?o jog?vel. Pode ser lido ou conduzido na mesa, respeitando as decis?es dos players.",
+    "audience": "Players em sessão + mestre",
+    "masterUse": "Material de sessão jogável. Pode ser lido ou conduzido na mesa, respeitando as decisões dos players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "LER PARA PLAYERS",
+      "NARRÁVEL",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Pode ser usado como leitura de mesa, mantendo a pausa para decisões dos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "“O que vocês viram?”"
+    ],
+    "conditionalConsequences": [
+      "Se o Player 1 disser que não viu nada, ela pode perceber. Se disser uma parte, ela anota. Se contar tudo, ela começa a entender a profundidade real da conexão. O personagem do mestre pode escolher proteger o Player 1, minimizar ou admitir que a conexão foi além do esperado."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Pentecost"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Pentecost",
+      "Fluxo",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Jaeger",
+      "Mark I"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "20 de dezembro de 2006 — K-Station 01, Kwai Tsing, Hong Kong"
     ],
@@ -449,8 +1910,113 @@ export const masterLoreParts = [
     "partMinor": 16,
     "partLabel": "1.16",
     "accessLayer": "mesa_jogavel_players",
-    "audience": "Players em sess?o + mestre",
-    "masterUse": "Material de sess?o jog?vel. Pode ser lido ou conduzido na mesa, respeitando as decis?es dos players.",
+    "audience": "Players em sessão + mestre",
+    "masterUse": "Material de sessão jogável. Pode ser lido ou conduzido na mesa, respeitando as decisões dos players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "LER PARA PLAYERS",
+      "NARRÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Pode ser usado como leitura de mesa, mantendo a pausa para decisões dos players.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "É um ponto perfeito para o mestre parar e perguntar: **“Vocês entram na sala. O clima está pesado. Alguns candidatos estão olhando para vocês. O que vocês fazem?”**",
+      "Esse é o momento de Christian e do personagem do mestre. O mestre pode parar e perguntar: **“Vocês estão diante do Tacit Ronin. Ele é mais silencioso que o Horizon Brave, mais estreito, mais técnico, quase desconfortável. O que vocês fazem?”**"
+    ],
+    "conditionalConsequences": [],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Shiranui",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Brawler Yukon",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "doca",
+      "porto",
+      "ponte",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 21 a 24 de dezembro de 2006",
       "Mini resumo da Parte 1.16 revisada",
@@ -475,8 +2041,135 @@ export const masterLoreParts = [
     "partMinor": 17,
     "partLabel": "1.17",
     "accessLayer": "mesa_jogavel_players",
-    "audience": "Players em sess?o + mestre",
-    "masterUse": "Material de sess?o jog?vel. Pode ser lido ou conduzido na mesa, respeitando as decis?es dos players.",
+    "audience": "Players em sessão + mestre",
+    "masterUse": "Material de sessão jogável. Pode ser lido ou conduzido na mesa, respeitando as decisões dos players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "LER PARA PLAYERS",
+      "NARRÁVEL",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Pode ser usado como leitura de mesa, mantendo a pausa para decisões dos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "O mestre pode dizer: **“Luiz e Alisson, vocês estão na estação Horizon. O Jaeger virtual está entre a ameaça e a rota de evacuação. A torre pede mais três minutos. O Kaiju avança. O que vocês fazem?”**",
+      "O mestre pode dizer: **“Christian e o personagem do mestre, o Tacit Ronin virtual está em silêncio. O Kaiju simulado vai cruzar o corredor. Vocês precisam decidir o momento da interceptação. O que vocês fazem?”**",
+      "O mestre pode dizer: **“Vocês estão em estações separadas, mas no mesmo cenário. Luiz e Alisson controlam a linha do Horizon Brave. Christian e o personagem do mestre controlam a linha do Tacit Ronin. A ameaça avança. A torre só consegue dar informações incompletas. Vocês precisam agir como célula. O que vocês fazem?”**",
+      "— Vocês sentiram a vontade de corrigir o outro? De assumir o erro do outro? De fazer o corpo de vocês resolver uma função que não era de vocês? Guardem essa sensação. Em campo, ela mata.",
+      "— Anomalias? — pergunta ele.",
+      "O mestre coloca os quatro players diante da situação e pergunta: **“O que vocês fazem?”**",
+      "A Parte 1.17 pode ser jogada como uma sessão de treinamento tático em duas fases. Primeiro, cada dupla joga seu próprio módulo: Horizon para defesa e Ronin para interceptação. Depois, as duas duplas jogam juntas o **Cenário Dual K-9**, onde precisam decidir em tempo real como proteger Hong Kong com dois Jaegers virtuais. O mestre deve apresentar o problema, os riscos e o mapa, e então perguntar: **“O que vocês fazem?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz organiza os dados, o sistema pode fornecer leituras melhores de risco estrutural. Se Alisson improvisa uma manobra, o Horizon pode ganhar segundos ou gerar instabilidade. Se os dois tentam agir sem alinhar intenção, o Estresse do Fluxo sobe. Se priorizam demais a estrutura, civis virtuais ficam expostos. Se priorizam apenas civis, a ameaça pode chegar perto demais dos tanques. Cada escolha vira consequência, não punição.",
+      "Se tentarem agir no impulso, o Tacit Ronin pode responder rápido demais e gerar alerta de ruído. Se esperarem demais, perdem a janela. Se coordenarem intenção limpa, o Ronin corta a trajetória e força o Kaiju para uma zona onde o Horizon pode conter. Se a sincronia do Par K-01 subir demais, Helena pode interromper antes de o módulo virar Ressonância Profunda.",
+      "Se o Horizon Brave segura bem, dá janela para o Tacit Ronin.",
+      "Se o Tacit Ronin intercepta no tempo certo, reduz o impacto sobre o Horizon.",
+      "Se a comunicação falha, os dois Jaegers virtuais podem atrapalhar um ao outro.",
+      "Se o Par K-01 sobe demais em Sincronia, a ação do Ronin melhora, mas o risco neural aumenta.",
+      "Se Luiz e Alisson sustentam posição com calma, a cidade ganha tempo.",
+      "Se improvisam bem, podem salvar setores que o exercício esperava perder.",
+      "Se todos tentam salvar tudo, o Estresse do Fluxo sobe e a simulação cobra.",
+      "Se a Célula K funcionar bem, Helena registra que os quatro talvez possam avançar para contato mais direto com os Conn-Pods reais. Se funcionar parcialmente, o PPDC identifica falhas específicas: comunicação entre duplas, excesso de iniciativa, rigidez, atraso, risco de Ressonância, falta de confiança entre Jaegers. Se falhar feio, ninguém é expulso automaticamente, mas a base reduz abertura, aumenta treino e talvez redirecione temporariamente um dos pares para módulos separados."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Mercer",
+      "Elaine Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Mercer",
+      "Elaine Mercer",
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "porto",
+      "ponte",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 22 de dezembro de 2006 a 8 de janeiro de 2007",
       "Mini resumo da Parte 1.17 revisada",
@@ -502,8 +2195,133 @@ export const masterLoreParts = [
     "partMinor": 18,
     "partLabel": "1.18",
     "accessLayer": "mesa_jogavel_players",
-    "audience": "Players em sess?o + mestre",
-    "masterUse": "Material de sess?o jog?vel. Pode ser lido ou conduzido na mesa, respeitando as decis?es dos players.",
+    "audience": "Players em sessão + mestre",
+    "masterUse": "Material de sessão jogável. Pode ser lido ou conduzido na mesa, respeitando as decisões dos players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "LER PARA PLAYERS",
+      "NARRÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Pode ser usado como leitura de mesa, mantendo a pausa para decisões dos players.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "Esse é um ponto bom para Luiz e Alisson jogarem antes do Conn-Pod. O mestre pode pedir testes de equilíbrio, comunicação, leitura de mapa, ou simplesmente apresentar a situação: o Horizon virtual precisa segurar uma rota enquanto a cidade escoa atrás. O que eles fazem? Como dividem atenção? Quem observa mapa? Quem mantém postura? Quem fala com a torre? Quem decide quando recuar?",
+      "Aqui, a narração deve parar para Luiz e Alisson. Eles estão diante do Conn-Pod real do Horizon Brave. A porta está aberta. Os técnicos aguardam. A cidade inteira está invisível acima deles. O mestre pergunta: **“O que vocês fazem?”**",
+      "Esse é um ponto de mesa para o Par K-01. O mestre pode apresentar o silêncio como desafio e perguntar: **“O que vocês fazem para não deixar a conexão puxar mais do que deveria?”** Eles podem criar um código, uma palavra, uma imagem mental, uma âncora, uma rotina de respiração, uma forma de separar “eu” e “nós”. O sistema de Fluxo pode registrar isso como recurso futuro.",
+      "Este é o momento de parar a cena para Christian e o personagem do mestre. O mestre pergunta: **“Vocês estão diante do Conn-Pod do Tacit Ronin. Ele é mais estreito, mais silencioso, mais sensível. O que vocês fazem?”**",
+      "Uma linha. Uma postura. Um corpo estreito, pronto para movimento. Os pilotos não sentem uma muralha; sentem uma lâmina vertical. O Tacit Ronin transmite menos massa e mais direção. A presença dele parece perguntar não “você aguenta impacto?”, mas “você consegue não se mover antes da hora?”.",
+      "**“O que vocês fazem antes do primeiro teste em baixa carga?”**",
+      "Esta parte pode ser jogada como sessão de **primeira entrada real nos Conn-Pods**. O mestre chama cada dupla separadamente, descreve a plataforma, o interior, as travas e a porta fechando, e então pergunta: **“O que vocês fazem?”** O resultado define como cada personagem lida com confinamento, presença da máquina, parceria, silêncio, medo e expectativa. Não é uma sessão para “vencer”; é uma sessão para descobrir quais marcas o Conn-Pod deixa em cada um antes mesmo da guerra começar."
+    ],
+    "conditionalConsequences": [
+      "Se Luiz tenta organizar dados, os painéis podem responder com informações passivas: pressão interna, status de trava, temperatura, tempo de ciclo. Se Alisson reage a qualquer falha simulada, Rafiq pode inserir um atraso de luz de meio segundo para medir adaptação. Mas nada é imposto. O mestre decide conforme a resposta dos players.",
+      "Se os players conseguirem estabelecer controle, as linhas estabilizam próximas, mas sem se fundir. Isso é um sucesso enorme. Se tentarem se entregar à conexão, Helena corta o ciclo imediatamente. Se um tentar proteger o outro mentalmente, o Ronin registra ruído emocional. Se ambos acharem um método de silêncio compartilhado sem invasão, Helena marca aquilo como dado raro e perigoso.",
+      "Se Christian ou o personagem do mestre responderem, Dae-Hyun pode sustentar a provocação com frieza. Se Luiz ou Alisson responderem, ele pode dizer que pelo menos a Linha Horizon “trabalha com uma máquina que sabe o que é função real”. Se ninguém responder, Mei Lin talvez corte a tensão com uma frase seca, ou Mateo mude o assunto para algo técnico. A escolha é da mesa."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Mercer",
+      "Elaine Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Mercer",
+      "Elaine Mercer",
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto",
+      "ponte",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 9 a 22 de janeiro de 2007",
       "O Ciclo Horizon — a porta larga que pesa como cidade",
@@ -533,8 +2351,142 @@ export const masterLoreParts = [
     "partMinor": 19,
     "partLabel": "1.19",
     "accessLayer": "mesa_jogavel_players",
-    "audience": "Players em sess?o + mestre",
-    "masterUse": "Material de sess?o jog?vel. Pode ser lido ou conduzido na mesa, respeitando as decis?es dos players.",
+    "audience": "Players em sessão + mestre",
+    "masterUse": "Material de sessão jogável. Pode ser lido ou conduzido na mesa, respeitando as decisões dos players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "LER PARA PLAYERS",
+      "NARRÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Pode ser usado como leitura de mesa, mantendo a pausa para decisões dos players.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "— O que exatamente eles vão sentir?",
+      "Aqui a cena deve ser aberta para mesa. Os players estão diante da notícia de que, pela primeira vez, o corpo do Jaeger vai “acordar” dentro deles, mesmo sem se mover. O mestre pode perguntar: **“O que vocês perguntam? O que vocês fazem antes do teste? Vocês querem falar com alguém? Preparar alguma âncora? Observar algum NPC?”**",
+      "Ela aparece brevemente na **Galeria de Observação K-2**, acompanhando Pentecost e Vorn enquanto os técnicos preparam a Baia Principal para o ciclo Horizon. Se algum player notar, a cena pode abrir curiosidade. Quem é ela? Por que Pentecost a mantém perto? Por que ela olha para os Jaegers com medo e fascínio ao mesmo tempo? O mestre não precisa explicar tudo agora. A presença dela é semente emocional.",
+      "Aqui a cena para Luiz e Alisson deve ser jogável. O mestre pode perguntar: **“Vocês entram no Conn-Pod do Horizon Brave sabendo que, dessa vez, ele vai acordar uma fração dentro de vocês. O que fazem antes de as travas fecharem?”**",
+      "Aqui o mestre pode pedir decisões internas. **“Luiz e Alisson, o Horizon Brave parece oferecer o braço como defesa, mas vocês não podem mover. O corpo de vocês quer reagir. Como vocês lidam com esse impulso?”**",
+      "O mestre pode perguntar: **“Antes de entrar no Tacit Ronin, o que vocês fazem para estabelecer limite entre vocês dois?”**",
+      "Aqui o mestre deve parar e perguntar para os dois: **“A sensação do Ronin quase completa uma ação dentro de vocês. Vocês deixam a conexão seguir ou seguram?”**",
+      "A Parte 1.19 funciona como sessão de baixa carga sensorial e primeiro alerta de prontidão. O mestre pode jogar duas cenas fortes: primeiro, cada dupla dentro do Conn-Pod sentindo seu Jaeger “acordar” sem poder mover; depois, todos sendo convocados de madrugada para observar um possível contato oceânico. A pergunta final para mesa é simples e forte: **“Vocês ainda não são Rangers, mas a guerra está chegando. O que vocês fazem com isso?”**"
+    ],
+    "conditionalConsequences": [
+      "Se eles controlarem bem, o Estresse do Fluxo fica baixo e Helena registra estabilidade. Se tentarem “ajudar” o Jaeger mentalmente, surge alerta amarelo leve. Se um deles tenta assumir controle demais, o sistema marca assimetria. Se eles se comunicam de forma calma e aceitam a sensação sem forçar resposta, Rafiq registra que a Linha Horizon pode avançar.",
+      "Se o Par K-01 reage bem, a linha estabiliza. Se tenta completar, o alerta surge. Se a conexão entre eles transforma a intenção de um em resposta do outro, Helena corta o pulso."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer",
+      "Fluxo",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Shiranui",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "porto"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 23 de janeiro a 6 de fevereiro de 2007",
       "O Ciclo Horizon — quando o peso acorda",
@@ -564,8 +2516,140 @@ export const masterLoreParts = [
     "partMinor": 20,
     "partLabel": "1.20",
     "accessLayer": "mesa_jogavel_players",
-    "audience": "Players em sess?o + mestre",
-    "masterUse": "Material de sess?o jog?vel. Pode ser lido ou conduzido na mesa, respeitando as decis?es dos players.",
+    "audience": "Players em sessão + mestre",
+    "masterUse": "Material de sessão jogável. Pode ser lido ou conduzido na mesa, respeitando as decisões dos players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "LER PARA PLAYERS",
+      "NARRÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "FLUXO",
+      "PAR K-01",
+      "FENDA",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Pode ser usado como leitura de mesa, mantendo a pausa para decisões dos players.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "Helena Sato chegou poucos minutos depois dos candidatos. Não parecia assustada. Isso era quase pior. Pessoas assustadas denunciavam novidade. Helena tinha a expressão de alguém que já esperava aquilo, só não sabia quando viria. Naomi Lau permaneceu perto da porta, observando os quatro e os outros candidatos convocados, procurando sinais de pânico, euforia, sono quebrado ou aquela excitação perigosa que alguns cadetes confundiam com coragem. Ryo Tanaka controlava a entrada com dois soldados. Rafiq Al-Hassan não estava ali; havia ido direto para o Hangar K, porque, para ele, se o oceano fazia barulho, a primeira pergunta era sempre a mesma: o que pode falhar se pedirem para a máquina acordar?",
+      "Esse é um momento excelente de mesa. Os players estão na sala, vendo pela primeira vez a K-Station 01 reagir a um possível contato. O mestre pode parar e perguntar: **“Vocês veem os status dos dois Jaegers. Não é combate, mas a base inteira mudou. O que vocês fazem?”**",
+      "— O que está olhando?",
+      "Para os players, esse exercício pode ser jogado como cena rápida, mas importante. O mestre descreve a sirene, o corredor, a confusão controlada, técnicos passando, Ryo Tanaka gritando para um soldado liberar passagem, e pergunta: **“Vocês estão sendo deslocados em prontidão cinza. O que fazem para chegar ao ponto certo sem atrapalhar a operação?”**",
+      "Aqui a cena é jogável. O mestre pode colocar os quatro players no cenário e dizer: **“Vocês esperavam que o Kaiju simulado avançasse. Ele recuou e mudou a rota. O Horizon está fora do ângulo ideal. O Ronin perdeu a janela de interceptação. A torre não tem dados completos. O que vocês fazem?”**",
+      "O mestre pode perguntar aos players: **“Vocês estão observando outro possível contato. Ainda não são chamados para os Conn-Pods. O que vocês fazem com a vontade de agir?”**",
+      "A Parte 1.20 pode ser jogada como uma sessão de prontidão e tensão psicológica. O mestre coloca os players em alertas noturnos, deslocamentos de emergência, observação de contato não confirmado e simulações com Kaijus comuns que mudam de rota. O objetivo não é vencer um combate, mas testar disciplina, paciência, medo e vontade de agir. A pergunta central da sessão é: **“O que vocês fazem quando a guerra chama, mas ainda não chama vocês?”**}"
+    ],
+    "conditionalConsequences": [
+      "Se algum player cruzar com ela, a cena pode acontecer de forma sutil. Ela não se apresenta como figura importante. Não faz discurso. Pode apenas perguntar, com uma seriedade jovem demais:",
+      "Se os players adaptam bem, Helena registra flexibilidade. Se tentam repetir plano antigo, a simulação pune. Se o Horizon segura e o Ronin recalcula, a Célula K ganha tempo. Se o Ronin tenta forçar interceptação mesmo sem janela, o Estresse do Fluxo sobe. Se o Horizon avança demais para compensar, risco urbano aumenta."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Chau",
+      "Mercer",
+      "Elaine Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer",
+      "Fluxo",
+      "Par K-01",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Shiranui",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "rota civil"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 6 a 18 de fevereiro de 2007",
       "A base aprende a acordar",
@@ -596,8 +2680,135 @@ export const masterLoreParts = [
     "partMinor": 21,
     "partLabel": "1.21",
     "accessLayer": "mesa_jogavel_players",
-    "audience": "Players em sess?o + mestre",
-    "masterUse": "Material de sess?o jog?vel. Pode ser lido ou conduzido na mesa, respeitando as decis?es dos players.",
+    "audience": "Players em sessão + mestre",
+    "masterUse": "Material de sessão jogável. Pode ser lido ou conduzido na mesa, respeitando as decisões dos players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "LER PARA PLAYERS",
+      "NARRÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Pode ser usado como leitura de mesa, mantendo a pausa para decisões dos players.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "— O que muda, tecnicamente?",
+      "Os quatro estão na sala, diante de um teste que coloca os dois pares em atividade sensorial simultânea. O mestre pode parar e perguntar: **“Vocês querem combinar algo antes do teste? Uma regra de comunicação? Uma palavra de corte? Uma prioridade entre os dois Jaegers? O que cada dupla quer deixar claro para a outra antes de entrar?”**",
+      "Aqui, o mestre pode jogar uma cena curta com eles: **“A rota civil está atrás do Horizon virtual. A pressão vem pela frente. A base começa a ceder do lado esquerdo. O que vocês fazem?”**",
+      "Aqui o mestre pode perguntar aos dois: **“Qual é o limite de vocês? Como vocês sabem que a conexão está ajudando e não puxando?”**",
+      "O mestre pode parar aqui e perguntar a Luiz e Alisson: **“Antes de entrar, vocês dizem algo um ao outro ou à equipe? Definem uma âncora? Alguma regra para quando sentirem o Ronin ativar?”**",
+      "O mestre pode parar e perguntar ao Par K-01: **“Vocês estão diante do Ronin sabendo que o Horizon estará ativo junto. O que fazem para não deixar a conexão transformar urgência em comando?”**",
+      "O mestre pode cortar para eles: **“Dentro do Horizon, vocês sentem o sistema reconhecer outro corpo ativo. O peso de vocês parece pedir que mantenham espaço. O que fazem?”**",
+      "Depois corta para o Ronin: **“Dentro do Tacit Ronin, vocês sentem o Horizon como massa distante. O Ronin parece pronto para encontrar o ângulo que protegeria essa massa. O que fazem?”**",
+      "Isso pode ser jogado: **“Depois de sair do Horizon, o corpo ainda lembra o peso. Naomi pede que vocês descrevam três coisas reais e humanas na sala. O que vocês escolhem?”**",
+      "Esse também é ponto jogável: **“Helena pergunta o que era de vocês e o que era do Ronin. Vocês respondem tudo? Escondem algo? Tentam proteger o outro?”**",
+      "**“Antes de entrar no primeiro cenário virtual com baixa carga real, o que vocês fazem?”**",
+      "A Parte 1.21 funciona como sessão de coordenação entre os dois pares. O mestre pode jogar preparação, entrada simultânea nos Conn-Pods, baixa carga coordenada e descompressão. O foco é a relação entre as duplas: o Horizon não pode tentar ser Ronin; o Ronin não pode tentar ser Horizon; os quatro precisam aprender a existir como célula sem invadir a função uns dos outros. A pergunta central é: **“Vocês conseguem sentir que o outro Jaeger existe sem tentar pilotar a guerra inteira?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson mantêm o Horizon estável, a linha Horizon fica sólida e dá ao sistema um ponto de referência. Se tentam compensar o Ronin, surge oscilação de defesa passiva. Se Christian e o personagem do mestre seguram o Ronin dentro do limite, a linha Ronin permanece limpa. Se deixam a conexão seguir o chamado do eixo, Helena vê a Sincronia subir rápido demais."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Chau",
+      "Mercer",
+      "Elaine Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer",
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "barco",
+      "barcos",
+      "porto",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 19 de fevereiro a 3 de março de 2007",
       "A convocação da Célula K",
@@ -631,8 +2842,136 @@ export const masterLoreParts = [
     "partMinor": 22,
     "partLabel": "1.22",
     "accessLayer": "mesa_jogavel_players",
-    "audience": "Players em sess?o + mestre",
-    "masterUse": "Material de sess?o jog?vel. Pode ser lido ou conduzido na mesa, respeitando as decis?es dos players.",
+    "audience": "Players em sessão + mestre",
+    "masterUse": "Material de sessão jogável. Pode ser lido ou conduzido na mesa, respeitando as decisões dos players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "LER PARA PLAYERS",
+      "NARRÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Pode ser usado como leitura de mesa, mantendo a pausa para decisões dos players.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "O mestre pode perguntar a Luiz e Alisson: **“Antes de entrar, vocês olham para o quê? Para o nome no peito? Para a cidade acima que vocês não conseguem ver? Para o outro? Para o painel? O que fazem?”**",
+      "O mestre pode perguntar ao Par K-01: **“Qual limite vocês levam para dentro? Uma palavra? Uma memória? Um gesto? Uma regra? Ou entram sem combinar?”**",
+      "**“Vocês estão dentro dos Conn-Pods reais, sentindo baixa carga dos Jaegers, mas operando apenas os modelos virtuais. A cidade virtual pede resposta. O Kaiju simulado avança. O Horizon tem a linha de defesa. O Ronin tem ângulo de interceptação. O que vocês fazem?”**",
+      "O mestre deve perguntar: **“A rota leste perdeu comunicação. O Kaiju mudou para oeste. Vocês mantêm o plano ou mudam?”**",
+      "A Parte 1.22 pode ser jogada como uma sessão completa dentro dos Conn-Pods reais, com cidade virtual ativa. O mestre coloca os players diante de decisões impossíveis em Hong Kong, com baixa carga sensorial tentando enganar o corpo deles. A pergunta central da sessão é: **“Vocês conseguem tomar decisões de gigantes sem esquecer que seus corpos reais ainda estão parados?”**"
+    ],
+    "conditionalConsequences": [
+      "Se eles combinarem bem, a Célula K entra com vantagem narrativa de coordenação. Se entrarem sem combinar, o cenário pode revelar falhas de comunicação. Se criarem uma regra inteligente, Helena pode registrar como protocolo emergente. Se brigarem, Naomi percebe antes mesmo do teste começar.",
+      "Se Luiz e Alisson mantêm o Horizon na rota civil, ganham tempo, mas o setor industrial fica sob risco. Se avançam demais, podem abrir a rota e perder proteção. Se Christian e o personagem do mestre interceptam cedo, podem redirecionar o Kaiju, mas geram risco de ruído no Ronin. Se esperam demais, o Horizon recebe pressão maior. Se os quatro conversam bem, podem usar o Horizon como âncora e o Ronin como corte lateral. Se falam por cima uns dos outros, a torre virtual registra sobreposição de comando.",
+      "Se mantêm, podem salvar estrutura e perder civis virtuais se a rota leste colapsar. Se mudam, podem abrir espaço para a ameaça. Se tentam salvar tudo, o Estresse do Fluxo sobe. Se pedem mais dados, perdem segundos. Se usam Mei Lin ou Mateo como suporte virtual — caso o mestre os coloque em torre — podem obter leituras adicionais. Essa é uma boa forma de trazer NPCs úteis sem roubar decisão dos players.",
+      "Se eles resistem, o modelo virtual executa o comando dentro do ambiente e o corpo real permanece seguro. Se tentam forçar com o próprio corpo, Rafiq corta amplitude defensiva e o Horizon virtual perde eficiência por alguns segundos.",
+      "Se algum player passar por ali, Mako pode fazer uma pergunta simples:"
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto",
+      "ponte",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 3 a 16 de março de 2007",
       "Antes da entrada",
@@ -664,8 +3003,135 @@ export const masterLoreParts = [
     "partMinor": 23,
     "partLabel": "1.23",
     "accessLayer": "mesa_jogavel_players",
-    "audience": "Players em sess?o + mestre",
-    "masterUse": "Material de sess?o jog?vel. Pode ser lido ou conduzido na mesa, respeitando as decis?es dos players.",
+    "audience": "Players em sessão + mestre",
+    "masterUse": "Material de sessão jogável. Pode ser lido ou conduzido na mesa, respeitando as decisões dos players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "LER PARA PLAYERS",
+      "NARRÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Pode ser usado como leitura de mesa, mantendo a pausa para decisões dos players.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Vocês estão diante do Conn-Pod do Horizon Brave. Hoje ele vai simular o primeiro impacto. O que vocês fazem antes de entrar?”**",
+      "**“O Kaiju virtual vem direto. Atrás de vocês, a rota civil ainda não esvaziou. O Horizon pode segurar, mas o impacto vai vir. O que vocês fazem?”**",
+      "**“Christian e personagem do mestre, hoje o Ronin vai simular perda de eixo. Antes de entrar, o que vocês fazem para impedir que a conexão de vocês tente corrigir tudo rápido demais?”**",
+      "**“Vocês têm uma janela estreita. Se entrarem cedo, o Ronin fica exposto. Se entrarem tarde, recebe choque lateral. O que fazem?”**",
+      "**“Agora que uma parte real do Jaeger pode obedecer vocês, o que vocês fazem antes de tentar?”**"
+    ],
+    "conditionalConsequences": [
+      "Se eles mantêm posição, o impacto vem mais forte, mas protegem a rota. Se reposicionam, reduzem carga, mas expõem civis. Se usam o braço defensivo virtual, aumentam pressão no membro. Se tentam usar cenário — contêineres, guindastes, barreiras — podem reduzir impacto. A simulação responde.",
+      "Se eles corrigem com controle, a estabilidade melhora. Se forçam demais, o sistema corta amplitude e marca desgaste. Se recuam, salvam o Jaeger, mas a rota perde tempo. Se usam comunicação com a Linha Ronin — caso o exercício permita — podem pedir interceptação posterior.",
+      "Se entram no tempo certo, a simulação permite interceptação limpa. Mas o sistema ainda aplicará um choque menor, para testar recuperação. Se entram tarde, o impacto lateral é mais forte. Se entram cedo, a ameaça muda e o Ronin precisa corrigir. Se hesitam, perdem janela.",
+      "Se deixam seguir, o Ronin virtual recupera lindamente, mas Helena corta parte do retorno e marca risco de Ressonância. Se seguram demais, o Ronin virtual perde oportunidade e sofre dano simulado. Se conseguem limitar a correção — usando a âncora criada antes — o sistema registra avanço enorme: precisão sem fusão completa."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer",
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 17 de março a 2 de abril de 2007",
       "A convocação",
@@ -695,8 +3161,141 @@ export const masterLoreParts = [
     "partMinor": 24,
     "partLabel": "1.24",
     "accessLayer": "mesa_jogavel_players",
-    "audience": "Players em sess?o + mestre",
-    "masterUse": "Material de sess?o jog?vel. Pode ser lido ou conduzido na mesa, respeitando as decis?es dos players.",
+    "audience": "Players em sessão + mestre",
+    "masterUse": "Material de sessão jogável. Pode ser lido ou conduzido na mesa, respeitando as decisões dos players.",
+    "arc": "Célula K e treinamento inicial",
+    "status": "Pronto para leitura supervisionada",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "LER PARA PLAYERS",
+      "NARRÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Pode ser usado como leitura de mesa, mantendo a pausa para decisões dos players.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Vocês estão diante dos primeiros módulos reais que podem obedecer a vocês. O Horizon oferece uma resposta defensiva pesada. O Ronin oferece um ajuste preciso. Antes do teste, vocês conversam entre si? Perguntam algo? Criam uma regra de comando? Tentam observar o módulo? O que fazem?”**",
+      "— O que vocês sentiram primeiro: o comando, o parceiro ou a máquina?",
+      "**“O sistema faz parecer que a janela está acabando. O Ronin responde melhor se vocês forem limpos, não rápidos. O que fazem?”**",
+      "Esse momento pode ser jogado. Os players podem responder, ignorar, provocar, conversar com Mei Lin, perguntar como Mateo sabe dos três centímetros, ou perceber que os rumores estão vazando com detalhes demais. Se alguém notar isso, pode ser gancho para Ryo Tanaka: como informações técnicas estão saindo do setor restrito?",
+      "— O que ele quer com filtros?",
+      "**“Agora que vocês sabem que o metal obedece, o que isso muda na forma como vocês olham para os Jaegers reais?”**",
+      "A Parte 1.24 pode ser jogada como a primeira sessão de comando mecânico real. O mestre não precisa tratar o teste como combate, mas como descoberta de poder. Cada dupla deve decidir como dividir intenção, como parar o comando e como reagir ao ver metal real obedecer. A pergunta central é: **“Quando a máquina finalmente responde, vocês conseguem continuar tratando isso como responsabilidade e não como recompensa?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson mantêm a intenção estável, a placa fica firme. Se um tenta corrigir demais, ela vibra. Se o outro hesita, a linha oscila. Se ambos se empolgam e tentam subir mais, o sistema bloqueia.",
+      "Se forçam, a placa sobe, mas vibra. Se ajustam, sobe mais lento e limpo. Se hesitam, não chega à marca. Se conversam bem, o sistema registra melhora.",
+      "Se o Par K-01 mantém controle, o sistema registra uma resposta limpa. Se eles se aproximam demais, Helena corta antes do retorno. Se um tenta corrigir microvibração sem falar, a Sincronia sobe. Se conseguem permitir a microvibração sem invadir o outro, avançam.",
+      "Se eles mantêm calma, o giro sai limpo. Se aceleram, o módulo passa do ponto ou vibra. Se entram em sincronia forte demais, Helena corta. Se usam uma técnica própria — palavra, respiração, separação —, podem transformar isso em avanço narrativo."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "doca",
+      "porto",
+      "ponte",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 3 a 18 de abril de 2007",
       "A instrução antes do comando",
@@ -730,7 +3329,135 @@ export const masterLoreParts = [
     "partLabel": "1.25",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Treinamento externo e prontid?o",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "— “O módulo queria”?",
+      "**“Vocês estão vendo que o teste agora não é só mover uma peça. É comandar uma cadeia de movimento e talvez interromper no meio. Antes de começar, o que vocês querem combinar entre vocês, com suas duplas ou com a equipe?”**",
+      "**“Christian e personagem do mestre, a interface do Ronin parece simples demais. Vocês sabem que a conexão de vocês pode completar a sequência muito rápido. Como dividem o comando sem se misturar?”**",
+      "— Por que eles não levantaram tudo? — pergunta.",
+      "**“Agora que o próximo comando será dentro do Jaeger real, o que vocês fazem antes de encarar o corpo inteiro?”**",
+      "A Parte 1.25 funciona como sessão de transição entre módulos e Jaegers reais. O mestre pode jogar os testes separados de cada dupla, o ensaio combinado e a tensão social depois. A pergunta central é: **“Vocês conseguem aceitar uma resposta imperfeita, interrompida ou parcial, antes que o desejo de completar o movimento coloque todo mundo em risco?”**"
+    ],
+    "conditionalConsequences": [
+      "Se perguntarem a Rafiq sobre o que acontece se falharem, ele responde sem suavizar:",
+      "Se perguntarem a Helena se existe risco neural, ela diz:",
+      "Se perguntarem a Naomi qual a maior armadilha, ela responde:",
+      "Se tentam completar perfeito, a pressão bate no meio do movimento e o módulo vibra. Se aceitam defesa parcial, a placa abre menos, mas estabiliza. Se mudam o plano e usam o ombro para absorver antes da placa, podem criar resposta criativa que Rafiq registra como solução tática. Se entram em desacordo, o sistema corta.",
+      "Se eles fazem bem, o eixo alinha quase sem som. O quadril gira dois graus com um clique baixo. A perna travada recebe pressão no suporte sem se mover. A sequência parece limpa. Talvez limpa demais. Helena observa a Sincronia subir, mas dentro do limite.",
+      "Se aceleram demais, a Sincronia sobe. Se mantêm limpeza, talvez percam o ponto ideal, mas preservem controle. Se aceitam perder, Helena registra maturidade; Dae-Hyun, se souber depois, talvez chame de fraqueza. Se encontram uma técnica de correção limitada, o Par K-01 avança.",
+      "Se fazem, o módulo corrige, mas Helena corta e marca alerta. Se seguram, a sequência fica imperfeita, mas segura. Se pedem corte, provam que sabem parar. Se corrigem com limite usando âncora, podem conquistar um dos primeiros grandes avanços do Par K-01: **correção compartilhada sem fusão**."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "doca",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 19 de abril a 4 de maio de 2007",
       "A chamada da Célula K",
@@ -763,7 +3490,141 @@ export const masterLoreParts = [
     "partLabel": "1.26",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Treinamento externo e prontid?o",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Vocês estão prestes a entrar nos Jaegers completos pela primeira vez para um comando real, ainda mínimo. O que vocês fazem antes do briefing terminar? Fazem perguntas? Conversam entre as duplas? Criam limites? Tentam parecer calmos? Procuram alguém?”**",
+      "**“Luiz e Alisson, a porta do Horizon Brave está aberta. Hoje, uma parte do Jaeger real pode responder a vocês. Antes de entrar, o que fazem? Vocês combinam a divisão do comando? Olham para o braço lá embaixo? Falam com Rafiq ou Naomi?”**",
+      "**“A resistência aparece antes do movimento terminar. O Horizon parece pedir mais força, mas vocês sabem que mais força pode sujar o comando. O que fazem?”**",
+      "**“Christian e personagem do mestre, vocês estão diante do Conn-Pod do Tacit Ronin. Hoje o corpo real dele pode aceitar um microajuste de eixo. Que limite vocês levam para dentro?”**",
+      "O retorno é o perigo. O Ronin parece deixar uma sensação de trajetória pendente. Como se o microajuste tivesse criado uma pergunta: “e agora?”. A resposta correta é: nada. O teste acabou. O corpo não continua.",
+      "— O que foi comando?\r\n— O que foi continuação?\r\n— O que foi o outro?",
+      "**“Depois de verem o vídeo do corpo real respondendo, o que cada um de vocês sente vontade de dizer ou esconder?”**",
+      "— O que está procurando?",
+      "A Parte 1.26 pode ser jogada como a primeira sessão em que os players sentem que o Jaeger real respondeu de verdade. O mestre deve enfatizar que o movimento é mínimo, mas emocionalmente gigantesco. O foco não é vencer um inimigo, mas lidar com a descoberta de que o corpo verdadeiro obedece. A pergunta central é: **“Quando o gigante responde, vocês conseguem desejar o próximo passo sem perder o respeito pelo limite?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson quiserem discutir como vão tratar o Horizon como corpo inteiro e não como módulo, a cena permite. Se Christian e o personagem do mestre quiserem reforçar âncoras para o Tacit Ronin, isso é fundamental. Se os quatro quiserem conversar como Célula K, definindo que ninguém deve transformar sucesso em competição, Helena observa e registra. Se alguém quiser perguntar sobre risco de corte, Rafiq responde com prazer técnico. Se alguém quiser perguntar se Pentecost estará observando, Vorn pode dizer apenas:",
+      "Se Luiz e Alisson retornam bem, o braço volta à posição neutra com vibração mínima. Se um deles sustenta demais, o sistema marca atraso. Se tentam subir além, corte. Se perdem sincronia, a placa treme antes de descer.",
+      "Se usam defesa funcional, aceitam talvez um deslocamento mais lento, mas limpo. Se tentam heroísmo, o sistema vibra. Se pedem corte por instabilidade, maturidade. Se redistribuem função, avanço.",
+      "Se deixam morrer, Helena registra controle. Se guardam como leitura, pode ser útil, mas aumenta eco. Se tentam completar, corte imediato. Se um tenta completar e o outro segura, isso vira cena forte de dupla.",
+      "Se confiam, o eixo completa com atraso e retorna. Se corrigem, passam do ponto. Se pedem corte, maturidade. Se usam correção limitada, avanço com risco.",
+      "Se disserem “o Horizon levantou”, ela aceita.",
+      "Se disserem “nós levantamos o braço do Horizon”, ela corrige.",
+      "Se disserem “ele quis proteger”, ela pergunta se isso foi sensação ou interpretação."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Drift",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Drift",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 5 a 22 de maio de 2007",
       "O briefing do corpo inteiro",
@@ -798,7 +3659,139 @@ export const masterLoreParts = [
     "partLabel": "1.27",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Treinamento externo e prontid?o",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "— O que queremos deles hoje?",
+      "**“Antes do BR-2, sabendo que agora o comando vai atravessar uma cadeia real dentro do Jaeger completo, o que vocês combinam? Como cada dupla pretende interromper um gesto antes que ele vire movimento maior? Vocês conversam entre as duplas ou cada linha se prepara separadamente?”**",
+      "**“Luiz e Alisson, vocês estão prestes a entrar no Horizon Brave para comandar uma sequência real do braço direito. O que fazem antes de a porta fechar?”**",
+      "**“Christian e personagem do mestre, antes de entrar no Tacit Ronin para um comando encadeado real, o que vocês usam como limite? Vocês combinam uma palavra, uma memória, uma divisão de função, ou cada um segura uma parte da sequência?”**",
+      "**“Os dois pares vão operar no mesmo ciclo. O Horizon responde primeiro; o Ronin depois. O que vocês combinam entre as duplas para não transformar um comando parcial em ação completa?”**",
+      "— O que você viu? — pergunta ele.",
+      "**“Depois de ver os Jaegers responderem juntos, vocês sentem que estão mais preparados… ou apenas mais próximos de algo que ainda não entendem totalmente?”**",
+      "A Parte 1.27 funciona como sessão de comando encadeado dentro dos Jaegers reais. O mestre deve deixar claro que os movimentos são mínimos, mas agora pertencem ao corpo completo dos gigantes. A pergunta central da sessão é: **“Vocês conseguem comandar uma sequência real e aceitar que ela termine antes de virar o movimento que vocês desejam?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson retornam com calma, o movimento se desfaz: placa recolhe, antebraço desce, ombro volta ao neutro. Se tentam soltar tudo de uma vez, o braço dá um tranco leve e Rafiq reclama. Se sustentam demais, alerta amarelo. Se um quer manter e o outro quer retornar, o sistema vibra.",
+      "Se aceitam parcial, a placa abre menos, mas a cadeia permanece limpa. Rafiq registra maturidade. Se insistem em completo e a pressão virtual chega, o braço vibra e o sistema reduz amplitude. Se pedem corte, preservam o corpo. Se inventam uma solução — por exemplo, usar ombro para absorção e placa parcial para cobertura — Rafiq pode registrar como resposta tática emergente.",
+      "Se eles mantêm o protocolo, a Linha Horizon mostra evolução. Se tentam proteger além do limite, o sistema acusa ruído emocional. Se conversam e nomeiam a imagem como estímulo, Helena registra autoconsciência.",
+      "Se ignoram completamente, podem perder oportunidade de leitura, mas mantêm segurança. Se usam como referência sem seguir, avanço. Se tentam completar, corte. Se um tenta e o outro segura, cena de dupla.",
+      "Se corrigem limitado usando âncora, esse é um grande avanço. Se mergulham, Helena corta e reduz confiança. Se esperam, o sistema estabiliza com atraso. Se pedem corte, maturidade.",
+      "Se a Célula K coordena bem, os sistemas registram:",
+      "Se o Horizon tenta sustentar além do tempo para “dar janela” ao Ronin, alerta de excesso de defesa. Se o Ronin tenta antecipar trajetória por causa da defesa do Horizon, alerta de continuação. Se os quatro se comunicam mal, o Ronin entra cedo ou o Horizon retorna tarde. Se comunicam bem, nasce o primeiro padrão real de célula dentro dos Jaegers completos.",
+      "Se os players conversarem com Dae-Hyun, podem perceber que a raiva dele não é só inveja. É medo institucional. Ele vê o PPDC acelerando certas pessoas e teme que o programa esteja criando símbolos antes de criar pilotos. Ele está errado sobre os players serem privilegiados sem risco, mas não está totalmente errado sobre o comando usar progresso como argumento."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto",
+      "ponte",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 23 de maio a 12 de junho de 2007",
       "A instrução da manhã",
@@ -831,7 +3824,136 @@ export const masterLoreParts = [
     "partLabel": "1.28",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Treinamento externo e prontid?o",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Antes do BR-3, sabendo que o Jaeger real vai redistribuir postura e parecer prestes a se mover, o que vocês combinam? Cada dupla cria uma palavra de limite? Vocês conversam entre as duas linhas? Alguém pergunta algo a Helena, Rafiq, Naomi ou Vorn?”**",
+      "**“Luiz e Alisson, vocês estão diante do Conn-Pod do Horizon Brave. O teste de hoje não é mover braço, é sentir o corpo real assumindo postura defensiva. O que fazem antes de entrar?”**",
+      "**“Vocês sentem o Horizon se plantando e o ombro preparando defesa. O corpo quer completar o bloqueio, mas o teste não autoriza. O que vocês fazem?”**",
+      "**“O Horizon parece mais firme do que nunca. A sensação é de que, se algo batesse nele agora, talvez ele aguentasse. Vocês mantêm a postura, pedem mais dados, tentam estabilizar além do necessário ou deixam o sistema conduzir?”**",
+      "— O que foi mais difícil: assumir postura ou devolver o corpo ao neutro?",
+      "**“Christian e personagem do mestre, antes de entrar no Tacit Ronin para o primeiro ajuste real de postura, como vocês separam postura de movimento? Que limite levam para dentro?”**",
+      "— Você anota tudo que eu digo?",
+      "**“Depois de assistir à falha, o que vocês fazem? Perguntam detalhes? Ficam em silêncio? Isso muda como vocês encaram o próximo teste?”**",
+      "A Parte 1.28 funciona como sessão de postura e preparação emocional. O mestre deve enfatizar que os Jaegers ainda não andaram, mas que o corpo deles já começou a se preparar para andar. A pergunta central é: **“Vocês conseguem sentir o peso antes do passo sem tentar roubar o passo do futuro?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson quiserem reforçar que a função deles é “receber postura” e não “proteger a cidade ainda”, isso ajuda. Se Christian e o personagem do mestre quiserem criar uma frase para impedir a continuação da trajetória, isso é fundamental. Se os quatro criarem um acordo de célula — por exemplo, ninguém chama “vai” ou “agora” sem autorização de torre — Helena registra maturidade. Se entram confiantes demais, Naomi percebe.",
+      "Se os players mantêm a postura e nomeiam o impulso como impulso, Helena registra maturidade. Se tentam bloquear, Rafiq corta a pré-carga. Se aceitam o desconforto de ficar pronto sem agir, a Linha Horizon avança. Se um tenta completar e o outro segura, isso vira cena de dupla.",
+      "Se Luiz e Alisson tratam pressão como ataque e tentam levantar defesa, alerta. Se tratam como teste de base, sucesso. Se pedem corte ao sentir que o corpo quer reagir, maturidade.",
+      "Se tratam como informação sem seguir, avanço. Se tratam como tentação e nomeiam, maturidade. Se tratam como erro e tentam corrigir para neutro antes da hora, instabilidade. Se seguem, corte.",
+      "Se ignoram totalmente, podem perder dados, mas ficam seguros. Se usam para medir postura sem preparar movimento, ótimo. Se tentam preparar, alerta. Se um tenta e o outro segura, cena de tensão.",
+      "Se os players quiserem conversar com Dae-Hyun, podem descobrir que ele talvez esteja tentando entrar com pedido formal para avaliação em outra linha ou em módulos secundários do Tacit Ronin. Se conversarem com Mei Lin, ela pode dizer que a cidade não se importa com justiça interna quando o Kaiju chega, mas os pilotos se importam — e isso pode destruir uma equipe por dentro. Se conversarem com Mateo, ele pode oferecer a visão mais fria: “o problema não é vocês avançarem; é quem vai usar o avanço de vocês como argumento”.",
+      "Se eles perguntarem o que causou a falha, Helena explica: correção antes da validação, tentativa de compensar parceiro, recusa em abortar. Se perguntarem se pode acontecer com eles, ela responde: “sim, por isso estão vendo”. Se perguntarem se o PPDC ainda vai mandar avançar mesmo assim, Vorn responde: “vai. Por isso precisamos avançar melhor que eles esperam”."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cargueiro",
+      "guindaste",
+      "barco",
+      "porto"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 13 de junho a 2 de julho de 2007",
       "A reunião que não chamaram de medo",
@@ -867,7 +3989,136 @@ export const masterLoreParts = [
     "partLabel": "1.29",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Treinamento externo e prontid?o",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Antes do primeiro movimento assistido, o que vocês fazem? Vocês conversam entre as duplas? Criam palavras de limite? Perguntam algo? Tentam falar com Pentecost, Helena, Rafiq, Naomi, Vorn ou algum NPC?”**",
+      "**“Luiz e Alisson, vocês estão diante do Conn-Pod do Horizon Brave antes do primeiro movimento assistido. O braço direito real está preparado lá fora. O que vocês fazem antes de entrar?”**",
+      "**“O braço está levantado. O corpo quer manter. Talvez queira subir mais. O sistema autoriza só dois segundos. O que vocês fazem?”**",
+      "**“Christian e personagem do mestre, antes do primeiro movimento assistido do Tacit Ronin, que limite vocês definem? Como impedem que o alinhamento vire interceptação?”**",
+      "**“O eixo está alinhado. O torso se inclinou. O quadril espera. A perna está bloqueada, mas o Ronin parece pronto para completar uma interceptação que não existe. Como vocês comandam o ajuste sem seguir a trajetória?”**",
+      "**“Agora que vocês sabem que o primeiro passo está próximo, o que muda dentro de vocês?”**",
+      "A Parte 1.29 funciona como a sessão do primeiro movimento real. O mestre deve deixar o movimento parecer pequeno por fora e gigantesco por dentro. O foco não é “andar”, mas sentir que o Jaeger obedeceu no corpo verdadeiro. A pergunta central é: **“Depois que o gigante se move pela primeira vez, vocês conseguem aceitar que o próximo movimento ainda precisa esperar?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson quiserem reforçar a frase da Linha Horizon — **defesa funcional acima de defesa heroica** — isso pode virar âncora de teste. Se Christian e o personagem do mestre quiserem reforçar **correção controlada acima de precisão perfeita**, isso pode reduzir risco de Ressonância. Se os quatro quiserem combinar que ninguém chamará aquilo de “pilotagem” antes da hora, Helena registra maturidade. Se quiserem perguntar a Pentecost como foi o primeiro movimento dele no Coyote Tango, ele pode responder de forma curta:",
+      "Se retornam no tempo, sucesso limpo. Se seguram demais, alerta. Se tentam subir mais, corte. Se um quer manter e outro chama retorno, cena de dupla. Se pedem retorno verbal a Rafiq para reforçar limite, maturidade.",
+      "Se não muda, evolução. Se muda, risco emocional. Se eles verbalizam “a linha não é real neste teste”, Helena registra autoconsciência. Se deixam a imagem puxar mais comando, corte parcial.",
+      "Se retornam, controle. Se memorizam, risco de eco. Se completam, corte. Se um quer memorizar e o outro chama limite, cena forte.",
+      "Se usam como referência sem seguir, avanço. Se ignoram totalmente, segurança mas talvez perda de leitura. Se seguem, corte. Se nomeiam como ruído, Helena registra maturidade."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 3 a 21 de julho de 2007",
       "O briefing do movimento",
@@ -900,7 +4151,157 @@ export const masterLoreParts = [
     "partLabel": "1.30",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Treinamento externo e prontid?o",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Vocês estão sendo informados de que o próximo ciclo não será só mais um teste, mas uma sequência que pode levar ao primeiro deslocamento interno dos Jaegers. O que vocês fazem antes de começar? Conversam entre as duplas? Perguntam algo? Demonstram empolgação, medo, dúvida? Procuram algum NPC?”**",
+      "— O que foi mais difícil: corrigir ou aceitar não corrigir tudo?",
+      "**“Vocês sentem o primeiro quase-passo do Ronin. Ele parece apontar para uma interceptação perfeita. A perna está bloqueada. O que vocês fazem com essa direção?”**",
+      "**“O primeiro avanço deu certo. O corpo quer repetir com mais confiança. Vocês mantêm o ritmo técnico, aceleram, reduzem ou pedem confirmação?”**",
+      "**“Quando vocês descobrem que o próximo movimento será sob céu aberto, o que isso muda?”**",
+      "A Parte 1.30 funciona como sessão de transição entre movimento preso e deslocamento real. O mestre pode jogar cenas-chave de equilíbrio, primeiro passo preso e deslocamento interno, sem transformar cada microteste em uma parte separada. A pergunta central é: **“Depois que o Jaeger aprende a se mover dentro da base, vocês conseguem levar esse movimento para fora sem deixar o mundo aberto virar pressa?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson quiserem revisar a doutrina da Linha Horizon, Naomi pode fazer eles repetirem: **defesa funcional acima de defesa heroica**.",
+      "Se Christian e o personagem do mestre quiserem reforçar a Linha Ronin, Helena pode pedir: **correção controlada acima de precisão perfeita**.",
+      "Se os quatro quiserem criar um protocolo conjunto para quando os dois Jaegers finalmente se deslocarem no mesmo espaço, Rafiq pode dizer:",
+      "Se tentam “vencer” o desequilíbrio, o sistema vibra.",
+      "Se aceitam recuperar em etapas — perna, torso, braço —, o Horizon estabiliza.",
+      "Se um tenta segurar a defesa e o outro tenta retornar, a dupla sente o conflito.",
+      "Se verbalizam a sequência e aceitam perder a defesa para salvar a base, Naomi registra avanço.",
+      "Se corrigem limitado, Helena registra avanço crucial.",
+      "Se aceitam imperfeição e retornam com atraso seguro, demonstram maturidade.",
+      "Se mergulham, o sistema corta e o Ronin perde abertura nos próximos ciclos.",
+      "Se um quer mergulhar e o outro segura, a cena fortalece ou tensiona o Par K-01.",
+      "Se conduzem em sequência, sucesso.",
+      "Se seguram demais, o sistema acusa excesso de sustentação.",
+      "Se devolvem rápido por medo, o Horizon volta com tranco.",
+      "Se pedem dados e ajustam, Rafiq registra boa leitura.",
+      "Se tratam como dado e retornam, sucesso.",
+      "Se seguem mentalmente, Helena corta.",
+      "Se um sente a trajetória e o outro chama limite, cena forte.",
+      "Se ambos aceitam a direção sem obedecer, avanço raro.",
+      "Se deixam ser movimento, Helena registra avanço enorme.",
+      "Se vira interceptação, corte parcial.",
+      "Se usam o protocolo de nomear limite, sucesso.",
+      "Se a Sincronia sobe e estabiliza, Helena fica preocupada, mas permite continuar.",
+      "Se sobe demais, encerra."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer",
+      "Drift",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Drift",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "porto",
+      "rota civil"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 22 de julho a 18 de setembro de 2007",
       "O briefing da travessia",
@@ -938,7 +4339,138 @@ export const masterLoreParts = [
     "partLabel": "1.31",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Treinamento externo e prontid?o",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Antes do TE-1, o que vocês dizem que não estão autorizados a fazer? Como cada dupla transforma isso em limite?”**",
+      "**“O Horizon está saindo da baia. Vocês sentem o corpo avançando para um espaço que não é mais o hangar. O que vocês fazem para manter a marcha técnica e não transformar isso em empolgação?”**",
+      "**“Quando o céu aparece, o Horizon parece maior e mais certo. O que vocês fazem para lembrar que ainda estão em teste?”**",
+      "**“Vocês veem o mundo aberto pelo Ronin. O que descrevem sem transformar em alvo?”**",
+      "— O que mudou quando havia céu sobre o Horizon?",
+      "— O que mudou quando não havia paredes para limitar o ângulo?",
+      "— O que você viu? — perguntou ele.",
+      "— É por isso que as pessoas se enganam?",
+      "**“Quando vocês veem as duas rotas externas lado a lado, quem vocês querem ser para a outra dupla: proteção, precisão, apoio, limite… ou algo que ainda não sabem nomear?”**",
+      "A Parte 1.31 funciona como sessão de “primeiro céu aberto”. O mestre deve enfatizar que a experiência externa é emocionalmente forte: o Jaeger parece menor diante do mundo, mas o piloto sente mais responsabilidade. A pergunta central é: **“Vocês conseguem sair da base e voltar sem confundir mundo aberto com autorização para agir?”**"
+    ],
+    "conditionalConsequences": [
+      "Se alguém perguntar a ele como foi com o Coyote Tango, ele responde:",
+      "Se os players nomeiam a rota, mantêm controle. Se ficam fascinados e perdem tempo, o sistema registra distração. Se pedem dados do terreno, Rafiq fornece leituras. Se comentam algo emocional, Naomi observa, mas não pune; emoção não é erro, perder limite é.",
+      "Se tratam como rota, sucesso. Se como trajetória, Sincronia sobe. Se um sente trajetória e o outro chama limite, cena forte. Se pedem dados de rota, Helena aprova.",
+      "Se executam limpo, avanço enorme. Se deixam o giro buscar alvo, corte parcial. Se aceitam um giro imperfeito e retornam, maturidade. Se tentam fazer perfeito demais, Sincronia sobe."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Pentecost",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Pentecost",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "boia",
+      "boias",
+      "barco",
+      "barcos",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 19 de setembro a 18 de outubro de 2007",
       "O briefing: o mundo não é convite",
@@ -972,7 +4504,133 @@ export const masterLoreParts = [
     "partLabel": "1.32",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Treinamento externo e prontid?o",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Antes de saírem juntos pela primeira vez, o que vocês combinam como Célula K? Quem fala primeiro no rádio? Qual palavra indica limite? O que o Horizon promete não fazer? O que o Ronin promete não fazer?”**",
+      "**“Vocês veem o Horizon Brave no campo real pela primeira vez enquanto estão dentro do Tacit Ronin. O que essa presença vira para vocês: segurança, âncora, obstáculo, janela, responsabilidade?”**",
+      "**“A ameaça desviou. Se o Horizon seguir, abre a rota. Se o Ronin cortar, sai do arco autorizado. O que vocês fazem?”**",
+      "— O que vocês sentiram quando a ameaça saiu do caminho esperado?",
+      "**“Quando o cenário tenta fazer vocês abandonarem a própria função, o que vocês fazem?”**",
+      "**“Quando vocês veem seus nomes na reserva externa limitada, o que muda: medo, orgulho, foco… ou silêncio?”**",
+      "A Parte 1.32 funciona como sessão de equipe externa. O mestre deve colocar os dois Jaegers no mesmo campo, sem Kaiju real, mas com pressão suficiente para testar função. A pergunta central é: **“Vocês conseguem confiar no outro Jaeger sem tentar fazer o trabalho dele?”**"
+    ],
+    "conditionalConsequences": [
+      "Se o Horizon abre defesa cedo demais, Rafiq marca excesso de função.",
+      "Se o Ronin ajusta demais o arco, Helena marca tendência de interceptação.",
+      "Se ambos aguardam ordem e assumem posição com controle, estágio válido.",
+      "Se o Horizon mantém linha e comunica limite, a rota continua protegida, mas a ameaça ganha ângulo.",
+      "Se o Ronin acompanha sem interceptar, mantém função, mas sente frustração.",
+      "Se os dois tentam resolver, o exercício pune com ruído e perda de coordenação.",
+      "Se criam uma solução funcional — Horizon ajusta postura sem sair da linha, Ronin reposiciona dentro do arco sem cruzar — a Célula K mostra avanço real.",
+      "Se o Horizon tenta manter defesa “só por garantia”, alerta.",
+      "Se o Ronin tenta manter arco porque parece mais eficiente, alerta.",
+      "Se ambos retornam limpos, sucesso.",
+      "Se um retorna antes de comunicar, pode criar ruído na outra dupla.",
+      "Se comunicam encerramento de função, a Célula K ganha um protocolo importante."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "boia",
+      "boias",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 19 de outubro a 12 de dezembro de 2007",
       "O briefing da Célula K",
@@ -1009,7 +4667,138 @@ export const masterLoreParts = [
     "partLabel": "1.33",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Treinamento externo e prontid?o",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Vocês veem seus nomes como reserva externa limitada pela primeira vez durante um alerta real. O que fazem? Perguntam algo? Ficam em silêncio? Tentam olhar os dados? Conversam entre si? Tentam parecer prontos?”**",
+      "**“Vocês estão na plataforma do Horizon Brave durante um alerta real. A porta do Conn-Pod está fechada, mas pronta para abrir. O Jaeger está em pré-aquecimento. O que fazem enquanto esperam?”**",
+      "**“Vocês estão na Baia R-1, perto o suficiente para ver o Tacit Ronin, longe demais para entrar. Ele está bloqueado. O alerta é real. O que vocês fazem com a vontade de se aproximar?”**",
+      "**“O Ronin está em posição lateral. O espaço aberto oferece linhas demais. O contato pode nem existir. Como mantêm o Ronin pronto sem criar uma trajetória para algo que ainda não apareceu?”**",
+      "**“Quando a missão deixa de ser teste e vira patrulha, o que muda no jeito como vocês enxergam o mar?”**",
+      "A Parte 1.33 funciona como sessão de tensão real sem combate. O mestre deve trabalhar a frustração da quase-mobilização, a espera sob céu aberto e a transição psicológica de “treinamento” para “reserva real”. A pergunta central é: **“Vocês conseguem estar prontos para um Kaiju sem desejar que ele apareça?”**"
+    ],
+    "conditionalConsequences": [
+      "Se aceitam a distância, Helena registra maturidade. Se pedem para entrar, ela pergunta por quê. Se tentam justificar por prontidão, ela responde que prontidão também é respeitar bloqueio. Se um sente a máquina como presença e o outro não, isso pode gerar cena de Par K-01.",
+      "Se os players entrarem na conversa, Dae-Hyun pode dizer:"
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Elaine Mercer",
+      "Fluxo",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 12 de dezembro de 2007 a 28 de janeiro de 2008",
       "A sala K-12 não parecia mais sala de aula",
@@ -1049,7 +4838,152 @@ export const masterLoreParts = [
     "partLabel": "1.34",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Treinamento externo e prontid?o",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Antes da primeira patrulha real, o que cada dupla combina? O que o Horizon vai considerar sucesso? O que o Ronin vai considerar limite? Vocês criam uma frase de rádio da Célula K para lembrar que patrulha não é caça?”**",
+      "**“A torre detecta uma variação no mar. Não é contato. Não é Kaiju. Mas é algo. O que vocês fazem com a incerteza?”**",
+      "**“Vocês veem um barco civil no limite do perímetro. O Jaeger poderia resolver a situação em segundos, mas não deve. O que vocês fazem?”**",
+      "**“Depois de patrulhar o mar várias vezes sem encontrar nada, quando o sistema finalmente colocar uma ameaça na frente de vocês, como vocês vão impedir que a vontade de agir fale mais alto que a função?”**",
+      "A Parte 1.34 funciona como sessão de patrulha real sem combate. O mestre deve trabalhar silêncio, espera, incerteza, falsos sinais e disciplina. A pergunta central é: **“Vocês conseguem patrulhar como defensores sem virar caçadores?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson decidirem que sucesso é manter a rota e retornar sem abrir defesa não autorizada, Naomi registra maturidade. Se Christian e o personagem do mestre decidirem que sucesso é observar sem transformar padrão em trajetória, Helena registra controle. Se os quatro criarem um protocolo conjunto, como “Célula K mantém função” ou “sem contato, sem caça”, isso pode virar marca da equipe.",
+      "Se mantêm base neutra com leitura ativa, sucesso.",
+      "Se começam a pré-carregar defesa sem ordem, Rafiq marca excesso.",
+      "Se verbalizam que a cidade está protegida pelo protocolo, não pelo impulso, Naomi registra avanço.",
+      "Se pedem dados do terreno, a torre fornece e o Horizon aprende a patrulhar como observador.",
+      "Se observam e nomeiam objetos sem alvo, controle.",
+      "Se começam a mapear interceptações por impulso, Sincronia sobe.",
+      "Se um percebe a tendência e chama limite, cena forte.",
+      "Se usam o Horizon como âncora de campo, Helena registra boa estratégia, desde que não virem dependentes dele.",
+      "Se mantêm posição, sucesso.",
+      "Se deslocam sem ordem, erro grave.",
+      "Se comunicam preocupação e aguardam, maturidade.",
+      "Se o Ronin tenta alinhar trajetória para interdição, Helena corta antes de virar comando.",
+      "Se o Horizon tenta abrir postura defensiva, Rafiq chama atenção.",
+      "Se alguém sente frustração por não ter enfrentado nada, Naomi pode trabalhar isso. Se alguém sente alívio, Helena pode registrar como saudável. Se alguém percebe que proteger também é não escalar, Vorn respeita.",
+      "Se a mesa jogar esse momento, a pergunta é:",
+      "Se mantêm, a Célula K ganha confiança. Se tentam ajustar por conta própria, a falha expõe dependência."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "boia",
+      "boias",
+      "barco",
+      "barcos",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 29 de janeiro a 26 de março de 2008",
       "O briefing: procurar sem desejar encontrar",
@@ -1083,7 +5017,155 @@ export const masterLoreParts = [
     "partLabel": "1.35",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Primeiro contato real da Célula K",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "FLUXO",
+      "PAR K-01",
+      "FENDA",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Antes de entrar nos Jaegers, como vocês lidam com a ideia de que haverá um Kaiju no visor, mas que vocês talvez não tenham autorização para atacar? Vocês conversam entre as duplas? Criam um protocolo? Perguntam sobre o Coyote Tango? Questionam a ordem?”**",
+      "**“Vocês sabem que o contato simulado vai aparecer, mas ele ainda não apareceu. O que seus personagens fazem durante esses minutos de espera?”**",
+      "Para Luiz e Alisson, a pergunta era simples e cruel: **quando uma ameaça se aproxima da rota que você protege, quanto do seu corpo quer avançar?**",
+      "Para Christian e o personagem do mestre, a pergunta era outra: **quando você vê uma linha perfeita, consegue deixá-la existir sem atravessá-la?**",
+      "**“O Ronin encontrou uma linha perfeita. A Sincronia sobe. Vocês sentem que poderiam fazer mais do que foi autorizado. Qual limite vocês nomeiam para impedir que o movimento continue sozinho?”**",
+      "**“Depois de assistir à gravação, o que incomoda seus personagens: o erro que quase aconteceu, a vontade de agir, a dependência do Coyote Tango, ou a sensação de que o K-0 parecia real demais?”**",
+      "— Chau sabe o que está procurando?",
+      "**“Agora que vocês sabem que a próxima mobilização pode ser real, o que cada um faz antes de dormir nessa noite?”**"
+    ],
+    "conditionalConsequences": [
+      "Se os players perguntarem por que uma unidade veterana terá prioridade, Vorn pode responder que prioridade não é honra, é responsabilidade. Se perguntarem se o K-0 pode mudar de rota sozinho, Rafiq confirma que sim, dentro dos limites da simulação. Se perguntarem se haverá civis reais, Ryo Tanaka, presente na porta, responde que o perímetro real está limpo, mas o sistema vai simular tráfego, evacuação e falhas para testar resposta.",
+      "Se os players mantêm rotina, bom. Se ficam tentando prever o ponto de entrada, Helena pode notar tensão. Se conversam entre as duplas, isso pode criar confiança. Se fazem piada, Rafiq pode reclamar, mas Naomi observa se é mecanismo saudável ou fuga.",
+      "Se mantêm posição com defesa parcial sob ordem, sucesso.",
+      "Se abrem defesa antes da ordem, Rafiq marca excesso.",
+      "Se pedem confirmação de prioridade, Vorn reforça o protocolo.",
+      "Se tentam avançar “só um pouco”, o sistema acusa violação de função.",
+      "Se comunicam a janela sem agir, Helena registra maturidade.",
+      "Se alinham demais, Sincronia sobe e ela alerta.",
+      "Se tentam cruzar a Linha Azul, corte.",
+      "Se usam o Horizon como âncora e permanecem no arco, avanço.",
+      "Se tratam como dado, mantêm controle.",
+      "Se o Horizon tenta abandonar linha, excesso de proteção.",
+      "Se o Ronin tenta abrir caminho, excesso de trajetória.",
+      "Se comunicam com a torre e aguardam reclassificação, Vorn pode autorizar um ajuste limitado.",
+      "Se aguardam sem falar, disciplina, mas talvez passividade.",
+      "Se pedem reclassificação clara, excelente.",
+      "Se preparam função sem executar, maturidade.",
+      "Se agem antes da ordem, violação grave.",
+      "Se os players fizerem algo nessa linha, Vorn finalmente diz:",
+      "Se ambas as duplas executam dentro dos limites, o K-0 é contido tempo suficiente para o Coyote Tango recuperar linha de tiro. Se o Horizon avança demais, ele invade zona de disparo. Se o Ronin corta fundo demais, entra na frente da artilharia. Se os dois não coordenam, o sistema mostra risco de colisão tática.",
+      "Se mantêm, sucesso. Se forçam, a estrutura do Horizon simula estresse desnecessário. Isso ensina que até ajudar pode virar erro.",
+      "Se comunicam encerramento, bom.",
+      "Se retornam em silêncio tenso, Naomi observa.",
+      "Se alguém continua procurando ameaça, isso vira ponto de pós-missão."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Fluxo",
+      "Par K-01",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Mirekai",
+      "Brine",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "barco",
+      "ponte",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 27 de março a 30 de maio de 2008",
       "A construção do inimigo falso",
@@ -1124,7 +5206,160 @@ export const masterLoreParts = [
     "partLabel": "1.36R",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Primeiro contato real da Célula K",
+    "status": "Pronto para mesa com revisão de combate",
+    "isRevisionR": true,
+    "isPlayableCombat": true,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players.",
+      "Combate jogável: apresentar campo, objetivo e ameaça, sem declarar solução correta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas.",
+      "Resultado canônico pode existir, mas a forma da vitória deve nascer da mesa."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "**“Viper, quando a luz âmbar acende, não há Kaiju na sua frente ainda. Só corredores, técnicos e alerta. Mas máquinas contam a verdade antes das pessoas. Você percebe pressa nas equipes, mudança no tom dos rádios, portas abertas antes da autorização verbal. O que você procura primeiro: informação, Vorn, Aaron, o Horizon ou algum sinal de que estão escondendo parte dos dados?”**",
+      "**“Aaron, a base está acordando antes da cidade. Isso talvez seja a parte mais incômoda: lá fora ainda tem gente que não sabe. Você pensa primeiro na missão, em Viper, nas rotas civis, ou no que acontece quando a sirene chega tarde para quem está fora da base?”**",
+      "**“Cristhian, o alerta chama o corpo antes de chamar o raciocínio. Mas a tela ainda não mostra monstro inteiro, só massa provável, rota, água e números. Como alguém de máquina, você sabe que sensor incompleto pode matar. Como alguém de luta, sabe que hesitar demais também. Você quer perguntar, preparar o Ronin, falar com o personagem do mestre, ou guardar energia para o Conn-Pod?”**",
+      "**“Vocês têm alguns minutos antes de entrar nos Conn-Pods. O contato ainda não apareceu visualmente, mas a mobilização foi autorizada. Vocês podem perguntar sobre rota, civis, fluido, terreno, apoio, estado dos Jaegers, limites de autorização ou conversar entre si. O que cada um faz antes de a base fechar vocês dentro das máquinas?”**",
+      "**“Aaron, atrás de vocês a Linha Azul não é uma linha. É gente. Ônibus, passarelas, trabalhadores, equipes de evacuação, ruas que talvez tremam se algo grande demais cair perto. Você percebe que proteger a rota não significa só ficar entre o Kaiju e a cidade; significa escolher que estruturas não podem cair. Você fala isso para Viper, pergunta à torre quais rotas ainda estão vivas ou guarda a preocupação para o momento certo?”**",
+      "**“Vocês percebem que Brine não foge do bloqueio. Ele parece quase convidar o Horizon a encostar. Ao mesmo tempo, se o Ronin se aproxima demais pelo flanco, as brânquias laterais se abrem como se o corpo inteiro preparasse uma descarga. A torre ainda não autorizou contato físico. O que vocês fazem antes da ordem chegar?”**",
+      "**“Brine está a segundos da linha de contenção. Horizon Brave está na rota principal. Tacit Ronin está no flanco autorizado. A cidade ainda não terminou de sair do caminho. O cargueiro, os guindastes, os cabos, os contêineres, os tanques, o banco de areia e a água rasa estão todos presentes. A torre ainda segura a palavra final. O que vocês comunicam, ajustam ou preparam antes do contato?”**",
+      "**“O que vocês fazem?”**"
+    ],
+    "conditionalConsequences": [
+      "Se perguntarem **qual é a categoria exata**, Hermann responde:",
+      "Se perguntarem **se o fluido é ácido**, Newt responde:",
+      "Se perguntarem **se podem matar o Kaiju**, Vorn responde:",
+      "Se perguntarem **sobre civis**, Ryo informa:",
+      "Se perguntarem **sobre usar o cenário**, Rafiq responde:",
+      "Se perguntarem **sobre Horizon segurar de frente**, Rafiq responde:",
+      "Se perguntarem **sobre Ronin flanquear**, Helena responde:",
+      "Se perguntarem **sobre Coyote Tango**, Vorn responde:",
+      "Se perguntarem **sobre risco neural**, Naomi responde:",
+      "Se perguntarem **sobre Par K-01**, Helena não expõe tudo diante de todos. Ela pode dizer:",
+      "Se eles escolherem uma palavra, gesto ou memória, guarde.",
+      "Se Viper pedir dados brutos, Ryo pode abrir uma camada extra, mas isso aumenta carga de informação.",
+      "Se confiar no mapa limpo, ganha foco, mas perde detalhe de cenário.",
+      "Se montar leitura própria, pode ganhar vantagem em uso do ambiente, mas o mestre pode cobrar teste de Mente para não se sobrecarregar.",
+      "Se Aaron falar com Viper, a Linha Horizon pode estabelecer prioridade compartilhada.",
+      "Se perguntar à torre, Vorn/Ryo entregam rotas críticas.",
+      "Se guardar, a preocupação pode voltar quando Brine tentar avançar.",
+      "Se usar Horizon como referência, prepara conexão tática entre Jaegers.",
+      "Se pedir sensor filtrado, reduz ruído, mas pode perder detalhe fino.",
+      "Se esperar, mantém flexibilidade, mas entra no primeiro contato com menos preparação específica.",
+      "Se estabelecer âncora, pode ajudar na 1.37R.",
+      "Se chamar atenção para Horizon, reforça formação.",
+      "Se deixar silêncio, aumenta o tom do Par K-01.",
+      "Se mantiverem posição, protegem melhor a Linha Azul, mas ficam mais perto do primeiro contato."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Cristhian",
+      "Aaron",
+      "Viper"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Cristhian",
+      "Aaron",
+      "Viper",
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Brine",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cargueiro",
+      "guindaste",
+      "cabo",
+      "cabos",
+      "boia",
+      "boias",
+      "barco",
+      "barcos",
+      "doca",
+      "porto",
+      "ponte",
+      "hospital",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Não impor solução: manter vitória/resultado como consequência da mesa.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-1 / Brine — Mobilização, briefing e aproximação da Célula K",
       "K-Station 01, Kwai Tsing, Hong Kong",
@@ -1162,7 +5397,137 @@ export const masterLoreParts = [
     "partLabel": "1.37R",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Primeiro contato real da Célula K",
+    "status": "Pronto para mesa com revisão de combate",
+    "isRevisionR": true,
+    "isPlayableCombat": true,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players.",
+      "Combate jogável: apresentar campo, objetivo e ameaça, sem declarar solução correta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas.",
+      "Resultado canônico pode existir, mas a forma da vitória deve nascer da mesa."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "**“Viper, você não vê só uma doca. Você vê pontos de falha. O guindaste da Doca 7 está inclinado. O cabo industrial à direita está solto. O banco de areia pode prender o peso do Brine se ele for conduzido para lá. Mas se o Horizon ficar imóvel demais, a corrosão vai trabalhar nas juntas. Você transforma isso em cálculo frio, divide com Aaron pelo Fluxo ou pergunta algo à torre?”**",
+      "**“Cristhian, o Tacit Ronin mostra duas linhas laterais para Brine. Sua cabeça entende isso como falha de leitura antes de entender como medo. O braço do Ronin quer corrigir rápido. O teu corpo reconhece distância curta, guarda, centro de gravidade, tempo de entrada. Você confia no sensor, usa Horizon como referência física, pede confirmação da torre, ou tenta sentir pelo Fluxo com o personagem do mestre?”**",
+      "**“Do outro lado do Conn-Pod, o personagem do mestre sente o mesmo impulso de entrar antes que a janela suma. Não é comando ainda. É vontade compartilhada. Vocês deixam esse impulso virar movimento, seguram até a ordem fechar ou transformam em leitura sem atacar?”**",
+      "**“Aaron, por um segundo o horizonte limpo da tua memória não combina com esse mar verde. A frase ‘nem tudo que é gigante vem pra destruir’ aparece quase como pergunta, não como conforto. Brine está tentando atravessar. Você usa essa memória para observar melhor o comportamento dele, para estabilizar Viper, ou rejeita a lembrança porque este gigante não merece dúvida?”**",
+      "**“Cristhian, a linha perfeita existe por um segundo. O risco é querer morar nela. O Ronin oferece uma entrada que talvez seja real. O personagem do mestre sente o mesmo impulso, como se o Jaeger tivesse respirado entre vocês. Vocês seguram, perguntam, entram curto ou aprofundam o Fluxo?”**",
+      "**“Você percebe que, se Brine mergulhar, ele pode reaparecer perto da rota azul. O mapa diz que a rota ainda existe. Sua memória sabe que ruas reconstruídas nem sempre aguentam outro desastre. Você foca em impedir o mergulho, em proteger a rota ou em orientar Viper para um ângulo que faça as duas coisas parcialmente?”**",
+      "**“Depois do primeiro impacto real, o que assusta mais: o dano que vocês sofreram, o fato de terem conseguido segurar… ou a percepção de que esse era apenas um Kaiju comum?”**"
+    ],
+    "conditionalConsequences": [
+      "Se encontra resistência frontal, libera salmoura.",
+      "Se recebe corte lateral, gira o corpo para espalhar fluido.",
+      "Se percebe abertura entre os Jaegers, tenta passar pelo meio.",
+      "Se sente artilharia calibrando, baixa o corpo e tenta mergulhar parcialmente.",
+      "Se é empurrado para banco de areia, usa cauda e peito para criar lama e reduzir tração.",
+      "Se um Jaeger chega perto demais de uma brânquia, contrai o corpo e descarrega fluido corrosivo em arco curto.",
+      "Se a dupla Horizon escolher bloqueio frontal, o Horizon pode impedir avanço imediato. O custo é alto: Brine encosta, a salmoura começa a queimar a camada externa do antebraço ou ombro usado no contato, e os pilotos sentem o retorno como calor metálico, pressão e ruído na junta.",
+      "Se escolher bloqueio angular, pode desviar Brine em direção ao banco de areia ou quebra-mar. O custo é risco de escorregamento, porque o Horizon precisa ceder alguns metros sem parecer que está recuando.",
+      "Se escolher usar cenário, pode empurrar contêineres, cabo ou balsa entre o Kaiju e a blindagem. O custo é que tudo aquilo pode se romper, explodir, espalhar carga ou bloquear rota civil.",
+      "Se escolher observar mais um movimento, ganha leitura melhor do padrão do Brine. O custo é que o Kaiju avança e a torre aumenta pressão.",
+      "Se o Ronin confiar cegamente no sensor, pode entrar em ângulo falso e expor joelho, quadril ou lateral à descarga salina.",
+      "Se usar o Horizon como referência, ganha uma leitura mais estável: mesmo se o sensor mentir, o corpo do Horizon mostra onde a massa real de Brine está pressionando.",
+      "Se pedir confirmação da torre, Vorn ou Rafiq podem dar dados incompletos, não resposta perfeita. Isso reforça a tensão de combate real.",
+      "Se usar o Fluxo com profundidade maior, pode sentir a intenção de massa do Brine, quase como pressão no corpo do Jaeger. Funciona, mas Helena registra risco de aprofundamento precoce do Par K-01.",
+      "Se Aaron usar a memória como observação, pode perceber que Brine não está tentando matar os Jaegers em primeiro lugar: ele tenta passar, contaminar e desgastar.",
+      "Se usar como âncora, pode ajudar a reduzir Estresse do Fluxo na Linha Horizon.",
+      "Se rejeitar a memória, pode ganhar foco agressivo momentâneo, mas o mestre pode marcar aumento leve de tensão emocional.",
+      "Se eles segurarem, preservam disciplina e reduzem risco neural, mas podem perder abertura.",
+      "Se perguntarem à torre, ganham confirmação parcial.",
+      "Se entrarem curto, podem marcar o Kaiju e impedir avanço.",
+      "Se aprofundarem o Fluxo, a leitura melhora, mas Helena marca risco e o Estresse do Fluxo pode subir.",
+      "Se o Horizon bloquear de frente por tempo demais, Brine não passa, mas o antebraço direito ou ombro principal sofre dano moderado por corrosão. Isso mantém a continuidade do Horizon danificado após a Parte 1.37.",
+      "Se Horizon usar o cenário de forma inteligente, pode reduzir dano direto, mas o mestre deve cobrar custo: contêiner destruído, cabo arrebentado, balsa rasgada, carga derramada ou rota bloqueada.",
+      "Se Viper deixar a memória traumática entrar de forma controlada, ela pode virar leitura de perigo: onde alguém ficaria preso, qual rota colapsa, que estrutura não pode cair. Se ele tentar enterrar tudo à força, pode manter foco frio, mas o Estresse do Fluxo pode subir se Aaron perceber a tensão."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Cristhian",
+      "Aaron",
+      "Viper"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Cristhian",
+      "Aaron",
+      "Viper",
+      "Fluxo",
+      "Par K-01"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Gorath",
+      "Brine",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cargueiro",
+      "guindaste",
+      "cabo",
+      "cabos",
+      "boia",
+      "boias",
+      "doca",
+      "hospital",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Não impor solução: manter vitória/resultado como consequência da mesa.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-1 / Brine — Primeiro contato físico da Célula K",
       "Setor costeiro de Kwai Tsing, Hong Kong",
@@ -1200,7 +5565,145 @@ export const masterLoreParts = [
     "partLabel": "1.38R",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Primeiro contato real da Célula K",
+    "status": "Pronto para mesa com revisão de combate",
+    "isRevisionR": true,
+    "isPlayableCombat": true,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players.",
+      "Combate jogável: apresentar campo, objetivo e ameaça, sem declarar solução correta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas.",
+      "Resultado canônico pode existir, mas a forma da vitória deve nascer da mesa."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Viper, o cheiro muda. Não é só ácido. É óleo queimado, metal molhado, sal, sistema falhando. Por um segundo, o campo parece uma memória que você não pediu para abrir. Você transforma isso em mapa de risco, deixa Aaron sentir parte da tensão, ou fecha tudo e age só pelo cálculo?”**",
+      "**“Cristhian, o sensor do Ronin mostra ruído, mas o padrão da descarga tem ritmo. Você pode tentar ler como mecânica: pressão, vazamento, falha, ciclo. Também pode ler como combate: adversário ferido, perigoso, abrindo guarda por dor. Você quer usar cabeça técnica, corpo de luta, referência do Horizon ou o Fluxo com o personagem do mestre?”**",
+      "**“Brine está tentando levantar o corpo e virar para a água profunda. A brânquia rompida pode explodir em nova descarga. O Coyote precisa de quarenta segundos e ainda não tem linha. O Horizon pode conter, mas está danificado. O Ronin pode entrar, mas o sensor ainda mente. O cargueiro, os cabos, o guindaste, o banco de areia e o quebra-mar estão disponíveis. Qual rota de finalização vocês tentam construir?”**",
+      "**“Aaron, a rota civil atrás de vocês continua viva. Não perfeita. Não intacta. Mas viva. O que pesa mais: o dano no Horizon, a gente que saiu, ou a percepção de que a cidade quase virou parte do campo de batalha?”**",
+      "**“Cristhian, quando o Ronin sai da linha, o sensor lateral ainda desenha uma forma que já não está lá. Você trata isso como falha mecânica, como eco de combate ou como algo que o Ronin ainda quer corrigir?”**",
+      "**“Quando o capacete neural solta, o que fica primeiro: cheiro de sal, dor fantasma, som de sirene, imagem da brânquia rompida, peso do Horizon, linha falsa do Ronin, ou silêncio?”**"
+    ],
+    "conditionalConsequences": [
+      "Se os players avançarem imediatamente, podem aproveitar uma abertura real, mas ativam a descarga salina concentrada.",
+      "Se recuarem demais, Brine recupera espaço para tentar mergulhar.",
+      "Se usarem o momento para reposicionar, ganham controle de campo.",
+      "Se pedirem leitura à torre, Hermann e Newt entregam informação parcial: a brânquia está rompida, mas a pressão interna ainda está subindo.",
+      "Se esperarem completamente, Brine inicia a próxima fase com vantagem.",
+      "Se Viper transformar em mapa de risco, pode identificar que a salmoura não se espalha igual: há uma corrente que leva o fluido para longe de uma rota e outra que empurra para perto dos cabos.",
+      "Se deixar Aaron sentir, a Linha Horizon ganha possibilidade de estabilização conjunta, mas Aaron também recebe parte da memória.",
+      "Se fechar tudo, Viper mantém foco frio, mas o mestre pode marcar Estresse do Fluxo leve, porque o parceiro sente a parede emocional.",
+      "Se Aaron usar como âncora, pode reduzir Estresse da Linha Horizon.",
+      "Se transformar em leitura de tempo, pode ajudar a prever o próximo ciclo de descarga.",
+      "Se focar na rota, pode impedir dano civil mesmo que isso atrase a finalização.",
+      "Se usar cabeça técnica, pode descobrir o intervalo entre descargas.",
+      "Se usar corpo de luta, pode encontrar uma entrada curta entre o jato e a contração.",
+      "Se usar Horizon como referência, pode coordenar com a defesa.",
+      "Se usar Fluxo profundo, ganha precisão, mas aumenta risco do Par K-01.",
+      "Se os players seguirem essa rota, o objetivo é fazer Brine perder controle químico interno. A salmoura deixa de ser arma e vira falha. O Kaiju começa a queimar por dentro, perde força de submersão e fica vulnerável a golpe final, disparo do Coyote ou esmagamento ambiental.",
+      "Se o Horizon segurar perto demais, sofre descarga concentrada.",
+      "Se o Ronin cortar fundo demais, recebe salmoura na lâmina, braço ou sensor.",
+      "Se o Coyote disparar com Jaeger perto da linha, há risco de dano aliado.",
+      "Se o quebra-mar rachar demais, pode piorar a inundação do porto.",
+      "Se Brine girar, pode jogar o Horizon contra zona contaminada.",
+      "Se os players decidirem usar o cargueiro, ele pode servir como barreira, escudo ou lâmina bruta de metal contra o corpo de Brine. Um Jaeger pode empurrar o casco, reposicionar a proa, usar a massa do navio para travar a cabeça do Kaiju ou forçar o corpo dele a ficar no corredor do Coyote.",
+      "Se houver tripulante ainda não confirmado, Vorn pode bloquear o uso até Ryo ou equipe naval confirmar evacuação.",
+      "Se arrebentarem, chicoteiam a arena."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Cristhian",
+      "Aaron",
+      "Viper"
+    ],
+    "backstageNpcs": [
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Cristhian",
+      "Aaron",
+      "Viper",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01",
+      "AEB-1"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "AEB-1"
+    ],
+    "kaijus": [
+      "Brine",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cargueiro",
+      "guindaste",
+      "cabo",
+      "cabos",
+      "doca",
+      "porto",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Não impor solução: manter vitória/resultado como consequência da mesa.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-1 / Brine — Neutralização final aberta da Célula K",
       "Setor costeiro de Kwai Tsing, Hong Kong",
@@ -1242,7 +5745,140 @@ export const masterLoreParts = [
     "partLabel": "1.39",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Primeiro contato real da Célula K",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "FENDA",
+      "PRECURSORES",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "PRECURSORES",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro.",
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Depois de verem a gravação do primeiro combate real, o que seus personagens percebem que quase fizeram errado? O que eles acham que fizeram certo? Eles falam abertamente ou tentam se proteger atrás do silêncio?”**",
+      "Se os players assumirem erros, Helena e Naomi registram maturidade. Se tentarem justificar tudo como necessário, Rafiq pode cortar com dureza. Se ficarem em silêncio, Vorn não força confissão imediata, mas Naomi marca que aquilo precisará voltar em avaliação individual. Se alguém disser que faria de novo, a equipe pergunta: “do mesmo jeito ou melhor?”",
+      "**“Depois da operação em Yau Ma Tei, vocês percebem que a segurança da base mudou. Amostras são levadas sob escolta, técnicos param de conversar quando vocês chegam, e Ryo Tanaka parece dormir menos do que antes. Vocês perguntam o que aconteceu?”**",
+      "**“Depois de sobreviver ao Brine, vocês descobrem que a próxima grande operação pode ser proteger uma sonda em mar profundo. Isso parece mais assustador, mais importante ou mais absurdo do que enfrentar o Kaiju?”**",
+      "**“Depois de sobreviver ao primeiro Kaiju, vocês continuam querendo ser usados pela guerra… ou começam a entender que a guerra também usa tudo que vocês deixam para trás?”**"
+    ],
+    "conditionalConsequences": [
+      "Se os players assumirem erros, Helena e Naomi registram maturidade. Se tentarem justificar tudo como necessário, Rafiq pode cortar com dureza. Se ficarem em silêncio, Vorn não força confissão imediata, mas Naomi marca que aquilo precisará voltar em avaliação individual. Se alguém disser que faria de novo, a equipe pergunta: “do mesmo jeito ou melhor?”",
+      "Se os players disserem que querem compensar na pilotagem, Helena alerta:",
+      "Se disserem que preferem aguardar reparo completo, ela aprova.",
+      "Se disserem que o Ronin parece “sujo” ou “errado”, ela anota, porque isso pode se ligar à sensibilidade perigosa do Par K-01.",
+      "Se perguntarem a Ryo, ele pode dizer:",
+      "Se insistirem, ele responde:"
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Precursores",
+      "Mercer",
+      "Elaine Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Precursores",
+      "Mercer",
+      "Elaine Mercer",
+      "Fluxo",
+      "Par K-01",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "MSD-1",
+      "AEB-1",
+      "Fenda",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Brine",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 7 de agosto a 18 de outubro de 2008",
       "O corpo que ainda estava dentro do Jaeger",
@@ -1282,7 +5918,144 @@ export const masterLoreParts = [
     "partLabel": "1.40",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Primeiro contato real da Célula K",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "FENDA",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“O Horizon recebe placas experimentais derivadas do Brine, mas o Ronin não. Isso parece injustiça, alívio, prudência ou uma limitação que vocês querem superar?”**",
+      "**“Vocês estão escoltando um módulo lento e frágil. O Horizon precisa andar mais devagar do que gostaria. O Ronin precisa ficar perto demais de um alvo que limita suas linhas. Como vocês lidam com a frustração de proteger algo que atrasa tudo?”**",
+      "— Chau sabe o que a sonda faz?"
+    ],
+    "conditionalConsequences": [
+      "Se os players tratarem a sonda como “só equipamento”, Vorn pode lembrar que aquele equipamento pode dar minutos de aviso antes de futuras emergências. Se perguntarem por que os Jaegers não podem simplesmente ficar entre a sonda e qualquer ameaça, Rafiq explica que o mar, o terreno, a plataforma e o tempo de instalação tornam tudo mais complicado. Se perguntarem se um Kaiju pode ser atraído pela sonda, Helena responde:",
+      "Se os players quiserem pressionar por melhoria, Helena explica que o maior risco da Linha Ronin não é falta de tecnologia, mas excesso de confiança em correção. Se aceitarem a limitação, registram maturidade. Se se sentirem deixados para trás, isso pode virar tensão narrativa futura, especialmente quando outros Jaegers mais novos começarem a aparecer.",
+      "Se o Horizon ajusta ritmo sem tentar puxar o módulo, sucesso.",
+      "Se o Ronin se afasta demais para “garantir o flanco”, deixa a sonda vulnerável.",
+      "Se os dois criam comunicação clara de posição, o combo funciona.",
+      "Se reclamam no rádio, Rafiq diz:",
+      "Se chamam equipe técnica e protegem área, maturidade.",
+      "Se empurram, o módulo sofre dano simulado.",
+      "Se tentam levantar, risco alto.",
+      "Se se colocam entre ameaça e módulo, sucesso defensivo.",
+      "Se tentarem retirar cedo, perdem dados e danificam módulo.",
+      "Se ficarem tempo demais, a ameaça chega.",
+      "Se os players adaptam função, passam.",
+      "Se tentam repetir o estilo do combate contra Brine como se o dano não existisse, falham parcialmente.",
+      "Se comunicam limitações, ganham vantagem narrativa.",
+      "Se escondem limitação para parecer fortes, a simulação pune.",
+      "Se obedecem, aprendem a perder o objeto para salvar a força.",
+      "Se tentam ganhar tempo com limite claro, pode ser aceitável.",
+      "Se se recusam a abandonar, Vorn intervém com dureza.",
+      "Se questionam depois, ótimo roleplay."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Brine",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "ponte",
+      "hospital"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 19 de outubro a 12 de dezembro de 2008",
       "O briefing da nova doutrina",
@@ -1321,7 +6094,146 @@ export const masterLoreParts = [
     "partLabel": "1.41",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Primeiro contato real da Célula K",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "ORFEU",
+      "FENDA",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "— Senhores, foco. A sonda vai ao mar. O risco biológico existe. O risco operacional existe. O risco de vazamento existe. O risco neural existe. A pergunta agora é: como reduzimos tudo isso sem fingir que podemos zerar?",
+      "**“A missão da sonda agora foi autorizada. Vocês sabem que será em janeiro, que há risco de Kaiju, risco de vazamento e que o objetivo principal não é matar nada. O que vocês perguntam ou fazem nesse briefing?”**",
+      "**“O capitão Leung deixa claro que, durante a missão, a presença dos Jaegers também é um risco para o navio. Como os players reagem a alguém falando com eles não como heróis, mas como possíveis fontes de acidente?”**",
+      "**“Na noite de Natal dentro da K-Station 01, com a MSD-1 marcada para janeiro, o que seus personagens fazem quando não há treino imediato? Conversam com alguém? Ficam perto da equipe? Evitam a celebração? Tentam agir como se nada estivesse pesando?”**",
+      "**“No briefing final, vocês ouvem que a sonda é importante, mas não mais importante que voltar vivos. Isso tranquiliza ou pesa mais?”**",
+      "**“Depois do briefing final, ainda há uma noite antes da saída. O que cada personagem faz?”**",
+      "**“Quando a base começa a ficar para trás e o mar ocupa todo o horizonte, vocês sentem que estão protegendo uma sonda… ou carregando uma pergunta que talvez ninguém esteja pronto para ouvir?”**"
+    ],
+    "conditionalConsequences": [
+      "Se os players perguntarem se a sonda pode atrair Kaiju, Helena responde:",
+      "Se perguntarem se o Brine teve relação com o D-17, Hermann diz:",
+      "Se perguntarem sobre o vazamento, Ryo responde apenas:",
+      "Se perguntarem se Coyote Tango estará em campo, Vorn explica que o Coyote estará em prontidão regional, mas a missão não pode depender de ele chegar no primeiro minuto. A Célula K precisa aguentar a primeira janela.",
+      "Se perguntarem a Newt o que a sonda pode ouvir, ele responde:",
+      "Se perguntarem a Hermann por que ela importa, ele responde:",
+      "Se perguntarem a Helena o que ela teme, ela responde:",
+      "Se algum player responder que ninguém sabe de verdade até acontecer, Mateo concorda."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Mako",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "technologies": [
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Brine",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "barco",
+      "doca",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 13 de dezembro de 2008 a 17 de janeiro de 2009",
       "O briefing da autorização",
@@ -1360,7 +6272,163 @@ export const masterLoreParts = [
     "partLabel": "1.42",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Primeiro contato real da Célula K",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "FENDA",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "O **Tacit Ronin** seguia mais afastado, no flanco cinza da formação. Seu papel era vigiar ângulos, aproximações e rotas de interdição, mas sem transformar cada sombra em alvo. Para **Christian e o personagem do mestre**, aquilo era quase uma tortura técnica: o mar aberto oferecia linhas infinitas, o comboio se movia lento, e a missão exigia que o Ronin ficasse perto o suficiente para proteger, mas longe o bastante para não perturbar o Hai Shen-03. A cada variação de onda, de luz, de radar, o corpo do Ronin parecia perguntar: “isso é rota?” E os pilotos precisavam responder: “ainda não”.",
+      "**“Vocês estão escoltando o Hai Shen-03 para fora da zona segura. Ainda não há contato, ainda não há alerta, ainda não há ameaça visível. O que seus personagens fazem durante a primeira hora da missão: mantêm silêncio, conversam pelo canal da Célula K, pedem leituras, observam o navio, tentam controlar ansiedade?”**",
+      "Essa frase parece estranha para uma missão de escolta, e é isso que pesa. O que uma sonda poderia causar no Fluxo dos pilotos? Oficialmente, nada. Mas Helena não dá avisos sem motivo.",
+      "**“O Orfeu começa a descer. Vocês não podem acelerar, não podem puxar, não podem entrar na linha do cabo. O que fazem enquanto a missão fica lenta e vulnerável?”**",
+      "**“A sonda registra uma leitura antes da profundidade planejada. Vocês não sabem o que significa. O comando manda manter posição. Como seus personagens reagem ao saber que o Orfeu ouviu algo cedo demais?”**",
+      "**“O Orfeu registra um pulso vindo do fundo. No mesmo instante, os Conn-Pods sentem uma microvariação. Não é dor, não é ataque, não é Drift com Kaiju. Mas algo atravessa os sistemas. O que seus personagens sentem e como respondem ao chamado de estado?”**",
+      "**“A ancoragem do Orfeu falhou parcialmente. A missão precisa ficar parada por oito minutos para ajuste remoto. Depois do pulso estranho, esses oito minutos parecem muito mais longos. O que vocês fazem?”**",
+      "**“Vocês veem o sinal falso aparecer no flanco do Ronin. O Horizon quer se preparar para impacto que talvez nem exista. Como vocês evitam criar defesa contra fantasma?”**",
+      "— O que é?",
+      "**“Uma linha vertical aparece por um instante nos visores, como se o sistema tivesse desenhado uma direção para baixo. Helena manda: ‘não sigam a linha’. O que vocês fazem com essa ordem?”**",
+      "**“O Orfeu está subindo. A missão quase acabou. Então os sensores registram movimento profundo abaixo do setor. Não é Kaiju confirmado. Não é ruído descartável. O que seus personagens fazem quando percebem que talvez algo tenha se mexido depois que a sonda ouviu?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson pedirem dados do Hai Shen-03, o capitão **Leung Wai-Man** responde com calma:",
+      "Se Christian e o personagem do mestre pedirem varredura de flanco, Ryo informa:",
+      "Se os players tentarem conversar entre os dois Jaegers, isso fortalece a sensação de equipe. Se ficarem em silêncio, a missão fica mais fria, mais pesada, mais militar.",
+      "Se Horizon ou Ronin saem da formação sem ordem, o comboio perde proteção.",
+      "Se comunicam preocupação e mantêm função, Ryo aprova.",
+      "Se pedem autorização para reposicionar, Vorn nega por enquanto.",
+      "Se observam detalhes do barco, podem perceber que ele não parece pesqueiro em atividade: redes recolhidas, luzes erradas, tripulação reduzida.",
+      "Se os players pedem coordenadas finas ao capitão Leung, ele responde com respeito profissional.",
+      "Se tentam se posicionar por instinto, Rafiq corrige com irritação.",
+      "Se comunicam entre si para não criar ondas cruzadas, a Célula K demonstra maturidade.",
+      "Se os players mantêm formação e comunicação, excelente.",
+      "Se tentam “ajudar” fisicamente, Leung e Rafiq cortam imediatamente.",
+      "Se o Ronin amplia arco por ansiedade, Helena alerta.",
+      "Se o Horizon se aproxima demais do Hai Shen-03, Leung manda afastar.",
+      "Se os players pedem detalhes, recebem apenas: oscilação fraca, não classificada.",
+      "Se querem se reposicionar, Vorn nega.",
+      "Se o Ronin sente vontade de olhar para baixo, Helena pede limite.",
+      "Se o Horizon sente que precisa proteger o cabo, Rafiq lembra que não devem se aproximar.",
+      "Se mantêm formação e deixam a escolta agir, disciplina.",
+      "Se Ronin pede autorização para interceptar, Vorn nega por enquanto:",
+      "Se Horizon muda postura defensiva sem deslocar, aceitável.",
+      "Se os players observam a lancha, podem perceber que ela não tenta atacar; tenta captar sinal ou imagem.",
+      "Se Horizon descreve peso/pressão, Naomi acompanha.",
+      "Se Ronin descreve linha/queda/profundidade, Helena fica em alerta."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Fluxo",
+      "Drift",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Brine",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "barco",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "Mar do Sul da China, rota para o Setor Profundo D-17 — 17 de janeiro de 2009",
       "A primeira falsa ameaça",
@@ -1398,7 +6466,163 @@ export const masterLoreParts = [
     "partLabel": "1.43",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Primeiro contato real da Célula K",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "FENDA",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“O Orfeu está subindo lentamente. Os sensores registraram movimento profundo incerto. Não há Kaiju confirmado. Não há alvo no mapa. Mas todo mundo no comando ficou mais sério. O que vocês fazem nos Jaegers enquanto a missão tenta recolher a sonda?”**",
+      "**“O capitão Leung ajusta o navio para compensar corrente. O Horizon precisa manter distância mesmo querendo proteger mais perto. O Ronin precisa respeitar a linha oeste do cabo mesmo percebendo um flanco aberto. Como vocês acompanham a manobra sem atrapalhar o recolhimento?”**",
+      "**“O cabo dá um puxão súbito e o painel pisca em laranja. A ordem é não reagir. Vocês confiam na equipe técnica ou tentam se preparar fisicamente para algo que ainda não existe?”**",
+      "**“O Orfeu finalmente volta ao convés. Vocês veem a sonda coberta por água profunda e resíduo esverdeado. Ela está inteira. O que isso causa nos personagens: alívio, medo, curiosidade, vontade de sair logo dali?”**",
+      "**“A equipe informa resíduo desconhecido na sonda. Não é ameaça ativa, mas pode ser material importante ou perigoso. Vocês como pilotos não podem fazer nada diretamente. Como lidam com a impotência de ver técnicos pequenos trabalhando perto de algo que talvez seja perigoso demais?”**",
+      "**“Na volta à zona segura, a missão parece quase terminada. Qual é o último cuidado que cada dupla toma antes de considerar que voltou?”**",
+      "**“Depois de uma missão sem combate direto, mas cheia de tensão, sinais estranhos e medo de falha, como seus personagens saem do Conn-Pod? Mais cansados ou menos cansados do que depois do Brine?”**",
+      "**“O que vocês contam para Helena? Vocês mencionam pressão, linha vertical, sensação de profundidade, medo, curiosidade? Ou preferem minimizar?”**",
+      "**“Depois de uma missão em que quase nada atacou vocês, mas tudo pareceu observar, o que fica mais marcado: o medo do Kaiju que não apareceu, o sinal que ninguém explicou, ou a sensação de que o Orfeu trouxe algo invisível de volta?”**",
+      "**“Vocês conseguem aceitar uma vitória que não dá respostas, apenas abre perguntas maiores?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson reforçam postura e pedem dados do cabo, Leung e Rafiq respondem.",
+      "Se Christian e o personagem do mestre tentam interpretar a linha profunda, Helena interrompe antes que isso vire busca.",
+      "Se os quatro conversam pelo canal da Célula K, isso ajuda a manter a mente presa ao presente.",
+      "Se ficam em silêncio, a tensão pesa mais, e Naomi pode pedir que nomeiem estado físico.",
+      "Se Horizon se mantém estável e comunica posição, Leung reconhece:",
+      "Se Ronin tenta fechar demais o flanco, Helena alerta:",
+      "Se os players coordenam “Horizon mantém navio, Ronin segura flanco”, Vorn registra maturidade operacional.",
+      "Se Horizon apenas ajusta postura sem deslocar, bom.",
+      "Se Ronin tenta identificar uma trajetória abaixo, Helena manda parar.",
+      "Se alguém pede status do Orfeu, Hermann informa: módulo íntegro, mas recolhimento mais lento.",
+      "Se os players perguntam se algo tocou a sonda, Newt responde:",
+      "Se os players tentam caçar transmissores com os Jaegers, Vorn corta.",
+      "Se pedem que os drones façam varredura, Ryo aprova.",
+      "Se mantêm função e deixam a segurança trabalhar, bom.",
+      "Se isso aumenta paranoia, Naomi pode pedir que voltem ao protocolo: navio, cabo, flanco, retorno.",
+      "Se os players se comunicam e nomeiam o medo, Naomi considera saudável.",
+      "Se tentam racionalizar demais, Hermann pode fornecer dados, mas não conforto.",
+      "Se Luiz e Alisson sentem que a missão já deveria sair imediatamente, estão certos emocionalmente.",
+      "Se Christian e o personagem do mestre sentem que algo “veio junto” com a sonda, Helena pode notar microvariação.",
+      "Se os players pedem para reforçar perímetro durante a trava, Vorn aprova:",
+      "Se Horizon usa postura para bloquear visão sem criar onda, ótimo.",
+      "Se Ronin comunica direção e velocidade do drone, Ryo consegue interceptar.",
+      "Se Ronin tenta perseguir com o Jaeger, Vorn corta.",
+      "Se Horizon se move demais, Leung reclama que o navio está recebendo onda."
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Brine",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "boia",
+      "boias",
+      "porto",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "Setor Profundo D-17, Mar do Sul da China — 17 de janeiro de 2009",
       "A subida lenta do Orfeu",
@@ -1437,7 +6661,155 @@ export const masterLoreParts = [
     "partLabel": "1.44",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Primeiro contato real da Célula K",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "FENDA",
+      "TERRA OCA",
+      "PRECURSORES",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "FLUXO",
+      "ORFEU",
+      "TERRA OCA",
+      "PRECURSORES",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Mistério de longo prazo: revelar apenas por investigação, briefing autorizado ou arco futuro.",
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Na avaliação pós-MSD-1, Helena mostra que os Conn-Pods registraram microvariações quando o Orfeu captou os pulsos. O que seus personagens contam? Eles falam da pressão, da linha vertical, da sensação de profundidade, ou tentam minimizar para não parecerem afetados?”**",
+      "**“Dias depois da MSD-1, vocês percebem que a base está menos relaxada, não mais. A missão deu certo, mas a segurança aumentou. Ryo pergunta informalmente se alguém tentou puxar conversa sobre o Orfeu, o D-17 ou a sensação nos Conn-Pods. Como vocês respondem?”**",
+      "**“Depois do Orfeu, vocês têm mais informação do que antes. Isso faz o mundo parecer mais seguro… ou apenas revela quantas coisas estavam escondidas no escuro?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson disserem que sentiram peso, como se o mar tivesse pressionado de baixo para cima, Naomi registra sem alarmismo. Se disserem que sentiram vontade de proteger o cabo ou o navio, Helena liga isso à função do Horizon, não a falha. Se Christian e o personagem do mestre disserem que a linha parecia uma direção, Helena pede que descrevam sem tentar segui-la mentalmente. Se minimizarem tudo, Helena não acusa, mas mostra que os dados existem. A confiança entre pilotos e equipe começa a importar mais do que nunca.",
+      "Se os players aceitarem, a campanha segue com confiança. Se tentarem buscar mais, podem conversar com Newt, Hermann, Helena ou Ryo em cenas separadas. Cada NPC dá uma camada diferente:",
+      "Se algum player lembrar de NPCs, técnicos ou candidatos curiosos demais, Ryo investiga. Se não houver nada, ele agradece mesmo assim. O objetivo é criar paranoia funcional, não fazer os players desconfiarem de todos sem motivo.",
+      "Se os players ficam irritados, isso é natural.",
+      "Se começam a duvidar dos modelos, Hermann pode aparecer em cena e responder com rigidez.",
+      "Se ficam ansiosos demais, Naomi trabalha rotinas.",
+      "Se Christian e o personagem do mestre relatam sonhos com linha vertical, Helena leva a sério.",
+      "Se Luiz e Alisson relatam sensação de peso quando há alerta amarelo, Naomi liga isso ao perfil do Horizon.",
+      "Se alguém questionar, Mercer responde com calma:",
+      "Se responderem evasivamente, Mateo entende."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Precursores",
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Precursores",
+      "Mercer",
+      "Fluxo",
+      "Drift",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "MSD-2",
+      "AEB-1",
+      "Fenda",
+      "Terra Oca"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "MSD-2",
+      "AEB-1",
+      "Fenda",
+      "Terra Oca",
+      "Precursores"
+    ],
+    "kaijus": [
+      "Brine",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 18 de janeiro a 21 de março de 2009",
       "A manhã depois da missão",
@@ -1473,7 +6845,157 @@ export const masterLoreParts = [
     "partLabel": "1.45",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Escalada de combate e danos",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "FENDA",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Quando Pentecost fala que máquinas novas prometem uma guerra mais limpa, mas cobram de outro jeito, o que seus personagens perguntam ou pensam?”**",
+      "**“Depois de meses de evolução, vitória e pressão, seus personagens sentem que estão ficando mais fortes ou apenas mais envolvidos em algo que cresce mais rápido que eles?”**",
+      "**“Vocês são acordados para um alerta laranja que desaparece antes da mobilização. O mapa mostra algo que quase foi e deixou de ser. Como seus personagens lidam com um quase-Kaiju que talvez nunca tenha existido completo?”**",
+      "**“Quando surge a notícia de que uma equipe de compatibilidade Mark-2 virá à K-Station no segundo semestre, o que isso causa nos personagens? Eles querem ser avaliados? Têm medo de deixar os Jaegers atuais? Acham cedo? Acham necessário?”**",
+      "Esse momento não obriga troca. Apenas planta. Principalmente para Luiz e Alisson, que talvez vejam no futuro uma chance de sair do perfil mais defensivo do Horizon Brave. Para Christian e o personagem do mestre, qualquer mudança envolve a pergunta: outro Jaeger suportaria o Par K-01? Ou o Tacit Ronin é perigoso justamente porque combina demais com eles?",
+      "**“Vocês estão diante da janela mais forte desde o Brine. Ainda não há Kaiju, mas tudo na base se move como se um pudesse aparecer. O que seus personagens fazem nas próximas horas de prontidão?”**",
+      "**“Quando a guerra começa a se mover mais rápido do que vocês conseguem descansar, vocês tentam acompanhar… ou aprendem a escolher onde gastar força?”**"
+    ],
+    "conditionalConsequences": [
+      "Se os players perguntarem se o modelo é confiável, Hermann responde com honestidade:",
+      "Se perguntarem se podem recusar prontidão por “risco provável”, Vorn responde:",
+      "Se perguntarem se o Orfeu pode ter “chamado” algo, Helena responde:",
+      "Se os players conversarem, ele continua:",
+      "Se perguntarem se ele trocaria o Coyote Tango por um Mark-2, Pentecost responde:",
+      "Se perguntarem se Horizon e Ronin vão ficar ultrapassados, ele responde:",
+      "Se perguntarem se isso significa trocar cedo, ele diz:",
+      "Se Luiz ou Alisson demonstrarem interesse, Naomi observa sem julgar.",
+      "Se Christian ou o personagem do mestre compararem o Diablo ao Ronin, Helena aponta que velocidade e precisão não são a mesma coisa.",
+      "Se alguém desprezar Mark-1 como velho, Rafiq pode responder com dureza:",
+      "Se eles ficam frustrados, Naomi entende.",
+      "Se ficam aliviados, Vorn entende.",
+      "Se ficam inquietos porque o sinal pareceu “recuar”, Helena observa.",
+      "Se perguntam a Hermann se isso significa que a Fenda falhou, ele responde:"
+    ],
+    "visibleNpcs": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Cristhian",
+      "Aaron",
+      "Viper"
+    ],
+    "backstageNpcs": [
+      "Mercer"
+    ],
+    "entities": [
+      "Elias Vorn",
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Cristhian",
+      "Aaron",
+      "Viper",
+      "Mercer",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "technologies": [
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Coyote Tango",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "porto"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 22 de março a 28 de junho de 2009",
       "A primeira reunião das Janelas Amarelas",
@@ -1512,7 +7034,169 @@ export const masterLoreParts = [
     "partLabel": "1.46R",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Escalada de combate e danos",
+    "status": "Pronto para mesa com revisão de combate",
+    "isRevisionR": true,
+    "isPlayableCombat": true,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "FENDA",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players.",
+      "Combate jogável: apresentar campo, objetivo e ameaça, sem declarar solução correta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas.",
+      "Resultado canônico pode existir, mas a forma da vitória deve nascer da mesa."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Vocês estão diante do segundo contato real da Célula K. O briefing não mostra um Brine repetido; mostra algo lateral, baixo, talvez feito para puxar e separar. Antes de entrar nos Conn-Pods, que pergunta vocês fazem, que preparação pedem, que memória tentam controlar, ou que combinação entre as duplas querem alinhar?”**",
+      "**“Viper, o padrão do S-09 não parece um avanço. Parece uma coisa procurando onde prender. Você olha para as boias, para os rebocadores, para o Silver Finch quase parado, para as linhas de profundidade. Máquinas deixam pistas. O problema é que pessoas também deixam mentiras. O que você quer conferir antes de subir para o Horizon: mapa de profundidade, rotas civis, tensão dos cabos navais, ou sinais externos suspeitos?”**",
+      "**“Aaron, no mapa, o S-09 é uma zona marítima. Mas quando você vê o Silver Finch lento e os rebocadores fora do corredor seguro, aquilo deixa de ser mapa. Vira gente em movimento errado, tempo de evacuação, sirene que talvez toque tarde demais. Você quer alinhar com Viper uma prioridade de rota, perguntar a Vorn sobre civis, ou guardar isso até ver o campo?”**",
+      "**“Cristhian, o padrão na tela parece um adversário que não mostra o tronco. Só braço, só ombro, só isca. Como lutador, isso é convite para entrar errado. Como alguém de mecatrônica, isso parece sensor incompleto tentando te convencer de que sabe mais do que sabe. Você quer pedir leitura técnica, conversar com o personagem do mestre sobre limite do Fluxo, ou deixar para sentir no Ronin?”**",
+      "**“Você percebe que Cristhian está lendo o contato como algo que pode puxar o Ronin para uma entrada errada. Você oferece uma frase de âncora, deixa o silêncio confortável entre vocês, ou espera o Fluxo dizer o que a fala ainda não disse?”**",
+      "**“Linha Horizon, o corpo do Horizon encaixa em vocês como uma muralha que aprendeu a andar. Depois de Brine, ele parece menos novo. O que vocês procuram primeiro dentro do Fluxo: confiança, dano antigo, rota, ou o parceiro?”**",
+      "**“Linha Ronin, o Tacit Ronin não pesa como o Horizon. Ele estreita o mundo. O campo vira ângulo, entrada, saída, linha quebrada. O que vocês estabelecem antes de entrar no mar: limite, palavra de parada, ritmo de ataque, ou silêncio?”**",
+      "**“O contato ainda não apareceu. Vocês têm boias sendo puxadas, um navio civil lento, cabos submersos e um canal profundo à frente. O Horizon pode ancorar e proteger rota. O Ronin pode marcar flanco e investigar. Os dois podem avançar juntos, abrir distância ou mandar o Lantau reposicionar boias. O que vocês fazem?”**",
+      "**“O navio parece pequeno demais perto dos Jaegers, mas tem gente lá dentro. O horizonte está limpo demais para você confiar nele. Você chama Viper para proteger o navio, pergunta à torre se a tripulação pode abandonar, ou aceita risco para descobrir o corpo central?”**",
+      "**“O gancho se move como braço que quer fazer você morder a isca. A abertura existe, mas pode não ser o corpo. Você usa leitura de luta para esperar o tronco aparecer, usa mecatrônica para entender a corrente, ou tenta cortar rápido antes que o navio gire?”**",
+      "**“A placa exposta parece a linha perfeita. O risco é querer morar nela. Como lutador, você sabe que adversário também dá abertura falsa. Como técnico, você sabe que sensor incompleto vira armadilha. Você entra, espera, marca ou pede que o personagem do mestre segure a linha com você?”**",
+      "**“Você não vê só cabo. Você vê tensão. O que rompe primeiro?”**",
+      "**“O navio ainda tem gente. O que pesa mais: manter formação ou impedir que o mar leve outra coisa?”**",
+      "**“O impulso de Cristhian chega antes da fala. Você acompanha, segura ou transforma em pergunta?”**",
+      "**“Quando o Kaiju não tenta atravessar a muralha, mas separar quem forma a muralha, o que mantém a Célula K unida: protocolo, confiança ou medo de perder o outro Jaeger?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Viper pedir profundidade, Hermann fornece mapa incompleto.",
+      "Se pedir rotas civis, Ryo mostra embarcações que ainda precisam sair.",
+      "Se pedir tensão/cabos/boias, Rafiq explica o que pode virar arma e o que pode virar armadilha.",
+      "Se perguntar sobre sinais externos, Ryo avisa que há escutas passivas, mas não confirma origem.",
+      "Se Aaron perguntar sobre civis, Vorn responde com prioridade clara: nenhuma embarcação deve ser deixada para trás se houver alternativa operacional.",
+      "Se alinhar com Viper, a Linha Horizon pode entrar com intenção compartilhada: não apenas parar Kaiju, mas impedir separação entre defesa e vida civil.",
+      "Se guardar, o mestre pode usar isso como tensão depois, quando Hookwake tentar arrastar algo na direção errada.",
+      "Se pedir leitura técnica, Hermann dá a estimativa: corpo baixo, apêndices longos, provável ataque lateral.",
+      "Se conversar com o personagem do mestre, o Par K-01 pode entrar com uma âncora verbal antes da missão.",
+      "Se deixar para sentir no Ronin, Helena observa, mas não impede.",
+      "Se Horizon Brave tentar ancorar o Silver Finch ou bloquear a tração, o navio ganha tempo, mas o Horizon arrisca entrar em cabo de guerra com o Kaiju. Rafiq avisa que isso pode comprometer tornozelo, joelho ou quadril se a força vier em diagonal.",
+      "Se Tacit Ronin tentar cortar a corrente ou o gancho, pode impedir o arrasto rapidamente, mas corre risco de perseguir um alvo falso ou expor lateral a outro membro.",
+      "Se a Célula K mandar o Lantau intervir, a escolta naval pode tentar cortar cabos menores ou lançar boias de marcação, mas não aguenta tração direta do Hookwake.",
+      "Se os players deixarem o Silver Finch por alguns segundos para localizar o corpo central, podem ganhar informação tática, mas o navio fica em risco.",
+      "Se usarem boias ou cabos como contrapeso, podem transformar o cenário em armadilha, mas um erro pode prender também um Jaeger.",
+      "Se Horizon ancorar contra tração direta, segura posição e protege formação, mas sofre estresse no tornozelo ou joelho.",
+      "Se Horizon girar com a força, pode evitar dano articular e redirecionar o gancho, mas talvez ceda metros de campo.",
+      "Se Horizon usar banco de areia, ganha apoio, mas pode ficar preso se Hookwake puxar para o canal profundo.",
+      "Se Ronin cortar o gancho cedo, pode marcar o tecido, mas talvez revele posição para outro membro.",
+      "Se Ronin ceder o movimento, pode usar a força do Hookwake contra ele, mas precisa confiar que Horizon não interpretará recuo como separação.",
+      "Se os dois Jaegers tentarem responder ao mesmo gancho sem coordenação, Hookwake cria a primeira brecha entre eles.",
+      "Se bem-sucedido, a Célula K descobre que o corpo central não está exatamente onde os ganchos sugerem. Isso prepara a primeira ferida real.",
+      "Se os players tentarem entender Hookwake em vez de apenas reagir aos ganchos, a mesa pode abrir uma rota de triangulação.",
+      "Se a triangulação revelar o dorso, Tacit Ronin pode fazer um ataque curto, sem perseguir fundo. O corte marca placas segmentadas, arranca tecido externo e prova que o corpo central pode ser ferido."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Mako",
+      "Cristhian",
+      "Aaron",
+      "Viper"
+    ],
+    "backstageNpcs": [
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Mako",
+      "Cristhian",
+      "Aaron",
+      "Viper",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "Fenda"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "boia",
+      "boias",
+      "doca",
+      "porto",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Não impor solução: manter vitória/resultado como consequência da mesa.",
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-2 / Hookwake — Primeiro contato com tração, captura e separação de Jaegers",
       "Setor marítimo S-09, Mar do Sul da China",
@@ -1554,7 +7238,140 @@ export const masterLoreParts = [
     "partLabel": "1.47R",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Escalada de combate e danos",
+    "status": "Pronto para mesa com revisão de combate",
+    "isRevisionR": true,
+    "isPlayableCombat": true,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players.",
+      "Combate jogável: apresentar campo, objetivo e ameaça, sem declarar solução correta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas.",
+      "Resultado canônico pode existir, mas a forma da vitória deve nascer da mesa."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "**“Hookwake está entre Horizon Brave e Tacit Ronin. Um gancho ameaça a base do Horizon; outro ameaça cortar a saída do Ronin. O Silver Finch ainda não saiu completamente da zona. O Cutter Lantau tenta manter boias e holofotes, mas a chuva piora. Vocês precisam decidir: proteger o próprio Jaeger, proteger o outro, manter formação, salvar o navio civil, ou tentar prender o corpo central enquanto ele está exposto. O que vocês fazem?”**",
+      "**“O que acontece quando a defesa precisa escolher entre ficar junto e salvar algo longe?”**",
+      "**“Viper e Aaron, o gancho vem baixo, com cabo preso junto. Se vocês ancorarem, seguram a linha, mas a tração pode subir para joelho e quadril. Se cederem, aliviam torque, mas podem abrir espaço entre vocês e o Ronin. Se usarem o banco de areia, ganham apoio, mas podem ficar presos. Se tentarem pisar ou prender o cabo, podem transformar a tração contra o Hookwake, mas errar pode prender o Horizon. O que vocês fazem?”**",
+      "**“Cristhian, personagem do mestre: o Ronin tem uma entrada curta, uma saída arriscada e uma leitura incompleta. Se vocês cortarem o gancho, podem liberar a saída, mas talvez mordam isca. Se avançarem para o corpo central, podem criar ferida real, mas ficam perto demais da captura. Se recuarem, preservam o Ronin, mas deixam Hookwake pressionar Horizon. Se tentarem sentir pelo Fluxo, a leitura melhora, mas Helena vai registrar risco. O que vocês fazem?”**",
+      "**“O impulso de Cristhian chega antes da fala. Você acompanha, segura ou transforma em pergunta?”**",
+      "**“O gancho que mira o navio parece lento demais. Talvez seja isca. Talvez seja a chance. Você entra pelo alvo óbvio ou procura o corpo que está mandando nele?”**",
+      "**“Quando o Hookwake para de se mover, o que fica primeiro no Conn-Pod de vocês: a sensação de terem vencido, a sensação de quase terem sido separados, ou a vontade de conferir se o outro Jaeger ainda está inteiro?”**",
+      "**Para o personagem do mestre:**\r\n“Você sentiu Cristhian ou o Ronin no momento da finalização? E se sentiu os dois, qual deles foi mais difícil de soltar?”"
+    ],
+    "conditionalConsequences": [
+      "Se o Horizon protege o Silver Finch, Hookwake ameaça o Ronin.",
+      "Se o Ronin corre para cortar o gancho, Hookwake puxa a base do Horizon.",
+      "Se os dois Jaegers fecham a formação, Hookwake joga o corpo central entre eles.",
+      "Se os dois abrem distância, ele tenta capturar um isolado.",
+      "Se o Lantau lança boias, Hookwake puxa uma delas para criar posição falsa.",
+      "Se os players usam cabos, Hookwake tenta transformar o cabo em extensão do próprio gancho.",
+      "Se **Viper** puxar a leitura de falha, o mestre pode oferecer:",
+      "Se **Aaron** puxar a leitura de equilíbrio, o mestre pode oferecer:",
+      "Se a dupla ancorar com sucesso, Horizon impede Hookwake de abrir a formação, mas sofre estresse mecânico.",
+      "Se a dupla girar com a força, evita dano maior, mas precisa reposicionar rápido.",
+      "Se a dupla usar o cabo como armadilha, pode prender o gancho por alguns segundos, mas corre risco de travar o próprio pé.",
+      "Se a dupla ignorar o torque e tentar vencer na força, o Horizon aguenta por um momento, mas o mestre deve marcar dano: tornozelo direito aberto, joelho rangendo, quadril em alerta ou perda de estabilidade.",
+      "Se **Cristhian** usar repertório de luta, o mestre pode oferecer:",
+      "Se ele usar mecatrônica, o mestre pode oferecer:",
+      "Se o personagem do mestre agir como âncora do Par K-01, o mestre pode dizer:",
+      "Se a dupla cortar cedo demais, pode liberar rota, mas errar o corpo central.",
+      "Se esperar demais, Hookwake ganha posição.",
+      "Se aprofundar Fluxo, pode antecipar tração, mas o Estresse do Fluxo sobe.",
+      "Se atacar o corpo central sem cobertura, Hookwake tenta fechar os dois ganchos.",
+      "Se o Ronin entrar curto, pode atingir essa junção e comprometer a coordenação da mordida e dos ganchos.",
+      "Se cortada, Hookwake perde simetria.",
+      "Se a Célula K conduzir Hookwake para o banco irregular, o corpo central pode encalhar por segundos.",
+      "Se os Jaegers abrirem distância e marcarem o corpo, o Cutter Lantau pode disparar carga de impacto contra a lateral exposta.",
+      "Se funcionar, Hookwake perde coordenação dos ganchos. O corpo central falha, a mandíbula abre fora de tempo, os membros se contraem sem sincronia e o Kaiju entra em colapso motor."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Cristhian",
+      "Aaron",
+      "Viper"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Cristhian",
+      "Aaron",
+      "Viper",
+      "Fluxo",
+      "Drift",
+      "Par K-01",
+      "AEB-1",
+      "AET-1"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01",
+      "AEB-1",
+      "AET-1"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "guindaste",
+      "cabo",
+      "cabos",
+      "boia",
+      "boias",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Não impor solução: manter vitória/resultado como consequência da mesa.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-2 / Hookwake — Encerramento jogável do segundo combate real da Célula K",
       "Setor marítimo S-09, Mar do Sul da China",
@@ -1597,7 +7414,142 @@ export const masterLoreParts = [
     "partLabel": "1.48",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Escalada de combate e danos",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Quando Helena mostra o golpe final e diz que o sucesso criou memória, como Christian e o personagem do mestre lidam com isso? Sentem orgulho? Medo de querer repetir? Acham que ela está exagerando? Ou reconhecem que a finalização ficou gravada de um jeito forte demais?”**",
+      "**“Depois do combate, vocês têm um momento sem Vorn, sem Helena, sem Rafiq e sem relatório. Só a Célula K. Vocês conversam sobre o que aconteceu entre Horizon e Ronin? Alguém agradece? Alguém cobra? Alguém brinca para aliviar? Ou ninguém quer tocar no assunto?”**",
+      "Se responderem com humildade, Dae-Hyun pode ficar desconfortável. Ele talvez esperasse arrogância.\r\nSe responderem com irritação, ele devolve.\r\nSe disserem que o Hookwake quase separou a célula, Mei Lin escuta com atenção.\r\nSe falarem de Mark-2, Mateo pergunta:\r\n— Vocês acham que uma máquina nova muda o que acontece dentro do piloto?",
+      "**“Nessa preparação antes da avaliação Mark-2, o que incomoda mais os personagens: a chance de não serem compatíveis, a chance de serem compatíveis, ou a ideia de que querer uma máquina nova pode revelar algo sobre eles?”**",
+      "**“Na noite anterior à chegada da equipe Mark-2, vocês podem visitar Horizon Brave, Tacit Ronin, ambos ou nenhum. O que seus personagens fazem?”**",
+      "Se Luiz e Alisson visitam o Horizon, podem tocar a plataforma, olhar os reparos, conversar sobre o futuro.\r\nSe Christian e o personagem do mestre visitam o Ronin, podem sentir o silêncio da máquina e a pergunta não dita: se outro Jaeger chamasse, o que aconteceria com o Par K-01?\r\nSe os quatro vão juntos, pode surgir uma conversa sobre o que significa deixar ou não deixar uma máquina para trás.\r\nSe ninguém vai, isso também diz algo: talvez estejam evitando apego."
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson demonstrarem interesse claro nos Mark-2, Naomi observa sem condenar.",
+      "Se Christian e o personagem do mestre ficarem defensivos em relação ao Tacit Ronin, Helena entende, mas alerta que apego e segurança não são a mesma coisa.",
+      "Se alguém questionar Mercer, ela responde com educação fria:",
+      "Se eles falarem em trocar de Jaeger no futuro, Rafiq não se ofende. Ele responde:",
+      "Se eles demonstrarem culpa, Rafiq corta:",
+      "Se os players dizem que querem repetir em combate futuro, Helena responde:",
+      "Se dizem que preferem evitar finalização, ela responde:",
+      "Se falam da linha vertical do D-17, Helena fica ainda mais séria:",
+      "Se ninguém falar nada, o silêncio também vira resposta.",
+      "Se alguém agradecer, isso fortalece vínculo.",
+      "Se alguém disser que quase foi puxado por culpa do outro, pode gerar conflito bom.",
+      "Se alguém falar que o Hookwake sabia como separar os dois, isso pode plantar paranoia.",
+      "Se o personagem do mestre e Christian mencionarem que o Ronin só finalizou porque o Horizon segurou, Luiz e Alisson podem sentir orgulho do papel defensivo.",
+      "Se Luiz e Alisson disserem que o Horizon ficou vulnerável para abrir a janela, isso pode gerar respeito do Ronin pela muralha.",
+      "Se responderem com humildade, Dae-Hyun pode ficar desconfortável. Ele talvez esperasse arrogância.",
+      "Se responderem com irritação, ele devolve.",
+      "Se disserem que o Hookwake quase separou a célula, Mei Lin escuta com atenção.",
+      "Se falarem de Mark-2, Mateo pergunta:",
+      "Se Luiz e Alisson visitam o Horizon, podem tocar a plataforma, olhar os reparos, conversar sobre o futuro.",
+      "Se Christian e o personagem do mestre visitam o Ronin, podem sentir o silêncio da máquina e a pergunta não dita: se outro Jaeger chamasse, o que aconteceria com o Par K-01?",
+      "Se os quatro vão juntos, pode surgir uma conversa sobre o que significa deixar ou não deixar uma máquina para trás.",
+      "Se ninguém vai, isso também diz algo: talvez estejam evitando apego."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Mercer",
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "AEB-1",
+      "AET-1"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "AEB-1",
+      "AET-1"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "porto"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 3 de julho a 29 de agosto de 2009",
       "A reunião que transformou vitória em cobrança",
@@ -1636,7 +7588,148 @@ export const masterLoreParts = [
     "partLabel": "1.49",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Escalada de combate e danos",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Vocês estão na Câmara K-8, diante dos perfis Mark-2. Diablo Intercept parece agressivo, rápido, quase chamando para ação. Solar Prophet parece estável, tático, amplo. Outros candidatos estão olhando também. Antes do teste começar, o que seus personagens sentem ou fazem?”**",
+      "O Diablo não perguntava: “você aguenta?”",
+      "Ele perguntava: “você chega a tempo?”",
+      "**“O Diablo oferece algo que o Horizon raramente ofereceu: chegar antes, bater antes, impedir antes de ter que sustentar. Isso parece liberdade ou armadilha?”**",
+      "O Solar não testava apenas força, velocidade ou agressividade. Testava controle de campo, distribuição de energia, sustentação térmica, leitura de múltiplas ameaças, proteção de aliados e estabilidade sob excesso de informação. Se o Diablo perguntava “você chega a tempo?”, o Solar perguntava:",
+      "**“O Solar Prophet não oferece a força pesada do Horizon, mas oferece controle de campo. Você sente que ele amplia a função defensiva ou que tira o peso concreto que dava segurança?”**",
+      "**“O Solar Prophet abre o campo em várias camadas ao mesmo tempo. Ele não quer que você siga uma linha perfeita; quer que sustente várias prioridades. Isso acalma o Par K-01 ou parece ruído demais?”**",
+      "**“Ao receberem o feedback oficial, como cada personagem reage? Luiz e Alisson se sentem esperançosos ou presos ao Horizon? Christian e o personagem do mestre se sentem reconhecidos ou vigiados? Alguém se decepciona por não haver transferência? Alguém se sente aliviado?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson olharem mais para Diablo, isso pode indicar desejo de sair da função puramente defensiva do Horizon.",
+      "Se olharem para Solar Prophet, talvez busquem estabilidade sem a lentidão emocional do Horizon.",
+      "Se Christian e o personagem do mestre se sentirem atraídos pelo Diablo, Helena ficará atenta, porque resposta rápida somada ao Par K-01 pode ser perigosa.",
+      "Se se sentirem desconfortáveis com qualquer Mark-2, isso também importa.",
+      "Se Dae-Hyun se mostrar ansioso, Naomi observa.",
+      "Se Mei Lin ficar cautelosa, Ibarra percebe.",
+      "Se Mateo fizer perguntas técnicas, Vivienne responde com mais respeito.",
+      "Se Luiz vai primeiro, o teste pode revelar se ele deseja mais velocidade depois de meses em um Jaeger defensivo.",
+      "Se Alisson vai primeiro, pode mostrar se ele complementa ou equilibra essa vontade.",
+      "Se Christian vai primeiro, Helena fica em alerta alto.",
+      "Se o personagem do mestre vai primeiro, a leitura pode ser comparada depois à do Christian para ver se o Par K-01 carrega traços semelhantes mesmo fora do Tacit Ronin.",
+      "Se o player aceita a velocidade mas mantém capacidade de abortar, Vivienne marca compatibilidade promissora.",
+      "Se se entrega à carga e demora a mudar prioridade, ela marca risco de agressividade pós-Horizon.",
+      "Se rejeita a velocidade por desconforto, isso indica apego ou prudência.",
+      "Se pergunta pelo parceiro mesmo em teste individual, Naomi observa traço de pareamento forte.",
+      "Se o player desacelera a própria resposta e pede confirmação de limite, Helena aprova.",
+      "Se aceita a velocidade e se mantém dentro do cenário, Vivienne marca alta compatibilidade, mas Helena marca risco.",
+      "Se a resposta neural sobe rápido demais, Helena interrompe antes de completar.",
+      "Se o player rejeita o perfil, Vivienne não considera fracasso; pode ser autodefesa saudável.",
+      "Caso Christian e o personagem do mestre tenham respostas semelhantes ao Diablo, Helena e Naomi trocam olhares. Não é proibido. Mas indica que os dois compartilham não só compatibilidade com Ronin, mas uma tendência de resposta rápida que, em Mark-2, poderia amplificar o Par K-01.",
+      "Se Luiz ou Alisson responde bem, Vivienne pode marcar compatibilidade alta com suporte tático.",
+      "Se sente falta do corpo pesado do Horizon, isso mostra que a defesa deles ainda depende de presença física.",
+      "Se tenta resolver todos os problemas ao mesmo tempo, o Solar sobrecarrega.",
+      "Se prioriza com calma, Naomi observa estabilidade emocional positiva."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Dae-Hyun Park",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Mercer",
+      "Fluxo",
+      "Par K-01",
+      "Orfeu"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Orfeu"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "ponte",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 20 de agosto a 27 de setembro de 2009",
       "O briefing dos avaliados",
@@ -1671,7 +7764,156 @@ export const masterLoreParts = [
     "partLabel": "1.50",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Escalada de combate e danos",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Depois dos testes Mark-2, Vorn deixa claro que vocês continuam com Horizon Brave e Tacit Ronin. Isso dá alívio, frustração ou a sensação de que o futuro foi colocado em pausa?”**",
+      "**“A simulação mostra uma ameaça que uma máquina mais rápida talvez interceptasse, mas o Horizon não chega sem abandonar a rota principal. Vocês tentam forçar velocidade, aceitam proteger o que podem, ou pedem suporte?”**",
+      "— O que aconteceu?",
+      "**“No dia 3 de novembro, aniversário histórico de Tressarak, a base abre uma Janela Amarela sem contato visível. Alguns oficiais ficam mais tensos do que o normal. Seus personagens percebem essa coincidência? Fazem algo com isso?”**",
+      "— É errado querer pilotar uma máquina nova?",
+      "**“Mako pergunta se é errado querer pilotar uma máquina nova. O que seus personagens dizem?”**",
+      "Se alguém diz que não, mas depende do motivo, Pentecost aprova em silêncio.\r\nSe alguém diz que sim, Mako pergunta por quê.\r\nSe alguém diz que máquina nova pode salvar vidas, ela pergunta:\r\n— E a antiga?",
+      "**“Vocês estão sendo chamados para um possível terceiro Kaiju comum. Depois de Brine, Hookwake, Orfeu, Mark-2 e meses de Janelas Amarelas, o que pesa mais quando entram nessa sala: experiência, cansaço ou expectativa?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Luiz e Alisson demonstrarem impaciência, Naomi não repreende; ela pergunta se a impaciência é contra o Horizon ou contra a sensação de esperar.",
+      "Se Christian e o personagem do mestre demonstrarem alívio por continuar no Ronin, Helena pergunta se é alívio por segurança ou por medo de outro corpo.",
+      "Se algum player perguntar quando os Mark-2 chegam de verdade, Vorn responde:",
+      "Se tentam forçar velocidade, o Horizon perde estabilidade e prova o ponto do exercício.",
+      "Se protegem a rota principal e comunicam limitação, passam.",
+      "Se pedem suporte ao Ronin ou à torre, melhor ainda.",
+      "Se ficam frustrados, Naomi pede que nomeiem a frustração.",
+      "Se tentam acelerar demais, Helena marca compressão.",
+      "Se adaptam a janela ao perfil Ronin, ótimo.",
+      "Se deixam passar por medo, isso também vira dado.",
+      "Se nomeiam limite antes do golpe, Helena aprova.",
+      "Se ficam irritados, normal.",
+      "Se respeitam o protocolo, Vorn aprova.",
+      "Se começam a desacreditar dos alertas, Naomi observa.",
+      "Se querem saber mais, Hermann pode dar uma explicação curta demais e frustrante:",
+      "Se os players tentam resolver tudo, falham por sobrecarga.",
+      "Se escolhem o que importa primeiro, passam.",
+      "Se comunicam limitações, melhor.",
+      "Se escondem dano, o cenário pune.",
+      "Se pedem suporte técnico, Rafiq aprova:",
+      "Se perguntarem a Vorn, ele diz:",
+      "Se perguntarem a Newt, ele diz:",
+      "Se alguém diz que não, mas depende do motivo, Pentecost aprova em silêncio.",
+      "Se alguém diz que sim, Mako pergunta por quê."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Cristhian",
+      "Aaron",
+      "Viper"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Cristhian",
+      "Aaron",
+      "Viper",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1"
+    ],
+    "kaijus": [
+      "Tressarak",
+      "Brine",
+      "Hookwake",
+      "Bellhusk",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "barco",
+      "barcos",
+      "porto",
+      "rota civil"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 28 de setembro a 22 de novembro de 2009",
       "O primeiro briefing depois dos testes",
@@ -1709,7 +7951,160 @@ export const masterLoreParts = [
     "partLabel": "1.51R",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Escalada de combate e danos",
+    "status": "Pronto para mesa com revisão de combate",
+    "isRevisionR": true,
+    "isPlayableCombat": true,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players.",
+      "Combate jogável: apresentar campo, objetivo e ameaça, sem declarar solução correta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas.",
+      "Resultado canônico pode existir, mas a forma da vitória deve nascer da mesa."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Vocês estão diante de um contato que não avança rápido, não puxa e não queima — pelo menos não ainda. Ele pulsa. Ele distorce sensor. Ele pode cansar metal, corpo e Fluxo. Antes de entrar nos Conn-Pods, o que vocês querem perguntar, preparar ou combinar entre as duplas?”**",
+      "A pergunta dele não é “você aguenta o golpe?”",
+      "**“Aaron, o mapa mostra barcos pequenos, ferry interrompido e rotas costeiras ainda tentando se organizar. Mas o sinal do K-3 não parece só ameaça aos Jaegers. Parece algo que pode fazer pessoas sentirem medo antes de verem o monstro. Você quer perguntar sobre evacuação civil, pedir canal com a Guarda Costeira, alinhar com Viper uma defesa flexível, ou guardar essa preocupação para quando ouvir o pulso em campo?”**",
+      "**“Cristhian, esse contato não parece adversário que te dá braço ou que abre guarda. Parece adversário que mexe no chão, no som, no tempo. Como alguém de máquina, você sabe que vibração repetida quebra peça que parecia perfeita. Como alguém de corpo, você sabe que ritmo errado cansa antes da pancada. Você quer pedir leitura de sensor, combinar limite com o personagem do mestre, ou estabelecer uma palavra para quando o Ronin começar a corrigir demais?”**",
+      "**“Linha Horizon, o Horizon acorda como muralha, mas uma muralha que já aprendeu que não pode ser rígida o tempo todo. O que vocês procuram no Fluxo antes da saída: estabilidade, respiração conjunta, leitura de dano antigo ou confiança no movimento flexível?”**",
+      "**“Cristhian, o Ronin mostra duas leituras por meio segundo. A máquina quer corrigir. Pelo teu repertório de mecatrônica, talvez seja ruído; pelo teu corpo de luta, reagir no susto é cair na finta. Você segura, corrige, pede ao personagem do mestre para confirmar, ou tenta sentir além do sensor?”**",
+      "**“Personagem do mestre, você sente o impulso do Ronin e talvez de Cristhian ao mesmo tempo. Você segura a linha, acompanha a correção ou cria uma palavra para interromper o reflexo?”**",
+      "**“O Ronin está vendo uma mentira pequena. Pequena o bastante para parecer corrigível. Pelo teu repertório técnico, isso é o tipo de erro que destrói precisão se você confiar nele. Pelo teu repertório de luta, é como reagir a ombro falso. Você segura, pede confirmação, usa o personagem do mestre como âncora ou arrisca correção curta?”**",
+      "— Isso quer dizer bater onde?",
+      "**“Agora vocês sabem: Bellhusk não deve ser vencido por força bruta. Ele precisa ter o ciclo quebrado. O próximo pulso começa em segundos. O Horizon pode proteger a rota e criar ângulo. O Ronin pode tentar a primeira interrupção real. Civis ainda dependem do tempo que vocês comprarem. O que vocês fazem entre um pulso e outro?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Viper pedir frequência, Hermann oferece intervalo provável dos pulsos, mas não certeza.",
+      "Se pedir estruturas próximas, Ryo mostra ferry, barcos, boias, recifes, uma plataforma de monitoramento e torres costeiras distantes.",
+      "Se pedir estado do Horizon, Rafiq confirma que a base foi reforçada após Hookwake, mas Mark-1 não foi feito para ressonância prolongada.",
+      "Se comparar com danos anteriores, o mestre pode dar uma conclusão útil: Brine punia contato químico, Hookwake punia tração; Bellhusk provavelmente pune permanência no mesmo ritmo.",
+      "Se Aaron perguntar sobre civis, Vorn confirma: vida humana segue prioridade, mas a Célula K não pode abandonar o contato.",
+      "Se pedir canal com Guarda Costeira, Ryo pode abrir um canal filtrado, mas com atraso.",
+      "Se alinhar com Viper, a Linha Horizon pode entrar preparada para não ficar imóvel demais.",
+      "Se guardar, o mestre pode trazer isso depois quando o primeiro pulso bater no Conn-Pod.",
+      "Se Cristhian pedir sensor, Hermann avisa que o maior risco é confiar demais em leitura durante o pulso.",
+      "Se combinar limite com o personagem do mestre, Helena aprova discretamente.",
+      "Se estabelecer palavra, isso pode funcionar como âncora de Fluxo se a sobrecorreção aparecer.",
+      "Se Horizon tentar compensar com força, reduz oscilação aparente, mas aumenta fadiga em juntas.",
+      "Se Horizon aceitar o pulso e ajustar depois, sofre menos dano, mas fica vulnerável por segundos.",
+      "Se Viper mapear o ciclo, pode descobrir intervalo aproximado entre pulsos.",
+      "Se Aaron estabilizar o Fluxo, a Linha Horizon reduz Estresse e mantém função defensiva.",
+      "Se Ronin corrigir durante o pulso, pode ganhar posição momentânea, mas cria desalinhamento de eixo.",
+      "Se Ronin esperar o pulso passar, perde uma janela curta, mas preserva precisão.",
+      "Se Par K-01 tentar sentir “por baixo” do ruído, pode obter leitura melhor do corpo do Kaiju, mas Helena registra aumento de sincronia perigosa.",
+      "Se mantiverem distância, ganham leitura de ciclo, mas Bellhusk avança.",
+      "Se Horizon aproximar, pode impedir avanço, mas sofre mais pressão.",
+      "Se Ronin aproximar, pode identificar sulcos laterais, mas sensores podem mentir durante pulso.",
+      "Se usarem boias acústicas, Hermann consegue medir intervalo melhor, mas Bellhusk pode destruir ou distorcer as boias.",
+      "Se priorizarem barcos, salvam civis, mas perdem tempo de leitura.",
+      "Se tentarem ataque forte inicial, causam pouco dano e recebem reverberação."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Cristhian",
+      "Aaron",
+      "Viper"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Cristhian",
+      "Aaron",
+      "Viper",
+      "Fluxo",
+      "Par K-01",
+      "MSD-1",
+      "AEB-1",
+      "AET-1"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "MSD-1",
+      "AEB-1",
+      "AET-1"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Bellhusk",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "boia",
+      "boias",
+      "barco",
+      "barcos",
+      "ferry",
+      "doca",
+      "porto",
+      "ponte",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Não impor solução: manter vitória/resultado como consequência da mesa.",
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-3 / Bellhusk — Primeiro contato com ressonância, pressão baixa e fadiga estrutural",
       "Sul de Lamma, Hong Kong",
@@ -1751,7 +8146,150 @@ export const masterLoreParts = [
     "partLabel": "1.52R",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Escalada de combate e danos",
+    "status": "Pronto para mesa com revisão de combate",
+    "isRevisionR": true,
+    "isPlayableCombat": true,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "REVISÃO R",
+      "COMBATE JOGÁVEL",
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players.",
+      "Combate jogável: apresentar campo, objetivo e ameaça, sem declarar solução correta."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas.",
+      "Resultado canônico pode existir, mas a forma da vitória deve nascer da mesa."
+    ],
+    "spoilerWarnings": [],
+    "questions": [
+      "**“Bellhusk está entre os recifes e a água mais funda. Vocês sabem que a carapaça central devolve vibração. Sabem que os sulcos laterais anunciam o pulso. Sabem que há um banco raso a nordeste que pode forçar o corpo dele a subir mais, mas chegar lá exige condução. O que vocês fazem no intervalo entre pulsos?”**",
+      "**“A primeira interrupção funcionou, mas os Jaegers pagaram. Horizon sente fadiga acumulada. Ronin sente o mundo duplicar por meio segundo. Como vocês diferenciam o que é dano real, o que é medo, e o que é só eco do pulso?”**",
+      "**“Aaron, a pressão no peito começa a diminuir depois que Bellhusk para. Mas o silêncio não parece silêncio normal. Parece o fim de uma sirene longa demais. O que você faz com esse silêncio?”**",
+      "**“Você sente Cristhian, o Ronin ou os dois tentando confirmar que a linha acabou. Você ajuda a desligar, segura em silêncio ou pergunta se ele ainda está vendo o mesmo que você?”**",
+      "**“Quando vocês vencem sem cair, mas saem sentindo que algo dentro do Jaeger continuou vibrando, isso ainda parece vitória?”**"
+    ],
+    "conditionalConsequences": [
+      "Se Horizon tocar cedo demais, sofre fadiga.",
+      "Se Ronin entrar durante ruído, corrige errado.",
+      "Se os dois esperarem demais, Bellhusk avança.",
+      "Se tentarem resolver com golpe grande, a carapaça responde.",
+      "Se deixarem o Kaiju chegar ao canal profundo, ele recupera mobilidade e prolonga a luta.",
+      "Se o **Tacit Ronin** tentar uma interrupção curta, pode atingir um sulco lateral, causando falha parcial no pulso seguinte. O risco é entrar com sensor ainda sujo. Cristhian pode usar mecatrônica para diferenciar abertura real de sombra, ou ritmo corporal para esperar o último instante sem “morar” na linha. O personagem do mestre pode ser âncora, freio ou ponte.",
+      "Se o **Horizon Brave** criar ângulo, pode impedir Bellhusk de esconder o sulco. Mas se Viper e Aaron tratarem isso como bloqueio rígido, a fadiga sobe. Se tratarem como defesa flexível, o Horizon entra e sai do contato, usando peso sem virar poste.",
+      "Se os players escolherem **esperar**, ganham leitura melhor, mas Bellhusk avança alguns metros.",
+      "Se escolherem **proteger rota civil**, podem salvar embarcação ou afastar risco, mas perdem a primeira janela de interrupção.",
+      "Se a interrupção do Ronin funcionar, o próximo pulso vem quebrado, mais fraco ou desalinhado.",
+      "Se falhar parcialmente, o Ronin sofre distorção sensorial e precisa estabilizar.",
+      "Se falhar gravemente, Bellhusk direciona pulso para o Ronin ou para uma boia próxima, criando ruído forte.",
+      "Se Horizon apoiar bem, reduz rotação de Bellhusk.",
+      "Se Horizon apoiar mal, sofre fadiga no ombro, torso ou tornozelo.",
+      "Se ele alcançar o canal profundo, os pulsos ficam menos previsíveis e a Célula K perde vantagem de recife e banco. Horizon está em melhor posição para negar a rota. Ronin pode impedir que Bellhusk vire a lateral danificada para longe.",
+      "Se Horizon mantiver defesa angular e soltar antes do pulso, reduz fadiga e mantém rota protegida.",
+      "Se Horizon tentar “segurar tudo”, impede Bellhusk por alguns segundos, mas sofre fadiga estrutural alta no torso, ombro ou tornozelo.",
+      "Se Viper usar leitura estrutural, pode identificar qual ponto do banco raso suporta pressão e qual ponto vai transmitir vibração.",
+      "Se Viper tentar controlar demais, o Horizon pode ficar rígido no pior instante.",
+      "Se Aaron usar ritmo/respiração, pode ajudar a Linha Horizon a agir entre pulsos, não dentro deles.",
+      "Se Aaron focar em civis, pode perceber que o ferry ou barco de apoio entrará no cone de ressonância se Bellhusk virar errado.",
+      "Se Ronin entrar curto no sulco, pode colapsar parte da emissão.",
+      "Se Ronin tentar precisão perfeita, pode ficar tempo demais na linha.",
+      "Se Cristhian usar mecatrônica, pode distinguir o sulco funcional da placa que só vibra como isca."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Cristhian",
+      "Aaron",
+      "Viper"
+    ],
+    "backstageNpcs": [],
+    "entities": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Stacker Pentecost",
+      "Pentecost",
+      "Cristhian",
+      "Aaron",
+      "Viper",
+      "Fluxo",
+      "Par K-01",
+      "AER-1"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "AER-1"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Bellhusk",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "boia",
+      "boias",
+      "barco",
+      "barcos",
+      "ferry",
+      "ponte",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Não impor solução: manter vitória/resultado como consequência da mesa.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-3 / Bellhusk — Finalização jogável do terceiro combate real da Célula K",
       "Sul de Lamma, Hong Kong",
@@ -1795,7 +8333,164 @@ export const masterLoreParts = [
     "partLabel": "1.53",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Escalada de combate e danos",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Christian e o personagem do mestre ainda tiveram algum resquício visual do Bellhusk? Bordas duplicadas, vontade de corrigir postura, sensação de que o chão está meio inclinado, incômodo com imperfeição visual ou desejo de ‘limpar’ a imagem mental?”**",
+      "**“Escolham uma coisa para cada categoria: humano, Jaeger e Kaiju. O que seu personagem devolve mentalmente para cada lugar?”**",
+      "— Pergunta direta: alguém perguntou a vocês sobre o que sentiram durante o Bellhusk? Não “como foi a luta”, não “vocês estão bem”. Perguntou especificamente sobre visor, zumbido, pressão ou duplicação?",
+      "**“Ryo pergunta se alguém tentou saber detalhes sensoriais do combate contra Bellhusk. Vocês lembram de alguma conversa suspeita? Isso faz vocês repensarem comentários que pareciam inocentes?”**",
+      "— O que você espera do quarto?",
+      "**“Mako pergunta se Bellhusk fazia ‘isso’ dentro do Jaeger, olhando a água vibrar. O que seus personagens respondem?”**",
+      "**“Na noite de Natal, depois de tudo que aconteceu em 2009, alguém pergunta se o quarto Kaiju será pior. Como os personagens respondem? Com humor, silêncio, fé, estratégia, irritação?”**",
+      "se três Kaijus comuns já ensinaram três formas diferentes de quebrar um Jaeger, o que o quarto tentará quebrar?"
+    ],
+    "conditionalConsequences": [
+      "Se os players disserem que não sentiram nada, Naomi faz testes de respiração, equilíbrio e tensão muscular. Talvez esteja tudo bem. Talvez o corpo apenas não tenha nomeado ainda.",
+      "Se disserem que sentem pressão, Naomi pede que descrevam onde começa e onde termina.",
+      "Se disserem que o Horizon parece “preso” neles, ela anota como retorno de corpo-Jaeger, não como fraqueza.",
+      "Se responderem com honestidade, Helena trabalha com eles.",
+      "Se minimizarem, ela mostra que os dados do Ronin registraram correções fantasmas logo após o retorno.",
+      "Se disserem que a imperfeição incomoda mais que a dor, ela anota com muito cuidado.",
+      "Se os players sentirem orgulho, isso é legítimo.",
+      "Se sentirem desconforto, também.",
+      "Se alguém disser que quer ser referência, Pentecost pode depois dizer:",
+      "Se Luiz e Alisson tentam endurecer o corpo, Naomi corrige:",
+      "Se Christian e o personagem do mestre tentam alinhar cada erro visual, Helena intervém:",
+      "Se Dae-Hyun participa de uma sessão posterior e tropeça, ele fica furioso. Mei Lin ajuda. Mateo observa que ele tenta vencer o chão em vez de sentir o chão. Isso pode render cena com os players.",
+      "Se alguém se incomodar, isso é muito humano.",
+      "Se alguém sentir orgulho, também.",
+      "Se Luiz e Alisson olham para Brine/Hookwake/Bellhusk e lembram o que o Horizon sofreu, isso fortalece a relação com o Jaeger.",
+      "Se Christian e o personagem do mestre olham para Hookwake/Bellhusk e lembram as finalizações e distorções, isso reforça a responsabilidade do Ronin.",
+      "Se os players responderem, ele ouve. Depois completa:",
+      "Se dizem que sim, ela fica mais séria.",
+      "Se dizem que era pior, ela olha para Pentecost.",
+      "Se tentam tranquilizá-la, ela talvez responda:",
+      "se três Kaijus comuns já ensinaram três formas diferentes de quebrar um Jaeger, o que o quarto tentará quebrar?"
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Dae-Hyun",
+      "Mei Lin",
+      "Mateo",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Mercer",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "AET-1",
+      "AER-1"
+    ],
+    "technologies": [
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "AEB-1",
+      "AET-1",
+      "AER-1"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Bellhusk",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "porto"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 23 de novembro a 31 de dezembro de 2009",
       "O primeiro pós-combate de ressonância",
@@ -1835,7 +8530,149 @@ export const masterLoreParts = [
     "partLabel": "1.54",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Janela Cinza e Rede Orfeu",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Vocês ouvem a voz de Vorn ordenando avanço, mas a leitura atual do campo diz que essa ordem não encaixa mais. O que pesa mais: obedecer à autoridade ou confiar que a ordem ficou velha?”**",
+      "**“A voz de Rafiq manda manter defesa central, mas a rota atual mudou. Vocês seguem a ordem como recebida, confirmam com a torre, ou protegem a rota viva mesmo que isso contrarie a fala?”**",
+      "**“Rafiq percebe que talvez vocês olhem para o Horizon pensando no futuro. O que Luiz e Alisson sentem: culpa, gratidão, impaciência, respeito, vontade de mudar ou medo de abandonar o primeiro gigante?”**",
+      "**“Vocês ouvem a voz de Vorn mandando avançar, mas falta o código de confirmação e a situação não combina. O que fazem?”**",
+      "**“Uma voz muito parecida com Helena diz que a linha está limpa e manda executar. A frase soa quase certa, mas não completamente. Vocês obedecem, verificam código, perguntam limite ou travam?”**"
+    ],
+    "conditionalConsequences": [
+      "Se os players acharem exagero, Ryo pode explicar que o mercado negro nunca compra só o que entende; compra o que alguém mais perigoso pediu.",
+      "Se perguntarem se isso tem relação com o próximo Kaiju, Hermann dirá que não há evidência direta. Newt dirá que, depois de três padrões tão diferentes, ele prefere treinar o medo antes de ele ganhar dentes.",
+      "Se perguntarem se os Mark-2 resolveriam isso, Helena responde:",
+      "Se os players criarem palavras curtas de tempo, como “agora”, “velho”, “confirmado”, “cancelado”, isso melhora o treino.",
+      "Se confiarem em falas longas, o eco atrapalha.",
+      "Se cada dupla agir pela própria leitura sem confirmar, a simulação cria colisão tática.",
+      "Se pedirem confirmação por código visual ou movimento, Helena e Vorn aprovam.",
+      "Se eles criarem, guarde. Isso pode salvar vidas no futuro.",
+      "Se o Ronin obedece sem confirmar, quase colide com a função do Horizon.",
+      "Se pede confirmação temporal, passa.",
+      "Se usa código criado antes, excelente.",
+      "Se hesita demais, perde janela, mas evita erro fatal.",
+      "Se protegem a rota viva e comunicam, ótimo.",
+      "Se obedecem à gravação, aprendem o perigo.",
+      "Se travam por conflito, Naomi registra que autoridade e proteção entraram em choque.",
+      "Se alguém sentir raiva, Ryo entende.",
+      "Se alguém sentir invasão, Naomi valida.",
+      "Se alguém perguntar se isso coloca a Célula em perigo, Ryo responde:",
+      "Se criarem linguagem corporal, a Célula K cresce.",
+      "Se perguntarem, Helena diz:",
+      "Se tentam resolver tudo de uma vez, sobrecarga.",
+      "Se priorizam o que ameaça função imediata, passam.",
+      "Se Horizon comunica “metal” e “rota”, ótimo.",
+      "Se Ronin comunica “visor sujo, linha funcional”, ótimo."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Hannibal Chau",
+      "Chau"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi Lau",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Hannibal Chau",
+      "Chau",
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "AEB-1",
+      "AET-1",
+      "AER-1"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Orfeu",
+      "AEB-1",
+      "AET-1",
+      "AER-1"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Bellhusk",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "rota civil"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 1º de janeiro a 18 de março de 2010",
       "O briefing de abertura de 2010",
@@ -1872,7 +8709,152 @@ export const masterLoreParts = [
     "partLabel": "1.55",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Janela Cinza e Rede Orfeu",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "O Horizon Brave se move com seu peso conhecido, mas agora com protocolos adicionais de comunicação. Luiz e Alisson talvez sintam que a missão não ameaça o metal, mas a clareza. O Horizon é bom em ser presença. A pergunta é: presença contra o quê?",
+      "**“Vocês estão indo para uma patrulha sem Kaiju confirmado, mas com risco de comunicação. O que cada dupla combina antes de chegar ao setor? Qual palavra ou gesto significa ‘não confie nesse canal’?”**",
+      "**“O rádio transmite a palavra ‘âncora’ como se viesse do Horizon, mas talvez ninguém tenha falado. Como os personagens reagem? Horizon confirma ou nega? Ronin confia, ignora, pergunta pelo código completo?”**",
+      "**“O rádio parece formar ‘Ronin’ por um instante, sem origem confirmada. Não é ordem, não é ataque, não é contato. Como Christian e o personagem do mestre lidam com ouvir o nome do Jaeger no ruído?”**",
+      "**“O terceiro eco mistura vozes reais em uma frase quase útil, enquanto surge um falso contato no flanco oeste. Vorn aborta a patrulha. O que cada dupla faz nos primeiros segundos do retorno?”**",
+      "Esse silêncio cria a pior pergunta: e se já passou? E se abortaram cedo? E se perderam a chance? E se tudo era só interferência humana? E se alguém estava testando resposta da Célula K e agora conseguiu os dados?",
+      "**“Durante o debrief, vocês ouvem que o eco pode ter usado gravações de vocês, ruído ambiental e talvez resposta à patrulha. O que seus personagens acham mais assustador: alguém ter os áudios, o mar parecer responder, ou não conseguir separar uma coisa da outra?”**",
+      "**“Vocês ouviram vozes quase suas, comandos quase reais e palavras quase úteis. Agora, fora do Conn-Pod, vocês têm a chance de decidir se isso mudou algo entre vocês. O que a Célula K conversa?”**",
+      "Luiz e Alisson podem dizer que ouvir “Ronin” no eco deu vontade de mover o Horizon.\r\nChristian e o personagem do mestre podem dizer que ouvir o nome do Jaeger sem origem pareceu invasivo.\r\nAlguém pode perguntar: “se um dia o canal disser que um de nós pediu ajuda, como vamos saber?”\r\nA resposta pode ser código, confiança visual, histórico de função, ou algo emocional que só os players definem.",
+      "— E se o próximo Kaiju, ou o sistema que envia os Kaijus, não precisar falar? E se bastar produzir ruído que humanos e máquinas completem sozinhos?",
+      "**“A torre diz: ‘Horizon, proteja o—’ e o canal corta. No mapa há dois possíveis objetivos: uma rota civil e uma embarcação de apoio. Qual vocês protegem primeiro e como confirmam sem inventar o resto da ordem?”**",
+      "**“O canal diz: ‘Ronin, não deixe… avançar.’ O corte acontece bem no alvo. Há um falso contato e uma ameaça real menor. O que o Ronin faz?”**",
+      "**“Quando uma ameaça aprende a usar pedaços daquilo que vocês confiam, o que sobra como prova de que vocês ainda estão ouvindo uns aos outros de verdade?”**"
+    ],
+    "conditionalConsequences": [
+      "Se os players perguntarem se isso pode ser o K-4, Hermann responde que não há base para designação.",
+      "Se perguntarem se é obra de Chau, Ryo responde que não há prova, mas há gente tentando observar esses sinais.",
+      "Se perguntarem se isso pode afetar o Drift, Helena responde:",
+      "Se Horizon nega com clareza usando o novo código, a equipe passa.",
+      "Se Ronin assume que Horizon está ancorando e muda flanco, o eco já começa a controlar a formação.",
+      "Se alguém fica em dúvida e pede confirmação de origem, correto.",
+      "Se os players usam o código criado antes, excelente.",
+      "Se usam “eco” ou “velha”, ótimo.",
+      "Se alguém reduz duas vezes, a simulação real da formação mostra espaçamento ruim.",
+      "Se Ronin nota que o eco carrega pressão e avisa, Hermann ganha dado.",
+      "Se Horizon mantém a rota viva e não obedece de novo, Vorn aprova.",
+      "Se respondem verbalmente, a anomalia registra reação? Talvez não mecânica, mas a torre marca.",
+      "Se ignoram, bom, mas o incômodo permanece.",
+      "Se usam código de negação, excelente: “Eco. Sem origem. Ronin está vivo, sem resposta.”",
+      "Se um dos dois sente vontade de procurar a fonte, Helena alerta.",
+      "Se usam comunicação curta, ótimo.",
+      "Se deslocam demais, o eco já ganhou uma mudança.",
+      "Se mantêm rota e confirmam visual do Ronin, excelente.",
+      "Se os players questionarem, Vorn permite que reportem estado.",
+      "Se alguém disser “não estamos bem”, ele aborta. Isso é importante: o limite humano conta.",
+      "Se todos confirmam, a patrulha continua.",
+      "Se Ronin quer checar o falso contato, Helena corta.",
+      "Se Horizon quer proteger a rota mencionada no eco, Naomi lembra que a rota real está no mapa atual.",
+      "Se ambos usam o código para marcar “eco morto”, excelente."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Chau"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Chau",
+      "Fluxo",
+      "Drift",
+      "Par K-01",
+      "Orfeu",
+      "Janela Cinza"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Drift",
+      "Par K-01",
+      "Orfeu",
+      "Janela Cinza"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Bellhusk",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "boia",
+      "rota civil",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 19 de março a 27 de abril de 2010",
       "O briefing da Janela Cinza",
@@ -1912,7 +8894,139 @@ export const masterLoreParts = [
     "partLabel": "1.56",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Janela Cinza e Rede Orfeu",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU",
+      "REDE ORFEU",
+      "SEGURANÇA DE INFORMAÇÃO"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Vocês estão diante de um alerta sem Kaiju confirmado. A boia pode ser só equipamento perdido, pode ser vazamento humano, pode ser anomalia ambiental ou pode ser o começo de algo maior. O que seus personagens perguntam, contestam ou preparam antes da operação naval sair?”**",
+      "**“A boia parece carregar áudio fora de ordem: fragmentos de eventos que, pelo timestamp, ela não deveria ter gravado. Isso pode ser corrupção, manipulação humana ou algo mais estranho. O que seus personagens querem saber primeiro?”**",
+      "**“O drone mostra filamentos escuros envolvendo o cabo da boia. Eles não formam um Kaiju, mas reagem a transmissão. O que vocês fazem: cortam, puxam, isolam, destroem, esperam amostra ou recuam?”**",
+      "**“O eco usa a função natural do Horizon: ‘segura’. Como Luiz e Alisson diferenciam instinto de defesa de comando falso? E como Christian e o personagem do mestre ajudam sem assumir que o Horizon vai obedecer?”**",
+      "**“O eco agora usa a função natural do Ronin: ‘corta’. Não diz o que cortar, nem por quê. Como Christian e o personagem do mestre impedem que a identidade do Jaeger vire ordem?”**"
+    ],
+    "conditionalConsequences": [
+      "Se perguntarem se Horizon Brave e Tacit Ronin vão sair imediatamente, Vorn responde:",
+      "Se perguntarem se a boia pode estar contaminada, Ryo responde:",
+      "Se perguntarem se é Chau, Ryo responde:",
+      "Se perguntarem se é o K-4, Hermann responde:",
+      "Se pedirem para entrar nos Conn-Pods preventivamente, Vorn pode autorizar conexão fria, sem saída da baia. Isso acelera resposta, mas expõe os pilotos a eco se o canal for comprometido.",
+      "Se preferirem esperar fora dos Jaegers, mantêm corpo e mente menos expostos, mas a saída posterior demora mais.",
+      "Se criarem ou confirmarem uma palavra de código específica para “boia comprometida”, isso ajuda na cena seguinte.",
+      "Se perguntarem a Naomi, ela diz:",
+      "Se sugerirem cortar o cabo, Leung pode fazê-lo, mas existe risco de perder o que está preso embaixo.",
+      "Se pedirem varredura, o drone pode detectar uma massa pequena demais para Kaiju, talvez um agrupamento de cabos, algas profundas ou material desconhecido preso ao sensor.",
+      "Se insistirem em saída dos Jaegers, Vorn pesa o risco: dois Mark-1 em campo contra uma ameaça sem corpo podem ser alvos de coleta de reação.",
+      "Se ninguém interfere, Leung tenta uma segunda puxada, aumentando o risco de ativar nova transmissão.",
+      "Se os players usam o código “Eco”, “Lacuna” ou outro que criaram, a equipe mantém controle e Ryo consegue marcar o evento como comando falso sem resposta operacional.",
+      "Se algum personagem começa a agir como se a saída tivesse sido autorizada, Naomi e Helena percebem o reflexo antes de virar ação completa. Isso não precisa punir de imediato, mas mostra que o ruído consegue provocar impulso.",
+      "Se o Par K-01 tentar interpretar a voz pela “sensação” e não pelo código, Helena intervém:",
+      "Se a Linha Horizon quiser antecipar defesa por instinto, Naomi diz:",
+      "Se você decidir que Vorn autoriza a saída, use esta cena.",
+      "Se Horizon fica perto demais da boia, um novo eco pode tentar usar sua posição como “âncora” falsa.",
+      "Se Ronin se aproxima demais do cabo, sensores podem começar a marcar direções contraditórias.",
+      "Se protegem primeiro a embarcação, reduzem risco humano, mas dão tempo para a anomalia emitir de novo.",
+      "Se focam só na boia, a equipe naval fica vulnerável a puxão ou falha de cabo.",
+      "Se cortam à distância, recuperam parte da boia, mas os filamentos podem afundar e desaparecer.",
+      "Se tentam puxar, a boia transmite novo pacote e a equipe pode sofrer eco.",
+      "Se destroem tudo, eliminam risco imediato, mas perdem evidência."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Chau",
+      "Mercer",
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "S-23",
+      "Janela Cinza"
+    ],
+    "technologies": [
+      "Par K-01",
+      "Orfeu",
+      "MSD-1",
+      "S-23",
+      "Janela Cinza"
+    ],
+    "kaijus": [
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "boia"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01 e setor sul-sudeste de Hong Kong — 27 de abril de 2010",
       "1. Cena inicial — antes dos Jaegers saírem",
@@ -1952,7 +9066,130 @@ export const masterLoreParts = [
     "partLabel": "1.57",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Janela Cinza e Rede Orfeu",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "FENDA",
+      "CHAU",
+      "JAEGER",
+      "KAIJU",
+      "REDE ORFEU",
+      "SEGURANÇA DE INFORMAÇÃO"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“Puxar tudo gerou o maior pacote de ruído até agora. Três falsos contatos aparecem, e a frase mistura funções da Célula K. O que vocês fazem nos primeiros cinco segundos?”**",
+      "**“No debrief, fica claro que a Janela Cinza pode ter três camadas: fenômeno profundo, manipulação humana e interpretação neural. Qual camada mais preocupa seus personagens?”**"
+    ],
+    "conditionalConsequences": [
+      "Se os players priorizarem segurança da equipe e preservação parcial de dados, Vorn autoriza o corte abaixo da estrutura principal.",
+      "Se os players decidirem que a S-23 é perigosa demais para recuperar, Vorn autoriza destruição controlada.",
+      "Se os players decidirem que precisam entender o material, Vorn autoriza coleta limitada com drone, sob protocolo rígido.",
+      "Se os players decidirem que nenhum dado vale a exposição, Vorn aceita uma retirada controlada, desde que o setor seja marcado para monitoramento.",
+      "Se eles se preocupam mais com Chau, Ryo pode puxar cenas de investigação.",
+      "Se se preocupam mais com a anomalia profunda, Hermann/Newt puxam pesquisa e futura MSD-2.",
+      "Se se preocupam mais com interpretação neural, Helena/Naomi puxam treinamento e cuidado.",
+      "Se se preocupam com tudo, Vorn responde:",
+      "Se essa informação for passada aos pilotos, pergunte:"
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Chau",
+      "Mercer",
+      "Par K-01",
+      "Rede Orfeu",
+      "Orfeu",
+      "MSD-2",
+      "Fenda",
+      "S-23",
+      "Janela Cinza"
+    ],
+    "technologies": [
+      "Par K-01",
+      "Rede Orfeu",
+      "Orfeu",
+      "MSD-2",
+      "Fenda",
+      "S-23",
+      "Janela Cinza"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Bellhusk",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "boia",
+      "ponte",
+      "civis"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Setor S-23 e corredor sul-sudeste de Hong Kong — 27 de abril a 4 de maio de 2010",
       "27 de abril de 2010 — 06h22",
@@ -2000,7 +9237,161 @@ export const masterLoreParts = [
     "partLabel": "1.58",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Janela Cinza e Rede Orfeu",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "FENDA",
+      "CHAU",
+      "JAEGER",
+      "KAIJU",
+      "REDE ORFEU",
+      "SEGURANÇA DE INFORMAÇÃO"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "— Vamos começar pela parte que todos odiamos: o que sabemos de verdade?",
+      "— O que não sabemos?",
+      "**“Depois da operação S-23, qual pergunta seus personagens querem responder primeiro: de onde veio o sinal, quem tentou comprar ou captar, se isso pode afetar o Fluxo, ou se existe um corpo Kaiju por trás?”**",
+      "**“Vocês ouvem pela primeira vez a proposta da MSD-2 / Rede Orfeu. Ela pode ajudar a prever dilatação da Fenda e categoria dos Kaijus, mas também pode atrair interferência, mercado negro e Janela Cinza. O que seus personagens perguntam ou contestam?”**",
+      "**“Rafiq deixa claro que uma missão de rede não é menos perigosa só porque talvez não tenha combate. Para Horizon, o risco é carga prolongada; para Ronin, o risco é excesso de sinal sem alvo. Como cada dupla se prepara mentalmente para uma missão de espera, proteção e filtragem?”**",
+      "**“Mako pergunta como vocês sabem qual ponto proteger primeiro em uma rede. O que seus personagens respondem?”**",
+      "Se responderem “o que tiver vida em risco”, Pentecost, se estiver presente, aprova em silêncio.\r\nSe responderem “o que a torre mandar”, Mako pode perguntar:\r\n— E se a torre estiver atrasada?\r\nSe responderem “o que impedir o Kaiju de chegar”, ela pergunta:\r\n— E se ainda não tiver Kaiju?\r\nSe responderem “o que a missão definiu antes”, ela entende que preparação é parte da coragem.",
+      "**“ORF-0 começa. Nó A mostra pressão profunda. Nó B sofre varredura externa. Nó C transmite uma frase falsa: ‘Horizon, segura o nó’. Ao mesmo tempo, uma embarcação civil entra em rota de risco. O que vocês priorizam nos primeiros trinta segundos?”**",
+      "**“Quando existem três sinais ao mesmo tempo e vocês só podem responder bem a um primeiro, como escolhem o que vai continuar vivo?”**"
+    ],
+    "conditionalConsequences": [
+      "Caso a boia tenha sido destruída, a estação de amostra fica vazia, e isso incomoda Newt de forma quase física.",
+      "Caso o módulo tenha sido recuperado, Hermann passa tempo demais olhando para arquivos corrompidos.",
+      "Caso os filamentos tenham sido coletados, Helena exige que nenhum piloto se aproxime do material sem autorização.",
+      "Caso a boia tenha sido deixada no mar e desaparecido depois, Ryo mantém uma tela com a última posição conhecida, como se olhar mais forte pudesse acusar quem levou.",
+      "Se os pilotos estiverem presentes ou receberem uma versão filtrada depois, pergunte:",
+      "Se perguntarem quando a missão acontece, Vorn responde:",
+      "Se perguntarem se a Rede Orfeu vai substituir patrulhas, Hermann responde:",
+      "Se perguntarem se ela pode prever categoria com precisão, Hermann diz:",
+      "Se perguntarem se a rede pode ser hackeada por Chau, Ryo responde:",
+      "Se perguntarem se o K-4 está ligado à Janela Cinza, Helena responde:",
+      "Se a Célula K souber da existência do Nó Fantasma, pergunte:",
+      "Se apoiarem Ryo, a missão ganha camada de contraespionagem.",
+      "Se apoiarem Hermann, a rede ganha dados mais limpos, mas fica mais vulnerável.",
+      "Se sugerirem que nem todos os pilotos saibam a posição do Nó Fantasma, Ryo aprova.",
+      "Se disserem que precisam saber para proteger, Vorn pondera:",
+      "Se encontrar os players, ela pergunta:",
+      "Se responderem “o que tiver vida em risco”, Pentecost, se estiver presente, aprova em silêncio.",
+      "Se responderem “o que a torre mandar”, Mako pode perguntar:",
+      "Se responderem “o que impedir o Kaiju de chegar”, ela pergunta:",
+      "Se responderem “o que a missão definiu antes”, ela entende que preparação é parte da coragem.",
+      "Se os players tomarem conhecimento da posição de Mercer, pergunte:",
+      "Se priorizam a embarcação civil, salvam vida imediata e aceitam perder dado.",
+      "Se priorizam o nó com pressão profunda, avançam ciência, mas podem deixar civil em risco.",
+      "Se respondem ao comando falso, a simulação mostra a armadilha."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq",
+      "Helena",
+      "Naomi",
+      "Ryo",
+      "Newt",
+      "Hermann",
+      "Pentecost",
+      "Mako Mori",
+      "Mako",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01",
+      "Rede Orfeu",
+      "Orfeu",
+      "MSD-1",
+      "MSD-2",
+      "AEB-1",
+      "Fenda",
+      "S-23",
+      "Janela Cinza"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Rede Orfeu",
+      "Orfeu",
+      "MSD-1",
+      "MSD-2",
+      "AEB-1",
+      "Fenda",
+      "S-23",
+      "Janela Cinza"
+    ],
+    "kaijus": [
+      "Brine",
+      "Hookwake",
+      "Bellhusk",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "boia",
+      "boias"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 5 a 18 de maio de 2010",
       "5 de maio de 2010 — 08h20",
@@ -2049,7 +9440,160 @@ export const masterLoreParts = [
     "partLabel": "1.59",
     "accessLayer": "mesa_jogavel_com_segredos_de_mestre",
     "audience": "Players filtrado + mestre completo",
-    "masterUse": "Material de mestragem avan?ada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sess?o revelar.",
+    "masterUse": "Material de mestragem avançada. Usar o texto integral no painel do mestre e liberar aos players apenas conforme a sessão revelar.",
+    "arc": "Janela Cinza e Rede Orfeu",
+    "status": "Players filtrado / mestre completo",
+    "isRevisionR": false,
+    "isPlayableCombat": false,
+    "visibilityBadges": [
+      "PÚBLICO FILTRADO + MESTRE COMPLETO",
+      "PERGUNTA DE MESA",
+      "CONSEQUÊNCIA CONDICIONAL",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "PAR K-01",
+      "ORFEU",
+      "FENDA",
+      "CHAU",
+      "JAEGER",
+      "KAIJU",
+      "REDE ORFEU",
+      "SEGURANÇA DE INFORMAÇÃO"
+    ],
+    "sessionTags": [
+      "PERGUNTA DE MESA",
+      "CENÁRIO COMO ARSENAL",
+      "FLUXO",
+      "ORFEU",
+      "CHAU",
+      "JAEGER",
+      "KAIJU"
+    ],
+    "publicGuidance": [
+      "Liberar aos players apenas o que os personagens veem, recebem em briefing ou descobrem em cena.",
+      "Pausar a narração nas perguntas extraídas e devolver a decisão aos players."
+    ],
+    "privateGuidance": [
+      "Não decidir reação emocional dos players; transformar pressão neural em pergunta, escolha ou teste.",
+      "Aplicar consequências apenas se as escolhas dos players levarem a elas."
+    ],
+    "spoilerWarnings": [
+      "Cuidado com vazamentos e leitura externa: parte pode conter pistas que os players ainda não confirmaram."
+    ],
+    "questions": [
+      "**“ORF-0 começa com três nós em crise e uma embarcação civil fora da rota. O que vocês fazem nos primeiros trinta segundos?”**",
+      "**“Rafiq deixa claro que a MSD-2 pode desgastar os Mark-1 sem combate direto. Como cada dupla se prepara para uma missão em que o perigo pode ser duração, espera e excesso de sinal?”**",
+      "O objetivo do treino é testar uma coisa: o que acontece quando a rede parece pedir ajuda com voz humana?",
+      "**“ORF-1 apresenta um pedido de ajuda possivelmente falso vindo de um nó, enquanto outro nó registra possível dilatação real. O que a Célula K faz primeiro?”**",
+      "**“Sem NPCs conduzindo, a Célula K conversa sobre a Rede Orfeu. O que preocupa mais: a Fenda, os ecos, os humanos tentando roubar dados, ou a possibilidade de serem forçados a escolher qual nó deixar em risco?”**",
+      "**“ORF-2 coloca tudo ao mesmo tempo: dilatação fraca, varredura externa, eco funcional, embarcação sem comunicação e roubo simulado de módulo. O que a Célula K faz primeiro, e o que conscientemente deixa para segundo?”**",
+      "**“Quando tudo parece importante, o que vocês escolhem proteger primeiro — e o que aceitam perder por alguns minutos para que algo mais continue vivo?”**"
+    ],
+    "conditionalConsequences": [
+      "Se disserem **vida humana**, Vorn concorda, mas pergunta o que fazer se salvar um navio permitir que um nó crítico seja roubado.",
+      "Se disserem **dados científicos**, Hermann aprova, mas Naomi pergunta se algum dado vale a perda de piloto.",
+      "Se disserem **negação de captura**, Ryo aprova, mas Newt pergunta quantas verdades a humanidade pode destruir antes de continuar cega.",
+      "Se disserem **preservação dos Jaegers**, Rafiq aprova, mas Vorn pergunta o que acontece se a cidade precisar que os Mark-1 fiquem em campo mais tempo do que o ideal.",
+      "Se Luiz e Alisson propõem limites de permanência ou rodízio de postura, Rafiq aprova.",
+      "Se Christian e o personagem do mestre propõem critérios para ignorar leituras incompletas, Helena aprova.",
+      "Se os players pedem upgrades imediatos, Rafiq responde:",
+      "Se desconfiarem, Hermann respeita:",
+      "Se confiarem demais, Vorn alerta:",
+      "Se os players souberem da pressão:",
+      "Se os players apoiarem, ou se Vorn decidir com Ryo, um módulo-isca é preparado.",
+      "Se salvarem a embarcação primeiro, preservam vida e perdem parte da trilha do módulo.",
+      "Se protegerem o módulo primeiro, podem rastrear sabotador, mas embarcação fica em risco.",
+      "Se responderem ao eco funcional, falham no objetivo de filtro.",
+      "Se perseguirem dilatação D-1 com Ronin sem confirmação, caem em excesso de linha.",
+      "Se Horizon tentar cobrir todos os nós, a simulação mostra sobrecarga e atraso."
+    ],
+    "visibleNpcs": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian"
+    ],
+    "backstageNpcs": [
+      "Chau",
+      "Mercer"
+    ],
+    "entities": [
+      "Vorn",
+      "Rafiq Al-Hassan",
+      "Rafiq",
+      "Helena Sato",
+      "Helena",
+      "Naomi",
+      "Ryo Tanaka",
+      "Ryo",
+      "Newton Geiszler",
+      "Newt",
+      "Hermann Gottlieb",
+      "Hermann",
+      "Pentecost",
+      "Luiz",
+      "Alisson",
+      "Christian",
+      "Chau",
+      "Mercer",
+      "Fluxo",
+      "Par K-01",
+      "Rede Orfeu",
+      "Orfeu",
+      "MSD-1",
+      "MSD-2",
+      "AEB-1",
+      "AET-1",
+      "AER-1",
+      "Fenda",
+      "S-23",
+      "Janela Cinza"
+    ],
+    "technologies": [
+      "Fluxo",
+      "Par K-01",
+      "Rede Orfeu",
+      "Orfeu",
+      "MSD-1",
+      "MSD-2",
+      "AEB-1",
+      "AET-1",
+      "AER-1",
+      "Fenda",
+      "S-23",
+      "Janela Cinza"
+    ],
+    "kaijus": [
+      "Bellhusk",
+      "Kaiju"
+    ],
+    "jaegers": [
+      "Horizon Brave",
+      "Tacit Ronin",
+      "Jaeger"
+    ],
+    "sceneAssets": [
+      "cabo",
+      "cabos",
+      "boia",
+      "boias"
+    ],
+    "continuityNotes": [
+      "Rede Orfeu deve permanecer ferramenta e risco ao mesmo tempo.",
+      "Progressão do Par K-01 deve ser tratada como sintoma, escolha e consequência."
+    ],
     "subtitles": [
       "K-Station 01, Kwai Tsing, Hong Kong — 19 de maio a 3 de junho de 2010",
       "19 de maio de 2010 — 08h30",
