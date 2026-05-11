@@ -1,10 +1,12 @@
 import { notFound } from "next/navigation";
 import { DetailPage } from "@/components/detail-page";
+import { JaegerCombatSheet } from "@/components/jaegers/JaegerCombatSheet";
 import { JaegerDiagnosticLoader } from "@/components/jaegers/JaegerDiagnosticLoader";
 import { PageShell } from "@/components/page-shell";
 import { jaegers } from "@/data";
+import { getJaegerCombatContent } from "@/lib/jaeger-combat/content";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return jaegers.map((jaeger) => ({ id: jaeger.id }));
 }
 
@@ -12,6 +14,7 @@ export default async function JaegerDetailPage({ params }: { params: Promise<{ i
   const { id } = await params;
   const jaeger = jaegers.find((item) => item.id === id);
   if (!jaeger) notFound();
+  const combatContent = getJaegerCombatContent(jaeger.id);
 
   return (
     <PageShell eyebrow="Dossiê Jaeger" title={jaeger.nome} subtitle={jaeger.geracao} showHero={false}>
@@ -38,6 +41,15 @@ export default async function JaegerDetailPage({ params }: { params: Promise<{ i
           { title: "Transmissão", content: jaeger.transmissao, classified: true },
         ]}
       />
+      {combatContent ? (
+        <JaegerCombatSheet
+          entry={combatContent.entry}
+          jaegerName={jaeger.nome}
+          jaegerFunction={jaeger.funcao}
+          jaegerContent={combatContent.jaegerContent}
+          blocks={combatContent.blocks}
+        />
+      ) : null}
       <JaegerDiagnosticLoader jaegerId={jaeger.id} jaegerName={jaeger.nome} />
     </PageShell>
   );

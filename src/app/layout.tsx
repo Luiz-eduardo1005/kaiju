@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Rajdhani, Share_Tech_Mono } from "next/font/google";
+import { MasterQuickDock } from "@/components/master/MasterQuickDock";
 import { ModeThemeController } from "@/components/mode-theme-controller";
 import { TopBar } from "@/components/top-bar";
 import { AuthProvider } from "@/context/auth-context";
@@ -35,6 +36,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <div className="fixed inset-0 -z-10 bg-[linear-gradient(90deg,rgba(34,211,238,0.05)_1px,transparent_1px),linear-gradient(rgba(34,211,238,0.04)_1px,transparent_1px)] bg-[size:56px_56px] opacity-40" />
             <TopBar />
             {children}
+            <MasterQuickDock />
           </AuthProvider>
         </ModeProvider>
       </body>

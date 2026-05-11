@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { JaegerDiagnostic } from "@/components/jaegers/JaegerDiagnostic";
 import { jaegers } from "@/data";
 import { JAEGER_PARTS, JAEGER_STATUS_OPTIONS, mergeJaegerStatuses } from "@/lib/game/jaegerDiagnostics";
@@ -30,7 +30,7 @@ export function MasterJaegerStatusPanel({ masterProfile }: MasterJaegerStatusPan
   const selectedPart = JAEGER_PARTS.find((part) => part.id === selectedPartId) ?? JAEGER_PARTS[0];
   const selectedStatusOption = JAEGER_STATUS_OPTIONS.find((option) => option.id === status) ?? JAEGER_STATUS_OPTIONS[0];
 
-  async function loadStatuses(nextJaegerId = jaegerId) {
+  const loadStatuses = useCallback(async (nextJaegerId = jaegerId) => {
     const { data, error } = await supabase.from("jaeger_part_statuses").select("*").eq("jaeger_id", nextJaegerId);
     if (error) {
       setMessage("Tabela de status dos Jaegers ainda não encontrada. Rode o SQL do sistema de status dos Jaegers.");
@@ -38,19 +38,25 @@ export function MasterJaegerStatusPanel({ masterProfile }: MasterJaegerStatusPan
       return;
     }
     setStatuses((data as JaegerPartStatus[]) ?? []);
-  }
-
-  useEffect(() => {
-    void loadStatuses(jaegerId);
   }, [jaegerId]);
 
   useEffect(() => {
-    const current = mergedStatuses.find((part) => part.part_id === selectedPartId);
-    if (!current) return;
-    setStatus(current.status);
-    setIntegrity(String(current.integrity));
-    setNote(current.note ?? "");
-    setEquipmentNote(current.equipment_note ?? "");
+    const timer = window.setTimeout(() => {
+      void loadStatuses(jaegerId);
+    }, 0);
+    return () => window.clearTimeout(timer);
+  }, [jaegerId, loadStatuses]);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      const current = mergedStatuses.find((part) => part.part_id === selectedPartId);
+      if (!current) return;
+      setStatus(current.status);
+      setIntegrity(String(current.integrity));
+      setNote(current.note ?? "");
+      setEquipmentNote(current.equipment_note ?? "");
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, [mergedStatuses, selectedPartId]);
 
   async function savePartStatus() {

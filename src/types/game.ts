@@ -251,6 +251,23 @@ export type JaegerPartStatus = {
   updated_at?: string;
 };
 
+export type JaegerAssignmentStatus = "active" | "training" | "temporary" | "historical" | "revoked" | "dead_pair" | "classified";
+
+export type JaegerPilotAssignment = {
+  id: string;
+  jaeger_id: string;
+  pilot_left_id: string | null;
+  pilot_right_id: string | null;
+  pilot_left_label: string | null;
+  pilot_right_label: string | null;
+  visible_to_pilots: boolean;
+  assignment_status: JaegerAssignmentStatus;
+  notes: string | null;
+  assigned_by: string | null;
+  created_at?: string;
+  updated_at?: string;
+};
+
 export type StatKey =
   | "strength"
   | "agility"

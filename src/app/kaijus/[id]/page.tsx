@@ -3,7 +3,7 @@ import { KaijuDetail } from "@/components/kaiju-detail";
 import { PageShell } from "@/components/page-shell";
 import { kaijus } from "@/data";
 
-export function generateStaticParams() {
+export async function generateStaticParams() {
   return kaijus.map((kaiju) => ({ id: kaiju.id }));
 }
 

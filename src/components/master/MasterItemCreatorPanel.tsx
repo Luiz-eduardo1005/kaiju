@@ -121,7 +121,10 @@ export function MasterItemCreatorPanel({
   }
 
   useEffect(() => {
-    void load().catch((error) => setMessage(error.message));
+    const timer = window.setTimeout(() => {
+      void load().catch((error) => setMessage(error.message));
+    }, 0);
+    return () => window.clearTimeout(timer);
   }, []);
 
   function updateField<K extends keyof CustomItemFormInput>(key: K, value: CustomItemFormInput[K]) {

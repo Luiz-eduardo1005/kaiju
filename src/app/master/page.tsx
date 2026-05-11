@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { LoginRequired } from "@/components/game/login-required";
 import { MasterJaegerStatusPanel } from "@/components/master/MasterJaegerStatusPanel";
@@ -444,6 +445,24 @@ function MasterPanel() {
         subtitle="Atualize dano, integridade, partes arrancadas e funções afetadas dos Jaegers visíveis para os players."
       >
         <MasterJaegerStatusPanel masterProfile={profile} />
+      </CollapsibleMasterCard>
+      <CollapsibleMasterCard
+        eyebrow="Camada mecânica"
+        title="Fichas de Combate dos Jaegers"
+        subtitle="Abra a central com texto integral, cards, ataques, manobras, dano, Fluxo/Sincronia e vínculo de pilotos."
+      >
+        <div className="rounded-3xl border border-cyan-300/20 bg-cyan-950/10 p-5">
+          <p className="text-sm leading-6 text-slate-200">
+            Esta central não substitui o dossiê dos Jaegers nem o diagnóstico atual. Ela guarda a ficha mecânica importada dos arquivos Mark-1, Mark-2, Mark-3,
+            Mark-4 e Mark-VI, com Mark V preparado para importação futura.
+          </p>
+          <Link
+            href="/master/jaeger-combat"
+            className="mt-4 inline-flex rounded-2xl border border-cyan-200/40 bg-cyan-500/15 px-5 py-3 text-xs font-black uppercase tracking-[0.22em] text-cyan-50 transition hover:bg-cyan-500/25"
+          >
+            Abrir central de fichas
+          </Link>
+        </div>
       </CollapsibleMasterCard>
       <CollapsibleMasterCard
         eyebrow="Arsenal narrativo"
